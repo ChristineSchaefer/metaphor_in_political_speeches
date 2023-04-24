@@ -1,0 +1,5 @@
+requests
+cssutils
+beautifulsoup4
+pydantic[dotenv]
+pymongo

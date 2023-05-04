@@ -1,5 +1,5 @@
-import json
 import uuid
+from typing import Mapping, Any
 
 from pydantic import BaseModel, Extra, Field
 from pymongo.collection import Collection
@@ -29,14 +29,18 @@ class Document(BaseModel):
             raise Exception(f"{cls}.Config.collection_name is missing!")
         return cls._get_collection_from_name(name)
 
-    def savable_dict(self) -> dict:
-        savable = json.loads(self.json())
-        savable.pop("id")
-        return savable
-
-    # TODO replace_one with id does not work yet
+    # TODO replace does not work
     def save(self):
         """Inserts or updates a document with this id in the database"""
-        filter = {"_id": str(self.id)}
-        self.collection().replace_one(filter, self.savable_dict(), upsert=True)
+        self.collection().replace_one({"_id": self.id}, self.dict(exclude={"id"}), upsert=True)
         return self
+
+    @classmethod
+    def find(cls, filter: Mapping[str, Any] = None, *args, **kwargs) -> list["Document"]:
+        # TODO upgrade to py3.11 to be able to use Self type hint
+        """
+        Shortcut method that retrieves all document and instantiates the models for them.
+        """
+        if filter is None:
+            filter = {}
+        return [cls(**doc) for doc in cls.collection().find(filter, *args, **kwargs)]

@@ -78,12 +78,9 @@ class CrawlerController(BaseModel):
         text = read_from_txt("data/Regierungsmitglieder_normalisiert.txt")
         for item in text:
             politician = item[0:2]
-            item = remove_string(item, politician)
-            results = Politician.find({"name": {"$in": [" ".join(politician)]}})
-            if Politician.find({"name": {"$in": politician}}):
-                print(item)
-            # TODO check if new politicians exists in db
-            # self.politicians.append(Politician(name=" ".join(politician), party=" ".join(item)))
+            party = remove_string(item, politician)
+            if len(Politician.find({"name": {"$in": [" ".join(politician)]}})) <= 0:
+                self.politicians.append(Politician(name=" ".join(politician), party=" ".join(party)).save())
 
     def get_card_content(self):
         content = self.get_url_content()

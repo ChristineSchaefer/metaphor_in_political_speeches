@@ -5,7 +5,7 @@ from src.database import Document
 
 class Politician(Document):
     name: str
-    party: str
+    party: str | None
 
     class Config:
         extra = Extra.allow

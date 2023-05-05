@@ -1,0 +1,2350 @@
+[{
+  "_id": {
+    "$binary": {
+      "base64": "FqUuxVwRSEqjWcgdBuoOiA==",
+      "subType": "04"
+    }
+  },
+  "name": "Erich Köhler",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "yRcMXTEQTzq7rNVuk+SW/w==",
+      "subType": "04"
+    }
+  },
+  "name": "Hermann Ehlers",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "RsAeVDLBRoaPvN6NdtWe+A==",
+      "subType": "04"
+    }
+  },
+  "name": "Eugen Gerstenmaier",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tljaQMsYQ/aXu6jugw1ZUQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Kai-Uwe von Hassel",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "PGh91x7xQP6JbeQgW50enQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Annemarie Renger",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "s9+Hvbp0TaiMPGOH4Yqfyg==",
+      "subType": "04"
+    }
+  },
+  "name": "Karl Carstens",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "NX2xumt2RzC4sEQ7I2v3jA==",
+      "subType": "04"
+    }
+  },
+  "name": "Richard Stücklen",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "GLASuOU3RhmVOt2nUBG3Ww==",
+      "subType": "04"
+    }
+  },
+  "name": "Rainer Barzel",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "jVuBmIrfRKiQ0k1LGt53tQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Philipp Jenninger",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "1eAgTn+0SFmdnpT1rkOC9w==",
+      "subType": "04"
+    }
+  },
+  "name": "Rita Süssmuth",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "8J6U7rL4Sh+OB63BeB3y2g==",
+      "subType": "04"
+    }
+  },
+  "name": "Wolfgang Thierse",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tgipZ7MkRzCP9GNS60Nopw==",
+      "subType": "04"
+    }
+  },
+  "name": "Norbert Lammert",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tYM1fcaXRhGr+tbYj1x8QQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Wolfgang Schäuble",
+  "party": "CDU/CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "vKaJSzCKR3iKbItwAVoxiA==",
+      "subType": "04"
+    }
+  },
+  "name": "Konrad Adenauer",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/0SDuoIiTjaESnYoxn8nAA==",
+      "subType": "04"
+    }
+  },
+  "name": "Ilse Aigner",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "uIryeldxSkGn22JTCLWY7w==",
+      "subType": "04"
+    }
+  },
+  "name": "Peter Altmaier",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "gi7hgNBdQiiAVJ5yHTDK9g==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Apel",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "C0G5WnpHSpC9BORPI4hzpg==",
+      "subType": "04"
+    }
+  },
+  "name": "Walter Arendt",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "llNCJcRNTAu/OC4jUZNDRw==",
+      "subType": "04"
+    }
+  },
+  "name": "Annalena Baerbock",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "iCa6mj8AT16Mdds7k6AewA==",
+      "subType": "04"
+    }
+  },
+  "name": "Daniel Bahr",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "VFvRIF0eR52mdw90I3WtfQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Egon Bahr",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "W4PMbBIjTHONoxEq//HOlg==",
+      "subType": "04"
+    }
+  },
+  "name": "Siegfried Balke",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "rZtAvgn2T+C5WBgGpkzOAQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Martin Bangemann",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "bqjHRcPNSdKBcnntBfyrCA==",
+      "subType": "04"
+    }
+  },
+  "name": "Katarina Barley",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "YAxxD/LqQjWWd7FFd6LKzA==",
+      "subType": "04"
+    }
+  },
+  "name": "Gerhart Baum",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "f4dQvtypTgm5bm6VC0RDxw==",
+      "subType": "04"
+    }
+  },
+  "name": "Ernst Benda",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Z0NNGPJ+THWuqb8aTRTzVQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Christine Bergmann",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "XokMhA9CTRGWOKoCd1EgPQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Sabine BergmannPohl",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "gLPYFQGfRAu/HCeLMVIHAQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Theodor Blank",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "yHbWNTjcRsu14fclbrEOgg==",
+      "subType": "04"
+    }
+  },
+  "name": "Franz Blücher",
+  "party": "FVP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "3fhxRCP4T0SFmY+4sEr51A==",
+      "subType": "04"
+    }
+  },
+  "name": "Norbert Blüm",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "rGl06mh1QbubgTvPg2tjwA==",
+      "subType": "04"
+    }
+  },
+  "name": "Kurt Bodewig",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "xyz7AnVCS0aN+q5VW4rvJA==",
+      "subType": "04"
+    }
+  },
+  "name": "Friedrich Bohl",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "ojwUE/r8R4OmayDv/nRaMA==",
+      "subType": "04"
+    }
+  },
+  "name": "Jochen Borchert",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Gtel8RzUSkuEY7cXob5VMw==",
+      "subType": "04"
+    }
+  },
+  "name": "Wolfgang Bötsch",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "ZsOkJ/YBTT29/SlS9FhATg==",
+      "subType": "04"
+    }
+  },
+  "name": "Willy Brandt",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "WT4HuhnCSQ6sOsPSBj3LTQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Aenne Brauksiepe",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "kNPQJdfDTAO9tdbtbcDOyg==",
+      "subType": "04"
+    }
+  },
+  "name": "Helge Braun",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "7MW/Nj/uQ524QnsB0Rgl9Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Heinrich von Brentano",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "T7/xBJ7STD+AZulTcBZZxg==",
+      "subType": "04"
+    }
+  },
+  "name": "Rainer Brüderle",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "ENPRCD+ZSzCedspIIwKY2A==",
+      "subType": "04"
+    }
+  },
+  "name": "Ewald Bucher",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "SbvW8F6nQpC+rnSTl7Nr0A==",
+      "subType": "04"
+    }
+  },
+  "name": "Andreas von Bülow",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "InjSnWGfQY2bR8H56mFJhA==",
+      "subType": "04"
+    }
+  },
+  "name": "Edelgard Bulmahn",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "hgHXc0x7RMqQ/vCUGh5Qxg==",
+      "subType": "04"
+    }
+  },
+  "name": "Marco Buschmann",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tbCjtdsGSzO53ULLakMOFA==",
+      "subType": "04"
+    }
+  },
+  "name": "Wolfgang Clement",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Z2Zyk1woTLuUbqmsO8BTlQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Herta Däubler-Gmelin",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "2/4Wmd4NSgufJSHUyayJBw==",
+      "subType": "04"
+    }
+  },
+  "name": "Rolf Dahlgrün",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/2hflo/fRH2ksr8agMORMA==",
+      "subType": "04"
+    }
+  },
+  "name": "Thomas Dehler",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "jg7IpHEhT1mL+s0PgjNnTQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Alexander Dobrindt",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "81WSJ8q7SCWFiOKRL2ierA==",
+      "subType": "04"
+    }
+  },
+  "name": "Klaus von Dohnanyi",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "BLBoQY2fTPCBajxYqojaKg==",
+      "subType": "04"
+    }
+  },
+  "name": "Werner Dollinger",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "QitG6Ym0RK+Ze6LIEGlj0g==",
+      "subType": "04"
+    }
+  },
+  "name": "Horst Ehmke",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "3LT/aKMFTcSUM88W6rMoow==",
+      "subType": "04"
+    }
+  },
+  "name": "Herbert Ehrenberg",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "qS5yDOitR4K3ljRf4JxZvg==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Eichel",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "jybbNHxuRziXKK8gMl+5HA==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans A Engelhard",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/y9mBALRRc2vjdPq/ZJ68Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Björn Engholm",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "N/OUb3TXQtmDPxF+qhHUmg==",
+      "subType": "04"
+    }
+  },
+  "name": "Erhard Eppler",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "TkUTH+/4QECjVOXteBqOaA==",
+      "subType": "04"
+    }
+  },
+  "name": "Ludwig Erhard",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "mc2X9pmARB2StJhnzsAHbQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Josef Ertl",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "mDc/qbRbTXKXfNGZt6Niog==",
+      "subType": "04"
+    }
+  },
+  "name": "Franz Etzel",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "ewjQOoRhRf+wNS3S1GhHxQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Nancy Faeser",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tuEgV8YcRziezno3cny2JQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Andrea Fischer",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "zqds22ASS9yUrA0AFspnzw==",
+      "subType": "04"
+    }
+  },
+  "name": "Joschka Fischer",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "ROGnvCySRrSU2vehogylgg==",
+      "subType": "04"
+    }
+  },
+  "name": "Katharina Focke",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "RdpzviM1SNCGGy7lmcWUkQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Egon Franke",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "zH1nV7pETYq9bTWyCc9zvg==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Friderichs",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "seRh/xzFS8SeyU2uMjy78A==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans-Peter Friedrich",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Sm2UZ1gyTO6myYRqW/c2YA==",
+      "subType": "04"
+    }
+  },
+  "name": "Anke Fuchs",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "oirWnIMYSV2yY1Q44NCxVg==",
+      "subType": "04"
+    }
+  },
+  "name": "Karl-Heinz Funke",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "URnIFylwSuiCZOvB0h+uOA==",
+      "subType": "04"
+    }
+  },
+  "name": "Sigmar Gabriel",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "VtHGr9zsSfOSVWzRpmiHYA==",
+      "subType": "04"
+    }
+  },
+  "name": "Heiner Geißler",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "kmReLhaLTymvnO2P1diLtg==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans-Dietrich Genscher",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "xYyYRa2bQnOeuNx0VgpPsg==",
+      "subType": "04"
+    }
+  },
+  "name": "Klara Geywitz",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "SCM4fUeZRwOwuAWy82nXAw==",
+      "subType": "04"
+    }
+  },
+  "name": "Franziska Giffey",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "MnSHCswnTlSZLLqSHb731w==",
+      "subType": "04"
+    }
+  },
+  "name": "Michael Glos",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "D1DLTXpzQq2AiffFy+YCTQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Johann Baptist",
+  "party": "Gradl CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "3Ah2lNsATfS2C/rlXVnEzw==",
+      "subType": "04"
+    }
+  },
+  "name": "Hermann Gröhe",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Gmm4gg47Qf6gZV67V8tXlQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Kurt Gscheidle",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "GUxhmou+QbOh1ybnIHdaOQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Karl Theodor von und zu Guttenberg",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/CEVwjxZSr+aZPLgFhKQ+Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Dieter Haack",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "FSvDjvB3QWCvThspAk71Yg==",
+      "subType": "04"
+    }
+  },
+  "name": "Robert Habeck",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "EaFJlP2tTC+VzJxysFUtjw==",
+      "subType": "04"
+    }
+  },
+  "name": "Gerda Hasselfeldt",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "7CCewEqsRRaOh5nD2tML0Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Volker Hauff",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "wq+i74lyTcSDV4EXI0JACw==",
+      "subType": "04"
+    }
+  },
+  "name": "Helmut Haussmann",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "S6kwwogZSK6j0KkrKOcMHA==",
+      "subType": "04"
+    }
+  },
+  "name": "Bruno Heck",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "htHCz5NxQPi8r6CXPMR5cA==",
+      "subType": "04"
+    }
+  },
+  "name": "Hubertus Heil",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "KPd8qKERSQWyTcCnP1oYHQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Gustav Heinemann",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "KWRrgiNxRoigEO3zbeOtTw==",
+      "subType": "04"
+    }
+  },
+  "name": "Heinrich Hellwege",
+  "party": "DP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "xWbFl7j4Ql+5qkkPd/rAGg==",
+      "subType": "04"
+    }
+  },
+  "name": "Barbara Hendricks",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "iH2dIS6KQqGRT85DITm14w==",
+      "subType": "04"
+    }
+  },
+  "name": "Hermann Höcherl",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "5zqKRpbrRSKdRdD/IBS1Hg==",
+      "subType": "04"
+    }
+  },
+  "name": "Bodo Hombach",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "06jsnNSHQDOKOA7jewTcRQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Antje Huber",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "A4Y5dipIT8uMwjmXAj12EQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Richard Jaeger",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "8YThDj9JQRSD1BJ0o2W6Yg==",
+      "subType": "04"
+    }
+  },
+  "name": "Gerhard Jahn",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "D1Y4+3hqT1GD1zC4ZQEFLQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Franz Josef Jung",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "+uyDCHEOQDSN+pG3lL1iRQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Jakob Kaiser",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "toU+7A5rRw+La3/id4Y0dQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Manfred Kanther",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "W4XLtNcfQKatZXySMo/MyA==",
+      "subType": "04"
+    }
+  },
+  "name": "Anja Karliczek",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "46HofUuRQiGvQTd+2Hv4vw==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Katzer",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "4A0P5A8sRxe+W3in3Bvz4A==",
+      "subType": "04"
+    }
+  },
+  "name": "Ignaz Kiechle",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "sBI7KfH2S3u83vKN7E5H6A==",
+      "subType": "04"
+    }
+  },
+  "name": "Kurt Georg Kiesinger",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "JNf+5O9kTXq+5ubKF1BTSA==",
+      "subType": "04"
+    }
+  },
+  "name": "Klaus Kinkel",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "xd/MzERsTliFrMfP5r+gIw==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Klein",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "DbR93I3DQrqCsd/LhjZVuw==",
+      "subType": "04"
+    }
+  },
+  "name": "Reinhard Klimmt",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "wrgQSXDAQq2h/slNDSmXlg==",
+      "subType": "04"
+    }
+  },
+  "name": "Helmut Kohl",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "uE6kEUXWREmwIrcUfBqAdA==",
+      "subType": "04"
+    }
+  },
+  "name": "Kristina Schröder",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "VEnpBovURYWE6Kd9beZ/Bw==",
+      "subType": "04"
+    }
+  },
+  "name": "Julia Klöckner",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "p5+v23NpS5utXnl/7rEEvg==",
+      "subType": "04"
+    }
+  },
+  "name": "Waldemar Kraft",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "S8kurmDYRAuAzfuR58BLzQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Annegret Kramp-Karrenbauer",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Qz7/FTtvT3iAsFGwWUaGxg==",
+      "subType": "04"
+    }
+  },
+  "name": "Günther Krause",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "fv1kJrg4TXGHCwNZyhW6Hw==",
+      "subType": "04"
+    }
+  },
+  "name": "Heinrich Krone",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "1he4pVa4TEauueMSuh0bqg==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Krüger",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "RnDyw3OdS5qg0QzZuO35qA==",
+      "subType": "04"
+    }
+  },
+  "name": "Paul Krüger",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "f4FjNmbuQLGj3JlfzlnjDQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Renate Künast",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Z3ncaOvoRvGd8M+bbGRR2w==",
+      "subType": "04"
+    }
+  },
+  "name": "Karl-Hans Laermann",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "CcaiLZ7iRkaMNCPOKkqagQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Oskar Lafontaine",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "f8HHwql2QGqPFbY2ONYy7g==",
+      "subType": "04"
+    }
+  },
+  "name": "Manfred Lahnstein",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "uH7aIBmxQPOVHlUgfj6gEQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Christine Lambrecht",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "kXdjidvRSQW/MkA24PiksA==",
+      "subType": "04"
+    }
+  },
+  "name": "Otto Graf Lambsdorff",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/bfCoZtGTC2qmHLYGSyKCw==",
+      "subType": "04"
+    }
+  },
+  "name": "Lauritz Lauritzen",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "PKWo3TBPTT2/zUzpeLxo/g==",
+      "subType": "04"
+    }
+  },
+  "name": "Karl Lauterbach",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "mgvnQOlCRQ6ou9xXYWgCTw==",
+      "subType": "04"
+    }
+  },
+  "name": "Georg Leber",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "ylsjQNVoS4qF7uiGEaZcEA==",
+      "subType": "04"
+    }
+  },
+  "name": "Robert Lehr",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "7AoR1VdGR6Ws6eVlhWRMWA==",
+      "subType": "04"
+    }
+  },
+  "name": "Ursula Lehr",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "C3Ow7i4lSAaP4qbHyfJPDw==",
+      "subType": "04"
+    }
+  },
+  "name": "Steffi Lemke",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "VECd84+oSoKAZbwYYvnfhQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Ernst Lemmer",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "RYn4DLsiRGKOI8JwXmz/vQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Lenz",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "HGdFoFAkQh+eQYGSXzHs5g==",
+      "subType": "04"
+    }
+  },
+  "name": "Sabine Leutheusser-Schnarrenberger",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "h6Rxh2gkS7+J+6aUO7magA==",
+      "subType": "04"
+    }
+  },
+  "name": "Ursula von der Leyen",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/MhQ/R/tRAuCZ2IMwHlQEA==",
+      "subType": "04"
+    }
+  },
+  "name": "Christian Lindner",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "RO1QgF38QLOTGAVe6BaGgA==",
+      "subType": "04"
+    }
+  },
+  "name": "Hermann Lindrath",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "u1kHvSAeTuWwlG9hRLFaUw==",
+      "subType": "04"
+    }
+  },
+  "name": "Heinrich Lübke",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "TqOOPK+uTrKfE7io8FlVKQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Paul Lücke",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "NMl7HSkbQ6ygRf056lZfOQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Lukaschek",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "mN+qwlCbQCSbvzsWpQ6zYQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Heiko Maas",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "1dIThbZ5TpODCb3KZeikWw==",
+      "subType": "04"
+    }
+  },
+  "name": "Werner Maihofer",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Wki6ivXKQvGSIz4U8DqlNQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Lothar de Maizière",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "pZl985UyRKmOwbC3qmNuxw==",
+      "subType": "04"
+    }
+  },
+  "name": "Thomas de Maizière",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "zBTmcA2MRKWA6Ags3cYUyA==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Matthöfer",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "f9qoSCUsTviE5XweY/eRPw==",
+      "subType": "04"
+    }
+  },
+  "name": "Erich Mende",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "4KmGfp/CQfSI9XZtBfv4iw==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans-Joachim von Merkatz",
+  "party": "DP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "PVWCe0aHROqwgaXvxglMsQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Angela Merkel",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "iPvBmvqBSpu0+tAk+tOM9w==",
+      "subType": "04"
+    }
+  },
+  "name": "Wolfgang Mischnick",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "njTL8nxhS8yGQc9bSvtpDA==",
+      "subType": "04"
+    }
+  },
+  "name": "Jürgen Möllemann",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "P0Si/gYFTnaQp9UmFm4k6Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Alex Möller",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "27oDUJ7yR2mA53mpPqw/lA==",
+      "subType": "04"
+    }
+  },
+  "name": "Gerd Müller",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "R0Mu5EyNQeCOVX2c/9Sd/g==",
+      "subType": "04"
+    }
+  },
+  "name": "Franz Müntefering",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Zolwrq8lTGStk+YxGzqOTw==",
+      "subType": "04"
+    }
+  },
+  "name": "Andrea Nahles",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "G6kqCCFfRsyz7ns+WQO4qg==",
+      "subType": "04"
+    }
+  },
+  "name": "Fritz Neumayer",
+  "party": "FVP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "osN/eVOsSpqtTzFCU7CE3g==",
+      "subType": "04"
+    }
+  },
+  "name": "Dirk Niebel",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "ZyXm0PO9S4etyNuIQaBoVg==",
+      "subType": "04"
+    }
+  },
+  "name": "Alois Niederalt",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "jnVu8VB/Q+uStQrBXRLX2A==",
+      "subType": "04"
+    }
+  },
+  "name": "Wilhelm Niklas",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "BQQimkkgRSmSM00rnq6DGg==",
+      "subType": "04"
+    }
+  },
+  "name": "Claudia Nolte",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "I04SJSQnSKK2gZJthwTVAg==",
+      "subType": "04"
+    }
+  },
+  "name": "Theodor Oberländer",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "PlOpFImlSnGFyQzpRT1H8Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Rainer Offergeld",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/Fc3zm/qRWyRtUTIV2OvXg==",
+      "subType": "04"
+    }
+  },
+  "name": "Rainer Ortleb",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "7cDs0ANRRgW676IQObPNvA==",
+      "subType": "04"
+    }
+  },
+  "name": "Eduard Oswald",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tgjBBGzzSbOQYJSZoJgSbA==",
+      "subType": "04"
+    }
+  },
+  "name": "Cem Özdemir",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "K67KeRjBSo6/QO3bQ4t52Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Lisa Paus",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "hojGG1HGRF6a1ldmnd/WkQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Boris Pistorius",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "DxMMZWyASxO2zcD2KAZwLg==",
+      "subType": "04"
+    }
+  },
+  "name": "Ronald Pofalla",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "hQIxpx35TBeEzB1rCgBqDA==",
+      "subType": "04"
+    }
+  },
+  "name": "Victor-Emanuel Preusker",
+  "party": "FVP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "c9khERilRGOeIWpj5r37Fg==",
+      "subType": "04"
+    }
+  },
+  "name": "Peter Ramsauer",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "NAzvOxSmTUiLmrlGzm+VLQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Karl Ravens",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "hZWFSZY6Sa6pYDrOgcO5QQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Günter Rexrodt",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "5ikOREhjTAu459n7L5cjXQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Heinz Riesenhuber",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "xdBeEShOQGigCyiXiapnrQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Walter Riester",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "uzaXz/k/TVu3kNBOHCJJUg==",
+      "subType": "04"
+    }
+  },
+  "name": "Hannelore Rönsch",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "2KvGY1tpR92oBXDAn7Z15A==",
+      "subType": "04"
+    }
+  },
+  "name": "Philipp Rösler",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "K7dA8J+NQMiCNVFpKInP6A==",
+      "subType": "04"
+    }
+  },
+  "name": "Norbert Röttgen",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "FwHnWCcJRESHfP5JG35POA==",
+      "subType": "04"
+    }
+  },
+  "name": "Helmut Rohde",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "TJyB1qLHSUmqi0HftXKlEA==",
+      "subType": "04"
+    }
+  },
+  "name": "Volker Rühe",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "9aLGMLlEQUiOROYkGAqVhA==",
+      "subType": "04"
+    }
+  },
+  "name": "Jürgen Rüttgers",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "ufHFflICRfCIdQ1oeNSTfA==",
+      "subType": "04"
+    }
+  },
+  "name": "Hermann Schäfer",
+  "party": "FVP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "1yiv9UzqShqvObdGcpXepw==",
+      "subType": "04"
+    }
+  },
+  "name": "Fritz Schäffer",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "N5I8ChfTTu2BLgLxysW54Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Rudolf Scharping",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Wh1vHgJyT82XU9ylFJQSdg==",
+      "subType": "04"
+    }
+  },
+  "name": "Annette Schavan",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "yVp5ThZwTbOHuWi9D1CN1g==",
+      "subType": "04"
+    }
+  },
+  "name": "Walter Scheel",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Z2/GQOvMSsKyUI9ezgjMwA==",
+      "subType": "04"
+    }
+  },
+  "name": "Andreas Scheuer",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "E6DIfZiLRPy/t2wQJWzClQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Karl Schiller",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "0ro8WSIuSXWDf5zeRIAG4g==",
+      "subType": "04"
+    }
+  },
+  "name": "Otto Schily",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "UVK/lKcbTmyM2uP0zxB1SQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Marie Schlei",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "O3NnTb/0RlKf22Ue+doTSg==",
+      "subType": "04"
+    }
+  },
+  "name": "Carlo Schmid",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "vgfmBP68SqSLdWRBmQ17AQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Christian Schmidt",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "gbeHXtHARN2Jx5INKNaBkQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Helmut Schmidt",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "PJUZbWMgTQCRdBmwAUwaMQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Renate Schmidt",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "z0r6xtUIRyKYfv2hNaBrYg==",
+      "subType": "04"
+    }
+  },
+  "name": "Ulla Schmidt",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "urYvuzPfRryrXprKNlwRCA==",
+      "subType": "04"
+    }
+  },
+  "name": "Wolfgang Schmidt",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "OvqzyBcJQSeJH8AwXwLsIw==",
+      "subType": "04"
+    }
+  },
+  "name": "Edzard Schmidt-Jortzig",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "gYR3DIqkQ0ClQmiMzCDzbw==",
+      "subType": "04"
+    }
+  },
+  "name": "Jürgen Schmude",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "gHpd7qaTQK6bjCDiEEwS/Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Kurt Schmücker",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "kYbERto1TBqIeM06CDQdLQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Oscar Schneider",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/0toroaMSomVvTuOld8lIw==",
+      "subType": "04"
+    }
+  },
+  "name": "Olaf Scholz",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "wPO20AkpT02L0J+GImNX+Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Rupert Scholz",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "IKKWUdYFShCUvkblIV3i2A==",
+      "subType": "04"
+    }
+  },
+  "name": "Gerhard Schröder",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "D6VlIHOuQOajjre2pSZNwg==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Schuberth",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tVc6COYBTzm4qQObpssEBg==",
+      "subType": "04"
+    }
+  },
+  "name": "Svenja Schulze",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "mJ8+Jw9JSUO6PRE7op3g2w==",
+      "subType": "04"
+    }
+  },
+  "name": "Irmgard Schwaetzer",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "UQtLELvTQk6mDoKcfCCijg==",
+      "subType": "04"
+    }
+  },
+  "name": "Werner Schwarz",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "swb2BkoISx2JvzJ5G7a2FQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Elisabeth Schwarzhaupt",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "MlJ1r+CxQ6uYRUbNx5tLow==",
+      "subType": "04"
+    }
+  },
+  "name": "Christian Schwarz-Schilling",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Ts0sacSBQLeiL+gY6gDmOw==",
+      "subType": "04"
+    }
+  },
+  "name": "Manuela Schwesig",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "pMI1ZbbCRP2CTaat0jOiDQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans-Christoph Seebohm",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tHscRqx6RE2JlTLoue1MdQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Horst Seehofer",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "YvN3MvRCRy6t2eqV4X363w==",
+      "subType": "04"
+    }
+  },
+  "name": "Rudolf Seiters",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Spy97aPFRIeHPV980jY00g==",
+      "subType": "04"
+    }
+  },
+  "name": "Jens Spahn",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "GriuiUFKSziMV+85oY4dZg==",
+      "subType": "04"
+    }
+  },
+  "name": "Anne Spiegel",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "5OVkevzvTw+0ahpUrcUNvw==",
+      "subType": "04"
+    }
+  },
+  "name": "Carl-Dieter Spranger",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "yG7ilbkxQ8WiCcRMKFK8SQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Wolfgang Stammberger",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "BgYGOHpvT/ehoQL4w2PJOg==",
+      "subType": "04"
+    }
+  },
+  "name": "Heinz Starke",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "cgqbeDd3QiCaZwDWrCBM8A==",
+      "subType": "04"
+    }
+  },
+  "name": "Bettina Stark-Watzinger",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "0LHBlSCDTlu8rzFopEOh9Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Peer Steinbrück",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "CQcrPExVTo+3EX2X25dUIw==",
+      "subType": "04"
+    }
+  },
+  "name": "Frank-Walter Steinmeier",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "s5W4C2S+RYSQS0a/xsxt6g==",
+      "subType": "04"
+    }
+  },
+  "name": "Manfred Stolpe",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "yG8e9u69TZGPSHmhg3BELA==",
+      "subType": "04"
+    }
+  },
+  "name": "Gerhard Stoltenberg",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "/VAnCBVkSj6IWRz6snhTEg==",
+      "subType": "04"
+    }
+  },
+  "name": "Anton Storch",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "82weoUOTQ9GrB/lxIKlAxQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Käte Strobel",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "dks0dvebSnWRqLHjzHzYVA==",
+      "subType": "04"
+    }
+  },
+  "name": "Peter Struck",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "cLWNWt0GTqqyxVkqgeuB+g==",
+      "subType": "04"
+    }
+  },
+  "name": "Wolfgang Tiefensee",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "MoZhQr17SI2pgVj/hHB8TQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Robert Tillmanns",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "eCDrmXFHTm+nYJBt8f72OA==",
+      "subType": "04"
+    }
+  },
+  "name": "Klaus Töpfer",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "fL1agsMTQp+YhcgnPXYVtw==",
+      "subType": "04"
+    }
+  },
+  "name": "Jürgen Trittin",
+  "party": "Bündnis 90/Die Grünen"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "o8y7V2Z6Qde7ltvkqz6kCQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans-Jochen Vogel",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "W69MwkSsRGiHfWBDO0I5OQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Theo Waigel",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "eVJz/1KBTBOumdEvzNm1MA==",
+      "subType": "04"
+    }
+  },
+  "name": "Walter Wallmann",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "iiI4MmWnSaaezw7zF6UXNQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Hansjoachim Walther",
+  "party": "DSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "EmvK7QnjSbOpJWKV907pmw==",
+      "subType": "04"
+    }
+  },
+  "name": "Johanna Wanka",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "8Xr5Ec91QCOX1jx/t/3w2Q==",
+      "subType": "04"
+    }
+  },
+  "name": "Jürgen Warnke",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "MIj+E/eWRrmLqbdoSmDXOQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Karl Weber",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "mjTBO49GTRi/3mawnW2iEQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Herbert Wehner",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "cAI4cBpOR56Vlu7oAHi8PA==",
+      "subType": "04"
+    }
+  },
+  "name": "Guido Westerwelle",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "eXA6T9+/TF608lYVI3A6vw==",
+      "subType": "04"
+    }
+  },
+  "name": "Heinz Westphal",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "tydHb1OMQQuaeCRmEuOhPQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Ludger Westrick",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "fK3La5dvQomLC2UOStmrDQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Heidemarie Wieczorek-Zeul",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "Fw+otcqaTAmcxcsU4oq3Fg==",
+      "subType": "04"
+    }
+  },
+  "name": "Eberhard Wildermuth",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "IclRVF70T92MmLssy3McAw==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans Wilhelmi",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "0X2AprJzTveip88LA5DH8w==",
+      "subType": "04"
+    }
+  },
+  "name": "Dorothee Wilms",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "R4a0HKDkSW+VLOseHi/vfw==",
+      "subType": "04"
+    }
+  },
+  "name": "Heinrich Windelen",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "PvimUAu/Qx67YYQKjhxmyQ==",
+      "subType": "04"
+    }
+  },
+  "name": "Hans-Jürgen Wischnewski",
+  "party": "SPD"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "WdFhcF4wRFuxP7c1lx3Thg==",
+      "subType": "04"
+    }
+  },
+  "name": "Volker Wissing",
+  "party": "FDP"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "v1l1T0BPTne1fKUBKm1dSg==",
+      "subType": "04"
+    }
+  },
+  "name": "Matthias Wissmann",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "KUA/4klFSauXj5Vu33/IwA==",
+      "subType": "04"
+    }
+  },
+  "name": "Manfred Wörner",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "OhvorRsdToGi9XohYZg3dw==",
+      "subType": "04"
+    }
+  },
+  "name": "Franz-Josef Wuermeling",
+  "party": "CDU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "58Rve5+cSzWPgjmfEMrTSg==",
+      "subType": "04"
+    }
+  },
+  "name": "Friedrich Zimmermann",
+  "party": "CSU"
+},{
+  "_id": {
+    "$binary": {
+      "base64": "CelTUuFMQYy5e7mALTNi+g==",
+      "subType": "04"
+    }
+  },
+  "name": "Brigitte Zypries",
+  "party": "SPD"
+},{
+  "_id": {
+    "$oid": "64551d6b85e0882438d83e0c"
+  },
+  "name": "Joachim Gauck",
+  "party": ""
+},{
+  "_id": {
+    "$oid": "64551db085e0882438d83e0e"
+  },
+  "name": "Christian Wulff",
+  "party": "CDU"
+},{
+  "_id": {
+    "$oid": "64551de885e0882438d83e0f"
+  },
+  "name": "Horst Köhler",
+  "party": "CDU"
+},{
+  "_id": {
+    "$oid": "64551e1385e0882438d83e10"
+  },
+  "name": "Johannes Rau",
+  "party": "SPD"
+},{
+  "_id": {
+    "$oid": "64551e2685e0882438d83e11"
+  },
+  "name": "Roman Herzog",
+  "party": "CDU"
+},{
+  "_id": {
+    "$oid": "64551e3c85e0882438d83e12"
+  },
+  "name": "Richard von Weizsäcker",
+  "party": "CDU"
+},{
+  "_id": {
+    "$oid": "64551f6185e0882438d83e13"
+  },
+  "name": "Cornelia Pieper",
+  "party": "FDP"
+},{
+  "_id": {
+    "$oid": "64551f9085e0882438d83e14"
+  },
+  "name": "Andreas Schockenhoff",
+  "party": "CDU"
+},{
+  "_id": {
+    "$oid": "64551fea85e0882438d83e15"
+  },
+  "name": "Werner Hoyer",
+  "party": "FDP"
+},{
+  "_id": {
+    "$oid": "6455200a85e0882438d83e16"
+  },
+  "name": "Maria Böhmer",
+  "party": "CDU"
+},{
+  "_id": {
+    "$oid": "6455202b85e0882438d83e17"
+  },
+  "name": "Michael Roth",
+  "party": "SPD"
+},{
+  "_id": {
+    "$oid": "6455205085e0882438d83e18"
+  },
+  "name": "Stephan Steinlein",
+  "party": ""
+},{
+  "_id": {
+    "$oid": "645520cd85e0882438d83e19"
+  },
+  "name": "Michael Georg Link",
+  "party": "FDP"
+},{
+  "_id": {
+    "$oid": "6455212c85e0882438d83e1a"
+  },
+  "name": "Harald Leibrecht",
+  "party": "FDP"
+},{
+  "_id": {
+    "$oid": "6455214f85e0882438d83e1b"
+  },
+  "name": "Günter Gloser",
+  "party": "SPD"
+},{
+  "_id": {
+    "$oid": "6455216f85e0882438d83e1c"
+  },
+  "name": "Gernot Erler",
+  "party": "SPD"
+},{
+  "_id": {
+    "$oid": "6455218b85e0882438d83e1d"
+  },
+  "name": "Markus Ederer",
+  "party": ""
+},{
+  "_id": {
+    "$oid": "645522e685e0882438d83e1e"
+  },
+  "name": "Karsten D. Voigt",
+  "party": "SPD"
+},{
+  "_id": {
+    "$oid": "6455234f85e0882438d83e1f"
+  },
+  "name": "Günter Nooke",
+  "party": "CDU"
+},{
+  "_id": {
+    "$oid": "645523b785e0882438d83e20"
+  },
+  "name": "Christoph Strässer",
+  "party": "SPD"
+},{
+  "_id": {
+    "$oid": "645523ed85e0882438d83e21"
+  },
+  "name": "Dietmar Woidke",
+  "party": "SPD"
+},{
+  "_id": {
+    "$oid": "6455242685e0882438d83e22"
+  },
+  "name": "Peter Ammon",
+  "party": ""
+},{
+  "_id": {
+    "$oid": "645524ad85e0882438d83e23"
+  },
+  "name": "Martin Kobler",
+  "party": ""
+},{
+  "_id": {
+    "$oid": "6455255785e0882438d83e24"
+  },
+  "name": "Emily Haber",
+  "party": ""
+}]

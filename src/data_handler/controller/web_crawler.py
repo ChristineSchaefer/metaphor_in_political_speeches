@@ -1,40 +1,10 @@
-import os
-
 import requests
 from bs4 import BeautifulSoup
 from pydantic import BaseModel
 
-from src.config import BASE_DIR
 from src.data_handler.models.politician import Politician
 from src.data_handler.models.speech import Speech
-
-
-def normalize(text: str):
-    for char in '()"=+-.,\n':
-        text = text.replace(char, "")
-    return text
-
-
-def remove_string(token: list, to_remove: list):
-    for i, t in enumerate(token):
-        if t in to_remove:
-            token[i] = ""
-    return [x for x in token if x]
-
-
-def write_to_txt(text: str, name: str, mode: str):
-    file = open(os.path.join(BASE_DIR, name), mode)
-    file.write(text + "\n")
-    file.close()
-
-
-def read_from_txt(path: str) -> list:
-    content = []
-    with open(os.path.join(BASE_DIR, path)) as f:
-        lines = f.readlines()
-        for line in lines:
-            content.append(normalize(line).split())
-    return content
+from src.utils.text_handler import normalize, remove_string, write_to_txt, read_from_txt
 
 
 class CrawlerController(BaseModel):

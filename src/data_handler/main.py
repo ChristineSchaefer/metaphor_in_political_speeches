@@ -13,6 +13,7 @@ def main_data_handling(arguments):
         cc.get_card_content()
 
     elif arguments.xml_path:
+        # TODO keine einzelne Datei, sondern Ordner mit Dateien, die alle durchgelaufen werden sollen
         xrc = XMLReaderController(path=arguments.xml_path)
         xrc.parse()
 

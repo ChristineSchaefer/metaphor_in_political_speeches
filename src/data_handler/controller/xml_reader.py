@@ -23,7 +23,7 @@ class XMLReaderController(BaseModel):
             for child in root:
                 self.politician = Politician(name=child.get("person"))
                 self._set_party()
-                speech = normalize(child.find("rohtext").text)
+                speech = child.find("rohtext").text
                 if self.politician:
                     self.speeches.append(Speech(speaker=self.politician, text=speech, url=file.name).dict(exclude={"id"}))
             print(f"With {file.name}: {len(self.speeches)}")

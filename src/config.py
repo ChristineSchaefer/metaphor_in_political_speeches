@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from pydantic import BaseSettings, BaseModel
+from pydantic import BaseSettings
 
 APP_NAME = "metaphor_political_speeches"
 BASE_DIR = Path(__file__).resolve().parent.parent

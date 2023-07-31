@@ -1,3 +1,4 @@
+from src.data_handler.controller.csv_reader import CSVController
 from src.data_handler.controller.xml_reader import XMLReaderController
 from src.utils import argparser
 from src.data_handler.controller.web_crawler import CrawlerController
@@ -16,6 +17,10 @@ def main_data_handling(arguments):
         # TODO keine einzelne Datei, sondern Ordner mit Dateien, die alle durchgelaufen werden sollen
         xrc = XMLReaderController(path=arguments.xml_path)
         xrc.parse()
+
+    elif arguments.csv_path:
+        cc = CSVController(path=arguments.csv_path)
+        cc.create_annotation_object()
 
     else:
         print("Please set valid arguments.")

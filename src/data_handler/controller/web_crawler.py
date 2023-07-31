@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from src.data_handler.models.politician import Politician
 from src.data_handler.models.speech import Speech
@@ -10,8 +10,8 @@ from src.utils.text_handler import normalize, remove_string, write_to_txt, read_
 class CrawlerController(BaseModel):
     url: str
     index: int
-    speeches: list[Speech] = []
-    politicians: list[Politician] = []
+    speeches: list[Speech] = Field(default_factory=list)
+    politicians: list[Politician] = Field(default_factory=list)
 
     def get_url_content(self):
         return requests.get(self.url).text

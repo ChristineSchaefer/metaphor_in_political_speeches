@@ -1,6 +1,5 @@
-import json
+import csv
 import os
-from typing import Mapping, Any
 
 from dict2xml import dict2xml
 
@@ -54,5 +53,23 @@ def save_collection_in_separate_xml(search: dict, path: str):
         file.close()
 
 
+def read_from_csv_and_write_to_dict(path: str) -> list[dict]:
+    with open(os.path.join(BASE_DIR, path), 'r') as f:
+        dict_reader = csv.DictReader(f, delimiter=';', fieldnames=[
+            "speech_id",
+            "sentence",
+            "sentence_index",
+            "verb",
+            "lexem",
+            "index_verb",
+            "basic_meaning",
+            "contextual_meaning",
+            "metaphorical_use"
+        ])
+
+        return list(dict_reader)
+
+
 if __name__ == "__main__":
-    save_collection_in_separate_xml({"url": "Bundesregierung.xml"}, "data/collections/bundesregierung_split/")
+    # save_collection_in_separate_xml({"url": "Bundesregierung.xml"}, "data/collections/bundesregierung_split/")
+    read_from_csv_and_write_to_dict("data/metaphors.csv")

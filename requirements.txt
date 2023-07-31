@@ -1,5 +1,7 @@
 requests
 cssutils
 beautifulsoup4
-pydantic[dotenv]
+pydantic<2.0.0
 pymongo
+duden
+dict2xml

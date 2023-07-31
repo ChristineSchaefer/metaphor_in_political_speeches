@@ -8,7 +8,7 @@ from src.data_handler.models.speech import Speech
 
 
 def normalize(text: str):
-    for char in '()"=+-.,\n':
+    for char in '()"=+-.:,?\n':
         text = text.replace(char, " ")
     return text
 

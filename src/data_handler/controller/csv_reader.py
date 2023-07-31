@@ -25,7 +25,13 @@ class CSVController(BaseModel):
 
     @staticmethod
     def _find_basic_meaning(word: str) -> list:
-        return duden.get(word).meaning_overview
+        try:
+            meaning = duden.get(word).meaning_overview
+            if type(meaning) != list:
+                return [meaning]
+            return meaning
+        except AttributeError:
+            return []
 
     @staticmethod
     def _get_index_of_verb_in_sentence(sentence: str, word: str) -> int:

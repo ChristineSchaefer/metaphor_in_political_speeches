@@ -54,7 +54,7 @@
     "verblasst in festen Verbindungen mit Verbalabstrakta zur Umschreibung des entsprechenden Verbs (besonders des Passivs)",
     "drückt eine Aufforderung aus"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sich als Geschehen, Ereignis jemandem in bestimmter Weise darstellen"],
   "is_metaphor": false
 },
 {
@@ -84,7 +84,7 @@
       "auf etwas in bestimmter Weise reagieren, einer Sache auf bestimmte Weise entgegenwirken, ihr gegenüber bestimmte Gegenmaßnahmen treffen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["von jemandem ohne sein Zutun (meist als etwas nicht Angenehmes) erlebt, erfahren werden; widerfahren"],
   "is_metaphor": false
 },
 {
@@ -104,7 +104,7 @@
     "einer Sache eine bestimmte Form, ein bestimmtes Aussehen geben",
     "sich in einer bestimmten Art entwickeln; werden"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["einer Sache eine bestimmte Form, ein bestimmtes Aussehen geben"],
   "is_metaphor": false
 },
 {
@@ -128,7 +128,7 @@
       "sich als Investition o. Ä. lohnen, bezahlt machen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["(von Geld) auf das eigene Konto, in den eigenen Geldbeutel kommen; eingenommen werden"],
   "is_metaphor": false
 },
 {
@@ -160,7 +160,7 @@
     "(von Farben, Mustern u. Ä.) verlaufen, auseinanderlaufen, ausgehen, sich verwischen",
     "sich durch Laufen, Spazierengehen Bewegung verschaffen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["nicht weiterführen; enden, aufhören", "nicht fortgesetzt, weitergeführt werden", "aufhören zu bestehen, sich dem Ende zuneigen"],
   "is_metaphor": false
 },
 {
@@ -183,7 +183,7 @@
     ],
     "jemanden um etwas bringen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["jemanden um etwas bringen"],
   "is_metaphor": false
 },
 {
@@ -215,7 +215,7 @@
       "in die nächste Klasse kommen, versetzt werden"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["in die nächste Klasse kommen, versetzt werden"],
   "is_metaphor": false
 },
 {
@@ -234,7 +234,7 @@
   "basic_meaning": [
     "lebendig erhalten; die Fortdauer von etwas bewahren"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["lebendig erhalten; die Fortdauer von etwas bewahren"],
   "is_metaphor": false
 },
 {
@@ -254,7 +254,7 @@
     "(fließendes Wasser) durch Bauen eines Dammes in eine bestimmte Bahn, Richtung lenken oder stauen",
     "an der Ausbreitung hindern"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["an der Ausbreitung hindern"],
   "is_metaphor": false
 },
 {
@@ -340,8 +340,8 @@
     ],
     "austragen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["die Sicherheitspolitik kommt wieder zum Einsatz"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -371,7 +371,7 @@
     ],
     "mühsam aus jemandem hervorkommen, sich jemandem entringen (2b)"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sich angestrengt, unter Einsatz aller Kräfte bemühen, etwas zu erreichen, zu erhalten, zu verwirklichen; heftig nach etwas streben"],
   "is_metaphor": false
 },
 {
@@ -399,7 +399,7 @@
     ],
     "im Innersten bewegen; jemandem nahegehen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["verblasst; drückt den Entschluss zu etwas, den Beginn von etwas aus"],
   "is_metaphor": false
 },
 {
@@ -418,8 +418,8 @@
   "basic_meaning": [
     "Gerümpel aus einem Raum entfernen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["Lehrpläne müssen überarbeitet werden"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -445,7 +445,7 @@
     ],
     "beginnen und intensiv betreiben"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sich [voll] entwickeln"],
   "is_metaphor": false
 },
 {
@@ -472,7 +472,7 @@
       "durch größere Schnelligkeit, durch geschicktes Taktieren o. Ä. einem Verfolger entkommen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sich von etwas frei machen; überwinden"],
   "is_metaphor": false
 },
 {
@@ -492,7 +492,7 @@
     "einer Sache eine bestimmte Form, ein bestimmtes Aussehen geben",
     "sich in einer bestimmten Art entwickeln; werden"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["einer Sache eine bestimmte Form, ein bestimmtes Aussehen geben"],
   "is_metaphor": false
 },
 {
@@ -519,8 +519,8 @@
       "kreisförmig bewegen"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["zwei internationale Entwicklungen waren von Interesse"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -533,13 +533,15 @@
   "sentence": "Natürlich fächert diese Studie aber auch auf, wie viel noch zu tun ist, um einen wirklichen Konsens zu erreichen.",
   "index_sentence": 5,
   "verb": "fächert",
-  "lexem": "fächern",
+  "lexem": "auffächern",
   "index_verb": 1,
   "basic_meaning": [
-    "in Fächer (1) einteilen"
+    "fächerartig ausbreiten, anordnen",
+["klar gegliedert ausbreiten", "sich klar gegliedert aufteilen"],
+"von einem Punkt aus fächerförmig auseinanderstreben"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["die Studie macht die verschiedenen Dinge sichtbar"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -565,7 +567,8 @@
     ],
     "beginnen und intensiv betreiben"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sich [voll] entwickeln",
+      "zeigen, zur Geltung bringen, an den Tag legen"],
   "is_metaphor": false
 },
 {
@@ -590,8 +593,8 @@
     "umfallen, hinfallen (wie ein Kegel), purzeln",
     "einen Kegel (2c) machen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["der Dom wurde fast von der Liste der Welterbstätten genommen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -610,7 +613,7 @@
     "Metall zu Münzen prägen",
     "auf jemanden, etwas gemünzt sein (sich auf jemanden, etwas beziehen; sich gegen jemanden, etwas richten; wohl nach den früher hergestellten Gedenkmünzen mit eingeprägten, versteckten satirischen Anspielungen)"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["auf jemanden, etwas gemünzt sein (sich auf jemanden, etwas beziehen; sich gegen jemanden, etwas richten; wohl nach den früher hergestellten Gedenkmünzen mit eingeprägten, versteckten satirischen Anspielungen)"],
   "is_metaphor": false
 },
 {
@@ -633,8 +636,8 @@
       "durch Schmieden (2a) befestigen"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["eine Koalition wurde zusammengesetzt/-gefunden"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -653,7 +656,7 @@
     "sich aus jemandes Blickfeld entfernen und dann nicht mehr sichtbar sein",
     "gestohlen werden"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sich aus jemandes Blickfeld entfernen und dann nicht mehr sichtbar sein"],
   "is_metaphor": false
 },
 {
@@ -675,8 +678,8 @@
     "(für etwas, jemanden) sein Leben lassen",
     "(jemandem) durch den Tod genommen werden"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["nicht mehr existieren", "nicht mehr da sein"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -694,8 +697,8 @@
   "basic_meaning": [
     "kalt werden"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["verschwinden"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -721,8 +724,8 @@
     ],
     "verschleiern"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["Betonung der düsteren und schweren Atmosphäre des Lagers"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -740,7 +743,7 @@
   "basic_meaning": [
     "lebendig erhalten; die Fortdauer von etwas bewahren"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["lebendig erhalten; die Fortdauer von etwas bewahren"],
   "is_metaphor": false
 },
 {
@@ -787,8 +790,8 @@
       "aufbrechen, platzen"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["Parallelen werden aufgezeigt", "Parallelen machen sich sichtbar"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -806,8 +809,8 @@
   "basic_meaning": [
     "gedanklich ausarbeiten und niederschreiben"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["die kulturellen Landschaften beider Länder sind in vielschichtiger und vielfältiger Weise gestaltet"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -829,7 +832,7 @@
       "in irgendeiner Weise behandelt, verändert werden; eine Behandlung, Veränderung mitmachen, erleiden"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["an sich selbst erleben, zu spüren bekommen"],
   "is_metaphor": false
 },
 {
@@ -854,7 +857,7 @@
     "befühlen, betasten, greifend prüfen",
     ""
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["geistig erfassen, in seinen Zusammenhängen erkennen, verstehen\nHerkunft\neigentlich = mit dem Verstand ergreifen"],
   "is_metaphor": false
 },
 {
@@ -890,7 +893,7 @@
     "[nicht angenommen und] zurückgeschickt werden",
     "seinen Ursprung in etwas haben; von jemandem, etwas herstammen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["seinen Ursprung in etwas haben; von jemandem, etwas herstammen"],
   "is_metaphor": false
 },
 {
@@ -909,8 +912,8 @@
   "basic_meaning": [
     "italienisch machen, gestalten"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["italienische Einflüsse sind in bestimmten Bereichen der deutschen Lebenswelt präsent"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -935,8 +938,8 @@
       "schreibend eine gewisse Routine im Schreiben bekommen"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["das Motiv der Sehnsucht gehört zur Tradition", "ist ein wichtiger Teil der Tradition"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -949,23 +952,19 @@
   "sentence": "Die Liste der durch die DaimlerChrysler AG geförderten Stipendiaten spiegelt die Leitidee der Casa di Goethe wieder, Goethes Werk sowohl in seinem historischen Kontext zu präsentieren als auch aus dem Blickwinkel der Gegenwart zu befragen.",
   "index_sentence": 40,
   "verb": "spiegelt",
-  "lexem": "spiegeln",
+  "lexem": "widerspiegeln",
   "index_verb": 9,
   "basic_meaning": [
     [
-      "(wie ein Spiegel Lichtstrahlen zurückwerfend) glänzen",
-      "infolge von auftreffendem Licht blenden (1), störende Reflexe verursachen"
+      "das Spiegelbild von jemandem, etwas zurückwerfen",
+      "als Spiegelbild erscheinen; sich spiegeln (2a)"
     ],
     [
-      "sich widerspiegeln, als Spiegelbild erscheinen",
-      "das Spiegelbild von etwas zurückwerfen"
-    ],
-    "(auf einer spiegelnden Fläche) sein Spiegelbild betrachten",
-    "mit dem Spekulum betrachten, untersuchen",
-    "eine Spiegelung (d) vornehmen",
-    "[vollständig] kopieren (1)"
+      "zum Ausdruck bringen, erkennbar werden lassen",
+      "erkennbar werden"
+    ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["zum Ausdruck bringen, erkennbar werden lassen"],
   "is_metaphor": false
 },
 {
@@ -988,7 +987,7 @@
     ],
     "heranwachsen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["(aus etwas) allmählich hervorgehen, sich [heraus]bilden, entstehen, sich entwickeln"],
   "is_metaphor": false
 },
 {
@@ -1018,8 +1017,8 @@
     "eine Spiegelung (d) vornehmen",
     "[vollständig] kopieren (1)"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["sein Umfang zeigt", "kein tatsächlicher Spiegel"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1047,7 +1046,7 @@
     "[zwanglos, auf angenehme Weise] mit jemandem über etwas sprechen",
     "jemanden auf Vergnügen bereitende, entspannende o. ä. Weise [mit etwas Anregendem] beschäftigen, ihm die Zeit vertreiben"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["[als Besitzer] etwas halten, einrichten, betreiben und dafür aufkommen"],
   "is_metaphor": false
 },
 {
@@ -1070,7 +1069,7 @@
       "jemanden, etwas durch magische Kraft vertreiben"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["durch Bann (2) [irgendwo] festhalten"],
   "is_metaphor": false
 },
 {
@@ -1090,8 +1089,8 @@
     "jemandem erlauben, etwas zu verlassen",
     "jemanden nicht weiter beschäftigen; jemandem kündigen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["frei machen", "nicht mehr beschäftigen (nicht in einem Anstellungsverhältnis"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1110,8 +1109,8 @@
     "sich im Wachstum übermäßig stark ausbreiten, vermehren",
     "mit etwas Wucher treiben"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["Sätze breiten sich auf den Blättern aus, vermehren sich oder entwickeln sich auf komplexe Weise, ähnlich wie das unkontrollierte Wachstum von Pflanzen oder Strukturen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1139,8 +1138,9 @@
       "sich harmonisch, organisch entwickeln, allmählich entstehen\n"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["sich entwickeln (2a) [können], gedeihen",
+      "sich beim Wachsen (1a) in bestimmter Weise entwickeln", "kein lebender Organismus"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1184,8 +1184,8 @@
       "vom Wesentlichen abschweifen"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["die Sätze lösen sich in Linien auf", "verschmelzen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1207,8 +1207,8 @@
     "in einen Zustand größerer Dichte (2) bringen",
     "dichter (1a) machen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["Sätze fügen sich zu Flächen zusammen", "ähnlich wie das Verdichten von Materie oder Informationen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1233,8 +1233,8 @@
     "(bei hoher Geschwindigkeit) das Lenkrad allmählich einschlagend in etwas hineinsteuern",
     "in etwas ziehen, verwickeln"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["seine Expressionen zu zeigen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1260,7 +1260,8 @@
       "kreisförmig bewegen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["mit etwas kreisförmige Bewegungen machen",
+      "kreisförmig bewegen"],
   "is_metaphor": false
 },
 {
@@ -1279,8 +1280,8 @@
   "basic_meaning": [
     "in die Nähe der sprechenden Person drängen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["neue Projektionen und Gedanken in den Fokus rücken oder machen sich bemerkbar"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1304,7 +1305,7 @@
     "befühlen, betasten, greifend prüfen",
     ""
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["geistig erfassen, in seinen Zusammenhängen erkennen, verstehen\nHerkunft\neigentlich = mit dem Verstand ergreifen"],
   "is_metaphor": false
 },
 {
@@ -1331,7 +1332,7 @@
     ],
     "[noch] am Leben sein und etwas als Zeitgenosse miterleben"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["von etwas betroffen und beeindruckt werden; erfahren müssen oder können; mitmachen, durchmachen"],
   "is_metaphor": false
 },
 {
@@ -1366,8 +1367,8 @@
       "sich schnürend (4a) irgendwohin bewegen"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["nicht das wörtliche Schnüren eines Pakets", "verschiedene Elemente oder Maßnahmen kombinieren und zu einem zusammenhängenden Plan oder Vorschlag verbinden"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1392,7 +1393,7 @@
     "(besonders von Schlachtfleisch) durch längeres Hängen mürbe werden",
     "[in entspannter Atmosphäre] seine Freizeit verbringen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["durch etwas bedingt sein; jemandes Willen oder Macht unterworfen sein"],
   "is_metaphor": false
 },
 {
@@ -1477,7 +1478,7 @@
     ],
     "in seiner Vorwärtsbewegung innehalten, zum Stillstand kommen; haltmachen, stehen bleiben, anhalten, stoppen; sich nicht weiter fortbewegen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["eintreten", "in Gebrauch nehmen"],
   "is_metaphor": false
 },
 {
@@ -1502,8 +1503,8 @@
     "[größere Mengen von] Flüssigkeit abgeben",
     "weich und wellig nach unten fallen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["Beiträge gehen in die Kassen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1533,7 +1534,7 @@
       "sich mit Leben, Lebewesen füllen; bevölkert werden"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["lebendig machen, zum Leben erwecken, mit Leben erfüllen"],
   "is_metaphor": false
 },
 {
@@ -1580,7 +1581,9 @@
       "zu den Menschen, Dingen usw. gehören, auf die jemand Wert legt bzw. die jemand schätzt und für sich zu gewinnen sucht"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["seine Lage, Position, Stufe, seinen Platz, Rang in einem Zusammenhang haben",
+    "sich befinden",
+    "enthalten, eingeschlossen, inbegriffen, zu finden sein"],
   "is_metaphor": false
 },
 {
@@ -1591,7 +1594,7 @@
     }
   },
   "speech_id": "ce4a913e-1b4c-4b62-a47d-e8562b59773e",
-  "sentence": "Ich teile diese Auffassung nicht, im Gegenteil: Die normative Orientierung an menschlicher Würde, am Respekt vor dem einzelnen menschlichen Individuum sehe ich als den (humanistischen) Kern des Ethos an, das eine Demokratie trägt oder besser tragen sollte: \"Die Würde des Menschen ist unantastbar\" muss normativ ausbuchstabiert werden - die Gesetzgebung ist nur ein Teil dieses ethischen Projektes. Die Wahrung der Menschenwürde verlangt Respekt.",
+  "sentence": "Ich teile diese Auffassung nicht, im Gegenteil: Die normative Orientierung an menschlicher Würde, am Respekt vor dem einzelnen menschlichen Individuum sehe ich als den (humanistischen) Kern des Ethos an, das eine Demokratie trägt oder besser tragen sollte: \"Die Würde des Menschen ist unantastbar\" muss normativ ausbuchstabiert werden - die Gesetzgebung ist nur ein Teil dieses ethischen Projektes.",
   "index_sentence": 31,
   "verb": "ausbuchstabiert",
   "lexem": "ausbuchstabieren",
@@ -1599,8 +1602,8 @@
   "basic_meaning": [
     "bis zu Ende buchstabieren"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["in seine Bestandteile, Bedeutungen oder Konsequenzen analysieren oder genauer definieren"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1626,7 +1629,7 @@
       "nachlassen, aufhören"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["nur in etwas bestehen, nicht über etwas hinausgehen"],
   "is_metaphor": false
 },
 {
@@ -1686,7 +1689,9 @@
       "etwas an einem Fall Beobachtetes, Vorhandenes auch für andere Fälle für zutreffend, gültig halten"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sich anschließen (4)",
+      "anschließen (3)",
+      "anschließen (2)"],
   "is_metaphor": false
 },
 {
@@ -1739,7 +1744,7 @@
     "(in Bezug auf den Wind) in einer bestimmten Richtung, in bestimmter Weise wehen",
     "erigiert sein"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["(von Sachen) sich [in aufrechter Stellung] an einem bestimmten Ort, einer bestimmten Stelle befinden, dort [vorfindbar] sein"],
   "is_metaphor": false
 },
 {
@@ -1770,7 +1775,7 @@
     [
       "(von jemandem, der gesucht wird, der eine Straftat begangen hat) sich freiwillig zur Polizei o. Ä. begeben, sich dort melden",
       "um einer Pflicht nachzukommen, sich bei einer militärischen Dienststelle einfinden, melden",
-      "einer Herausforderung o. Ä. nicht ausweichen; bereit sein, etwas auszutragen"
+      "einer Herausforderung o. Ä. nicht ausweichen; bereit sein, etwas auszuragen"
     ],
     "sich in bestimmter Weise jemandem, einer Sache gegenüber verhalten; in Bezug auf jemanden, etwas eine bestimmte Position beziehen, Einstellung haben",
     "jemandem ein bestimmtes Auskommen verschaffen",
@@ -1780,8 +1785,8 @@
     "aufgrund bestimmter Merkmale, Daten o. Ä. erstellen, aufstellen",
     "in verblasster Bedeutung in Verbindung mit bestimmten Substantiven"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["der Mittelstand ist in dieser Situation in einer schlechteren Position oder Lage im Vergleich zu den Körperschaften", "nicht körperlich"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1846,8 +1851,8 @@
       "sich um etwas handeln"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["zusammenarbeiten"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1866,7 +1871,7 @@
     "zur Begleichung von Schulden oder als Entgelt o. Ä. zahlen müssen",
     "aus sittlichen, gesellschaftlichen o. ä. Gründen jemandem ein bestimmtes Verhalten, Tun, eine bestimmte Haltung schuldig sein"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["aus sittlichen, gesellschaftlichen o. ä. Gründen jemandem ein bestimmtes Verhalten, Tun, eine bestimmte Haltung schuldig sein"],
   "is_metaphor": false
 },
 {
@@ -1907,8 +1912,8 @@
     "aufgrund bestimmter Merkmale, Daten o. Ä. erstellen, aufstellen",
     "in verblasster Bedeutung in Verbindung mit bestimmten Substantiven"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["beachten", "nicht körperlich"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1948,8 +1953,8 @@
     "aufgrund bestimmter Merkmale, Daten o. Ä. erstellen, aufstellen",
     "in verblasster Bedeutung in Verbindung mit bestimmten Substantiven"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["beachten", "nicht körperlich"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2009,8 +2014,8 @@
     "programmgemäß vorgeführt, dargeboten, ausgestrahlt werden",
     "sich günstig entwickeln"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["das Gesetz verhindern"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2032,7 +2037,7 @@
     ],
     "zugestehen, gewähren"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["zugestehen, gewähren"],
   "is_metaphor": false
 },
 {
@@ -2081,7 +2086,8 @@
     "(verblasst in Verbindung mit Abstrakta) drückt das Vorhandensein von etwas bei jemandem aus",
     "sich innerlich mit etwas beschäftigen, es in Erwägung ziehen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["[in bestimmter Weise] etwas ertragen",
+      "etwas auf sich nehmen, übernehmen [müssen]"],
   "is_metaphor": false
 },
 {
@@ -2126,7 +2132,7 @@
     ],
     "sich in bestimmter Haltung, an einer bestimmten Stelle meist vor jemanden hinstellen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["entstehen, sich bilden"],
   "is_metaphor": false
 },
 {
@@ -2173,7 +2179,9 @@
     "jemandem [nicht] zuträglich sein; [un]günstig für jemanden, etwas sein",
     ""
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["zu einem bestimmten Verhalten o. Ä. bringen",
+      "erreichen, dass jemand, etwas in einen bestimmten Zustand versetzt wird",
+      "erreichen, dass etwas an eine bestimmte Stelle kommt"],
   "is_metaphor": false
 },
 {
@@ -2262,8 +2270,8 @@
     "mit schraubenlinienartigen Zügen (15) versehen",
     "in Verbindung mit bestimmten Substantiven in verblasster Bedeutung"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["zusammenarbeiten"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2288,7 +2296,7 @@
       "erkennbar werden"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["das Spiegelbild von jemandem, etwas zurückwerfen"],
   "is_metaphor": false
 },
 {
@@ -2311,7 +2319,7 @@
       "[in vertraulicher Unterredung] mitteilen, sagen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["schriftlich oder mündlich auf anschauliche Weise darstellen"],
   "is_metaphor": false
 },
 {
@@ -2339,7 +2347,7 @@
       "zunichtemachen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["(eine Einrichtung, Organisation o. Ä.) [gewaltsam, durch Zwangsmaßnahmen] auflösen, beseitigen, abschaffen"],
   "is_metaphor": false
 },
 {
@@ -2353,46 +2361,13 @@
   "sentence": "Aber in der Not stehen die Menschen zusammen.",
   "index_sentence": 48,
   "verb": "stehen",
-  "lexem": "stehen",
+  "lexem": "zusammenstehen",
   "index_verb": 4,
   "basic_meaning": [
-    [
-      "sich in aufrechter Körperhaltung befinden; aufgerichtet sein, mit seinem Körpergewicht auf den Füßen ruhen",
-      "sich stehend (1a) an einem bestimmten Ort, einer bestimmten Stelle befinden",
-      "sich stellen",
-      "(von Sachen) sich [in aufrechter Stellung] an einem bestimmten Ort, einer bestimmten Stelle befinden, dort [vorfindbar] sein"
-    ],
-    [
-      "(auf einer [Wert]skala, innerhalb eines Systems o. Ä.) eine bestimmte Stellung haben",
-      "einen bestimmten Spielstand aufweisen"
-    ],
-    "(von Kulturpflanzen) in einem bestimmten Stand des Wachstums, Gedeihens sein",
-    "(von Gebäuden) als Bauwerk vorhanden sein",
-    "(von Fischen) ruhig (im Wasser) verharren, sich nicht fortbewegen",
-    "(von Schalenwild) in einem bestimmten Revier seinen ständigen Aufenthalt haben",
-    "einen Sprung stehend, ohne Sturz zu Ende führen",
-    "nicht [mehr] fahren, nicht [mehr] in Bewegung, in Funktion sein",
-    "an einer bestimmten Stelle in schriftlicher oder gedruckter Form vorhanden sein",
-    "in bestimmten (besonders finanziellen) Verhältnissen leben",
-    "ein bestimmtes Verhältnis zu jemandem haben",
-    "von jemandes Entscheidung abhängen",
-    "(im Hinblick auf die Vorbereitung o. Ä. von etwas) fertig, abgeschlossen sein",
-    [
-      "für etwas einstehen, Gewähr bieten",
-      "stellvertretend sein"
-    ],
-    "sich zu etwas bekennen",
-    "jemandem beistehen, zu jemandem halten",
-    "(in Bezug auf eine Straftat) mit einem bestimmten Strafmaß geahndet werden",
-    "in einem bestimmten [Entwicklungs]zustand sein",
-    "<unpersönlich mit Infinitiv mit „zu“; entspricht einem mit „müssen“ gebildeten Passiv>",
-    "(von Kleidungsstücken) zu jemandem in bestimmter Weise passen; jemanden kleiden (1b)",
-    "leben (3), angestellt, beschäftigt sein",
-    "von jemandem, einer Sache besonders angetan sein, eine besondere Vorliebe für jemanden, etwas haben",
-    "(in Bezug auf den Wind) in einer bestimmten Richtung, in bestimmter Weise wehen",
-    "erigiert sein"
+    "gemeinsam irgendwo stehen",
+"zusammenhalten (2); einander beistehen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["zusammenhalten (2); einander beistehen"],
   "is_metaphor": false
 },
 {
@@ -2458,8 +2433,8 @@
       "sich um etwas handeln"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["verbreiten", "wie eine Welle"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2481,7 +2456,7 @@
       "sich durch glückliche Umstände erhalten, bewahren und in einen Bereich übernommen werden, in einer anderen Zeit weiter bestehen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["vor dem Untergang bewahren und in eine Zeit, in einen Bereich übernehmen"],
   "is_metaphor": false
 },
 {
@@ -2517,7 +2492,8 @@
     "sein inneres Gleichgewicht, seine Haltung wiederfinden; sich wieder beruhigen",
     "mit einer Fassung (3) versehen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["in seinen Zusammenhängen erkennen, verstehen; geistig erfassen",
+      "in all seinen Auswirkungen begreifen"],
   "is_metaphor": false
 },
 {
@@ -2540,7 +2516,7 @@
     ],
     "einer Sache anpassen, angleichen, in weitgehende Übereinstimmung bringen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["einer Sache anpassen, angleichen, in weitgehende Übereinstimmung bringen"],
   "is_metaphor": false
 },
 {
@@ -2590,7 +2566,7 @@
     ],
     "sich darum kümmern, etwas Bestimmtes zu erreichen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["beurteilen, einschätzen"],
   "is_metaphor": false
 },
 {
@@ -2614,7 +2590,7 @@
     ],
     "aufheben, aufnehmen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["an etwas anknüpfen"],
   "is_metaphor": false
 },
 {
@@ -2634,8 +2610,8 @@
     "mit einem Stoß, mit Stößen nach vorn bewegen",
     "unter Überwindung von Hindernissen, Widerstand zielstrebig vorwärtsrücken"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["in neue Märkte wagen und versuchen, dort Fuß zu fassen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2681,7 +2657,7 @@
       "zu den Menschen, Dingen usw. gehören, auf die jemand Wert legt bzw. die jemand schätzt und für sich zu gewinnen sucht"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["irgendwo, in einer bestimmten Weise an einer Stelle sein, sich befinden"],
   "is_metaphor": false
 },
 {
@@ -2728,7 +2704,7 @@
       "zu den Menschen, Dingen usw. gehören, auf die jemand Wert legt bzw. die jemand schätzt und für sich zu gewinnen sucht"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["zu den Menschen, Dingen usw. gehören, auf die jemand Wert legt bzw. die jemand schätzt und für sich zu gewinnen sucht"],
   "is_metaphor": false
 },
 {
@@ -2759,7 +2735,8 @@
     ],
     "sich krankhaft röten und schmerzhaft anschwellen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["(eine heftige Gefühlsregung o. Ä.) entstehen lassen",
+      "in heftige Erregung versetzen"],
   "is_metaphor": false
 },
 {
@@ -2782,7 +2759,7 @@
       "[in vertraulicher Unterredung] mitteilen, sagen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["schriftlich oder mündlich auf anschauliche Weise darstellen"],
   "is_metaphor": false
 },
 {
@@ -2806,8 +2783,8 @@
     ],
     "interessiert sein, etwas Bestimmtes zu erreichen, zu erwerben"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["verarbeiten", "widerspiegeln", "dienen als Spiegel"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2826,7 +2803,7 @@
     "den Anstoß zu etwas geben; in die Wege leiten",
     "[mit einem Ritual] in einen Kreis einführen, in eine Gemeinschaft aufnehmen; einweihen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["den Anstoß zu etwas geben; in die Wege leiten"],
   "is_metaphor": false
 },
 {
@@ -2858,8 +2835,8 @@
       "sich anders stellen (6), geben, als man ist\nHerkunft\nmittelhochdeutsch (sich) verstellen"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["beeinträchtigen", "verzerren"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2878,8 +2855,8 @@
     "besonders Wasser ganz und gar unklar, trüb machen",
     "sich völlig mit einer Dunst-, Wolkenschicht bedecken"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["in einem schlechten Zustand befinden", "verschlechtern"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2898,8 +2875,8 @@
     "besonders Wasser ganz und gar unklar, trüb machen",
     "sich völlig mit einer Dunst-, Wolkenschicht bedecken"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["in einem schlechten Zustand befinden", "verschlechtern"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2929,8 +2906,8 @@
       "mühsam seine Existenz behaupten"
     ]
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["haben Einfluss"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2953,7 +2930,7 @@
     "ausführlich, im Einzelnen mit Worten wiedergeben, schildern, darstellen, erklären",
     "eine gekrümmte Bewegung machen, ausführen; eine bestimmte, besonders eine gekrümmte Bahn ziehen\nHerkunft\nfrühneuhochdeutsch in der Mathematik für konstruieren"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["kennzeichnen", "ausmachen"],
   "is_metaphor": false
 },
 {
@@ -2972,7 +2949,7 @@
   "basic_meaning": [
     "für jemanden verständlich, klar sein, auf jemanden überzeugend wirken"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["für jemanden verständlich, klar sein, auf jemanden überzeugend wirken"],
   "is_metaphor": false
 },
 {
@@ -3005,8 +2982,8 @@
     "zu etwas hinzutreten",
     "sich jemandem nähern"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["liefern"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3035,8 +3012,8 @@
     "den Bezug zur Realität verlieren\nHerkunft\nübertragen zu 4",
     "auf etwas nachdrücklich Bezug nehmen, in einem gegebenen Zusammenhang hinweisen\nHerkunft\nwohl aus der Schützensprache"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["hat das angesprochen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3077,7 +3054,11 @@
       "etwas Bestimmtes erreichen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["zustande bringen, können, schaffen",
+    [
+      "jemanden zu etwas veranlassen",
+      "etwas Bestimmtes erreichen"
+    ]],
   "is_metaphor": false
 },
 {
@@ -3099,7 +3080,7 @@
     "(als gültig) aussprechen, verkünden",
     "das Ausscheiden, Absondern eines gelösten Stoffes in Form von Tropfen, Flocken, Kristallen aus einer Lösung bewirken; ausfällen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["(als gültig) aussprechen, verkünden"],
   "is_metaphor": false
 },
 {
@@ -3141,8 +3122,8 @@
     "(von Geldbeträgen o. Ä.) irgendwo schriftlich festhalten, eintragen, verbuchen",
     "jemandem schriftlich einen bestimmten Gesundheitszustand bescheinigen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["nicht unbeachtet lassen", "der Bedeutung entsprechend"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3161,8 +3142,8 @@
     "mit einem Anker an seinem Platz halten",
     "fest mit einer Unterlage o. Ä. verbinden und so [unverrückbar] an seinem Platz halten"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["festmachen", "nicht körperlich"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3184,7 +3165,7 @@
       "[in vertraulicher Unterredung] mitteilen, sagen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["schriftlich oder mündlich auf anschauliche Weise darstellen"],
   "is_metaphor": false
 },
 {
@@ -3207,7 +3188,7 @@
       "etwas Bestimmtes zum Ziel (3) haben, einen bestimmten Zweck verfolgen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["etwas Bestimmtes zum Ziel (3) haben, einen bestimmten Zweck verfolgen"],
   "is_metaphor": false
 },
 {
@@ -3230,7 +3211,7 @@
       "[in vertraulicher Unterredung] mitteilen, sagen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["schriftlich oder mündlich auf anschauliche Weise darstellen"],
   "is_metaphor": false
 },
 {
@@ -3253,7 +3234,7 @@
       "etwas Bestimmtes zum Ziel (3) haben, einen bestimmten Zweck verfolgen"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["etwas Bestimmtes zum Ziel (3) haben, einen bestimmten Zweck verfolgen"],
   "is_metaphor": false
 },
 {
@@ -3276,7 +3257,7 @@
     ],
     "heranwachsen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["(aus etwas) allmählich hervorgehen, sich [heraus]bilden, entstehen, sich entwickeln"],
   "is_metaphor": false
 },
 {
@@ -3295,7 +3276,7 @@
   "basic_meaning": [
     "(etwas Angestrebtes) erreichen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["(etwas Angestrebtes) erreichen"],
   "is_metaphor": false
 },
 {
@@ -3316,8 +3297,8 @@
     "kurz erwähnen",
     "in bestimmter Weise auf jemanden wirken; jemanden beeindrucken"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["wirken", "nicht emotional", "Auswirkungen haben"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3366,7 +3347,7 @@
     ],
     "sich darum kümmern, etwas Bestimmtes zu erreichen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sich (jemanden, etwas) deutlich, lebhaft vorstellen [können], sich (an jemanden, etwas) deutlich erinnern [können]"],
   "is_metaphor": false
 },
 {
@@ -3393,7 +3374,8 @@
     ],
     "[noch] am Leben sein und etwas als Zeitgenosse miterleben"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["von etwas betroffen und beeindruckt werden; erfahren müssen oder können; mitmachen, durchmachen",
+      "auf sich wirken lassen"],
   "is_metaphor": false
 },
 {
@@ -3415,8 +3397,8 @@
     "(nicht sesshaft, ohne festen Aufenthaltsort) umher-, von Ort zu Ort, zu einem entfernten Ziel ziehen",
     "(zu einem bestimmten Zweck) an einen bestimmten Ort geschafft, gebracht werden"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["verändern", "bewegen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3442,7 +3424,7 @@
       "in jemandem allmählich entstehen, sich entwickeln"
     ]
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["reif (2a), älter und innerlich gefestigter werden"],
   "is_metaphor": false
 },
 {
@@ -3461,7 +3443,7 @@
   "basic_meaning": [
     "in, unter, hinter etwas anderem verbergen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["in, unter, hinter etwas anderem verbergen"],
   "is_metaphor": false
 },
 {
@@ -3511,7 +3493,8 @@
     ],
     "sich darum kümmern, etwas Bestimmtes zu erreichen"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["beurteilen, einschätzen",
+      "erkennen, erfassen"],
   "is_metaphor": false
 },
 {
@@ -3530,8 +3513,8 @@
   "basic_meaning": [
     "(durch Abtrennen einzelner Körperteile) schwer verletzen und entstellen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["nicht körperlich", "schädigen", "kaputtmachen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3550,7 +3533,8 @@
     "sehr stark beschädigen und dadurch unbrauchbar, unbenutzbar o. ä. machen",
     "zunichtemachen, zugrunde richten; ruinieren (a)"
   ],
-  "contextual_meaning": [],
+  "contextual_meaning": ["sehr stark beschädigen und dadurch unbrauchbar, unbenutzbar o. ä. machen",
+    "zunichtemachen, zugrunde richten; ruinieren (a)"],
   "is_metaphor": false
 },
 {
@@ -3608,8 +3592,8 @@
     ],
     "ein bestimmtes Ergebnis haben"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["bewusst machen"],
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3650,8 +3634,8 @@
     "(von Geldbeträgen o. Ä.) irgendwo schriftlich festhalten, eintragen, verbuchen",
     "jemandem schriftlich einen bestimmten Gesundheitszustand bescheinigen"
   ],
-  "contextual_meaning": [],
-  "is_metaphor": false
+  "contextual_meaning": ["bedeutsam sein", "nicht körperlich"],
+  "is_metaphor": true
 },
 {
   "_id": {

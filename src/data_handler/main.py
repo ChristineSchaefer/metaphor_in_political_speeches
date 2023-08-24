@@ -1,5 +1,7 @@
+from src.data_handler.controller.collection_controller import CollectionController
 from src.data_handler.controller.csv_reader import CSVController
 from src.data_handler.controller.xml_reader import XMLReaderController
+from src.data_handler.models.annotations import Annotation
 from src.utils import argparser
 from src.data_handler.controller.web_crawler import CrawlerController
 
@@ -21,6 +23,11 @@ def main_data_handling(arguments):
     elif arguments.csv_path:
         cc = CSVController(path=arguments.csv_path)
         cc.create_annotation_object()
+
+    elif arguments.db_job == 1:
+        annotations = Annotation.find()
+        cc = CollectionController(annotations=annotations)
+        cc.create_trofi_object_and_save_in_collection()
 
     else:
         print("Please set valid arguments.")

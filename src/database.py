@@ -2,9 +2,15 @@ import uuid
 from typing import Mapping, Any
 
 from pydantic import BaseModel, Extra, Field
+from pymongo import MongoClient
 from pymongo.collection import Collection
 
-from src.utils.database import get_database
+from src.config import get_settings
+
+
+env = get_settings()
+client = MongoClient(env.mdb_connection_string(), uuidRepresentation="standard")
+metaphor_identification_db = client[env.db_name]
 
 
 class Document(BaseModel):
@@ -20,7 +26,7 @@ class Document(BaseModel):
 
     @classmethod
     def _get_collection_from_name(cls, name: str) -> Collection:
-        return get_database()[name]
+        return metaphor_identification_db[name]
 
     @classmethod
     def collection(cls, ) -> Collection:

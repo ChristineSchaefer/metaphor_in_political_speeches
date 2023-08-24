@@ -1,4 +1,4 @@
-from pydantic import Field
+from pydantic import Field, Extra
 
 from src.database import Document
 
@@ -15,6 +15,6 @@ class Annotation(Document):
     is_metaphor: bool = False
 
     class Config:
-        collection_name = ("annotations"
-                           "")
+        collection_name = "annotations"
+        extra = Extra.allow
 

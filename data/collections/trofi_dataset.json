@@ -1,0 +1,3024 @@
+[{
+  "_id": {
+    "$binary": {
+      "base64": "+1bpkeoyRaO5GK5+JTtMfg==",
+      "subType": "04"
+    }
+  },
+  "verb": "kommen",
+  "sentence": "Heute allerdings muss man mit Ernst hinzufügen: Einigen Menschen, vor allen Dingen einigen Szenen, die so aussahen, als wären sie aus dem Kino leibhaftig in die Wirklichkeit gekommen, wäre man nicht gern begegnet, hätte man nicht gern erlebt.",
+  "verb_idx": 27,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Rm0OXiYsQJeD63pQgSFA0Q==",
+      "subType": "04"
+    }
+  },
+  "verb": "begegnen",
+  "sentence": "Heute allerdings muss man mit Ernst hinzufügen: Einigen Menschen, vor allen Dingen einigen Szenen, die so aussahen, als wären sie aus dem Kino leibhaftig in die Wirklichkeit gekommen, wäre man nicht gern begegnet, hätte man nicht gern erlebt.",
+  "verb_idx": 32,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "7xK24lGWRp2CmbcOxWJxoQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "gestalten",
+  "sentence": "Es eröffnet Perspektiven, die man gelegentlich über den Job hinaus braucht, die wir alle nötig brauchen; jedenfalls dann, wenn wir uns miteinander vornehmen, das Leben der Menschen besser, toleranter, aber auch friedlicher zu gestalten.",
+  "verb_idx": 33,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "/emxBSsTTXCzQHqxXnpGpg==",
+      "subType": "04"
+    }
+  },
+  "verb": "hereinkommen",
+  "sentence": "Inzwischen - das möchte ich Ihnen gerne versichern - ist die Berlinale wirklich völlig frei von politischem Reinreden, und zwar nicht zuletzt deshalb und gerade jetzt, weil wir neben dem, was am Kartenverkauf hereinkommt, die alleinige Finanzierung des Festivals übernommen haben.",
+  "verb_idx": 31,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "uTNxT8H7QqKf1nn+Mc+gLw==",
+      "subType": "04"
+    }
+  },
+  "verb": "auslaufen",
+  "sentence": "Wenn mit dem Jahr 2003 das Filmförderungsgesetz, das jetzt gilt, ausgelaufen sein wird, dann werden wir bei der Neuregelung alle diese Anregungen aufnehmen, und ich denke, wir werden auch zu einer deutlichen Erhöhung kommen, vor allen Dingen aber zu einer zielgenaueren Förderung dessen, was wir wollen.",
+  "verb_idx": 10,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Qvmg7Zw9QQSGwYW8IrpaFw==",
+      "subType": "04"
+    }
+  },
+  "verb": "rauben",
+  "sentence": "Zugleich mahnt uns die Botschaft der Häftlinge, nicht bei der Rekonstruktion des Leidens zu verweilen, denn es war je gerade das Leben außerhalb des Lagers, das ihnen geraubt wurde, das Leben ohne Häftlingsnummer und Appell.",
+  "verb_idx": 27,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "gOc5zdWUTnC+ncwOzfBmYQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "aufsteigen",
+  "sentence": "Die Orte von Leid, Unterdrückung und Tod sind längst zu wichtigen historischen Quellen aufgestiegen, zu Beweismitteln auch, ohne die das Gedenken gegen Ignoranz und Lüge nicht bestehen kann.",
+  "verb_idx": 13,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "al3jTltGTf6zeAQT4aprkw==",
+      "subType": "04"
+    }
+  },
+  "verb": "wachhalten",
+  "sentence": "Gedenkstätten werden weiterentwickelt zu modernen zeithistorischen Museen, die die Erinnerung an die Staatsverbrechen des vergangenen Jahrhunderts wachhalten werden. - Vorbildlich in diesem Gesamtprozess waren und sind die Gedenkstätte und das Museum Sachsenhausen, für die der Bund und das Land Brandenburg seit Bestehen der Stiftung Brandenburgische Gedenkstätten rund 16 Millionen Euro  bereitgestellt haben.",
+  "verb_idx": 16,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "wYzaIwc/Qp6xH2/S8Uy0qA==",
+      "subType": "04"
+    }
+  },
+  "verb": "eindämmen",
+  "sentence": "Wir werden ihn nur durch eine Politik der Prävention eindämmen können, wenn es uns gelingt, gemeinsam einen neuen Anlauf zu machen, um seine vielfältigen Ursachen wirksam zu bekämpfen.",
+  "verb_idx": 9,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "sNEoxr4uS3yYnGXEXMjdsg==",
+      "subType": "04"
+    }
+  },
+  "verb": "schlagen",
+  "sentence": "Menschenrechte sind kein Luxusgut, kein Orchideenthema, das in den Hintergrund rücken kann, wenn die Stunde der Sicherheitspolitik wieder schlägt.",
+  "verb_idx": 18,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Z1/l24qHQ3mOissf11rktQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "ringen",
+  "sentence": "Die hiermit zusammenhängenden, konkreten Fragen sind oft nicht leicht zu beantworten, auch in Deutschland ist um ihre Beantwortung immer wieder gerungen worden.",
+  "verb_idx": 20,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "9dGQmN6RSwWKcUZErD6+hg==",
+      "subType": "04"
+    }
+  },
+  "verb": "ergreifen",
+  "sentence": "Auch die Kultusministerkonferenz hat im Dezember 2001 als schnelle Reaktion auf die Ergebnisse der internationalen PISA-Studie beschlossen, \"Maßnahmen mit dem Ziel einer frühzeitigen Einschulung\" zu ergreifen.",
+  "verb_idx": 26,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "f5wGgAF0QYyzt8s7YSGboA==",
+      "subType": "04"
+    }
+  },
+  "verb": "entrümpeln",
+  "sentence": "Die Dichte der Vorgaben für den Unterrichtsstoff muss überprüft, Lehrpläne müssen entrümpelt werden.",
+  "verb_idx": 11,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "H3zWxDMtRS+321sBdqQibg==",
+      "subType": "04"
+    }
+  },
+  "verb": "entfalten",
+  "sentence": "Obwohl die neue Republik auf die besten und nobelsten deutschen und europäischen Verfassungstraditionen gestellt war, war die Skepsis am Anfang groß, ob sich im \"Weststaat\" eine dauerhaft stabile Demokratie würde entfalten können.",
+  "verb_idx": 30,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "RGZ1PVWDQUuOk0+yWHKJIg==",
+      "subType": "04"
+    }
+  },
+  "verb": "abschütteln",
+  "sentence": "Sie vor allem waren es, die den Preis für die deutsche Kriegsschuld zahlen mußten - bis sie in bewundernswerter Zivilcourage 1989 das Zwangssystem des Einparteienstaates abschüttelten.",
+  "verb_idx": 24,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "1kISENnnTHC1FHNYw1ittw==",
+      "subType": "04"
+    }
+  },
+  "verb": "gestalten",
+  "sentence": "Unsere Verfassung bietet auch für die Zukunft eine tragfähige Grundlage, die gesellschaftlichen Veränderungen erfolgreich zu gestalten.",
+  "verb_idx": 15,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "pIQs/kBBTUmBGbkjZS5YfQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "kreisen",
+  "sentence": "Damals kreiste das Interesse um zwei internationale Entwicklungen: · Kultur und Medien sahen sich von einer Liberalisierungsdebatte überzogen, die aus dem Allgemeinen Übereinkommen über den Handel mit Dienstleistungen - kurz GATS - herrührte.· Gleichzeitig bemühte sich die UNESCO, den Druck zu mildern und die kulturelle Vielfalt durch ein Übereinkommen zu schützen.",
+  "verb_idx": 1,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "IKbmBAVaQ9yRIZVf7sN6sA==",
+      "subType": "04"
+    }
+  },
+  "verb": "auffächern",
+  "sentence": "Natürlich fächert diese Studie aber auch auf, wie viel noch zu tun ist, um einen wirklichen Konsens zu erreichen.",
+  "verb_idx": 1,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "wOxLIpbdSRC57vBWIO+fag==",
+      "subType": "04"
+    }
+  },
+  "verb": "entfalten",
+  "sentence": "Der Handel mit Waren, also zum Beispiel Büchern oder Tonträgern, ist über die Regeln des GATT bereits seit langem weitgehend liberalisiert.· Selbst multilaterale Übereinkommen in der Kulturpolitik können Bindungswirkungen für die innerstaatliche Politik entfalten, die den jeweils Betroffenen nicht immer bewusst sind.",
+  "verb_idx": 34,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "1aiKKMIbQ5i0grh2DxVwuA==",
+      "subType": "04"
+    }
+  },
+  "verb": "kegeln",
+  "sentence": "So geschehen in Köln, als die städtebauliche Planung den Dom fast von der Liste der Welterbestätten gekegelt hätte und dies auch noch mit Erstaunen quittiert wurde.",
+  "verb_idx": 16,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "IgOPbgsYTaSKI9iG09QLvw==",
+      "subType": "04"
+    }
+  },
+  "verb": "münzen",
+  "sentence": "Ich erinnere nur daran, wie geschockt die Betroffenen reagierten, als der Europäische Gerichtshof Gemeinschaftsrecht auf gute alte Traditionen im Sport, auf den Bereitschaftsdienst von Krankenhausärzten oder auf den Zugang von Frauen zur Bundeswehr münzte.· Wir müssen den Blick weiten und uns bei der Debatte auf supranationaler Ebene mit der Sicht anderer, gleichberechtigter  Nationen in der Kulturpolitik auseinandersetzen.",
+  "verb_idx": 33,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Wxx3TH6VQd2uPFskWeTFmA==",
+      "subType": "04"
+    }
+  },
+  "verb": "schmieden",
+  "sentence": "Ich betrachte es daher als sehr ermutigendes Zeichen, dass es im vergangenen Jahr gelungen ist, eine Koalition für kulturelle Vielfalt zu schmieden.",
+  "verb_idx": 21,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "aFffbdasSvqQhk8HyXhvyw==",
+      "subType": "04"
+    }
+  },
+  "verb": "verschwinden",
+  "sentence": "Man sagt Zahlen nach, sie wären nur abstrakte Zeichen, hinter denen die konkreten menschlichen Erfahrungen und Leiden verschwinden.",
+  "verb_idx": 17,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "e2wwG1uNQtSaejDNe29mtQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "sterben",
+  "sentence": "Wenn erst einmal der Schmerz, die Hoffnung, die Trauer und die Freundschaft mit denjenigen gestorben sind, die all dies empfanden, dann bleiben die Zahlen in den Geschichtsbüchern - so heißt es - und mit ihnen erkaltet langsam die Erinnerung.",
+  "verb_idx": 14,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "+9yN29zfSribHmKoqUHxxQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "erkalten",
+  "sentence": "Wenn erst einmal der Schmerz, die Hoffnung, die Trauer und die Freundschaft mit denjenigen gestorben sind, die all dies empfanden, dann bleiben die Zahlen in den Geschichtsbüchern - so heißt es - und mit ihnen erkaltet langsam die Erinnerung.",
+  "verb_idx": 33,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "EyPDdu0QS2CbEHGYJt2NiA==",
+      "subType": "04"
+    }
+  },
+  "verb": "verdunkeln",
+  "sentence": "In den Erinnerungen vieler Häftlinge, wie sie in Schriften, in Ton-  und Bildaufzeichnungen niederlegt sind, gehört dieser Keller zu den finstersten Orten eines Lagers, das ohnehin von einer immerwährenden Nacht der Unmenschlichkeit verdunkelt wurde.",
+  "verb_idx": 32,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "4U7MZEsKQBmFhbmJ1QXg3A==",
+      "subType": "04"
+    }
+  },
+  "verb": "wachhalten",
+  "sentence": "Ein Ort, der die Erinnerung an die Toten wachhält.",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "v0mLizlWR4qWS6Tkev26Fg==",
+      "subType": "04"
+    }
+  },
+  "verb": "springen",
+  "sentence": "Für die Zeit des Mittelalters ist die Verbindung unübersehbar, Parallelen springen aber auch in der Neuzeit ins Auge: Deutschland und Italien sind verspätete Nationen des 19. Jahrhunderts, was jeweils im Inneren der Gesellschaften divergierende Geschwindigkeiten der Modernisierung bedingte.",
+  "verb_idx": 10,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "t7WVs0L5Q0q4fL2Q40GQnA==",
+      "subType": "04"
+    }
+  },
+  "verb": "verfassen",
+  "sentence": "Die späte Nationenbildung hatte nicht zuletzt den Effekt, dass die kulturellen Landschaften beider Länder bis heute in hohem Maße multipolar verfasst sind.",
+  "verb_idx": 20,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "svoUAOrmSJSYfdsysYItxw==",
+      "subType": "04"
+    }
+  },
+  "verb": "erfahren",
+  "sentence": "Die kulturelle Nähe zwischen Deutschland und Italien äußert sich in der hohen Wertschätzung, die die Leistungen der jeweils anderen Kultur erfahren.",
+  "verb_idx": 20,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "t73V7SzvRxi4ey90JNpGkg==",
+      "subType": "04"
+    }
+  },
+  "verb": "begreifen",
+  "sentence": "Als institutionellen Niederschlag der wechselseitigen Wertschätzung kann man das zwischen unseren Staaten bestehende dichte Geflecht kultureller Einrichtungen im jeweils anderen Land begreifen.",
+  "verb_idx": 21,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "KoUyifPORDGR+HlG4PxKSw==",
+      "subType": "04"
+    }
+  },
+  "verb": "zurückgehen",
+  "sentence": "Bemerkenswert ist dabei, dass eine Reihe dieser Einrichtungen auf das 19. Jahrhundert zurückgeht, eine Zeit also, in der der Begriff der auswärtigen Kulturpolitik - jedenfalls im deutschen Sprachraum - noch nicht existierte.",
+  "verb_idx": 12,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "KkGAPqxnSVWYAn8aKD0fRA==",
+      "subType": "04"
+    }
+  },
+  "verb": "italianisieren",
+  "sentence": "Auch in Folge der Mitte der 50er Jahre verstärkt einsetzenden Migration hat sich die Lebenswelt in Deutschland in gewisser Weise italianisiert - ich denke hier z.B. an die Bereiche Esskultur, Mode und Design.",
+  "verb_idx": 20,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "9NngT2zKRtGUtsYP8Dc5xg==",
+      "subType": "04"
+    }
+  },
+  "verb": "einschreiben",
+  "sentence": "Der langen Tradition der Italien-, besonders der Rom-Aufenthalte deutscher Künstler ist das Motiv der Sehnsucht eingeschrieben, Sehnsucht nach dem Fremden, dem ganz Anderen.",
+  "verb_idx": 16,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "4r54OdOaQA23SXNURk5WeA==",
+      "subType": "04"
+    }
+  },
+  "verb": "widerspiegeln",
+  "sentence": "Die Liste der durch die DaimlerChrysler AG geförderten Stipendiaten spiegelt die Leitidee der Casa di Goethe wieder, Goethes Werk sowohl in seinem historischen Kontext zu präsentieren als auch aus dem Blickwinkel der Gegenwart zu befragen.",
+  "verb_idx": 9,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "vNKOp2NNSAmz3ALRy+VtfQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "erwachsen",
+  "sentence": "Aus dieser Tradition erwächst in meinen Augen eine besondere Verpflichtung - auch mit Blick auf die Erweiterung der Europäischen Union.",
+  "verb_idx": 3,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ngF6Jk8rR925vZOgpJN0zg==",
+      "subType": "04"
+    }
+  },
+  "verb": "spiegeln",
+  "sentence": " Sein Umfang spiegelt die Vielfalt, die Dauer und die Intensität der Beziehungen, die zwischen Deutschland und Italien auf allen Gebieten der Kultur und Bildung bestehen.",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "WoB2rIkUQ6e/fQmbsm6w+g==",
+      "subType": "04"
+    }
+  },
+  "verb": "unterhalten",
+  "sentence": "Diese Intensität zeigt sich nicht zuletzt darin, dass sowohl Deutschland wie Italien im jeweils anderen Land die relativ größte Zahl kultureller Einrichtungen unterhalten.",
+  "verb_idx": 22,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "V6ZwE2kCRw+n4t4tzKHNRQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "bannen",
+  "sentence": "Dabei ist es vor allem die Reizgestalt der Handschrift, die ihn ans Entziffern der Mikrogramme bannt und gleichzeitig in eine ungewohnte Freiheit entlässt.",
+  "verb_idx": 15,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "AlVg6y9oRXGrYFt2k304tA==",
+      "subType": "04"
+    }
+  },
+  "verb": "entlassen",
+  "sentence": "Dabei ist es vor allem die Reizgestalt der Handschrift, die ihn ans Entziffern der Mikrogramme bannt und gleichzeitig in eine ungewohnte Freiheit entlässt.",
+  "verb_idx": 22,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "nqAF6D29QpCb2soAdGA/ew==",
+      "subType": "04"
+    }
+  },
+  "verb": "wuchern",
+  "sentence": "Im Gegenteil: Es ist die Sinnlichkeit der reinen Augenlust, wenn man sich ans Studium seiner Blätter macht und beobachtet, wie die Sätze wuchern, übereinander wachsen, sich in Linien verlieren oder zu Flächen verdichten.",
+  "verb_idx": 22,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "GUZX0GBlRxibjrrXOyKZaA==",
+      "subType": "04"
+    }
+  },
+  "verb": "wachsen",
+  "sentence": "Im Gegenteil: Es ist die Sinnlichkeit der reinen Augenlust, wenn man sich ans Studium seiner Blätter macht und beobachtet, wie die Sätze wuchern, übereinander wachsen, sich in Linien verlieren oder zu Flächen verdichten.",
+  "verb_idx": 24,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "jzc6XV8qTAa5m4fr7aCoMA==",
+      "subType": "04"
+    }
+  },
+  "verb": "verlieren",
+  "sentence": "Im Gegenteil: Es ist die Sinnlichkeit der reinen Augenlust, wenn man sich ans Studium seiner Blätter macht und beobachtet, wie die Sätze wuchern, übereinander wachsen, sich in Linien verlieren oder zu Flächen verdichten.",
+  "verb_idx": 28,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "KeC9uxb/R0S89MDu/rUsyA==",
+      "subType": "04"
+    }
+  },
+  "verb": "verdichten",
+  "sentence": "Im Gegenteil: Es ist die Sinnlichkeit der reinen Augenlust, wenn man sich ans Studium seiner Blätter macht und beobachtet, wie die Sätze wuchern, übereinander wachsen, sich in Linien verlieren oder zu Flächen verdichten.",
+  "verb_idx": 32,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "t2gQp/7QQT2eGkiyEsS28g==",
+      "subType": "04"
+    }
+  },
+  "verb": "hineinziehen",
+  "sentence": "Denklandschaft, \"Regenblatt\", \"Textvibrationsstudie\", \"Satzfeld\" oder auch: \"Porträtierter Satz\", das sind die Lockvögel, die Claus ausgesendet hat, um uns in seine Expressionen hineinzuziehen.",
+  "verb_idx": 21,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Q1lnLFNURU+QQGpNvTqCLg==",
+      "subType": "04"
+    }
+  },
+  "verb": "kreisen",
+  "sentence": "So lautet der Titel einer Arbeit aus dem Jahr 1968, für die Claus den Zeichenstift so lange über das Papier kreisen ließ, bis das Blatt fast vollständig schwarz geworden war.",
+  "verb_idx": 20,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "+Ba0F9U0TGGtTP75JKBThQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "herandrängen",
+  "sentence": "Wobei das \"Schweigen\" in diesem speziellen Fall auch nichts anderes ist, als ein Innehalten im Kontinuum der Wörter und Bilder, das Raum schafft für neue Projektionen und Gedanken, die von den Randzonen zwischen dem Bekannten und dem Unbewussten herandrängen.",
+  "verb_idx": 38,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "dpIVs0chTI2F3qMcLzng6w==",
+      "subType": "04"
+    }
+  },
+  "verb": "begreifen",
+  "sentence": "Europa muss von seinen Bürgerinnen und Bürgern als Ort des sozialen Zusammenhalts über kulturelle und religiöse Grenzen hinweg begriffen und erlebt werden.",
+  "verb_idx": 18,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "37QPCkF9S0qmDUM3bL6dzA==",
+      "subType": "04"
+    }
+  },
+  "verb": "erleben",
+  "sentence": "Europa muss von seinen Bürgerinnen und Bürgern als Ort des sozialen Zusammenhalts über kulturelle und religiöse Grenzen hinweg begriffen und erlebt werden.",
+  "verb_idx": 20,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "DJqZH8jnRF2sbVqRUFUzhg==",
+      "subType": "04"
+    }
+  },
+  "verb": "schnüren",
+  "sentence": "Das kann nicht oktroyiert werden, sondern das geht nur, indem wir die wechselseitige Blockade, die nach meinem Eindruck den Prozess so lange verzögert hat - natürlich sind die Interessen unterschiedlich und treffen auch im Bündnis für den Film aufeinander -, dadurch aufheben, dass wir ein Paket schnüren.",
+  "verb_idx": 44,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "e0jjHmBFRoyBXoiWAd2LBA==",
+      "subType": "04"
+    }
+  },
+  "verb": "abhängen",
+  "sentence": "So werden nach Expertenaussagen in Deutschland im Jahr 2000 von Mikroelektronikprodukten rund 1.000 Milliarden DM Umsatz 4,5 Millionen Arbeitsplätze Exporte im Wert von 510 Milliarden DM abhängen.",
+  "verb_idx": 28,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Fmac0JmMRb6vwgCdQ9eVLw==",
+      "subType": "04"
+    }
+  },
+  "verb": "halten",
+  "sentence": "Auch im privaten Bereich hat die Mikroelektronik längst Einzug gehalten: Von der Unterhaltungselektronik übers Handy bis zur Chipkarte.",
+  "verb_idx": 9,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "oOk/zeFMTum6p3Wb2Y8bEg==",
+      "subType": "04"
+    }
+  },
+  "verb": "fließen",
+  "sentence": "Und zusätzlich fließen erhebliche Beiträge in die Kassen der sozialen Sicherungssysteme.",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "mCZ2Mc9uSISkL84W83FOqA==",
+      "subType": "04"
+    }
+  },
+  "verb": "beleben",
+  "sentence": "Und gleichzeitig glaube ich auch, daß Kulturpolitik durch die Arbeit von Stiftungen belebt werden kann, also eine fruchtbare Wechselwirkung besteht.",
+  "verb_idx": 12,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "2vMdhxswSyalRXOjwBMV6g==",
+      "subType": "04"
+    }
+  },
+  "verb": "liegen",
+  "sentence": "Die Mehrheiten lagen quer zu den politischen Parteien.",
+  "verb_idx": 2,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "JUYWXacBSdGMB9FcAGCX3g==",
+      "subType": "04"
+    }
+  },
+  "verb": "ausbuchstabieren",
+  "sentence": "Ich teile diese Auffassung nicht, im Gegenteil: Die normative Orientierung an menschlicher Würde, am Respekt vor dem einzelnen menschlichen Individuum sehe ich als den (humanistischen) Kern des Ethos an, das eine Demokratie trägt oder besser tragen sollte: \"Die Würde des Menschen ist unantastbar\" muss normativ ausbuchstabiert werden - die Gesetzgebung ist nur ein Teil dieses ethischen Projektes.",
+  "verb_idx": 45,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "DdOm0UmaRBOxiiWEqHdI5g==",
+      "subType": "04"
+    }
+  },
+  "verb": "erschöpfen",
+  "sentence": "Allerdings erschöpfen sich die ethischen Pflichten nicht in der Bewahrung individueller Rechte.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "eXVDfP2qQiSBz9OU0mk1ew==",
+      "subType": "04"
+    }
+  },
+  "verb": "schließen",
+  "sentence": "Ich räume ein, dass diese 42 Prozent, die gelten - sie stehen ja schon im Gesetzblatt -, nicht zustande gekommen sind, weil die SPD sich das so gerne gewünscht hätte, sondern das war ein Kompromiss, den wir mit der rheinland-pfälzischen Landesregierung schließen mussten.",
+  "verb_idx": 40,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "yaBKQd7wSFia6RK90TRAYQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "stehen",
+  "sentence": "Davor steht die Garantie der kommunalen Selbstverwaltung.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "vtKDxTnlRsynQHlJBeV0+Q==",
+      "subType": "04"
+    }
+  },
+  "verb": "stellen",
+  "sentence": "Ich verstehe wirklich nicht, wie man bei dieser Situation sagen kann, dass der Mittelstand schlechter gestellt wird als die Körperschaften.",
+  "verb_idx": 15,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "j786iHsYSVG2cnfsNDxINQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "gehen",
+  "sentence": "Auch hier gehen wir Hand in Hand, der Bund und dieses Land.",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "fRJ02U9PSIOfIzHK4BY0yQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "schulden",
+  "sentence": "Das ist vor allen Dingen Ihren eigenen Aktivitäten geschuldet, nicht in erster Linie - das behauptet auch keiner - der Politik.",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "dzK9vINPSOq6JbdMReHYfg==",
+      "subType": "04"
+    }
+  },
+  "verb": "stellen",
+  "sentence": "Aber man muss eine Säule daneben stellen, und die heißt Kapitaldeckung.",
+  "verb_idx": 6,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "+VTks8nOSPOrPM6Jy2ptDw==",
+      "subType": "04"
+    }
+  },
+  "verb": "stellen",
+  "sentence": "Für mich war es immer wichtig, zu sagen: Der Sinn der Reform ist, Kapitaldeckung aufzubauen, die zweite Säule neben die erste, beitragsfinanzierte, zu stellen.",
+  "verb_idx": 23,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "SjTTWzU3SimA26uqLUDZpg==",
+      "subType": "04"
+    }
+  },
+  "verb": "laufen",
+  "sentence": "Meine Partei ist gegen dieses Gesetz Sturm gelaufen, meine Freunde in den Gewerkschaften genauso.",
+  "verb_idx": 7,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "rN/YEfdyRxuw7UyGMGAXeQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "einräumen",
+  "sentence": "Wir haben nämlich einen Rechtsanspruch auf Teilzeit eingeräumt.",
+  "verb_idx": 7,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "5GNwcw4qSEOv2UOJ+fvtAA==",
+      "subType": "04"
+    }
+  },
+  "verb": "tragen",
+  "sentence": "Deswegen denke ich, dass wir auch in diesem Bereich zwischen den Teilhabeansprüchen Ihrer Beschäftigten und den berechtigten Ansprüchen dessen, der sein Geld investieren will und der das Risiko für das investierte Geld trägt, eine sinnvolle, vernünftige Balance finden werden und finden müssen.",
+  "verb_idx": 32,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "y+yg8h42RUyl0op93iDVAg==",
+      "subType": "04"
+    }
+  },
+  "verb": "aufbauen",
+  "sentence": "Ich jedenfalls halte das, was gegenwärtig an vordergründigen Konfrontationen aufgebaut wird, für ganz verkehrt.",
+  "verb_idx": 9,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "/MtBV67ZSTOquN0BV//wxA==",
+      "subType": "04"
+    }
+  },
+  "verb": "bekommen",
+  "sentence": "Wir brauchen zweitens in unserer Gesellschaft ein Maß an Offenheit, an Internationalität, um die Menschen  von außen zu bekommen, die unsere Leute herausfordern können.",
+  "verb_idx": 18,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "mGTbtzvFSp2XGwVZDG+zog==",
+      "subType": "04"
+    }
+  },
+  "verb": "ziehen",
+  "sentence": "Ich sage deswegen: In diesen beiden Bereichen haben wir ein Modernitätsdefizit, das wir gemeinsam aufarbeiten müssen, wenn wir - ich denke, an diesem Punkt ziehen wir an einem Strang, wo immer sich der Einzelne politisch verortet - eines wollen: des Landes Wohlfahrt, wie man bei uns in Niedersachsen so schön sagt.",
+  "verb_idx": 23,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "1dF4rV8ISt+byn2mc7i8Bw==",
+      "subType": "04"
+    }
+  },
+  "verb": "widerspiegeln",
+  "sentence": "Was sich damals in den Gesichtern der Menschen widerspiegelte, zeigt die Ausstellung \"Here is New York\".",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "W22mnUGSSt2OmbAMufyjQg==",
+      "subType": "04"
+    }
+  },
+  "verb": "erzählen",
+  "sentence": "Sie erzählen von der Trauer und der Verzweiflung der Menschen, von Müdigkeit und Erschöpfung, aber auch vom Durchhaltewillen und der festen Entschlossenheit, nicht aufzugeben.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "jN+BbajrSYCw58F1dtd05A==",
+      "subType": "04"
+    }
+  },
+  "verb": "zerschlagen",
+  "sentence": "An der Seite der USA haben wir gemeinsam mit anderen Nato-Partnern in Afghanistan dazu beigetragen, die Wurzeln des terroristischen Al-Quaida-Netzwerkes zu zerschlagen.",
+  "verb_idx": 24,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "reBNpHLVT2WzpMKu4VvbHw==",
+      "subType": "04"
+    }
+  },
+  "verb": "zusammenstehen",
+  "sentence": "Aber in der Not stehen die Menschen zusammen.",
+  "verb_idx": 4,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "e2Yd9yaaSrW2Kw/fLnfdNQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "gehen",
+  "sentence": "Nicht nur eine Flutwelle, eine ungeheure Welle der Hilfsbereitschaft geht durch unser Land.",
+  "verb_idx": 9,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "HxX7YiTFSo+gpFr6EiCwRg==",
+      "subType": "04"
+    }
+  },
+  "verb": "hinüberretten",
+  "sentence": "Von diesem Gefühl haben wir immer noch etwas in die Gegenwart hinübergerettet.\"",
+  "verb_idx": 11,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "OpstT5iVShe4W/2OiHEWhg==",
+      "subType": "04"
+    }
+  },
+  "verb": "fassen",
+  "sentence": "Wir werden nie ganz fassen können, was damals geschah.",
+  "verb_idx": 4,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "smvHkicjQDekYWE6h+/m2A==",
+      "subType": "04"
+    }
+  },
+  "verb": "annähern",
+  "sentence": "Wir können nur versuchen, uns weiter anzunähern.",
+  "verb_idx": 6,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ooB/MnBeR8WzC2ayxpEthQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "sehen",
+  "sentence": "Ich denke, dass das, was Sie hier nach fünfjähriger Bauzeit beziehen, sich sehen lassen kann und in Berlins Mitte eine Bereicherung darstellt, sowohl baulich als auch von den Aufgaben her, die Sie hier bearbeiten.",
+  "verb_idx": 12,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "EzdfIdJFQ9+mGHoXCz5Y+g==",
+      "subType": "04"
+    }
+  },
+  "verb": "aufgreifen",
+  "sentence": "Ich möchte aber aufgreifen, was Sie, Herr Reich, vor wenigen Wochen in der Bilanzpressekonferenz gesagt haben.",
+  "verb_idx": 3,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "S5LR0p2PQ1SM5sU80vcFmw==",
+      "subType": "04"
+    }
+  },
+  "verb": "vorstoßen",
+  "sentence": "Hier liegt ein Grund, warum in der Frühphase traditionelle Kreditgeber schon einmal zögern, wenn Jungunternehmerinnen und -unternehmer mit unkonventionellen Methoden und einer Finanzierung, die nicht in allen Punkten als abgesichert gelten kann, in neue Märkte vorstoßen wollen, was wir uns alle miteinander aber auf der anderen Seite wünschen.",
+  "verb_idx": 35,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "I4Wvm9kGRi+EqPAE0PXhNA==",
+      "subType": "04"
+    }
+  },
+  "verb": "liegen",
+  "sentence": "Interessant ist in diesem Zusammenhang auch die Beobachtung, dass die Beschäftigungspläne bei den Unternehmen der New Economy trotz der Kursbereinigung an den Aktienmärkten erneut um fast zehn Prozentpunkte über denen des Vorjahres liegen.",
+  "verb_idx": 32,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "CglcZ0LwRkmlnqxtM68bCw==",
+      "subType": "04"
+    }
+  },
+  "verb": "liegen",
+  "sentence": "Neben der eindeutig beschäftigungsfreundlichen Wirkung dieser Förderbank liegt mir eines der Grundprinzipien der Kreditanstalt für Wiederaufbau besonders am Herzen, das Prinzip der Nachhaltigkeit.",
+  "verb_idx": 7,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "L/LNzMplSGynPgw6BUIpnw==",
+      "subType": "04"
+    }
+  },
+  "verb": "entzünden",
+  "sentence": "Meine Freude entzündet sich dabei sowohl am Thema der Ausstellung als auch an ihrem kulturpolitischen Kontext.",
+  "verb_idx": 2,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "JBFh4kU5QJGsH/ABT4abRw==",
+      "subType": "04"
+    }
+  },
+  "verb": "erzählen",
+  "sentence": "Kunstwerke erzählen nicht nur die Geschichte der Kunst, sondern auch die ihres Jahrhunderts.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "wFtw72/qRg6YpBKs/W2AmQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "reflektieren",
+  "sentence": "Sie reflektieren ihre Epoche, sind Spiegel der gesellschaftlichen, politischen und wissenschaftlichen Wirklichkeit, in der sie entstanden sind.",
+  "verb_idx": 1,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "p53sNDG4RDu4W2f8EUBNIg==",
+      "subType": "04"
+    }
+  },
+  "verb": "initiieren",
+  "sentence": "Die Künste initiieren daraus nicht selten gesellschaftliche Bewegungen, Utopien, Revolution.",
+  "verb_idx": 2,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "sRTvTVUQTkKUgTPshMNYcg==",
+      "subType": "04"
+    }
+  },
+  "verb": "verstellen",
+  "sentence": "Der europaweite Terror des NS-Regimes gegen die Kultur und der kalte Krieg haben unseren Blick zweifellos zweifach verstellt.",
+  "verb_idx": 18,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "nbfr4e08Q8iy/Q6nOPv7nA==",
+      "subType": "04"
+    }
+  },
+  "verb": "eintrüben",
+  "sentence": "Kein Zweifel: Im Vergleich zur Situation, die wir im letzten Jahr um diese Zeit vorgefunden haben, hat sich die Weltwirtschaft eingetrübt.",
+  "verb_idx": 20,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "XFTxzoQ7TDGn9awkkjo+NA==",
+      "subType": "04"
+    }
+  },
+  "verb": "eintrüben",
+  "sentence": "Kein Zweifel also: Die Weltwirtschaft hat sich eingetrübt.",
+  "verb_idx": 7,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "5c0An5GkRAe7oggAmh2ZBA==",
+      "subType": "04"
+    }
+  },
+  "verb": "durchschlagen",
+  "sentence": "Anders ausgedrückt: Krisenhafte Erscheinungen in dem für uns so wichtigen Markt der Vereinigten Staaten schlagen anders und vor allen Dingen schneller auf Deutschland durch, als es in der Vergangenheit der Fall war.",
+  "verb_idx": 14,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "XBoqUTP7SASTiVVJPyqoUg==",
+      "subType": "04"
+    }
+  },
+  "verb": "beschreiben",
+  "sentence": "Wir haben gesagt: Wir müssen einen Pfad in der staatlichen Finanzpolitik finden, der einen Weg in die Zukunft dadurch beschreibt, dass auf der einen Seite Konsolidierungspolitik in den öffentlichen Haushalten gemacht wird - übrigens auch international vereinbarte Konsolidierungspolitik; ich erinnere an den Stabilitätspakt, der international vereinbart wurde, keine Erfindung von mir war und trotzdem richtig ist - und auf der anderen Seite die öffentlichen Investitionen verstetigt werden, um dadurch Wachstum zu ermöglichen.",
+  "verb_idx": 19,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "BzjZS2dgTI20RPng5otq8Q==",
+      "subType": "04"
+    }
+  },
+  "verb": "einleuchten",
+  "sentence": "Es leuchtet jedem, der sich mit Finanz- und Wirtschaftspolitik befasst, unmittelbar ein, dass das nicht geht.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "KtwRwY5HTHGY9u2xv+hPAw==",
+      "subType": "04"
+    }
+  },
+  "verb": "antreten",
+  "sentence": "Diejenigen, die das befürworten, können nur sehr kurzfristige Beweise dafür antreten.",
+  "verb_idx": 10,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Z1Ov/SKySiawpwG449aTZQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "abheben",
+  "sentence": "Der Herr Ministerpräsident hat darauf abgehoben.",
+  "verb_idx": 5,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "RLU3T7gXSU2lI0/1abwg4Q==",
+      "subType": "04"
+    }
+  },
+  "verb": "bringen",
+  "sentence": "Wir haben nämlich aus guten Gründen - der Herr Ministerpräsident hat darauf hingewiesen - den Solidarpakt II unter Dach und Fach gebracht.",
+  "verb_idx": 19,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "8jue7vbPRumzgfd7hFbuqw==",
+      "subType": "04"
+    }
+  },
+  "verb": "fällen",
+  "sentence": "Ich wollte nämlich den Finanzmärkten wie den wirtschaftspolitischen Akteuren signalisieren: Dieses Land, föderal aufgebaut - was ja gelegentlich durchaus zu Schwierigkeiten bei Entscheidungen führen kann -, ist in der Lage, komplizierteste Entscheidungen mit weit reichenden Folgen in kurzer Zeit und großer Einigkeit zu fällen.",
+  "verb_idx": 41,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ZqGqoHa7TP6gB9oU9xAaIA==",
+      "subType": "04"
+    }
+  },
+  "verb": "schreiben",
+  "sentence": "Auch das, denke ich, wird die Branche nicht übersehen und keineswegs klein schreiben.",
+  "verb_idx": 12,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "gw9ATm/OTIaSWa9vycrkmw==",
+      "subType": "04"
+    }
+  },
+  "verb": "verankern",
+  "sentence": "Aber natürlich brauchen wir die Partner, um die Notwendigkeit einer solchen Innovationsstrategie auch in der Gesellschaft zu verankern.",
+  "verb_idx": 17,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "xJ6K5cTKQcSXwuoaKVNX/g==",
+      "subType": "04"
+    }
+  },
+  "verb": "erzählen",
+  "sentence": "Filme erzählen die Geschichten von der Vergangenheit mit ihren eigenen Mitteln.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "0kh1Ha3kSCirjGECTdwiWA==",
+      "subType": "04"
+    }
+  },
+  "verb": "zielen",
+  "sentence": "Gegenwärtig zielen die stilistischen Mittel des Kinos - nicht nur in Deutschland - vor allem auf die Emotionen des Publikums. Diese Tendenz ist nicht etwa zu verachten.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ad5+zBwjQZur63EbsPw6CQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "erzählen",
+  "sentence": "Das Kino erzählt die Geschichten von der Vergangenheit so, dass sie auf die Emotion, den Sinnesapparat, das seelische Zentrum des Zuschauers zielen.",
+  "verb_idx": 2,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "o13bLxd3QfiOc8ptyuI6kw==",
+      "subType": "04"
+    }
+  },
+  "verb": "zielen",
+  "sentence": "Das Kino erzählt die Geschichten von der Vergangenheit so, dass sie auf die Emotion, den Sinnesapparat, das seelische Zentrum des Zuschauers zielen.",
+  "verb_idx": 21,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "cB+JCA2xTA6Dt/JZkahi9w==",
+      "subType": "04"
+    }
+  },
+  "verb": "erwachsen",
+  "sentence": "Ich glaube, dass jeder unendliches Mitgefühl mit den Opfern, mit den Angehörigen der Toten hat und haben muss, und daraus auch der feste Wille erwachsen muss, alles zu tun, um erstens das, was abgelaufen ist, abzuklären und zweitens, wenn es ein Anschlag gewesen sein sollte - was gegenwärtig nicht sicher feststeht, es gibt Anzeichen, es gibt auch gegenteilige Erklärungen der tunesischen Behörden -, dann werden wir alles in unserer Macht stehende tun, um die Menschen, die so etwas tun, zu fangen und auf Dauer hinter Gitter zu bringen.",
+  "verb_idx": 24,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "YVm2pWYoQjazD7nS6pX+6A==",
+      "subType": "04"
+    }
+  },
+  "verb": "erzielen",
+  "sentence": "Meine Damen und Herren, am 17. Dezember 1999, in der 7. Verhandlungsrunde, haben wir hier in Berlin eine erste Vereinbarung erzielt: Bund und deutsche Unternehmen werden je zur Hälfte die Bundesstiftung \"Erinnerung, Verantwortung und Zukunft\" mit einem Stiftungskapital von 10 Mrd. DM ausstatten.",
+  "verb_idx": 20,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "A8j+C5YaQE6737AqbEQkZA==",
+      "subType": "04"
+    }
+  },
+  "verb": "berühren",
+  "sentence": "Diese Rechtssicherheit berührt unmittelbar deutsche Exporte und Investitionen in Amerika.",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "3mFUN+2aTxKBts1oXJ/z5w==",
+      "subType": "04"
+    }
+  },
+  "verb": "sehen",
+  "sentence": "Wer bauen will, muss Gebäude zuerst sehen und erleben lernen, muss sich umtun in der Welt, in Werkstätten und Büros, muss sich einen Bilderschatz erarbeiten, den er an einer Universität, in einer Stadt, ja nicht einmal in einem Land finden kann.",
+  "verb_idx": 6,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "JLxmjsYORkSHPl9ZQOLO8g==",
+      "subType": "04"
+    }
+  },
+  "verb": "erleben",
+  "sentence": "Wer bauen will, muss Gebäude zuerst sehen und erleben lernen, muss sich umtun in der Welt, in Werkstätten und Büros, muss sich einen Bilderschatz erarbeiten, den er an einer Universität, in einer Stadt, ja nicht einmal in einem Land finden kann.",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "6Znz7uWIRNmUTAT94uiQSQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "wandern",
+  "sentence": "Architekten müssen wandern, und es war nicht zuletzt diese alte Weisheit, die die rot-grüne Bundesregierung vor nunmehr fünf Jahren bewog, mit dem \"Taut-Stipendium\" den höchst dotierten Nachwuchspreis für junge Architektinnen und Architekten als Reisestipendium auszuloben.",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "fJoxrc1PRICB3/QRLzDA6A==",
+      "subType": "04"
+    }
+  },
+  "verb": "reifen",
+  "sentence": "Nur so reifen Ideen zu Innovationen.",
+  "verb_idx": 2,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "gT618FYrQriY5vWVcXyZ7A==",
+      "subType": "04"
+    }
+  },
+  "verb": "verstecken",
+  "sentence": "Aber die deutschen Winzer müssen sich mit ihren Produkten keineswegs hinter der Konkurrenz aus dem sonnigeren Ausland verstecken.",
+  "verb_idx": 17,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "jD2lXziOSyGN94wVEmrshQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "sehen",
+  "sentence": "Meine Damen und Herren, Sie werden mir zustimmen, diese Zahlen können sich sehen lassen.",
+  "verb_idx": 12,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "qOguyjv4QCSEVWtwgTb7aw==",
+      "subType": "04"
+    }
+  },
+  "verb": "verstümmeln",
+  "sentence": "Das perfide Überwachungssystem verstümmelte die Seele der Menschen.",
+  "verb_idx": 3,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "rKXex3/TTo+WMdHjmWxdww==",
+      "subType": "04"
+    }
+  },
+  "verb": "zerstören",
+  "sentence": "Jeder Hauch einer Opposition wurde zerstört.",
+  "verb_idx": 5,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "8uC42I8STI6c30jygLgqfA==",
+      "subType": "04"
+    }
+  },
+  "verb": "führen",
+  "sentence": "Wer immer über dieses Thema diskutiert, sollte sich die Zahlen des Abbaus der Fördermengen genauso vor Augen führen wie die Zahl der verlorengegangenen Arbeitsplätze und was in einem insgesamt störungsfreien, weil sozialverträglichen Prozess geleistet worden ist.",
+  "verb_idx": 17,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "a/xQ7CeSRy+mU+XCinQjfA==",
+      "subType": "04"
+    }
+  },
+  "verb": "schreiben",
+  "sentence": "Er hat ein Stück Automobilgeschichte nicht nur in Deutschland, sondern auch in der Welt geschrieben.",
+  "verb_idx": 14,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "p++aEa5QS6CDBruUTIEEdA==",
+      "subType": "04"
+    }
+  },
+  "verb": "laufen",
+  "sentence": "Insgesamt drei Millionen Fahrzeuge liefen vom Band.",
+  "verb_idx": 4,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "vs6U5mfBT4C39ch1qsSq/Q==",
+      "subType": "04"
+    }
+  },
+  "verb": "ausrichten",
+  "sentence": "Das ist ein Beispiel, an dem sich viele ausrichten sollten.",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "AbnCBb5gR2u813Jt3rgbVg==",
+      "subType": "04"
+    }
+  },
+  "verb": "entfalten",
+  "sentence": "Deshalb muss der Staat die ökonomischen Strukturen so gestalten, dass sich auch die Zivilgesellschaft besser entfalten kann.",
+  "verb_idx": 15,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "FRbspmg8Tayy3RtpZoDovA==",
+      "subType": "04"
+    }
+  },
+  "verb": "abzeichnen",
+  "sentence": "Erste Erfolge der Agenda 2010 zeichnen sich ab.",
+  "verb_idx": 5,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "wofoYhjvTO2nRbvLEOmbjw==",
+      "subType": "04"
+    }
+  },
+  "verb": "weglaufen",
+  "sentence": "Jetzt vor den Zahlen wegzulaufen oder den Reformprozess abzubrechen, wäre verheerend.",
+  "verb_idx": 4,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "tWyT04NUT5WR3t23xRVeGA==",
+      "subType": "04"
+    }
+  },
+  "verb": "tragen",
+  "sentence": "Und dann ist mir wichtig zu betonen, dass wir Sorge tragen für die Wettbewerbsfähigkeit unserer Luftverkehrsunternehmen, unserer Flughäfen und unserer Luftfahrtindustrie.",
+  "verb_idx": 10,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "1ejS4F6qTq+SkJMcpckgoA==",
+      "subType": "04"
+    }
+  },
+  "verb": "auflegen",
+  "sentence": "Allerdings ist nicht zuletzt Folge dessen, dass wir ein ambitioniertes Reformprogramm auflegen mussten und aufgelegt haben, um unsere Gesellschaft leistungsfähig zu halten.",
+  "verb_idx": 11,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "BXzV5/BcT8uDYtEdPrndfw==",
+      "subType": "04"
+    }
+  },
+  "verb": "entnehmen",
+  "sentence": "Das glaube ich jedenfalls den Vorträgen entnommen zu haben.",
+  "verb_idx": 6,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "99p0KjwRTYuArLsXNmLuSA==",
+      "subType": "04"
+    }
+  },
+  "verb": "gedeihen",
+  "sentence": "Eines ist klar: die wirtschaftliche Entwicklung der Länder gedeiht am besten, wenn es gelingt, Frieden in dieser Region zu schaffen.",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "KZjT0Lp4SBWy7utGM95aKA==",
+      "subType": "04"
+    }
+  },
+  "verb": "stehen",
+  "sentence": "Die Frage der Zwangsarbeiter steht nicht etwa am Rande jenes furchtbaren Geschehens, das unter dem Namen \"Holocaust\" weltweit zu einem Symbol für menschliche Barbarei geworden ist.",
+  "verb_idx": 4,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Zt2YKPg6R0Wjx18076rTMw==",
+      "subType": "04"
+    }
+  },
+  "verb": "stehen",
+  "sentence": "Nein, die Verschleppung und Misshandlung von Zwangsarbeitern stehen mit im Zentrum jener Verbrechen.",
+  "verb_idx": 7,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "M3MEJcd/RWiUz88584bkrw==",
+      "subType": "04"
+    }
+  },
+  "verb": "aufkeimen",
+  "sentence": "Und dazu gehört ebenso die Verpflichtung, Haß, Rassismus und Intoleranz in unserer Gesellschaft nicht wieder aufkeimen zu lassen.",
+  "verb_idx": 15,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "8GpobB6uTH+SrWHVxNjg+A==",
+      "subType": "04"
+    }
+  },
+  "verb": "ergrauen",
+  "sentence": "Redaktionen sind aber keine Behörden, wo man in Ehren ergrauen könnte.",
+  "verb_idx": 9,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "7ooRgoIFTCS4WRJCI69+Kg==",
+      "subType": "04"
+    }
+  },
+  "verb": "berühren",
+  "sentence": "Eine Wachstumsschwäche, die natürlich Europa und speziell Deutschland berührt.",
+  "verb_idx": 8,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "xlwcrl4cSA+QsAUtEmWBlg==",
+      "subType": "04"
+    }
+  },
+  "verb": "fahren",
+  "sentence": "Da haben wir die entsprechenden Haushalte zweistellig nach oben gefahren, inzwischen fast 16 Milliarden, obwohl wir für weite Teile der Bildung gar nicht zuständig sind, aber wir machen das.",
+  "verb_idx": 9,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "GAdf1icoQRaJ2rYgHqTddg==",
+      "subType": "04"
+    }
+  },
+  "verb": "schreiben",
+  "sentence": "Und weil das so ist, gibt es eine Begründung aus den Traditionen heraus, die man nicht klein schreiben soll.",
+  "verb_idx": 17,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "c18QDPS9SkKLBkgTj3U6NA==",
+      "subType": "04"
+    }
+  },
+  "verb": "ansteuern",
+  "sentence": "Neben den staatlichen und den grandiosen privaten Hilfen ist jetzt vor allen Dingen eines notwendig - das muss man gerade heute, gerade auf dieser Internationalen Tourismus-Börse sagen -: Die Touristen sollten die Ziele in den betroffenen Regionen nicht aus den Augen verlieren, sondern sie wieder ansteuern.",
+  "verb_idx": 44,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "IT0vS1zjT1i/P4LQXUagYw==",
+      "subType": "04"
+    }
+  },
+  "verb": "verfolgen",
+  "sentence": "Die 36 Spiele werden schätzungsweise 30 Milliarden Zuschauer in aller Welt verfolgen.",
+  "verb_idx": 11,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "5WgFq3x1SA6ATwjWX+9tpA==",
+      "subType": "04"
+    }
+  },
+  "verb": "setzen",
+  "sentence": "Um diese Herausforderungen zu meistern, ist es notwendig, vor allem auf Wissen und Innovation zu setzen.",
+  "verb_idx": 15,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "XlqUq+z6R7CTGBnPmK99/g==",
+      "subType": "04"
+    }
+  },
+  "verb": "legen",
+  "sentence": "Ich finde, die Begabungen, die Sie hier an den Tag gelegt haben, lohnen nun wirklich, weiterentwickelt zu werden.",
+  "verb_idx": 10,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "kkjVSY6jSVSZFNt09bpISQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "abstürzen",
+  "sentence": "Doch die hochfliegenden Hauptstadt-Träume waren schon längst abgestürzt.",
+  "verb_idx": 8,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "VIwGJVY9RRefOc3jp6HWKg==",
+      "subType": "04"
+    }
+  },
+  "verb": "verglimmen",
+  "sentence": "Nachdem der Feuerstrom der Reden, die auf Berlin am Ende des vergangenen Jahrhunderts gehalten wurden, verglimmt ist, beginnt die Gegenwart.",
+  "verb_idx": 15,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "gGR7pkKfTfSbt5xYl+PY1A==",
+      "subType": "04"
+    }
+  },
+  "verb": "zurückwerfen",
+  "sentence": "Berlin ist wieder auf sich zurückgeworfen, wie oft genug in seiner Geschichte.",
+  "verb_idx": 5,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ZofTMQ9kRea5KMd5pLSW6A==",
+      "subType": "04"
+    }
+  },
+  "verb": "aufblitzen",
+  "sentence": "Meist lässt der Finanzsenator die Sense kurz aufblitzen, erntet dann ein Aufjaulen in den Feuilletons und lässt sich kurz darauf mit der Gewissheit zurückfallen, dass man mit dem Schließen einer Oper gerade mal sechs Tage lang die Zinsen bezahlen könnte.",
+  "verb_idx": 7,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "c+qt3PxxTtC6TSo4JnjwOw==",
+      "subType": "04"
+    }
+  },
+  "verb": "ernten",
+  "sentence": "Meist lässt der Finanzsenator die Sense kurz aufblitzen, erntet dann ein Aufjaulen in den Feuilletons und lässt sich kurz darauf mit der Gewissheit zurückfallen, dass man mit dem Schließen einer Oper gerade mal sechs Tage lang die Zinsen bezahlen könnte.",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "2rf2DtDgRk+SM0BxFq5wIw==",
+      "subType": "04"
+    }
+  },
+  "verb": "ersticken",
+  "sentence": "Am Ende erstickt man die Künste, um die Verwaltungen am Leben zu lassen.",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "gB1VT1oxTgeaGV+0RBpu1w==",
+      "subType": "04"
+    }
+  },
+  "verb": "zukleistern",
+  "sentence": "Probleme, die Berlin zu lösen hat, lassen sich nicht mit Geld zukleistern.",
+  "verb_idx": 11,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "RIn2+U56SkyI/IbnJ9dYzQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "tragen",
+  "sentence": "Dem Autor des Artikels drängt sich der Verdacht auf, ob sich vielleicht sogar die Politik mit dieser Absicht trägt?",
+  "verb_idx": 18,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "k4HbO5j6RAuLkovVNdyycw==",
+      "subType": "04"
+    }
+  },
+  "verb": "schnüren",
+  "sentence": "Und doch: Bei den Berliner Privattheatern schnürte man schließlich Zuwendungspakete und auch den Berliner Universitäten waren Hochschulverträge vergönnt, die sie vor überfallartigen Sparklausuren bewahrten.",
+  "verb_idx": 6,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "QV88T4V+SA6YqstqaL/w8w==",
+      "subType": "04"
+    }
+  },
+  "verb": "einfrieren",
+  "sentence": "Vielleicht wäre ein Solidarpakt möglich, wonach die Bühnen Zuwendungsverträge über fünf Jahren bekommen, wenn sie im Gegenzug garantieren, Löhne einzufrieren, statt des Tarif- nur noch einen Inflationsausgleich zu zahlen, möglicherweise gar Abstriche am Urlaubsgeld hinzunehmen.",
+  "verb_idx": 19,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "0Hd7w8qDSvOydBE0T8nXyQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "erschüttern",
+  "sentence": "Solche Handstreich-Aktionen haben den Glauben der Beschäftigten an eine moderne Rechtsform schwer erschüttert.",
+  "verb_idx": 13,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Phejzs4cQOWa9j139DOpLg==",
+      "subType": "04"
+    }
+  },
+  "verb": "verzwergen",
+  "sentence": "Auch in Schleswig-Holstein wurde das Kulturressort verzwergt. Eine Kulturhoheit der Länder stelle ich mir anders vor.",
+  "verb_idx": 7,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "MF9T2qh2SuWoU9gwUSH6SA==",
+      "subType": "04"
+    }
+  },
+  "verb": "ausschöpfen",
+  "sentence": "Ohne die Teilhabe der Menschen am Haben und Sagen in der Gesellschaft aber werden wir die Potenziale nicht nutzen, die Kreativität nicht ausschöpfen können.",
+  "verb_idx": 22,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "QcyDxX1cT2CxhczOSdStbg==",
+      "subType": "04"
+    }
+  },
+  "verb": "bereithalten",
+  "sentence": "Das Leben hielt dann noch einige solcher Überraschungen für mich bereit.",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "tiGwiVSURemmCRxVawRT4A==",
+      "subType": "04"
+    }
+  },
+  "verb": "legen",
+  "sentence": "Ich halte unsere Position für die verantwortliche, weil sie dazu führt, dass die Schäden, die die Flut geschlagen hat, in dieser Generation und von dieser Generation ausgeglichen werden und nicht auf die Schultern unserer Kinder und Enkelkinder gelegt werden.",
+  "verb_idx": 37,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "JwupEkYkRMej5kIPHVDkxA==",
+      "subType": "04"
+    }
+  },
+  "verb": "bekommen",
+  "sentence": "Ganztagsbetreuung ist vor allen Dingen wichtig, um Frauen zu ermöglichen, Familie und Beruf besser als je zuvor unter einen Hut zu bekommen.",
+  "verb_idx": 21,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "HBPuU9adTfeGrd3y1fUAhQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "gebären",
+  "sentence": "Sie haben aus der Erstarrung Flexibilität und aus der Unterdrückung die Freiheit geboren.",
+  "verb_idx": 12,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "gcD4zVqGRdSTlxeT9eHYow==",
+      "subType": "04"
+    }
+  },
+  "verb": "dämmen",
+  "sentence": "Wer ist es denn, der mit dem französischen und dem englischen Außenminister versucht, diesen Konflikt zu dämmen, ihn nicht ausbrechen zu lassen?",
+  "verb_idx": 16,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "KC2d2UZtTAOKxQ/EV2g6Vg==",
+      "subType": "04"
+    }
+  },
+  "verb": "anstehen",
+  "sentence": "Das ist auch notwendig und stünde Deutschland gut an.",
+  "verb_idx": 5,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "mS1iwHJVQPquHG/+VQQB/A==",
+      "subType": "04"
+    }
+  },
+  "verb": "drücken",
+  "sentence": "Ich erinnere mich noch sehr gut daran, wie Ulla Schmidt standhaft verteidigt hat, was gemeinsam beschlossen worden ist und wie sich viele von Ihnen zur Seite gedrückt, um nicht zu sagen: in die Büsche verkrochen haben.",
+  "verb_idx": 26,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "SiBNPeMhQ0WYeP4ZLDsoFQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "herrschen",
+  "sentence": "Lassen Sie es uns bald machen; denn es eilt, zum einen, weil es in die Maastricht-Kriterien eingeht, zum anderen aber auch, weil Klarheit über den weiteren Weg herrschen muss.",
+  "verb_idx": 28,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "nXcSrMSxTuiK4Apz4+s1gA==",
+      "subType": "04"
+    }
+  },
+  "verb": "herrschen",
+  "sentence": "Das musste auch schnell gemacht werden; denn zum 1. Januar 2005 muss Klarheit herrschen.",
+  "verb_idx": 13,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "JJg5LpHTRmyr3JHtQ7l0BA==",
+      "subType": "04"
+    }
+  },
+  "verb": "abklopfen",
+  "sentence": "Ich glaube, dass man sich wirklich die Zeit nehmen sollte, eine der größten Sozialreformen, die in der Geschichte der Bundesrepublik gemacht worden sind, weil sie gemacht werden musste, sehr sorgfältig auf ihre Wirkungen abzuklopfen, und bereit sein sollte, korrigierend einzugreifen, wenn Wirkungen erzielt werden, die das Gesetz nicht vorsieht.",
+  "verb_idx": 33,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "WHV8zyKgQyCyEkhsu41i8A==",
+      "subType": "04"
+    }
+  },
+  "verb": "eindämmen",
+  "sentence": "Das dient dem Ziel, die Zufuhr in die Langzeitarbeitslosigkeit einzudämmen.",
+  "verb_idx": 9,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "+AaREdFeRV+nxpfTs++QVw==",
+      "subType": "04"
+    }
+  },
+  "verb": "malen",
+  "sentence": "Dabei können wir auf eine ungeheure Kraft in der deutschen Gesellschaft und auch in der deutschen Wirtschaft bauen - nicht in dem Sinne, dass man sich damit zufrieden geben könnte, aber schon in dem Sinne, dass man sie als Ausgangspunkt für eine Zukunft nutzt, die wir nun wirklich nicht schwarz in schwarz malen müssen.",
+  "verb_idx": 51,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "DHv0bh1xQS2qx8vtaiLL/g==",
+      "subType": "04"
+    }
+  },
+  "verb": "fallen",
+  "sentence": "Doch sein sprichwörtlich gewordenes Genie ist andererseits auch nicht vom Himmel gefallen.",
+  "verb_idx": 11,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "PBdQiCF3Qk+YQE1XedgGmQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "umsteuern",
+  "sentence": "Hierfür müssen wir Ressourcen freibekommen, indem wir von Vergangenheitssubventionen hin zu Zukunftsinvestitionen umsteuern.",
+  "verb_idx": 12,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "NuNfEZYYSru9DFixER8sqQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "verankern",
+  "sentence": "Sie hat in den vergangenen Jahren in den Köpfen vieler Unternehmer den Gedanken verankert, dass betriebliche Familienpolitik - wie sie sagt - \"kein weiches Weiberthema\", sondern konkretes und langfristiges Handeln für eine gute Zukunft unsers Landes ist.",
+  "verb_idx": 13,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "O+vj6CyNTim8FSC1IsugRg==",
+      "subType": "04"
+    }
+  },
+  "verb": "anschieben",
+  "sentence": "Als Konsequenz nicht zuletzt aus der PISA-Studie haben wir ein Programm aufgelegt, mit dem wir den Bau von Ganztagsschulen mit 4 Milliarden Euro über vier Jahre hinweg anschieben.",
+  "verb_idx": 28,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "6SFa1ABlTp+nggS5zlh73A==",
+      "subType": "04"
+    }
+  },
+  "verb": "berühren",
+  "sentence": "Die fürchterliche Katastrophe, die der Hurrikan \"Katrina\" im Süden der Vereinigten Staaten von Amerika angerichtet ist, berührt uns alle.",
+  "verb_idx": 16,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "A7ZJxYKvR/SUeAIQMErpjA==",
+      "subType": "04"
+    }
+  },
+  "verb": "eindämmen",
+  "sentence": "Es war notwendig, die weltwirtschaftlichen Auswirkungen durch die Preisexplosion bei Rohöl und Benzin einzudämmen.",
+  "verb_idx": 13,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "tjqA80RESDmAzBM8DmqFag==",
+      "subType": "04"
+    }
+  },
+  "verb": "setzen",
+  "sentence": "Die Energiepolitik, die auf nachwachsende Rohstoffe und auf erneuerbare Energien setzt, ist für eine verantwortlich handelnde Politik, für eine in diesem Sinne weitsichtige Politik ohne vernünftige Alternative.",
+  "verb_idx": 10,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "+rI02bCrQGO4RWADrCcosg==",
+      "subType": "04"
+    }
+  },
+  "verb": "auszahlen",
+  "sentence": "Jetzt zahlt sich aus, dass die Bundesregierung gemeinsam mit der Automobilindustrie und der Mineralölwirtschaft frühzeitig eine Strategie für alternative Kraftstoffe und Antriebe entwickelt hat.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "fe3vVJkXQxyzGnTaGD3yrA==",
+      "subType": "04"
+    }
+  },
+  "verb": "stehen",
+  "sentence": "Deswegen stehe ich auch zu dem Ziel, den Anteil der erneuerbaren Energien am Stromverbrauch bis 2020 auf 20 Prozent zu steigern.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "hrlKapncRKmUObiUiHFYrw==",
+      "subType": "04"
+    }
+  },
+  "verb": "werfen",
+  "sentence": "Ich denke, Sie werden verstehen, wenn ich mir Sorgen darüber mache, dass der eine oder andere denkt, in einer bestimmten Situation könne man das, was sich als erfolgreich erwiesen hat und was im Interesse der großen Ziele, die ich genannt habe, weitergeführt werden muss, einfach über Bord werfen, weil es einem in die Tagesaktualität passt.",
+  "verb_idx": 47,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "N2E4m9PCQVOwoolPSBUywA==",
+      "subType": "04"
+    }
+  },
+  "verb": "aufessen",
+  "sentence": "Wichtig ist mir, das werden Sie verstehen, auch der Wirtschaft gegenüber deutlich zu machen, dass sie selbst eine Verantwortung für - sagen wir es ruhig so - den Erhalt der Schöpfung und dafür hat, dass man heute nicht aufessen darf, wovon unsere Kinder und deren Kinder schließlich auch noch leben wollen.",
+  "verb_idx": 36,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "3nMlwll6QE2ohas9FrqCyQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "verabschieden",
+  "sentence": "Auf dem Europäischen Rat in Feira in einigen Wochen wollen wir einen konkreten Aktions-Plan zur EU-Initiative der \"Nördlichen Dimension\" verabschieden.",
+  "verb_idx": 21,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "j5gOh27pStGX0lWqQbWMFg==",
+      "subType": "04"
+    }
+  },
+  "verb": "abschütteln",
+  "sentence": "Die Menschen in den neuen Bundesländern haben uns das im Herbst 1989 buchstäblich demonstriert: Unbeirrt haben sie sich für die Grundwerte der Demokratie eingesetzt und ein diktatorisches Regime abschütteln können.",
+  "verb_idx": 28,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "s/X1R+y2SRiSuN2q2CMwUw==",
+      "subType": "04"
+    }
+  },
+  "verb": "verfolgen",
+  "sentence": "Naumann: Da ich die musikalische Erziehung und Bildung unserer Kinder für äußerst wichtig halte, verfolge ich den Rückgang des Musikunterrichtes an den Schulen mit Sorge.",
+  "verb_idx": 14,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "MmyU6EN1QuSnZoGhNj9Dcw==",
+      "subType": "04"
+    }
+  },
+  "verb": "treten",
+  "sentence": "Neben einer gehörigen Portion wohltuenden Pragmatismus tritt hier das überragende Dienstleistungs-Ethos Christoph Bertrams zutage.",
+  "verb_idx": 6,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "IgUKt1HOToWnwC3LqndH+A==",
+      "subType": "04"
+    }
+  },
+  "verb": "berühren",
+  "sentence": "Russland ist unser Nachbar, dessen schwierige innenpolitische Entwicklung mit ihren gewaltigen sozialen Spannungen uns unmittelbar berührt, kann Verbündeter in weltpolitischen Fragen sein, zum Beispiel im Zusammenhang mit der Bekämpfung des Terrorismus und der Verbreitung von Massenvernichtungswaffen, ist ein Markt mit gewaltigem Potential für die deutsche Wirtschaft, ist einer der wichtigsten Energielieferanten Deutschlands, Partner eines vielgestaltigen kulturellen und wissenschaftlichen Austauschs, Ort ökologischer Probleme, die uns potentiell betreffen ,Herkunftsland vieler Menschen deutscher Abstammung, die in den vergagenen Jahren in Deutschland ihre neue Heimat gefunden haben, und vieles mehr.",
+  "verb_idx": 15,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Khe36oS5QAmVebakedpgjA==",
+      "subType": "04"
+    }
+  },
+  "verb": "verzahnen",
+  "sentence": "Damit könnte zum einen der traditionelle außen- und sicherheitspolitische Diskurs besser mit solchen Themen verzahnt werden, die in der Regel eher der Innenpolitik zugerechnet werden.",
+  "verb_idx": 14,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "SCRYP5dERcuq/gjhLJTs1g==",
+      "subType": "04"
+    }
+  },
+  "verb": "erwachsen",
+  "sentence": "Die Wirklichkeit des öffentlichen Raums ... formulierte Hannah Arendt einst ... \"erwächst aus der gleichzeitigen Anwesenheit zahlloser Aspekte und Perspektiven, in denen ein Gemeinsames sich präsentiert und für die es keinen gemeinsamen Maßstab und keinen Generalnenner je geben kann.\"",
+  "verb_idx": 9,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "qlKdXs7TSriu0UqxTF2KCA==",
+      "subType": "04"
+    }
+  },
+  "verb": "setzen",
+  "sentence": "Die Bundesregierung setzt dabei auf einen starken Mittelstand.",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "QR9FdfwVRKSQUv5NWRdtJA==",
+      "subType": "04"
+    }
+  },
+  "verb": "laufen",
+  "sentence": "Auch die Behörden müssen Informationstechnik nutzen, nicht nur intern, sondern auch zur Kommunikation mit den Bürgerinnen und Bürgern: Informationen müssen laufen - nicht die Bürger.",
+  "verb_idx": 20,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Lq9PW23bRKeTh8twMdNmeQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "rütteln",
+  "sentence": "Diese Proteste haben dazu geführt, dass ich aus guten Gründen gesagt habe: \"An der Mitbestimmung kann man aus deutscher Sicht nicht rütteln\", und zwar deshalb, weil wir auch innerhalb eines größer gewordenen Europas nicht auf diese in Deutschland sehr erfolgreiche Form der Beteiligung der Arbeitnehmerinnen und Arbeitnehmer an den Entscheidungen in ihren Unternehmen verzichten können.",
+  "verb_idx": 21,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "fHxamIz6Teaz2tWLNKOe+A==",
+      "subType": "04"
+    }
+  },
+  "verb": "einbauen",
+  "sentence": "Wir haben also eine Kleinbetriebsklausel eingebaut.",
+  "verb_idx": 5,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "dfDvwwdjQC+QSlm76afUXA==",
+      "subType": "04"
+    }
+  },
+  "verb": "stellen",
+  "sentence": "Aber wir müssen eine daneben stellen, damit das Dach nicht kippt.",
+  "verb_idx": 5,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "kkOGtMwBSPGndSimI/nY8Q==",
+      "subType": "04"
+    }
+  },
+  "verb": "kippen",
+  "sentence": "Aber wir müssen eine daneben stellen, damit das Dach nicht kippt.",
+  "verb_idx": 10,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "2UHf4NC/Rm6KuRrbjjQsLQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "wegfegen",
+  "sentence": "Wo Automobilproduktion im internationalen Wettbewerb weggefegt worden ist, haben Politiker mit einem Ersatz für die Automobilindustrie Schwierigkeiten.",
+  "verb_idx": 5,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "XywwIJwuTnSlq/5t61c4xw==",
+      "subType": "04"
+    }
+  },
+  "verb": "bremsen",
+  "sentence": "Denn niemand wird den Forscherdrang und die wissenschaftliche Neugier der Menschen bremsen oder aufhalten können.",
+  "verb_idx": 11,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "7Ga2Zg8AQmOf+C5+7Wzu8w==",
+      "subType": "04"
+    }
+  },
+  "verb": "ringen",
+  "sentence": "Die Frage, um die im Weltsicherheitsrat, aber auch in den Gesellschaften dieser Welt miteinander gerungen wird, lautet: Darf die Staatengemeinschaft in einem Moment, da die Inspektionen Erfolge zeitigen und die Möglichkeit einer friedlichen Abrüstung des Irak alles andere als ausgeschöpft erscheint, zu Mitteln des Krieges greifen oder bleiben wir der Logik einer friedlichen Abrüstung des Irak von Massenvernichtungsmitteln, die ohne jede Frage sein muss, verpflichtet?",
+  "verb_idx": 14,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "EzoY0iy7SpqaqGpdc+cu6A==",
+      "subType": "04"
+    }
+  },
+  "verb": "reifen",
+  "sentence": "Wir werden das weiter tun müssen, auch wenn aufgrund der konjunkturellen Situation in Ihrer Branche nicht alle Blütenträume gereift sind.",
+  "verb_idx": 18,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "36YO/8enSSGP5W778KmYdg==",
+      "subType": "04"
+    }
+  },
+  "verb": "beschneiden",
+  "sentence": "Dabei geht es natürlich auch darum, dass natur- und ingenieurwissenschaftliche Studiengänge wegen aktueller konjunktureller Schwierigkeiten nicht beschnitten werden.",
+  "verb_idx": 16,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ed5hnZgcRXGlL06/cxxDDQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "ausklammern",
+  "sentence": "Marktsegmente indessen, in denen der Wettbewerb funktioniert, werden oder bleiben von der Regulierung jedenfalls nach unserer Auffassung ausgeklammert.",
+  "verb_idx": 17,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "fZuiah/eRqmXk8aczpWEbQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "entfalten",
+  "sentence": "Hier entfaltete sich der bis in unsere Tage wegweisende Gedanke eines umfassenden Bildungsauftrags der Museen, den wir in Zukunft mit dem Humboldt-Forum abrunden wollen.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "7MjI22WURVaCfErVyBVIZw==",
+      "subType": "04"
+    }
+  },
+  "verb": "abrunden",
+  "sentence": "Hier entfaltete sich der bis in unsere Tage wegweisende Gedanke eines umfassenden Bildungsauftrags der Museen, den wir in Zukunft mit dem Humboldt-Forum abrunden wollen.",
+  "verb_idx": 23,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "UQWiFDH+RC+5RtsllOW0ug==",
+      "subType": "04"
+    }
+  },
+  "verb": "eintauchen",
+  "sentence": "Der Besucher war eingeladen, in die Welt einer untergegangenen Epoche einzutauchen.",
+  "verb_idx": 10,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "pSqq++3ESaypEuRB7BP7qA==",
+      "subType": "04"
+    }
+  },
+  "verb": "konservieren",
+  "sentence": "Bei all diesen Diskussionen ist es für mich von besonderer Wichtigkeit, meine sehr verehrten Damen und Herren, dass wir die Museumsinsel nicht auf dem Stand des 19. Jahrhunderts konservieren.",
+  "verb_idx": 28,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "XMSf5b1TT/KiZByfBbfhfg==",
+      "subType": "04"
+    }
+  },
+  "verb": "stoßen",
+  "sentence": "Der 11. September hat die Welt in eine gefährliche Zukunft gestoßen.",
+  "verb_idx": 10,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "5wITaLACR3K+FXKmYef18g==",
+      "subType": "04"
+    }
+  },
+  "verb": "ausrichten",
+  "sentence": "Der 11. September war ein \"defining moment\", ein Tag, an dem die Weltpolitik neu ausgerichtet wurde.",
+  "verb_idx": 14,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "XGb4L923STugNMgZ87X/fA==",
+      "subType": "04"
+    }
+  },
+  "verb": "zielen",
+  "sentence": "Dies heißt nichts Geringeres als die Grundlagen einer kooperativen Ordnungspolitik für das 21. Jahrhundert zu entwerfen, einer Politik, die Zonen der Ordnungslosigkeit nicht mehr zulässt, die auf eine Weltordnung zielt, die allen Völkern eine volle und gerechte Teilhabe ermöglicht.",
+  "verb_idx": 29,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "CAuifgjgT6OlSZ7HBu7D0A==",
+      "subType": "04"
+    }
+  },
+  "verb": "sezieren",
+  "sentence": "Die Autoren der heute erlebten \"Interzone\" folgen den - wie ich finde - interessanteren Ansätzen: William Burroughs \"Interzone\" regt nämlich auch an, feste Begrifflichkeiten in Frage zu stellen, die Assoziationskraft von Worten zu sezieren und sich mit der Simultanität von Wahrnehmungen zu beschäftigen.",
+  "verb_idx": 31,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "rFfYTdIeTr+4dA3CGqWI5g==",
+      "subType": "04"
+    }
+  },
+  "verb": "zerschneiden",
+  "sentence": "Er zerschneidet Texte und setzt sie - auf der Suche nach neuen Sinnzusammenhängen - neu zusammen.",
+  "verb_idx": 1,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "qIshHgfXTM2/zEeWgHQ0AA==",
+      "subType": "04"
+    }
+  },
+  "verb": "zusammensetzen",
+  "sentence": "Er zerschneidet Texte und setzt sie - auf der Suche nach neuen Sinnzusammenhängen - neu zusammen.",
+  "verb_idx": 4,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ixYFzYYgSomzVu6/dz1UaQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "münzen",
+  "sentence": " Wenn man diese Technik nicht nur auf Texte, sondern auch auf Bilder und Töne münzt, dann stellt sich ein weiterer Bezug zu der heutigen \"Interzone\" her.",
+  "verb_idx": 14,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "YX93uxwsTV2rWAUu/dGEDw==",
+      "subType": "04"
+    }
+  },
+  "verb": "aufbrechen",
+  "sentence": "Solche Bindungen aufzubrechen, Neues zu wagen, der Kunstentwicklung neue Räume zu öffnen - darin sehe ich ein wichtiges Anliegen und auch eine Existenzberechtigung der Berliner Festspiele des Bundes.",
+  "verb_idx": 2,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "VjVhmwBfQoyPjedUbX7fGQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "waschen",
+  "sentence": "Wenn das nicht gelingt, werden wir in eine politische Krise hineinrutschen, die sich gewaschen hat.",
+  "verb_idx": 13,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "XZwbKZ5CR123CHkZW90hfw==",
+      "subType": "04"
+    }
+  },
+  "verb": "ausschneiden",
+  "sentence": "Wir können den Kurden kein Territorium in Europa ausschneiden.",
+  "verb_idx": 8,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Tel3yKrpQGaIwLvLsgi5RA==",
+      "subType": "04"
+    }
+  },
+  "verb": "kreisen",
+  "sentence": "Es kreisen gewissermaßen sinnloserweise Milliarden, viele Milliarden von Dollars im Augenblick in diesem Kasino, genannt Börse, verwaltet von 20- bis 30jährigen jungen Männern.",
+  "verb_idx": 1,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "eVxnWxbsQ/GXn7/gfS2VLQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "gebärden",
+  "sentence": "Und diese Schieflage haben diejenigen verursacht, die sich heute als Wahrer der sozialen Gerechtigkeit zu gebärden versuchen.",
+  "verb_idx": 15,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "WPOy7qdfTwCgm0IYzX182w==",
+      "subType": "04"
+    }
+  },
+  "verb": "verspielen",
+  "sentence": "Ich bin sicher: Die meisten Menschen in unserem Lande sehen ein, dass wir nicht die Handlungsfähigkeit unseres Gemeinwesens einschränken, die Zukunft unserer Kinder und Enkel verspielen dürfen.",
+  "verb_idx": 25,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "IjEYxsSNTLePdQatPjnsUA==",
+      "subType": "04"
+    }
+  },
+  "verb": "ausbuchstabieren",
+  "sentence": "Keine Frage: Wir werden nicht darum herumkommen, die Frage neu auszubuchstabieren, was in unserer Gesellschaft unter den Bedingungen einer globalisierten Wirtschaft \"soziale Gerechtigkeit\" konkret bedeutet.",
+  "verb_idx": 10,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "f5SrGI1cQdi6HmXuXWlCvg==",
+      "subType": "04"
+    }
+  },
+  "verb": "greifen",
+  "sentence": "All das zeigt uns: Die Maßnahmen der Bundesregierung beginnen zu greifen.",
+  "verb_idx": 10,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "V5i21iG6QxSxO54r8FWLPw==",
+      "subType": "04"
+    }
+  },
+  "verb": "verankern",
+  "sentence": "Umso wichtiger ist es unserer festen Überzeugung nach, dass im Verfassungsentwurf verbesserte Regelungen zur Abgrenzung von Kompetenzen zwischen mitgliedsstaatlicher und europäischer Ebene verankert worden sind.",
+  "verb_idx": 22,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "NQkhz2KIQbWH3yBRJbo+4A==",
+      "subType": "04"
+    }
+  },
+  "verb": "zusammenwachsen",
+  "sentence": "Europa wächst gewissermaßen ganz konkret zusammen, und zwar im Alltag der Menschen, ganz selbstverständlich und ganz unspektakulär beim Reisen, beim Gebrauch der einheitlichen Währung, beim Einkaufen, selbst beim Essen.",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ssderZpjTXWCW1MNKwxpfQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "schlagen",
+  "sentence": "Das ist auch die Grundlage, auf der wir über Betrittsverhandlungen mit der Türkei diskutieren und auf der Europa die historische Chance hat, eine Brücke in die islamische Welt zu schlagen.",
+  "verb_idx": 29,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "wOfBdFRnTnWL8LIn5NwJLg==",
+      "subType": "04"
+    }
+  },
+  "verb": "wachhalten",
+  "sentence": "Einer Aussöhnung, die nur durch die Bereitschaft zur Vergebung möglich wurde und durch den unbedingten Willen auf beiden Seiten, die Erinnerung an die Verbrechen des Völkermordes wachzuhalten.",
+  "verb_idx": 26,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "0Pk2Ho4/RXW7rGy3MfUOrg==",
+      "subType": "04"
+    }
+  },
+  "verb": "ausstrecken",
+  "sentence": "Und 55 Jahre nach dem Krieg, da die europäische Spaltung endlich überwunden ist, gilt unser historischer Auftrag um so mehr: Auf der Grundlage der gemeinsamen europäischen Werte unsererseits den Nachbarn in Mittel- und Osteuropa die Hand zur Integration auszustrecken.",
+  "verb_idx": 38,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "SrVhbCzDSVyq/W1+OZUmrA==",
+      "subType": "04"
+    }
+  },
+  "verb": "herumgeistern",
+  "sentence": "Im Moment geistern alle möglichen Berlinale-Reformideen herum: Verlegung des Forums in den Sommer, Abschaffung des Panorama etc.  Würden Sie diese Ideen verfolgen?",
+  "verb_idx": 2,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "OWCq/OvyQXWK1S84G2wtrg==",
+      "subType": "04"
+    }
+  },
+  "verb": "stehlen",
+  "sentence": "Der Bund - und schon gar nicht diese Regierung - wird sich nicht aus seiner sozialpolitischen Verantwortung stehlen.",
+  "verb_idx": 15,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "sEKH4fcDTNm+TgGRO3g3+g==",
+      "subType": "04"
+    }
+  },
+  "verb": "absterben",
+  "sentence": "Diese Institutionen absterben zu lassen, kann niemand im Sinn haben.",
+  "verb_idx": 2,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "M2YEpfvCTIaYia5dowtv6A==",
+      "subType": "04"
+    }
+  },
+  "verb": "beleben",
+  "sentence": "Oder wird es uns gelingen, den kulturellen Reichtum in seiner Vielfalt zu erhalten und durch die Bereitschaft zu wechselseitiger Verständigung zu beleben?",
+  "verb_idx": 21,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "ur1UHXaUSU2+Sz5IDooTEQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "camouflieren",
+  "sentence": "Eine Barbarei, die sich häufig genug religiös tarnt oder als Recht auf ethnische Identität camoufliert.",
+  "verb_idx": 14,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "KI8Le/gdRYeCrijy2aL0TA==",
+      "subType": "04"
+    }
+  },
+  "verb": "erhellen",
+  "sentence": "Dadurch erhellt sich der Satz: \"Die Sprache ist das Tor zur jeweiligen Kultur\".",
+  "verb_idx": 1,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "7aXPY2HoQnKSi+7iVfNG0A==",
+      "subType": "04"
+    }
+  },
+  "verb": "verstümmeln",
+  "sentence": "So, als habe der englische Wortschatz auf seinem weltweiten Siegeszug unsere Jungfer Deutsch geschändet, die wir doch längst selbst nach Belieben verstümmeln.",
+  "verb_idx": 21,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "y4/PVO4XT4yXywEjtoclkA==",
+      "subType": "04"
+    }
+  },
+  "verb": "fahren",
+  "sentence": "So gesehen ist das Motto \"tech is the place to be\", mit dem so mancher Aktionär von Nasdaq- oder Nemax-Titeln bis März letzten Jahres hervorragend fuhr, auch heute noch aktuell - auch wenn die New Economy mittlerweile in eine neue Phase eingetreten ist.",
+  "verb_idx": 26,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "3Jnm8zChRhewqMLzHfSmhg==",
+      "subType": "04"
+    }
+  },
+  "verb": "schröpfen",
+  "sentence": "Das bedeutet z. B., dass man nicht sagt: Wir schröpfen die aktiv Beschäftigten, indem wir die Steuerfreiheit, die es bei der Nacht- und Schichtarbeit gibt, beschneiden.",
+  "verb_idx": 9,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "M6X97LOTR6y6qcNAaR3BOQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "beschneiden",
+  "sentence": "Das bedeutet z. B., dass man nicht sagt: Wir schröpfen die aktiv Beschäftigten, indem wir die Steuerfreiheit, die es bei der Nacht- und Schichtarbeit gibt, beschneiden.",
+  "verb_idx": 25,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "VDRCDVcrTgO0jgWElk0rZw==",
+      "subType": "04"
+    }
+  },
+  "verb": "umbauen",
+  "sentence": "Um das zu erreichen, müssen wir die Bundesanstalt für Arbeit umbauen.",
+  "verb_idx": 10,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "aLaY+Q7ZQL+r/GhiO51ypw==",
+      "subType": "04"
+    }
+  },
+  "verb": "durchbrechen",
+  "sentence": "Der Teufelskreis der Gewalt muß endlich mit allen verfügbaren Mitteln durchbrochen werden.",
+  "verb_idx": 10,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "vY5ki4ZRR5eND0wtqmKn/A==",
+      "subType": "04"
+    }
+  },
+  "verb": "ringen",
+  "sentence": "Geschieht dies noch einmal, dann wären die Verlierer erneut diejenigen, um deren besseren Schutz wir gemeinsam ringen wollen: die Unterdrückten und Entwürdigten in aller Welt.",
+  "verb_idx": 16,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "4SG90KPhSxm8mBq7dQw6Qg==",
+      "subType": "04"
+    }
+  },
+  "verb": "zuwachsen",
+  "sentence": "Wie in kaum einem anderen Ministerium sind diesem Haus immer wieder Aufgaben zugewachsen und gelegentlich auch Aufgaben genommen worden.",
+  "verb_idx": 12,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "8Izw+lXYSCqFm+ilnMJyGQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "leben",
+  "sentence": " Das, was sich später als Kino durchsetzen sollte, lebte aber gerade von dem Seherlebnis in der anonymen Gemeinschaft des dunklen Vorführsaales.",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "vhNnzI4GTEebgZzVm4u7Ng==",
+      "subType": "04"
+    }
+  },
+  "verb": "beflügeln",
+  "sentence": "Jetzt geht es - und das ist eine schöne Entwicklung, wie ich finde - um die nachbarschaftliche Annäherung in Europa: eine spanisch-italienisch-britisch-dänisch-belgisch-deutsch-französische Studenten-WG beim Studienjahr in Barcelona fungiert in dieser Komödie als ideale europäischen Gemeinschaft, in der sich ein jeder frei entfalten kann und vom Esprit der anderen beflügelt wird.",
+  "verb_idx": 53,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "shH9xguvQUKktSTS8Du3Yw==",
+      "subType": "04"
+    }
+  },
+  "verb": "fallen",
+  "sentence": "Verbunden damit ist die zum Teil rüde Abkehr von einer Kunst, die als \"Drop-Art\" verspottet wird, eine Kunst, die so aussieht, als wäre sie an einer Stelle aus unerfindlichen Gründen vom Himmel gefallen.",
+  "verb_idx": 33,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "jMOzqF+dT36pEkXGh4Jxmw==",
+      "subType": "04"
+    }
+  },
+  "verb": "hineintragen",
+  "sentence": "Wir sollten nicht die Standards von Einfamilienhäusern auf der grünen Wiese in die Städte hineintragen",
+  "verb_idx": 14,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "2MkI2MVKTn+CK3mtP0OOIg==",
+      "subType": "04"
+    }
+  },
+  "verb": "verteidigen",
+  "sentence": "Ich denke, dass diese Werte der europäischen Stadt in Mario Bottas Arbeit verteidigt werden.",
+  "verb_idx": 12,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "WNMxAg5MQdGZWFHt52DeOw==",
+      "subType": "04"
+    }
+  },
+  "verb": "einfrieren",
+  "sentence": "Unsere Aufgabe wird es sein, die alte Stadt zu stärken, ohne sie einzufrieren, ohne sie zu musealisieren - da gibt es auch durchaus Auseinandersetzungen mit manchen Denkmalschützern.",
+  "verb_idx": 12,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "lOB9ceNCQZGjrYwLrOqkIQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "musealisieren",
+  "sentence": "Unsere Aufgabe wird es sein, die alte Stadt zu stärken, ohne sie einzufrieren, ohne sie zu musealisieren - da gibt es auch durchaus Auseinandersetzungen mit manchen Denkmalschützern.",
+  "verb_idx": 16,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "6ioYrll9TKqKmDg70wZ7LA==",
+      "subType": "04"
+    }
+  },
+  "verb": "stehen",
+  "sentence": "natürlich ist es so, dass wir alle, nicht nur in Deutschland, noch unter dem Schock der Ereignisse vom 11. September stehen.",
+  "verb_idx": 20,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Ds3GDd6cSRWOEdrWjze2NQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "anstecken",
+  "sentence": "Menschen, die sich nicht von Pessimismus und Hoffnungslosigkeit anstecken ließen, sich im wahrsten Sinne des Wortes nicht entmutigen ließen, die über die Jahre hinweg mit Mut und Energie, mit Willensstärke, aber auch mit einer ungeheuren Leistungsbereitschaft etwas geschaffen haben, auf das sie, die Menschen in dieser Region, wirklich stolz sein können.",
+  "verb_idx": 8,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "D1vhjxB/Q9ip4lX05urzuQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "klotzen",
+  "sentence": "Das wird im Osten zwar auf absehbare Zeit immer noch eine große Aufgabe für den Staat bleiben, aber es geht mir wirklich darum, dass erkannt wird, dass man in den Betrieben noch mehr klotzen und weniger kleckern muss, was diese Frage anbetrifft.",
+  "verb_idx": 33,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "PW8QDXAsTEGV49P2vpm5Xw==",
+      "subType": "04"
+    }
+  },
+  "verb": "kleckern",
+  "sentence": "Das wird im Osten zwar auf absehbare Zeit immer noch eine große Aufgabe für den Staat bleiben, aber es geht mir wirklich darum, dass erkannt wird, dass man in den Betrieben noch mehr klotzen und weniger kleckern muss, was diese Frage anbetrifft.",
+  "verb_idx": 36,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "JoqzsLyVTfOrjbsCj8UXmA==",
+      "subType": "04"
+    }
+  },
+  "verb": "herausstreichen",
+  "sentence": "Das ist auch ein wichtiger Punkt, den man herausstreichen muss, gerade wenn so viel und zu Recht über Globalisierung geredet wird.",
+  "verb_idx": 8,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "lD3poc6fT3mWdec7sB5QGQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "konservieren",
+  "sentence": "Dabei wurden keineswegs überkommene Strukturen konserviert.",
+  "verb_idx": 5,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "uvu/gdaGR0Gw+0uSomoMQQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "trüben",
+  "sentence": "Keine Frage: Die Rückgänge in der Bauwirtschaft trüben das Bild merklich.",
+  "verb_idx": 7,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "iOZebjnTSgaQ/+bR5bjzhg==",
+      "subType": "04"
+    }
+  },
+  "verb": "spiegeln",
+  "sentence": "Die Frage, wie sich die unterschiedlichen Menschenbilder dieser Systeme im Ausstellungsalltag spiegelten, gäbe Stoff für manche Doktorarbeit.",
+  "verb_idx": 11,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "XHiMsLrqQ7ucGUdXwH7Mvg==",
+      "subType": "04"
+    }
+  },
+  "verb": "verankern",
+  "sentence": "Vielleicht hat gerade die wechselhafte und teils widersprüchliche Historie des Hauses die Einsicht in die Geschichtlichkeit des Denkens besonders fest in den Grundsätzen dieses Museums und seiner Mitarbeiter verankert.",
+  "verb_idx": 28,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "bjUMPJfdQcW5pPRJLc/uEw==",
+      "subType": "04"
+    }
+  },
+  "verb": "überbrücken",
+  "sentence": "In diesen Ausstellungstiteln scheint die besondere Stärke des Hygiene-Museums auf: Elegant und spielerisch überbrücken sie die Trennung zwischen Wissenschaft, Kultur und Geschichte.",
+  "verb_idx": 14,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "2sev5K6nR/Cz/cvkjGlIsA==",
+      "subType": "04"
+    }
+  },
+  "verb": "erfüllen",
+  "sentence": "Vor allem aber danke ich Ihnen, lieber Herr Vogel, und Ihren Mitarbeiterinnen und Mitarbeitern, weil Sie diese traditionsreiche Einrichtung so klug und fantasievoll mit Leben erfüllen.",
+  "verb_idx": 25,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "Lqr2F3khTmKIUNRZDhCOWQ==",
+      "subType": "04"
+    }
+  },
+  "verb": "wachhalten",
+  "sentence": "Ich will nicht unerwähnt lassen, dass die Museen zu den historischen deutschen Ost- und Siedlungsgebieten eine hervorragende Arbeit leisten, wenn es darum geht, das Bewusstsein für das kulturelle Erbe wachzuhalten.",
+  "verb_idx": 29,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "2miTJt/0T1i+zvjRE/guyA==",
+      "subType": "04"
+    }
+  },
+  "verb": "knüpfen",
+  "sentence": "Deshalb bin ich froh, dass es den Kulturministern aus sechs Ländern noch vor der EU-Erweiterung gelungen ist, ein \"Europäisches Netzwerk Zwangsmigration und Vertreibung\" zu knüpfen.",
+  "verb_idx": 25,
+  "label": 0
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "eiRywHY0QpubqsPZq0ARxA==",
+      "subType": "04"
+    }
+  },
+  "verb": "speisen",
+  "sentence": "Landschaften, Straßen, Städte, Plätze und Gebäude speisen den Bilder- und Inspirationsvorrat eines jeden Architekten, und wir haben das Taut-Stipendium ins Leben gerufen, um den besten Absolventen der deutschen Architekturschulen durch einen gut ausgestatteten Auslandsaufenthalt das Sammeln von möglichst vielen prägnanten Bildern und Erfahrungen zu ermöglichen. - Sie sind in diesem Jahr für Ihre außergewöhnlichen Abschlussarbeiten von einer fachkundigen Jury ausgewählt worden, und ich freue mich, Sie im Bundeskanzleramt begrüßen zu können. Womöglich gehört dieses außergewöhnliche Haus ja bereits zu den ersten Entdeckungen auf Ihrer nun bald beginnenden Reise.",
+  "verb_idx": 6,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "p/ThNV/jQwKBc3lsyuD1Nw==",
+      "subType": "04"
+    }
+  },
+  "verb": "greifen",
+  "sentence": "Die Parameter Form und Funktion allein greifen nicht mehr.",
+  "verb_idx": 6,
+  "label": 1
+},
+{
+  "_id": {
+    "$binary": {
+      "base64": "P43mdkBiSumpaA+F33Zwtg==",
+      "subType": "04"
+    }
+  },
+  "verb": "beflügeln",
+  "sentence": "Lassen Sie sich von der Unbestimmtheit nicht lähmen, sondern beflügeln.",
+  "verb_idx": 9,
+  "label": 0
+}]

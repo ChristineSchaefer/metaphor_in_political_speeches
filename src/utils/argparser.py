@@ -16,4 +16,6 @@ def parse():
     parser.add_argument("csv_path", metavar="csv_path", nargs="?", type=str,
                         help="Set path (as a string) to folder with csv file of annotations. "
                              "Set empty string if you don't want to use it.")
+    parser.add_argument("db_job", metavar="db_job", nargs="?", type=int,
+                        help="Choose if you want to work on database jobs. 0 = no, 1 = yes.", choices=[0, 1])
     return parser

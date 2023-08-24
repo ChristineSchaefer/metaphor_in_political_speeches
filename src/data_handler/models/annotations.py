@@ -15,4 +15,6 @@ class Annotation(Document):
     is_metaphor: bool = False
 
     class Config:
-        collection_name = "annotations"
+        collection_name = ("annotations"
+                           "")
+

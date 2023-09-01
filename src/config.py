@@ -16,6 +16,18 @@ class Settings(BaseSettings):
     db_host: str = None
     db_port: int = 27017
     db_name: str = "political_speeches_local"
+    metaphor_dir: str = ""
+    mwe_dir: str = ""
+    batch_train: int = 16
+    batch_test: int = 1
+    K: int = 10
+    epochs: int = 5
+    num_total_steps: int = 500
+    num_warmup_steps: int = 100
+    max_len: int = 96
+    heads: int = 2
+    heads_mwe: int = 4
+    dropout: int = 0.6
 
     class Config:
         env_file = os.path.join(SRC_DIR, ".env")

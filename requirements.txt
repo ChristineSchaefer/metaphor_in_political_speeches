@@ -1,7 +1,12 @@
-requests
 cssutils
 beautifulsoup4
 pydantic<2.0.0
 pymongo
 duden
 dict2xml
+torch
+transformers
+scikit-learn
+pandas
+numpy
+spacy

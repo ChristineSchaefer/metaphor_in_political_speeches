@@ -47,6 +47,7 @@ class MultiHeadAttention(nn.Module):
         if mask is not None:
             mask = mask.unsqueeze(1)
 
+        # TODO get string but need tensor
         nbatches = query.size(0)
 
         query, key = [l(x).view(nbatches, -1, self.h, self.d_k).transpose(1, 2)

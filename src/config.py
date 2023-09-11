@@ -18,6 +18,8 @@ class Settings(BaseSettings):
     db_name: str = "political_speeches_local"
     metaphor_dir: str = ""
     mwe_dir: str = ""
+    mwe_test: str = ""
+    mwe_train: str = ""
     batch_train: int = 16
     batch_test: int = 1
     K: int = 10
@@ -28,6 +30,8 @@ class Settings(BaseSettings):
     heads: int = 2
     heads_mwe: int = 4
     dropout: int = 0.6
+    language_model: str = ""
+    language: str = ""
 
     class Config:
         env_file = os.path.join(SRC_DIR, ".env")

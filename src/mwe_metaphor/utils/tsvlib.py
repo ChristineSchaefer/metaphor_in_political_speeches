@@ -14,7 +14,6 @@ r"""
     MWE codes (e.g. "3:LVC.full;2;5:VID") or be EMPTY.
 """
 
-
 import collections
 import os
 import sys
@@ -27,6 +26,7 @@ SINGLEWORD = "*"
 def interpret_color_request(stream, color_req: str) -> bool:
     r"""Interpret environment variables COLOR_STDOUT and COLOR_STDERR ("always/never/auto")."""
     return color_req == 'always' or (color_req == 'auto' and stream.isatty())
+
 
 # Flags indicating whether we want to use colors when writing to stderr/stdout
 COLOR_STDOUT = interpret_color_request(sys.stdout, os.getenv('COLOR_STDOUT', 'auto'))
@@ -47,6 +47,7 @@ class TSVSentence:
         Iterating through `self.words` will yield ["You", "did", "not", "go"].
         You can access the range ["didn't"] through `self.contractions`.
     """
+
     def __init__(self, filename, lineno_beg, words=None, contractions=None):
         self.filename = filename
         self.lineno_beg = lineno_beg
@@ -55,7 +56,7 @@ class TSVSentence:
 
     def __str__(self):
         return "TSVSentence({!r}, {!r}, {!r}, {!r})".format(self.filename,
-                self.lineno_beg, self.words, self.contractions)
+                                                            self.lineno_beg, self.words, self.contractions)
 
     def append(self, token):
         r"""Add `token` to either `self.words` or `self.contractions`."""
@@ -94,16 +95,17 @@ class TSVSentence:
     def absorb_mwes_from_contraction_ranges(self):
         r"""If a range is part of an MWE, add its subtokens as part of it as well."""
         for c in self.contractions:
-            mustwarn = False # warning appears once per contraction...
+            mustwarn = False  # warning appears once per contraction...
             for i_subtoken in c.contraction_range():
                 more_codes = c.mwe_codes()
                 if more_codes:
-                    mustwarn = True # ...not once per contraction element
+                    mustwarn = True  # ...not once per contraction element
                     all_codes = self.words[i_subtoken].mwe_codes()
                     all_codes.update(more_codes)
                     self.words[i_subtoken]['PARSEME:MWE'] = ";".join(sorted(all_codes))
-            if mustwarn : # warning appears here
-                warn("Contraction {} ({}) should not contain MWE annotation {} ".format(c["ID"],c["FORM"],c["PARSEME:MWE"]))
+            if mustwarn:  # warning appears here
+                warn("Contraction {} ({}) should not contain MWE annotation {} ".format(c["ID"], c["FORM"],
+                                                                                        c["PARSEME:MWE"]))
 
     def iter_mwe_fields_and_normalizedindexes(self, field_name: str):
         r'''Yield one frozenset[(field_value: str, index: int)] for each MWE in
@@ -124,10 +126,9 @@ class TSVSentence:
 
 class FrozenCounter(collections.Counter):
     r'''Instance of Counter that can be hashed. Should not be modified.'''
+
     def __hash__(self):
         return hash(frozenset(self.items()))
-
-
 
 
 class MWEInfo(collections.namedtuple('MWEInfo', 'sentence category token_indexes')):
@@ -139,9 +140,10 @@ class MWEInfo(collections.namedtuple('MWEInfo', 'sentence category token_indexes
     @type category: Optional[str]
     @type token_indexes: list[int]
     """
+
     def n_gaps(self):
         r'''Return the number of gaps inside self.'''
-        span_elems = max(self.token_indexes)-min(self.token_indexes)+1
+        span_elems = max(self.token_indexes) - min(self.token_indexes) + 1
         assert span_elems >= self.n_tokens(), self
         return span_elems - self.n_tokens()
 
@@ -158,13 +160,13 @@ class MWEInfo(collections.namedtuple('MWEInfo', 'sentence category token_indexes
         where the value of `index` is normalized to start at 0.
         '''
         min_index = min(self.token_indexes)
-        return frozenset((self.sentence.words[i][field_name], i-min_index)
+        return frozenset((self.sentence.words[i][field_name], i - min_index)
                          for i in self.token_indexes)
 
     def field_including_span(self, field_name: str):
         r'''Return a tuple[str] with all words in this MWE (including words inside its gaps).'''
         first, last = min(self.token_indexes), max(self.token_indexes)
-        return tuple(self.sentence.words[i][field_name] for i in range(first, last+1))
+        return tuple(self.sentence.words[i][field_name] for i in range(first, last + 1))
 
 
 class TSVToken(collections.UserDict):
@@ -175,6 +177,7 @@ class TSVToken(collections.UserDict):
     Extra attributes:
     @type lineno: int
     """
+
     def __init__(self, lineno, data):
         self.lineno = lineno
         super().__init__(data)
@@ -204,7 +207,7 @@ class TSVToken(collections.UserDict):
         """
         assert self.is_contraction()
         a, b = self['ID'].split("-")
-        return range(int(a)-1, int(b))
+        return range(int(a) - 1, int(b))
 
     def __missing__(self, key):
         raise KeyError('''Field {} is underspecified ("_" or missing)'''.format(key))
@@ -218,7 +221,6 @@ def mwe_code_to_id_categ(mwe_code):
     return mwe_id, mwe_categ
 
 
-
 ############################################################
 
 
@@ -227,7 +229,7 @@ def iter_tsv_sentences(fileobj):
     header = next(fileobj)
     if not 'global.columns' in header:
         exit('ERROR: {}: file is not in the required format: missing global.columns header' \
-             .format(os.path.basename(fileobj.name) if len(fileobj.name)>30 else fileobj.name))
+             .format(os.path.basename(fileobj.name) if len(fileobj.name) > 30 else fileobj.name))
     colnames = header.split('=')[-1].split()
 
     sentence = None
@@ -252,11 +254,11 @@ def iter_tsv_sentences(fileobj):
         yield sentence
 
 
-
 ####################################################################
 
 last_filename = None
 last_lineno = 0
+
 
 def global_last_lineno(filename, lineno):
     # Update global `last_lineno` var
@@ -269,6 +271,7 @@ def global_last_lineno(filename, lineno):
 _MAX_WARNINGS = 10
 _WARNED = collections.defaultdict(int)
 
+
 def warn(message, *, warntype="WARNING", position=None, **format_args):
     _WARNED[message] += 1
     if _WARNED[message] <= _MAX_WARNINGS:
@@ -280,8 +283,9 @@ def warn(message, *, warntype="WARNING", position=None, **format_args):
 
         line_beg, line_end = ('\x1b[31m', '\x1b[m') if COLOR_STDERR else ('', '')
         for i, msg in enumerate(msg_list):
-            warn = warntype if i==0 else "."*len(warntype)
+            warn = warntype if i == 0 else "." * len(warntype)
             print(line_beg, position, warn, ": ", msg, line_end, sep="", file=sys.stderr)
+
 
 def excepthook(exctype, value, tb):
     global last_lineno
@@ -289,7 +293,7 @@ def excepthook(exctype, value, tb):
     if value and last_lineno:
         last_filename = last_filename or "???"
         err_msg = "===> ERROR when reading {} (line {})" \
-                .format(last_filename, last_lineno)
+            .format(last_filename, last_lineno)
         if COLOR_STDERR:
             err_msg = "\x1b[31m{}\x1b[m".format(err_msg)
         print(err_msg, file=sys.stderr)

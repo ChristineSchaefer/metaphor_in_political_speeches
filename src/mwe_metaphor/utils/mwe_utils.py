@@ -2,8 +2,6 @@ import numpy as np
 import pandas as pd
 import itertools
 
-from spacy_conll import ConllParser, init_parser
-
 from src.mwe_metaphor.utils.tsvlib import iter_tsv_sentences
 
 

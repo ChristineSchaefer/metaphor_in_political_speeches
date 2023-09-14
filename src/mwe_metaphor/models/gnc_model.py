@@ -1,10 +1,12 @@
-import torch, math
-import torch.nn as nn
 import copy
 
+import math
+import torch
+import torch.nn as nn
 import torch.nn.functional as F
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("mps") if torch.has_mps else torch.device("cpu")
+print(device)
 
 
 def attention(query, key, mask=None, dropout=None):
@@ -47,7 +49,6 @@ class MultiHeadAttention(nn.Module):
         if mask is not None:
             mask = mask.unsqueeze(1)
 
-        # TODO get string but need tensor
         nbatches = query.size(0)
 
         query, key = [l(x).view(nbatches, -1, self.h, self.d_k).transpose(1, 2)
@@ -80,7 +81,8 @@ class GraphConvolution(nn.Module):
 
     def forward(self, inputs, adj):
         support = torch.matmul(inputs, self.weight)
-        output = torch.matmul(adj.float().cuda(), support)
+        # adj.float().cuda() -> do not know if that makes differences
+        output = torch.matmul(adj.float(), support)
 
         if self.bias is not None:
             return output + self.bias

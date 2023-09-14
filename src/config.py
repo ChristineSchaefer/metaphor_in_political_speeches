@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     epochs: int = 5
     num_total_steps: int = 500
     num_warmup_steps: int = 100
-    max_len: int = 96
+    max_len: int = 90
     heads: int = 2
     heads_mwe: int = 4
     dropout: int = 0.6

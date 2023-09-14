@@ -7,7 +7,7 @@ import numpy as np
 from sklearn.model_selection import KFold
 from torch.utils.data import TensorDataset, RandomSampler, DataLoader
 from tqdm import trange
-from transformers import BertTokenizer, BertConfig, AdamW, get_linear_schedule_with_warmup
+from transformers import BertConfig, AdamW, get_linear_schedule_with_warmup, AutoTokenizer
 
 from src.config import Settings
 from src.mwe_metaphor.models.bert_model import BertWithGCNAndMWE
@@ -17,7 +17,7 @@ from src.mwe_metaphor.utils.mwe_utils import mwe_adjacency
 from src.mwe_metaphor.utils.text_utils import tokenize
 from src.mwe_metaphor.utils.training_utils import adjacency, pad_or_truncate
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("mps") if torch.has_mps else torch.device("cpu")
 
 
 class TrainingController(BaseModel):
@@ -105,8 +105,9 @@ class TrainingController(BaseModel):
 
     def prepare_bert_config(self, text, vocab):
         # index the input words
-        tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+        tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-german-cased")
         input_ids = [tokenizer.convert_tokens_to_ids(x) for x in text]
+        # input_ids = [tokenizer(x, return_tensors="pt", padding=True)["input_ids"] for x in text]
 
         input_ids = pad_or_truncate(input_ids, self.max_len)
 
@@ -201,7 +202,7 @@ class TrainingController(BaseModel):
             # Train the data for one epoch
             for step, batch in enumerate(train_dataloader):
                 # Add batch to GPU
-                batch = tuple(t.to(device) for t in batch)
+                batch = tuple(t.clone().to(torch.int32).to(device) for t in batch)
                 # Unpack the inputs from our dataloader
                 b_input_ids, b_input_mask, b_adj, b_adj_mwe, b_labels, b_target_idx, _ = batch
 

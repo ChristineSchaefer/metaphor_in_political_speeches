@@ -5,9 +5,10 @@ from pydantic import BaseModel, Field
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import KFold
+from torch.optim import AdamW
 from torch.utils.data import TensorDataset, RandomSampler, DataLoader
 from tqdm import trange
-from transformers import BertConfig, AdamW, get_linear_schedule_with_warmup, AutoTokenizer
+from transformers import BertConfig, get_linear_schedule_with_warmup, AutoTokenizer
 
 from src.config import Settings
 from src.mwe_metaphor.models.bert_model import BertWithGCNAndMWE
@@ -49,7 +50,7 @@ class TrainingController(BaseModel):
                                       self.settings.dropout)
             model.to(device)
 
-            optimizer = AdamW(model.parameters(), lr=2e-5, correct_bias=False)
+            optimizer = AdamW(model.parameters(), lr=2e-5)
             scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=self.settings.num_warmup_steps,
                                                         num_training_steps=self.settings.num_total_steps)
 
@@ -202,7 +203,7 @@ class TrainingController(BaseModel):
             # Train the data for one epoch
             for step, batch in enumerate(train_dataloader):
                 # Add batch to GPU
-                batch = tuple(t.clone().to(torch.int32).to(device) for t in batch)
+                batch = tuple(t.clone().to(torch.int64).to(device) for t in batch)
                 # Unpack the inputs from our dataloader
                 b_input_ids, b_input_mask, b_adj, b_adj_mwe, b_labels, b_target_idx, _ = batch
 
@@ -242,7 +243,7 @@ class TrainingController(BaseModel):
             # Evaluate data for one epoch
             for batch in test_dataloader:
                 # Add batch to GPU
-                batch = tuple(t.to(device) for t in batch)
+                batch = tuple(t.clone().to(torch.int64).to(device) for t in batch)
                 # Unpack the inputs from our dataloader
                 b_input_ids, b_input_mask, b_adj, b_adj_mwe, b_labels, b_target_idx, test_idx = batch
                 # Telling the model not to compute or store gradients, saving memory and speeding up validation

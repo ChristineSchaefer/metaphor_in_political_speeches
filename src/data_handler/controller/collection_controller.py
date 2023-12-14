@@ -4,7 +4,7 @@ from src.data_handler.models.annotations import Annotation
 from src.data_handler.models.trofi_dataset import TroFiDataset
 
 
-class CollectionController(BaseModel):
+class TrofiCollectionController(BaseModel):
     annotations: list[Annotation]
     trofi: list[TroFiDataset] | None = Field(default_factory=list)
 

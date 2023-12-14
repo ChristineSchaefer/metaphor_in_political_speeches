@@ -20,6 +20,11 @@ class Document(BaseModel):
         collection_name = ""
         extra = Extra.forbid
 
+    def __init__(self, **kwargs):
+        if kwargs.get("_id"):
+            kwargs["id"] = kwargs.pop("_id")
+        super().__init__(**kwargs)
+
     @classmethod
     def _get_collection_name(cls, ) -> str:
         return cls.Config.collection_name

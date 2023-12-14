@@ -4,11 +4,11 @@ pydantic<2.0.0
 pymongo
 duden
 dict2xml
-torch
+torch==2.0.1
 transformers
 scikit-learn
 pandas
 numpy
-spacy
+spacy<3.7.0
 tensorflow
 tqdm

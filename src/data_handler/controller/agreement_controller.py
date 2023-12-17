@@ -1,28 +1,35 @@
 import glob
 import json
 import os
-from collections import Counter
 
 from pydantic import BaseModel, Field
+from sklearn.metrics import cohen_kappa_score
 
 from src.config import BASE_DIR
 from src.data_handler.models.annotations import Annotation
+from src.data_handler.agreement.fleiss import fleissKappa, checkInput
 from src.utils.uuid_transformer import convert_to_valid_uuid
 
 
 class AgreementController(BaseModel):
     annotations: dict[int, list[Annotation]] = Field(default_factory=dict)
     annotation_path: str = "data/annotations/*.json"
+    fleiss_kappa: float = 0.0
+    cohen_kappa: list[float] = Field(default_factory=list)
 
-    # TODO read json data into annotation list for each annotator - check -
-    #  iterate over annotation with same id
-    #  count if is_metaphor
-    #  create matrix with annotation_id and categories (nparray 252x2, values between 0-3)
+    def compute_fleiss_agreement(self):
+        print(f"+++ get all annotations from folder: {self.annotation_path} +++")
+        self._get_annotations()
+        print("+++ create matrix from annotations +++")
+        matrix = self._create_matrix()
+        print("+++ compute fleiss' kappa +++")
+        self.fleiss_kappa = self._use_fleiss_kappa(matrix)
 
-    def get_annotations(self):
+    def _get_annotations(self):
         annotations = []
         annotator = 0
         for filename in glob.glob(os.path.join(BASE_DIR, self.annotation_path)):
+            print(f"+++ reading file: {filename} +++")
             with open(filename, encoding='utf-8', mode='r') as currentFile:
                 file = currentFile.read().replace('\n', '')
                 data = json.loads(file)
@@ -34,16 +41,53 @@ class AgreementController(BaseModel):
                 annotator += 1
                 annotations = []
 
-    def count_metaphor_annotation(self):
-        # TODO
-        annotation_list = []
-        for annotation in self.annotations.values():
-            pass
-        metaphor_counts = Counter(a.is_metaphor for a in annotation_list)
+    def _create_matrix(self) -> list[list[int]]:
+        counted_annotations = []
+        for key, value_list in self.annotations.items():
+            for index, obj in enumerate(value_list):
+                true = 0
+                false = 0
+                if obj.is_metaphor:
+                    true += 1
+                else:
+                    false += 1
 
-        return metaphor_counts[True], metaphor_counts[False]
+                if key == 0:
+                    counted_annotations.append([true, false])
+                else:
+                    counted_annotations[index][0] += true
+                    counted_annotations[index][1] += false
 
+        return counted_annotations
 
-if __name__ == '__main__':
-    a = AgreementController()
-    a.get_annotations()
+    def _use_fleiss_kappa(self, matrix: list[list[int]]):
+        try:
+            checkInput(matrix, len(self.annotations))
+        except AssertionError as e:
+            print(f"Error in use_fleiss_kappa: {e}")
+
+        return fleissKappa(matrix, len(self.annotations))
+
+    def compute_cohen_agreement(self):
+        self._get_annotations()
+        annotations_list = self._create_list_from_annotation()
+        print("+++ compute cohen's kappa +++")
+        kappa_1_2 = cohen_kappa_score(annotations_list[0], annotations_list[1])
+        print(f"Agreement between annotator 1 and annotator 2: {kappa_1_2}")
+        kappa_1_3 = cohen_kappa_score(annotations_list[0], annotations_list[2])
+        print(f"Agreement between annotator 1 and annotator 3: {kappa_1_3}")
+        kappa_2_3 = cohen_kappa_score(annotations_list[1], annotations_list[2])
+        print(f"Agreement between annotator 2 and annotator 3: {kappa_2_3}")
+        self.cohen_kappa = [kappa_1_2, kappa_2_3, kappa_1_3]
+
+    def _create_list_from_annotation(self) -> list[list[int]]:
+        annotator_annotations = []
+        for key, value_list in self.annotations.items():
+            return_list = []
+            for obj in value_list:
+                if obj.is_metaphor:
+                    return_list.append(0)
+                else:
+                    return_list.append(1)
+            annotator_annotations.append(return_list)
+        return annotator_annotations

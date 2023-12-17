@@ -1,0 +1,20 @@
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/bin/python /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/src/data_handler/main.py 0   0 1
++++ get all annotations from folder: data/annotations/*.json +++
++++ reading file: /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/data/annotations/annotations_Christine.json +++
++++ reading file: /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/data/annotations/annotations_Sara.json +++
++++ reading file: /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/data/annotations/annotations_Lea.json +++
++++ create matrix from annotations +++
++++ compute fleiss' kappa +++
+#raters =  3 , #subjects =  252 , #categories =  2
+PA =  0.7724867724867733
+PE = 0.534297052154195
+Fleiss' Kappa = 0.511
++++ reading file: /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/data/annotations/annotations_Christine.json +++
++++ reading file: /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/data/annotations/annotations_Sara.json +++
++++ reading file: /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/data/annotations/annotations_Lea.json +++
++++ compute cohen's kappa +++
+Agreement between annotator 1 and annotator 2: 0.5928391391456085
+Agreement between annotator 1 and annotator 3: 0.4847305586702725
+Agreement between annotator 2 and annotator 3: 0.466516124479571
+
+Process finished with exit code 0

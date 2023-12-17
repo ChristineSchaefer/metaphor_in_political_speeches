@@ -1,3 +1,4 @@
+from src.data_handler.controller.agreement_controller import AgreementController
 from src.data_handler.controller.collection_controller import TrofiCollectionController
 from src.data_handler.controller.csv_reader import CSVController
 from src.data_handler.controller.xml_reader import XMLReaderController
@@ -28,6 +29,11 @@ def main_data_handling(arguments):
         annotations = Annotation.find()
         cc = TrofiCollectionController(annotations=annotations)
         cc.create_trofi_object_and_save_in_collection()
+
+    elif arguments.agreement == 1:
+        ac = AgreementController()
+        ac.compute_fleiss_agreement()
+        ac.compute_cohen_agreement()
 
     else:
         print("Please set valid arguments.")

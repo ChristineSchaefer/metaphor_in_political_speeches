@@ -18,6 +18,10 @@ import collections
 import os
 import sys
 
+from pydantic import BaseModel, Field
+
+from src.database import Document
+
 UNDERSP = "_"
 SINGLEWORD = "*"
 
@@ -34,7 +38,7 @@ COLOR_STDERR = interpret_color_request(sys.stderr, os.getenv('COLOR_STDERR', 'au
 
 
 ############################################################
-class TSVSentence:
+class TSVSentence(Document):
     r"""A list of TSVTokens.
         TSVTokens may include ranges and sub-tokens.
 
@@ -47,16 +51,15 @@ class TSVSentence:
         Iterating through `self.words` will yield ["You", "did", "not", "go"].
         You can access the range ["didn't"] through `self.contractions`.
     """
+    filename: str
+    words: list | None = Field(default_factory=list)
+    contractions: list | None = Field(default_factory=list)
+    lineno_bag: int | None = None
 
-    def __init__(self, filename, lineno_beg, words=None, contractions=None):
-        self.filename = filename
-        self.lineno_beg = lineno_beg
-        self.words = words or []
-        self.contractions = contractions or []
-
-    def __str__(self):
-        return "TSVSentence({!r}, {!r}, {!r}, {!r})".format(self.filename,
-                                                            self.lineno_beg, self.words, self.contractions)
+    class Config:
+        arbitrary_types_allowed = True
+        extra = "allow"
+        collection_name = "tsv_sentences"
 
     def append(self, token):
         r"""Add `token` to either `self.words` or `self.contractions`."""
@@ -239,7 +242,7 @@ def iter_tsv_sentences(fileobj):
             pass  # Skip comments
         elif line.strip():
             if not sentence:
-                sentence = TSVSentence(fileobj.name, lineno)
+                sentence = TSVSentence(filename=fileobj.name, lineno_bag=lineno)
             fields = line.strip().split('\t')
             if len(fields) != len(colnames):
                 raise Exception('Line has {} columns, but header specifies {}' \

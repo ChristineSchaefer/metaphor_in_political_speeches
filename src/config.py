@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     mwe_dir: str = ""
     mwe_test: str = ""
     mwe_train: str = ""
+    mwe_val: str = ""
     batch_train: int = 16
     batch_test: int = 1
     K: int = 10

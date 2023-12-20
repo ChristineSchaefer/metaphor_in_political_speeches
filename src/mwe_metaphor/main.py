@@ -1,5 +1,5 @@
 from src.config import get_settings
-from src.mwe_metaphor.controller.training_controller import TrainingController
+from src.mwe_metaphor.controller.gcn_training_controller import TrainingController
 
 
 def main():

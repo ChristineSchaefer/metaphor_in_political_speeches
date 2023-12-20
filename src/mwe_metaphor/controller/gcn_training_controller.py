@@ -11,7 +11,7 @@ from tqdm import trange
 from transformers import BertConfig, get_linear_schedule_with_warmup, AutoTokenizer
 
 from src.config import Settings
-from src.mwe_metaphor.models.bert_model import BertWithGCNAndMWE
+from src.mwe_metaphor.models.bert_with_gcn_model import BertWithGCNAndMWE
 from src.mwe_metaphor.models.evaluation_model import Evaluate
 from src.mwe_metaphor.models.spacy_model import CoNLLParserModel, SpacyModel
 from src.mwe_metaphor.utils.mwe_utils import mwe_adjacency

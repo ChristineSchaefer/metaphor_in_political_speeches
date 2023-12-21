@@ -7,6 +7,7 @@ from accelerate import Accelerator
 from pydantic import BaseModel, Field
 from torch.optim import AdamW
 from torch.utils.data import DataLoader
+from tqdm import tqdm
 from transformers import AutoTokenizer, DataCollatorForTokenClassification, AutoModelForTokenClassification, \
     TrainingArguments, Trainer, get_scheduler
 
@@ -64,31 +65,68 @@ class BertTrainingController(BaseModel):
             ignore_mismatched_sizes=True)
         print(model.config.num_labels)
 
-        # define training arguments
-        args = TrainingArguments(
-            "xlm-roberta-large-finetuned-mwe",
-            evaluation_strategy="epoch",
-            save_strategy="epoch",
-            learning_rate=2e-5,
-            num_train_epochs=3,
-            weight_decay=0.01,
-            push_to_hub=False,
-        )
-
-        # trainer and train
-        trainer = Trainer(
-            model=model,
-            args=args,
-            # should be torch.utils.data.Dataset` or `torch.utils.data.IterableDataset
-            train_dataset=tokenized_inputs_train.data,
-            eval_dataset=tokenized_inputs_val.data,
-            data_collator=data_collator,
-            compute_metrics=self.compute_metrics,
-            tokenizer=tokenizer,
-        )
-        trainer.train()
-
         # TODO use own trainer
+        #  or gcn trainer with different model
+        metric = evaluate.load("seqeval")
+        optimizer = AdamW(model.parameters(), lr=2e-5)
+        accelerator = Accelerator()
+        model, optimizer, train_dataloader, eval_dataloader = accelerator.prepare(
+            model, optimizer, train_dataloader, eval_dataloader
+        )
+
+        num_train_epochs = 3
+        num_update_steps_per_epoch = len(train_dataloader)
+        num_training_steps = num_train_epochs * num_update_steps_per_epoch
+
+        lr_scheduler = get_scheduler(
+            "linear",
+            optimizer=optimizer,
+            num_warmup_steps=0,
+            num_training_steps=num_training_steps,
+        )
+
+        progress_bar = tqdm(range(num_training_steps))
+
+        for epoch in range(num_train_epochs):
+            # Training
+            model.train()
+            for batch in train_dataloader:
+                outputs = model(**batch)
+                loss = outputs.loss
+                accelerator.backward(loss)
+
+                optimizer.step()
+                lr_scheduler.step()
+                optimizer.zero_grad()
+                progress_bar.update(1)
+
+            # Evaluation
+            model.eval()
+            for batch in eval_dataloader:
+                with torch.no_grad():
+                    outputs = model(**batch)
+
+                predictions = outputs.logits.argmax(dim=-1)
+                labels = batch["labels"]
+
+                # Necessary to pad predictions and labels for being gathered
+                predictions = accelerator.pad_across_processes(predictions, dim=1, pad_index=-100)
+                labels = accelerator.pad_across_processes(labels, dim=1, pad_index=-100)
+
+                predictions_gathered = accelerator.gather(predictions)
+                labels_gathered = accelerator.gather(labels)
+
+                true_predictions, true_labels = self.postprocess(predictions_gathered, labels_gathered, self.val_dataset.labels)
+                metric.add_batch(predictions=true_predictions, references=true_labels)
+
+            results = metric.compute()
+            print(
+                f"epoch {epoch}:",
+                {
+                    key: results[f"overall_{key}"]
+                    for key in ["precision", "recall", "f1", "accuracy"]
+                },
+            )
 
     def load_data(self, path: str) -> list[TSVSentence]:
         with open(f"{self.settings.mwe_dir}/{path}") as f:
@@ -163,7 +201,7 @@ class BertTrainingController(BaseModel):
         }
 
     @staticmethod
-    def postprocess(self, predictions, labels, label_names):
+    def postprocess(predictions, labels, label_names):
         predictions = predictions.detach().cpu().clone().numpy()
         labels = labels.detach().cpu().clone().numpy()
 

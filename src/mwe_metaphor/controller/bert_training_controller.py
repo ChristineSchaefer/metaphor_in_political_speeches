@@ -1,8 +1,14 @@
 import re
 
+import evaluate
+import numpy as np
 import torch
+from accelerate import Accelerator
 from pydantic import BaseModel, Field
-from transformers import AutoTokenizer, DataCollatorForTokenClassification
+from torch.optim import AdamW
+from torch.utils.data import DataLoader
+from transformers import AutoTokenizer, DataCollatorForTokenClassification, AutoModelForTokenClassification, \
+    TrainingArguments, Trainer, get_scheduler
 
 from src.config import Settings, get_settings
 from src.mwe_metaphor.models.dataset_model import Dataset
@@ -36,8 +42,53 @@ class BertTrainingController(BaseModel):
         # fine-tuning the model
         # data collation
         data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
-        batch = data_collator([tokenized_inputs_train.data])
-        # TODO
+        train_dataloader = DataLoader(
+            tokenized_inputs_train.data,
+            shuffle=True,
+            collate_fn=data_collator,
+            batch_size=8
+        )
+        eval_dataloader = DataLoader(
+            tokenized_inputs_val.data,
+            collate_fn=data_collator,
+            batch_size=8
+        )
+
+        # defining the model
+        id2label = self.train_dataset.id2label
+        label2id = {v: k for k, v in id2label.items()}
+        model = AutoModelForTokenClassification.from_pretrained(
+            model_checkpoint,
+            id2label=id2label,
+            label2id=label2id,
+            ignore_mismatched_sizes=True)
+        print(model.config.num_labels)
+
+        # define training arguments
+        args = TrainingArguments(
+            "xlm-roberta-large-finetuned-mwe",
+            evaluation_strategy="epoch",
+            save_strategy="epoch",
+            learning_rate=2e-5,
+            num_train_epochs=3,
+            weight_decay=0.01,
+            push_to_hub=False,
+        )
+
+        # trainer and train
+        trainer = Trainer(
+            model=model,
+            args=args,
+            # should be torch.utils.data.Dataset` or `torch.utils.data.IterableDataset
+            train_dataset=tokenized_inputs_train.data,
+            eval_dataset=tokenized_inputs_val.data,
+            data_collator=data_collator,
+            compute_metrics=self.compute_metrics,
+            tokenizer=tokenizer,
+        )
+        trainer.train()
+
+        # TODO use own trainer
 
     def load_data(self, path: str) -> list[TSVSentence]:
         with open(f"{self.settings.mwe_dir}/{path}") as f:
@@ -60,11 +111,11 @@ class BertTrainingController(BaseModel):
             if word_id != current_word:
                 # start of a new word
                 current_word = word_id
-                label = -100 if word_id is None else labels[word_id]
+                label = "-100" if word_id is None else labels[word_id]
                 new_labels.append(label)
             elif word_id is None:
                 # special token
-                new_labels.append(-100)
+                new_labels.append("-100")
             else:
                 # same word as previous token
                 label = labels[word_id]
@@ -90,6 +141,39 @@ class BertTrainingController(BaseModel):
         new_labels = dataset.refactor_labels_columns(new_labels)
         tokenized_inputs["labels"] = new_labels
         return tokenized_inputs
+
+    @staticmethod
+    def compute_metrics(eval_preds, label_names):
+        metric = evaluate.load("seqeval")
+        logits, labels = eval_preds
+        predictions = np.argmax(logits, axis=-1)
+
+        # Remove ignored index (special tokens) and convert to labels
+        true_labels = [[label_names[l] for l in label if l != "-100"] for label in labels]
+        true_predictions = [
+            [label_names[p] for (p, l) in zip(prediction, label) if l != "-100"]
+            for prediction, label in zip(predictions, labels)
+        ]
+        all_metrics = metric.compute(predictions=true_predictions, references=true_labels)
+        return {
+            "precision": all_metrics["overall_precision"],
+            "recall": all_metrics["overall_recall"],
+            "f1": all_metrics["overall_f1"],
+            "accuracy": all_metrics["overall_accuracy"],
+        }
+
+    @staticmethod
+    def postprocess(self, predictions, labels, label_names):
+        predictions = predictions.detach().cpu().clone().numpy()
+        labels = labels.detach().cpu().clone().numpy()
+
+        # Remove ignored index (special tokens) and convert to labels
+        true_labels = [[label_names[l] for l in label if l != "-100"] for label in labels]
+        true_predictions = [
+            [label_names[p] for (p, l) in zip(prediction, label) if l != "-100"]
+            for prediction, label in zip(predictions, labels)
+        ]
+        return true_labels, true_predictions
 
 
 if __name__ == '__main__':

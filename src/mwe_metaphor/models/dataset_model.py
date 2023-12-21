@@ -17,6 +17,8 @@ class Dataset(BaseModel):
     features: list[Feature] | None = Field(default_factory=list)
     num_rows: int = 0
     columns: list[Column] | None = Field(default_factory=list)
+    id2label: dict | None = Field(default_factory=dict)
+    labels: list | None = Field(default_factory=list)
 
     def add_column(self, column: Column):
         self.columns.append(column)
@@ -44,6 +46,9 @@ class Dataset(BaseModel):
                 else:
                     available_feature.add(data)
             self.features.append(Feature(feature=column.name, names=list(available_feature)))
+
+    def get_column_data(self, column: int):
+        return self.columns[column].data
 
     def create(self, sentences: list[TSVSentence]):
         id_array, token_array, lemma_array, upos_array, xpos_array = [], [], [], [], []
@@ -83,12 +88,16 @@ class Dataset(BaseModel):
         self.set_features()
 
     def refactor_labels_columns(self, labels: list[list[str]]) -> list[list[int]]:
-        word_to_index = self.create_word_to_index_voc(labels)
-        return [[word_to_index[word] for word in label] for label in labels]
+        index_to_word = self.create_word_to_index_voc(labels)
+        return [
+            [list(index_to_word.keys())[list(index_to_word.values()).index(word)] for word in label]
+            for label in labels
+        ]
 
-    @staticmethod
-    def create_word_to_index_voc(labels: list[list[str]]):
+    def create_word_to_index_voc(self, labels: list[list[str]]):
         voc = set(word for label in labels for word in label)
-        word_to_index = {word: index for index, word in enumerate(voc, start=1)}
-        word_to_index[-100] = -100
+        word_to_index = {index: word for index, word in enumerate(voc, start=1) if word != "-100"}
+        word_to_index[-100] = "-100"
+        self.id2label = word_to_index
+        self.labels = list(word_to_index.values())
         return word_to_index

@@ -1,5 +1,7 @@
+accelerate
 cssutils
 beautifulsoup4
+evaluate
 pydantic<2.0.0
 pymongo
 duden
@@ -9,6 +11,7 @@ transformers
 scikit-learn
 pandas
 numpy
+seqeval
 spacy<3.7.0
 tensorflow
 tqdm

@@ -132,16 +132,14 @@ class BertTrainingController(BaseModel):
         return tokenized_inputs
 
     def compute_metrics(self, eval_preds):
-        # TODO run training in debug and take a look what is train_dataset.labels
+        # TODO check evaluation function and labels because no ner task
         metric = evaluate.load("seqeval")
         logits, labels = eval_preds
         predictions = np.argmax(logits, axis=-1)
 
         # Remove ignored index (special tokens) and convert to labels
-        # TODO durch was muss ich hier iterieren?
         true_labels = [[self.train_dataset.id2label[l] for l in label] for label in labels]
         true_predictions = [[self.train_dataset.id2label[p] for p in pred] for pred in predictions]
-        # TODO predictions and references have to be strings not int
         all_metrics = metric.compute(predictions=true_predictions, references=true_labels)
         return {
             "precision": all_metrics["overall_precision"],

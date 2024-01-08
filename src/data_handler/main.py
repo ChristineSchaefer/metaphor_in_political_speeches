@@ -35,6 +35,27 @@ def main_data_handling(arguments):
         ac.compute_fleiss_agreement()
         ac.compute_cohen_agreement()
 
+        agreement, disagreement = ac.get_cohen_examples(0, 1)
+        print(f"annotator 1 and 2 agreement for metaphor: {len(agreement['is_metaphor'])} \n {[a.id for a in agreement['is_metaphor']]}")
+        print(
+            f"annotator 1 and 2 agreement for no metaphor: {len(agreement['no_metaphor'])} \n {[a.id for a in agreement['no_metaphor']]}")
+        print(
+            f"annotator 1 and 2 disagreement: {len(disagreement)} \n {[d.id for d in disagreement]}")
+
+        agreement, disagreement = ac.get_cohen_examples(0, 2)
+        print(f"annotator 1 and 3 agreement for metaphor: {len(agreement['is_metaphor'])} \n {[a.id for a in agreement['is_metaphor']]}")
+        print(
+            f"annotator 1 and 3 agreement for no metaphor: {len(agreement['no_metaphor'])} \n {[a.id for a in agreement['no_metaphor']]}")
+        print(
+            f"annotator 1 and 3 disagreement: {len(disagreement)} \n {[d.id for d in disagreement]}")
+
+        agreement, disagreement = ac.get_cohen_examples(2, 1)
+        print(f"annotator 3 and 2 agreement for metaphor: {len(agreement['is_metaphor'])} \n {[a.id for a in agreement['is_metaphor']]}")
+        print(
+            f"annotator 3 and 2 agreement for no metaphor: {len(agreement['no_metaphor'])} \n {[a.id for a in agreement['no_metaphor']]}")
+        print(
+            f"annotator 3 and 2 disagreement: {len(disagreement)} \n {[d.id for d in disagreement]}")
+
     else:
         print("Please set valid arguments.")
 
@@ -42,4 +63,5 @@ def main_data_handling(arguments):
 if __name__ == "__main__":
     parser = argparser.parse()
     main_data_handling(parser.parse_args())
+
 

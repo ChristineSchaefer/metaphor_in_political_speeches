@@ -18,3 +18,6 @@ class Annotation(Document):
         collection_name = "annotations"
         extra = Extra.allow
 
+    def __hash__(self) -> int:
+        return self.speech_id.__hash__()  # or self.id.__hash__()
+

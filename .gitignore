@@ -131,3 +131,7 @@ dmypy.json
 
 # Pycharm project folder
 .idea
+
+
+/data/models
+/src/mwe_metaphor/controller/results

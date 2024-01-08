@@ -1,3 +1,4 @@
+import torch
 from pydantic import BaseModel, Field
 
 from src.mwe_metaphor.utils.tsvlib import TSVSentence
@@ -18,6 +19,7 @@ class Dataset(BaseModel):
     num_rows: int = 0
     columns: list[Column] | None = Field(default_factory=list)
     id2label: dict | None = Field(default_factory=dict)
+    label2id: dict | None = Field(default_factory=dict)
     labels: list | None = Field(default_factory=list)
 
     def add_column(self, column: Column):
@@ -99,5 +101,21 @@ class Dataset(BaseModel):
         word_to_index = {index: word for index, word in enumerate(voc, start=1) if word != "-100"}
         word_to_index[-100] = "-100"
         self.id2label = word_to_index
+        self.label2id = {id: tag for tag, id in self.id2label.items()}
         self.labels = list(word_to_index.values())
         return word_to_index
+
+
+class MWEDataset(torch.utils.data.Dataset):
+    def __init__(self, encodings, labels):
+        self.encodings = encodings
+        self.labels = labels
+
+    def __getitem__(self, idx):
+        item = {key: torch.tensor(val[idx]) for key, val in self.encodings.items()}
+        item['labels'] = torch.tensor(self.labels[idx])
+        return item
+
+    def __len__(self):
+        return len(self.labels)
+

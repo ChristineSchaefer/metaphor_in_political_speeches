@@ -1,18 +1,18 @@
+import os
 import re
 
 import evaluate
 import numpy as np
+import pandas as pd
 import torch
-from accelerate import Accelerator
+from evaluate import evaluator
 from pydantic import BaseModel, Field
 from torch.optim import AdamW
 from torch.utils.data import DataLoader
-from tqdm import tqdm
-from transformers import AutoTokenizer, DataCollatorForTokenClassification, AutoModelForTokenClassification, \
-    TrainingArguments, Trainer, get_scheduler
+from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer
 
-from src.config import Settings, get_settings
-from src.mwe_metaphor.models.dataset_model import Dataset
+from src.config import Settings, get_settings, BASE_DIR
+from src.mwe_metaphor.models.dataset_model import Dataset, MWEDataset
 from src.mwe_metaphor.utils.tsvlib import iter_tsv_sentences, TSVSentence
 
 device = torch.device("mps") if torch.has_mps else torch.device("cpu")
@@ -33,100 +33,46 @@ class BertTrainingController(BaseModel):
         self.preprocessing()
 
         # processing the data
-        model_checkpoint = "xlm-roberta-large-finetuned-conll03-german"
+        model_checkpoint = "distilbert-base-german-cased"
         tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
         # tokenize input and create word_ids, extend labels with special tokens
         tokenized_inputs_train = self.tokenize_and_align_labels(self.train_dataset, tokenizer)
         tokenized_inputs_test = self.tokenize_and_align_labels(self.test_dataset, tokenizer)
         tokenized_inputs_val = self.tokenize_and_align_labels(self.val_dataset, tokenizer)
 
-        # fine-tuning the model
-        # data collation
-        data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
-        train_dataloader = DataLoader(
-            tokenized_inputs_train.data,
-            shuffle=True,
-            collate_fn=data_collator,
-            batch_size=8
-        )
-        eval_dataloader = DataLoader(
-            tokenized_inputs_val.data,
-            collate_fn=data_collator,
-            batch_size=8
-        )
+        train_dataset = MWEDataset(tokenized_inputs_train, tokenized_inputs_train.data["labels"])
+        test_dataset = MWEDataset(tokenized_inputs_test, tokenized_inputs_test.data["labels"])
+        val_dataset = MWEDataset(tokenized_inputs_val, tokenized_inputs_val.data["labels"])
 
-        # defining the model
-        id2label = self.train_dataset.id2label
-        label2id = {v: k for k, v in id2label.items()}
         model = AutoModelForTokenClassification.from_pretrained(
             model_checkpoint,
-            id2label=id2label,
-            label2id=label2id,
+            num_labels=len(self.train_dataset.labels),
             ignore_mismatched_sizes=True)
-        print(model.config.num_labels)
 
-        # TODO use own trainer
-        #  or gcn trainer with different model
-        metric = evaluate.load("seqeval")
-        optimizer = AdamW(model.parameters(), lr=2e-5)
-        accelerator = Accelerator()
-        model, optimizer, train_dataloader, eval_dataloader = accelerator.prepare(
-            model, optimizer, train_dataloader, eval_dataloader
+        model.save_pretrained(os.path.join(BASE_DIR, f"data/models/{model_checkpoint}"))
+        tokenizer.save_pretrained(os.path.join(BASE_DIR, f"data/models/{model_checkpoint}"))
+
+        training_args = TrainingArguments(
+            output_dir='./results',  # output directory
+            num_train_epochs=3,  # total number of training epochs
+            per_device_train_batch_size=16,  # batch size per device during training
+            per_device_eval_batch_size=64,  # batch size for evaluation
+            warmup_steps=500,  # number of warmup steps for learning rate scheduler
+            weight_decay=0.01,  # strength of weight decay
+            logging_dir='./logs',  # directory for storing logs
+            logging_steps=10,
+            # evaluation_strategy="epoch"
         )
 
-        num_train_epochs = 3
-        num_update_steps_per_epoch = len(train_dataloader)
-        num_training_steps = num_train_epochs * num_update_steps_per_epoch
-
-        lr_scheduler = get_scheduler(
-            "linear",
-            optimizer=optimizer,
-            num_warmup_steps=0,
-            num_training_steps=num_training_steps,
+        trainer = Trainer(
+            model=model,  # the instantiated 🤗 Transformers model to be trained
+            args=training_args,  # training arguments, defined above
+            train_dataset=train_dataset,  # training dataset
+            eval_dataset=val_dataset,  # evaluation dataset
+            # compute_metrics=self.compute_metrics
         )
 
-        progress_bar = tqdm(range(num_training_steps))
-
-        for epoch in range(num_train_epochs):
-            # Training
-            model.train()
-            for batch in train_dataloader:
-                outputs = model(**batch)
-                loss = outputs.loss
-                accelerator.backward(loss)
-
-                optimizer.step()
-                lr_scheduler.step()
-                optimizer.zero_grad()
-                progress_bar.update(1)
-
-            # Evaluation
-            model.eval()
-            for batch in eval_dataloader:
-                with torch.no_grad():
-                    outputs = model(**batch)
-
-                predictions = outputs.logits.argmax(dim=-1)
-                labels = batch["labels"]
-
-                # Necessary to pad predictions and labels for being gathered
-                predictions = accelerator.pad_across_processes(predictions, dim=1, pad_index=-100)
-                labels = accelerator.pad_across_processes(labels, dim=1, pad_index=-100)
-
-                predictions_gathered = accelerator.gather(predictions)
-                labels_gathered = accelerator.gather(labels)
-
-                true_predictions, true_labels = self.postprocess(predictions_gathered, labels_gathered, self.val_dataset.labels)
-                metric.add_batch(predictions=true_predictions, references=true_labels)
-
-            results = metric.compute()
-            print(
-                f"epoch {epoch}:",
-                {
-                    key: results[f"overall_{key}"]
-                    for key in ["precision", "recall", "f1", "accuracy"]
-                },
-            )
+        trainer.train()
 
     def load_data(self, path: str) -> list[TSVSentence]:
         with open(f"{self.settings.mwe_dir}/{path}") as f:
@@ -168,7 +114,10 @@ class BertTrainingController(BaseModel):
 
     def tokenize_and_align_labels(self, dataset: Dataset, tokenizer):
         tokenized_inputs = tokenizer(
-            dataset.columns[1].data, padding="max_length", truncation=True, is_split_into_words=True
+            dataset.columns[1].data,
+            padding="max_length",
+            truncation=True,
+            is_split_into_words=True
         )
         all_labels = dataset.columns[-1].data
         new_labels = []
@@ -180,16 +129,16 @@ class BertTrainingController(BaseModel):
         tokenized_inputs["labels"] = new_labels
         return tokenized_inputs
 
-    @staticmethod
-    def compute_metrics(eval_preds, label_names):
+    def compute_metrics(self, eval_preds):
+        # TODO run training in debug and take a look what is train_dataset.labels
         metric = evaluate.load("seqeval")
         logits, labels = eval_preds
         predictions = np.argmax(logits, axis=-1)
 
         # Remove ignored index (special tokens) and convert to labels
-        true_labels = [[label_names[l] for l in label if l != "-100"] for label in labels]
+        true_labels = [[self.train_dataset.labels[l] for l in label if l != "-100"] for label in labels]
         true_predictions = [
-            [label_names[p] for (p, l) in zip(prediction, label) if l != "-100"]
+            [self.train_dataset.labels[p] for (p, l) in zip(prediction, label) if l != "-100"]
             for prediction, label in zip(predictions, labels)
         ]
         all_metrics = metric.compute(predictions=true_predictions, references=true_labels)
@@ -217,3 +166,4 @@ class BertTrainingController(BaseModel):
 if __name__ == '__main__':
     controller = BertTrainingController(settings=get_settings())
     controller.training()
+

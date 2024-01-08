@@ -63,7 +63,7 @@ class Dataset(BaseModel):
             xpos = [words.get("XPOS", "0") for words in sentence.words]
             heads = [words.get("HEAD", "0") for words in sentence.words]
             deprels = [words.get("DEPREL", "0") for words in sentence.words]
-            parseme_mwes = [words.get("PARSEME:MWE", "0") for words in sentence.words]
+            parseme_mwes = ["no_metaphor" if words.get("PARSEME:MWE", "0") == "*" else "is_metaphor" for words in sentence.words]
 
             id_array.append(id)
             token_array.append(tokens)
@@ -98,8 +98,8 @@ class Dataset(BaseModel):
 
     def create_word_to_index_voc(self, labels: list[list[str]]):
         voc = set(word for label in labels for word in label)
-        word_to_index = {index: word for index, word in enumerate(voc, start=1) if word != "-100"}
-        word_to_index[-100] = "-100"
+        word_to_index = {index: word for index, word in enumerate(list(voc), start=1) if word != "-100"}
+        word_to_index[0] = "-100"
         self.id2label = word_to_index
         self.label2id = {id: tag for tag, id in self.id2label.items()}
         self.labels = list(word_to_index.values())

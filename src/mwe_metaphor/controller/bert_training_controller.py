@@ -61,7 +61,9 @@ class BertTrainingController(BaseModel):
             weight_decay=0.01,  # strength of weight decay
             logging_dir='./logs',  # directory for storing logs
             logging_steps=10,
-            # evaluation_strategy="epoch"
+            evaluation_strategy="epoch",
+            save_strategy="epoch",
+            learning_rate=2e-5
         )
 
         trainer = Trainer(
@@ -69,7 +71,7 @@ class BertTrainingController(BaseModel):
             args=training_args,  # training arguments, defined above
             train_dataset=train_dataset,  # training dataset
             eval_dataset=val_dataset,  # evaluation dataset
-            # compute_metrics=self.compute_metrics
+            compute_metrics=self.compute_metrics
         )
 
         trainer.train()
@@ -136,11 +138,10 @@ class BertTrainingController(BaseModel):
         predictions = np.argmax(logits, axis=-1)
 
         # Remove ignored index (special tokens) and convert to labels
-        true_labels = [[self.train_dataset.labels[l] for l in label if l != "-100"] for label in labels]
-        true_predictions = [
-            [self.train_dataset.labels[p] for (p, l) in zip(prediction, label) if l != "-100"]
-            for prediction, label in zip(predictions, labels)
-        ]
+        # TODO durch was muss ich hier iterieren?
+        true_labels = [[self.train_dataset.id2label[l] for l in label] for label in labels]
+        true_predictions = [[self.train_dataset.id2label[p] for p in pred] for pred in predictions]
+        # TODO predictions and references have to be strings not int
         all_metrics = metric.compute(predictions=true_predictions, references=true_labels)
         return {
             "precision": all_metrics["overall_precision"],

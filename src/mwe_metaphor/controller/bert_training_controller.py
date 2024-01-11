@@ -3,17 +3,15 @@ import re
 
 import evaluate
 import numpy as np
-import pandas as pd
 import torch
-from evaluate import evaluator
 from pydantic import BaseModel, Field
-from torch.optim import AdamW
-from torch.utils.data import DataLoader
-from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer
+from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, \
+    DataCollatorForTokenClassification
 
 from src.config import Settings, get_settings, BASE_DIR
 from src.mwe_metaphor.models.dataset_model import Dataset, MWEDataset
 from src.mwe_metaphor.utils.tsvlib import iter_tsv_sentences, TSVSentence
+from src.utils.datetime import ts_now
 
 device = torch.device("mps") if torch.has_mps else torch.device("cpu")
 
@@ -21,10 +19,8 @@ device = torch.device("mps") if torch.has_mps else torch.device("cpu")
 class BertTrainingController(BaseModel):
     settings: Settings
     train_data_sentences: list[TSVSentence] = Field(default_factory=list)
-    test_data_sentences: list[TSVSentence] = Field(default_factory=list)
     val_data_sentences: list[TSVSentence] = Field(default_factory=list)
     train_dataset: Dataset = Field(default_factory=Dataset)
-    test_dataset: Dataset = Field(default_factory=Dataset)
     val_dataset: Dataset = Field(default_factory=Dataset)
     labels: list[str] = Field(default_factory=list)
 
@@ -33,37 +29,35 @@ class BertTrainingController(BaseModel):
         self.preprocessing()
 
         # processing the data
-        model_checkpoint = "distilbert-base-german-cased"
+        model_checkpoint = self.settings.model
         tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
         # tokenize input and create word_ids, extend labels with special tokens
         tokenized_inputs_train = self.tokenize_and_align_labels(self.train_dataset, tokenizer)
-        tokenized_inputs_test = self.tokenize_and_align_labels(self.test_dataset, tokenizer)
         tokenized_inputs_val = self.tokenize_and_align_labels(self.val_dataset, tokenizer)
 
         train_dataset = MWEDataset(tokenized_inputs_train, tokenized_inputs_train.data["labels"])
-        test_dataset = MWEDataset(tokenized_inputs_test, tokenized_inputs_test.data["labels"])
         val_dataset = MWEDataset(tokenized_inputs_val, tokenized_inputs_val.data["labels"])
 
         model = AutoModelForTokenClassification.from_pretrained(
             model_checkpoint,
             num_labels=len(self.train_dataset.labels),
-            ignore_mismatched_sizes=True)
+            ignore_mismatched_sizes=True,
+            id2label=self.train_dataset.id2label,
+            label2id=self.train_dataset.label2id)
 
-        model.save_pretrained(os.path.join(BASE_DIR, f"data/models/{model_checkpoint}"))
-        tokenizer.save_pretrained(os.path.join(BASE_DIR, f"data/models/{model_checkpoint}"))
+        data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
 
         training_args = TrainingArguments(
-            output_dir='./results',  # output directory
+            output_dir=f'./results/{model_checkpoint}_{ts_now()}',  # output directory
             num_train_epochs=3,  # total number of training epochs
             per_device_train_batch_size=16,  # batch size per device during training
             per_device_eval_batch_size=64,  # batch size for evaluation
             warmup_steps=500,  # number of warmup steps for learning rate scheduler
             weight_decay=0.01,  # strength of weight decay
-            logging_dir='./logs',  # directory for storing logs
-            logging_steps=10,
             evaluation_strategy="epoch",
             save_strategy="epoch",
-            learning_rate=2e-5
+            learning_rate=2e-5,
+            load_best_model_at_end=True
         )
 
         trainer = Trainer(
@@ -71,10 +65,15 @@ class BertTrainingController(BaseModel):
             args=training_args,  # training arguments, defined above
             train_dataset=train_dataset,  # training dataset
             eval_dataset=val_dataset,  # evaluation dataset
-            compute_metrics=self.compute_metrics
+            compute_metrics=self.compute_metrics,
+            data_collator=data_collator,
+            tokenizer=tokenizer
         )
 
         trainer.train()
+
+        model.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{ts_now()}"))
+        tokenizer.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{ts_now()}"))
 
     def load_data(self, path: str) -> list[TSVSentence]:
         with open(f"{self.settings.mwe_dir}/{path}") as f:
@@ -82,12 +81,10 @@ class BertTrainingController(BaseModel):
 
     def preprocessing(self):
         self.train_data_sentences = self.load_data(self.settings.mwe_train)
-        self.test_data_sentences = self.load_data(self.settings.mwe_test)
         self.val_data_sentences = self.load_data(self.settings.mwe_val)
 
-        self.train_dataset.create(self.train_data_sentences)
-        self.test_dataset.create(self.test_data_sentences)
-        self.val_dataset.create(self.val_data_sentences)
+        self.train_dataset.create_from_tsv(self.train_data_sentences)
+        self.val_dataset.create_from_tsv(self.val_data_sentences)
 
     @staticmethod
     def align_labels_with_tokens(labels, word_ids):

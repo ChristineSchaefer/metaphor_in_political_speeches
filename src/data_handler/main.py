@@ -35,26 +35,30 @@ def main_data_handling(arguments):
         ac.compute_fleiss_agreement()
         ac.compute_cohen_agreement()
 
-        agreement, disagreement = ac.get_cohen_examples(0, 1)
-        print(f"annotator 1 and 2 agreement for metaphor: {len(agreement['is_metaphor'])} \n {[a.id for a in agreement['is_metaphor']]}")
+        agreement1, disagreement1 = ac.get_cohen_examples(0, 1)
+        print(f"annotator 1 and 2 agreement for metaphor: {len(agreement1['is_metaphor'])} \n {[a.id for a in agreement1['is_metaphor']]}")
         print(
-            f"annotator 1 and 2 agreement for no metaphor: {len(agreement['no_metaphor'])} \n {[a.id for a in agreement['no_metaphor']]}")
+            f"annotator 1 and 2 agreement for no metaphor: {len(agreement1['no_metaphor'])} \n {[a.id for a in agreement1['no_metaphor']]}")
         print(
-            f"annotator 1 and 2 disagreement: {len(disagreement)} \n {[d.id for d in disagreement]}")
+            f"annotator 1 and 2 disagreement: {len(disagreement1)} \n {[d.id for d in disagreement1]}")
 
-        agreement, disagreement = ac.get_cohen_examples(0, 2)
-        print(f"annotator 1 and 3 agreement for metaphor: {len(agreement['is_metaphor'])} \n {[a.id for a in agreement['is_metaphor']]}")
+        agreement2, disagreement2 = ac.get_cohen_examples(0, 2)
+        print(f"annotator 1 and 3 agreement for metaphor: {len(agreement2['is_metaphor'])} \n {[a.id for a in agreement2['is_metaphor']]}")
         print(
-            f"annotator 1 and 3 agreement for no metaphor: {len(agreement['no_metaphor'])} \n {[a.id for a in agreement['no_metaphor']]}")
+            f"annotator 1 and 3 agreement for no metaphor: {len(agreement2['no_metaphor'])} \n {[a.id for a in agreement2['no_metaphor']]}")
         print(
-            f"annotator 1 and 3 disagreement: {len(disagreement)} \n {[d.id for d in disagreement]}")
+            f"annotator 1 and 3 disagreement: {len(disagreement2)} \n {[d.id for d in disagreement2]}")
 
-        agreement, disagreement = ac.get_cohen_examples(2, 1)
-        print(f"annotator 3 and 2 agreement for metaphor: {len(agreement['is_metaphor'])} \n {[a.id for a in agreement['is_metaphor']]}")
+        agreement3, disagreement3 = ac.get_cohen_examples(2, 1)
+        print(f"annotator 3 and 2 agreement for metaphor: {len(agreement3['is_metaphor'])} \n {[a.id for a in agreement3['is_metaphor']]}")
         print(
-            f"annotator 3 and 2 agreement for no metaphor: {len(agreement['no_metaphor'])} \n {[a.id for a in agreement['no_metaphor']]}")
+            f"annotator 3 and 2 agreement for no metaphor: {len(agreement3['no_metaphor'])} \n {[a.id for a in agreement3['no_metaphor']]}")
         print(
-            f"annotator 3 and 2 disagreement: {len(disagreement)} \n {[d.id for d in disagreement]}")
+            f"annotator 3 and 2 disagreement: {len(disagreement3)} \n {[d.id for d in disagreement3]}")
+
+        print(f"agreed metaphors from all annotators: {len(agreement1['is_metaphor'].intersection(agreement2['is_metaphor'], agreement3['is_metaphor']))} \n {[a.id for a in list(agreement1['is_metaphor'].intersection(agreement2['is_metaphor'], agreement3['is_metaphor']))]}")
+        print(
+            f"agreed no metaphors from all annotators: {len(agreement1['no_metaphor'].intersection(agreement2['no_metaphor'], agreement3['no_metaphor']))} \n {[a.id for a in list(agreement1['no_metaphor'].intersection(agreement2['no_metaphor'], agreement3['no_metaphor']))]}")
 
     else:
         print("Please set valid arguments.")

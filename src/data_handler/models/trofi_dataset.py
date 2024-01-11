@@ -9,3 +9,6 @@ class TroFiDataset(Document):
 
     class Config:
         collection_name = "trofi_dataset"
+
+    def __hash__(self) -> int:
+        return self.id.__hash__()  # or self.id.__hash__()

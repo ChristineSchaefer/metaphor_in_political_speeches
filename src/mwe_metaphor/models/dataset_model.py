@@ -1,7 +1,9 @@
 import torch
 from pydantic import BaseModel, Field
 
+from src.data_handler.models.trofi_dataset import TroFiDataset
 from src.mwe_metaphor.utils.tsvlib import TSVSentence
+from src.utils.text_handler import normalize
 
 
 class Column(BaseModel):
@@ -52,7 +54,7 @@ class Dataset(BaseModel):
     def get_column_data(self, column: int):
         return self.columns[column].data
 
-    def create(self, sentences: list[TSVSentence]):
+    def create_from_tsv(self, sentences: list[TSVSentence]):
         id_array, token_array, lemma_array, upos_array, xpos_array = [], [], [], [], []
         deprel_array, head_array, parseme_mwe_array = [], [], []
 
@@ -83,6 +85,34 @@ class Dataset(BaseModel):
             Column(name="heads", data=head_array),
             Column(name="deprels", data=deprel_array),
             Column(name="parseme_mwes", data=parseme_mwe_array),
+        ]
+
+        self.add_columns(columns)
+        self.set_rows()
+        self.set_features()
+
+    def create_from_trofi(self, sentences: list[TroFiDataset], language_model):
+        sentence_array, lemma_array, token_array, label_array = [], [], [], []
+        for sentence in sentences:
+            token = normalize(sentence.sentence).split()
+            lemma = []
+            for t in token:
+                doc = language_model(t)
+                result = ' '.join([x.lemma_ for x in doc])
+                lemma.append(result)
+            label = ["no_metaphor"] * len(token)
+            label[sentence.verb_idx] = "no_metaphor" if sentence.label == 0 else "is_metaphor"
+
+            sentence_array.append(sentence.sentence)
+            lemma_array.append(lemma)
+            label_array.append(label)
+            token_array.append(token)
+
+        columns = [
+            Column(name="sentences", data=sentence_array),
+            Column(name="label", data=label_array),
+            Column(name="tokens", data=token_array),
+            Column(name="lemmas", data=lemma_array),
         ]
 
         self.add_columns(columns)

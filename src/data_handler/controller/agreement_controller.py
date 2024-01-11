@@ -95,18 +95,19 @@ class AgreementController(BaseModel):
     def get_cohen_examples(self, annotator_a: int, annotator_b: int):
         annotations_a = self.annotations[annotator_a]
         annotations_b = self.annotations[annotator_b]
-        agreement = {"is_metaphor": [], "no_metaphor": []}
-        disagreement = []
+        agreement = {"is_metaphor": set(), "no_metaphor": set()}
+        disagreement = set()
         for index, a in enumerate(annotations_a):
             if a.is_metaphor and annotations_b[index].is_metaphor:
-                agreement["is_metaphor"].append(a)
+                agreement["is_metaphor"].add(a)
             elif not a.is_metaphor and not annotations_b[index].is_metaphor:
-                agreement["no_metaphor"].append(a)
+                agreement["no_metaphor"].add(a)
             else:
-                disagreement.append(a)
+                disagreement.add(a)
 
         return agreement, disagreement
 
     def get_fleiss_examples(self):
+        # TODO
         pass
 

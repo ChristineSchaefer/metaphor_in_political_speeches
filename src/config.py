@@ -33,6 +33,8 @@ class Settings(BaseSettings):
     dropout: int = 0.6
     language_model: str = ""
     language: str = ""
+    model: str = ""
+    model_dir: str = ""
 
     class Config:
         env_file = os.path.join(SRC_DIR, ".env")

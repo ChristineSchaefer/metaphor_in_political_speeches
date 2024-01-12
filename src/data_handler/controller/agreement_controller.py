@@ -107,7 +107,13 @@ class AgreementController(BaseModel):
 
         return agreement, disagreement
 
-    def get_fleiss_examples(self):
-        # TODO
-        pass
+    def update_annotation_collection(self):
+        matrix = self._create_matrix()
+        for index, pair in enumerate(matrix):
+            annotation = self.annotations[0][index]
+            if pair[0] > pair[1]:
+                annotation.is_metaphor = True
+            else:
+                annotation.is_metaphor = False
+            annotation.save()
 

@@ -1,5 +1,5 @@
 from src.data_handler.controller.agreement_controller import AgreementController
-from src.data_handler.controller.collection_controller import TrofiCollectionController
+from src.data_handler.controller.trofi_collection_controller import TrofiCollectionController
 from src.data_handler.controller.csv_reader import CSVController
 from src.data_handler.controller.xml_reader import XMLReaderController
 from src.data_handler.models.annotations import Annotation
@@ -60,6 +60,7 @@ def main_data_handling(arguments):
         print(
             f"agreed no metaphors from all annotators: {len(agreement1['no_metaphor'].intersection(agreement2['no_metaphor'], agreement3['no_metaphor']))} \n {[a.id for a in list(agreement1['no_metaphor'].intersection(agreement2['no_metaphor'], agreement3['no_metaphor']))]}")
 
+        ac.update_annotation_collection()
     else:
         print("Please set valid arguments.")
 

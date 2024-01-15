@@ -133,5 +133,5 @@ dmypy.json
 .idea
 
 
-/data/models
-/src/mwe_metaphor/controller/results
+/data/models/
+/src/mwe_metaphor/controller/results/

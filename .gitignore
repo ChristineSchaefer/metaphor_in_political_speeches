@@ -135,3 +135,4 @@ dmypy.json
 
 /data/models/
 /src/mwe_metaphor/controller/results/
+results/

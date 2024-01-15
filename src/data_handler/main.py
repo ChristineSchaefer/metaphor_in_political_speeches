@@ -3,7 +3,7 @@ from src.data_handler.controller.trofi_collection_controller import TrofiCollect
 from src.data_handler.controller.csv_reader import CSVController
 from src.data_handler.controller.xml_reader import XMLReaderController
 from src.data_handler.models.annotations import Annotation
-from src.utils import argparser
+from src.data_handler.utils import argparser
 from src.data_handler.controller.web_crawler import CrawlerController
 
 urls = ["https://goslar-gegen-rechtsextremismus.de/html/afd-sprueche.php",

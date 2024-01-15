@@ -7,7 +7,7 @@ def parse():
         Output:
             - parser object
     """
-    parser = argparse.ArgumentParser(description="Metaphor Identification in Political Speeches")
+    parser = argparse.ArgumentParser(description="Metaphor Identification in Political Speeches - Data Management")
     parser.add_argument("crawler_url", metavar="crawler_url", nargs="?", type=int,
                         help="Choose url for web crawler from list. Set to 0 if you don't want to use it.",
                         choices=[0, 1, 2, 3])

@@ -1,4 +1,5 @@
 import numpy as np
+from pydantic import BaseModel
 from sklearn.metrics import precision_recall_fscore_support
 
 
@@ -17,3 +18,10 @@ class Evaluate:
 
     def precision_recall_fscore(self, tag_list=[0, 1], average='macro'):
         return precision_recall_fscore_support(self.labels, self.out, average=average, labels=tag_list)[:-1]
+
+
+class PredictionEvaluationModel(BaseModel):
+    precision: float
+    recall: float
+    f1_score: float
+    accuracy: float

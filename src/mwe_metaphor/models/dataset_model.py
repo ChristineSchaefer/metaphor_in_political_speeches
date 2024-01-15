@@ -65,7 +65,8 @@ class Dataset(BaseModel):
             xpos = [words.get("XPOS", "0") for words in sentence.words]
             heads = [words.get("HEAD", "0") for words in sentence.words]
             deprels = [words.get("DEPREL", "0") for words in sentence.words]
-            parseme_mwes = ["no_metaphor" if words.get("PARSEME:MWE", "0") == "*" else "is_metaphor" for words in sentence.words]
+            # TODO evtl doch mit Beginn und Ende  BIO-Tag weil gängige Praxis --> erwähnen
+            parseme_mwes = [0 if words.get("PARSEME:MWE", 0) == "*" else 1 for words in sentence.words]
 
             id_array.append(id)
             token_array.append(tokens)
@@ -84,12 +85,15 @@ class Dataset(BaseModel):
             Column(name="xpos", data=xpos_array),
             Column(name="heads", data=head_array),
             Column(name="deprels", data=deprel_array),
-            Column(name="parseme_mwes", data=parseme_mwe_array),
+            Column(name="label", data=parseme_mwe_array),
         ]
 
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
+        self.labels = ["no_metaphor", "is_metaphor"]
+        self.id2label = {index: label for index, label in enumerate(self.labels)}
+        self.label2id = {id: tag for tag, id in self.id2label.items()}
 
     def create_from_trofi(self, sentences: list[TroFiDataset], language_model):
         sentence_array, lemma_array, token_array, label_array = [], [], [], []
@@ -100,8 +104,8 @@ class Dataset(BaseModel):
                 doc = language_model(t)
                 result = ' '.join([x.lemma_ for x in doc])
                 lemma.append(result)
-            label = ["no_metaphor"] * len(token)
-            label[sentence.verb_idx] = "no_metaphor" if sentence.label == 0 else "is_metaphor"
+            label = [0] * len(token)
+            label[sentence.verb_idx] = 0 if sentence.label == 0 else 1
 
             sentence_array.append(sentence.sentence)
             lemma_array.append(lemma)
@@ -118,22 +122,56 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-
-    def refactor_labels_columns(self, labels: list[list[str]]) -> list[list[int]]:
-        index_to_word = self.create_word_to_index_voc(labels)
-        return [
-            [list(index_to_word.keys())[list(index_to_word.values()).index(word)] for word in label]
-            for label in labels
-        ]
-
-    def create_word_to_index_voc(self, labels: list[list[str]]):
-        voc = set(word for label in labels for word in label)
-        word_to_index = {index: word for index, word in enumerate(list(voc), start=1) if word != "-100"}
-        word_to_index[0] = "-100"
-        self.id2label = word_to_index
+        self.labels = ["no_metaphor", "is_metaphor"]
+        self.id2label = {index: label for index, label in enumerate(self.labels)}
         self.label2id = {id: tag for tag, id in self.id2label.items()}
-        self.labels = list(word_to_index.values())
-        return word_to_index
+
+    @staticmethod
+    def align_labels_with_tokens(labels, word_ids):
+        new_labels = []
+        current_word = None
+        for word_id in word_ids:
+            if word_id != current_word:
+                # start of a new word
+                current_word = word_id
+                label = -100 if word_id is None else labels[word_id]
+                new_labels.append(label)
+            elif word_id is None:
+                # special token
+                new_labels.append(-100)
+            else:
+                # same word as previous token
+                label = labels[word_id]
+                # only the identifier is used for a continuous word (for BIO-tag)
+                # pattern = re.compile(r'^(\d+):.*$')
+                # match = pattern.match(label)
+                # if match:
+                # label = match.group(1)
+                new_labels.append(label)
+
+        return new_labels
+
+    def tokenize_and_align_labels(self, tokenizer):
+        token = next((column for column in self.columns if column.name == "tokens"), None)
+        labels = next((column for column in self.columns if column.name == "label"), None)
+        try:
+            tokenized_inputs = tokenizer(
+                token.data,
+                padding="max_length",
+                truncation=True,
+                is_split_into_words=True
+            )
+            new_labels = []
+            for i, label in enumerate(labels.data):
+                word_ids = tokenized_inputs.word_ids(i)
+                new_labels.append(self.align_labels_with_tokens(label, word_ids))
+
+            # new_labels = self.refactor_labels_columns(new_labels)
+            tokenized_inputs["labels"] = new_labels
+            return tokenized_inputs
+
+        except ValueError as e:
+            print(e)
 
 
 class MWEDataset(torch.utils.data.Dataset):
@@ -148,4 +186,3 @@ class MWEDataset(torch.utils.data.Dataset):
 
     def __len__(self):
         return len(self.labels)
-

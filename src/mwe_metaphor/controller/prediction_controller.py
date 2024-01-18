@@ -22,7 +22,7 @@ class PredictionController(BaseModel):
     test_dataset_mwe: Dataset = Field(default_factory=Dataset)
     test_dataset_metaphor: Dataset = Field(default_factory=Dataset)
     pre_training: bool
-    num_epochs: int = 2
+    num_epochs: int = 1
     evaluation_results: list[PredictionEvaluationModel] = Field(default_factory=list)
 
     def predict(self):

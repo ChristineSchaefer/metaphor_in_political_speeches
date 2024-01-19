@@ -1,0 +1,17 @@
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/bin/python /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/src/mwe_metaphor/main.py 0 0 1 0 False
+mps
++++ start prediction without fine-tuned model +++
+Some weights of DistilBertForTokenClassification were not initialized from the model checkpoint at distilbert-base-german-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+start evaluation for metaphor corpus
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+epoch 0: precision=0.005185480654168329 recall=0.029748283752860413 f1_score=0.008831521739130436 accuracy=0.6047888081786387
+metaphor average over 1 epochs: (0.6047888081786387, 0.029748283752860413, 0.005185480654168329, 0.008831521739130436)
+start evaluation for mwe corpus
+epoch 0: precision=0.044207052284175784 recall=0.1256479881510738 f1_score=0.06540314808866045 accuracy=0.8149778761061947
+mwe average over 1 epochs: (0.7098833421424167, 0.07769813595196712, 0.024696266469172057, 0.03711733491389544)
+
+Process finished with exit code 0

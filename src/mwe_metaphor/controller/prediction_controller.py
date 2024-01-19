@@ -27,23 +27,26 @@ class PredictionController(BaseModel):
 
     def predict(self):
         self.preprocessing()
-        if self.pre_training:
-            model = AutoModelForTokenClassification.from_pretrained(self._get_latest_save(self.settings.model))
-            tokenizer = AutoTokenizer.from_pretrained(self._get_latest_save(self.settings.model))
-        else:
-            model = AutoModelForTokenClassification.from_pretrained(self.settings.model)
-            tokenizer = AutoTokenizer.from_pretrained(self.settings.model)
+        model = AutoModelForTokenClassification.from_pretrained(self._get_latest_save(
+            self.settings.model)) if self.pre_training else AutoModelForTokenClassification.from_pretrained(
+            self.settings.model)
+        tokenizer = AutoTokenizer.from_pretrained(
+            self._get_latest_save(self.settings.model)) if self.pre_training else AutoTokenizer.from_pretrained(
+            self.settings.model)
 
+        self._evaluate_and_print("metaphor", self.test_dataset_metaphor, tokenizer, model)
+        self._evaluate_and_print("mwe", self.test_dataset_mwe, tokenizer, model)
+
+    def _evaluate_and_print(self, corpus_name, test_dataset, tokenizer, model):
+        print(f"start evaluation for {corpus_name} corpus")
         for _ in range(self.num_epochs):
-            evaluation_results = self.evaluate(self.test_dataset_metaphor, tokenizer, model)
+            evaluation_results = self.evaluate(test_dataset, tokenizer, model)
             self.evaluation_results.append(evaluation_results)
             print(f"epoch {_}: {evaluation_results}")
 
-        # TODO same for mwe dataset
-
         averages = self._compute_average()
-        print(f"average over {self.num_epochs} epochs: {averages}")
-
+        print(f"{corpus_name} average over {self.num_epochs} epochs: {averages}")
+        
     def _load_tsv_data(self) -> list[TSVSentence]:
         with open(f"{self.settings.mwe_dir}/{self.settings.mwe_test}") as f:
             return list(iter_tsv_sentences(f))

@@ -23,25 +23,27 @@ def classification_main(arguments):
         print('recorded_results_per_fold=', results)
         print('len(set(recorded_results_per_fold))=', len(set(results)))
 
-    elif arguments.distilBert_with_training != 0 and arguments.num_epochs != 0:
-        print("+++ train DistilBERT +++")
-        bert_training_controller = BertTrainingController(settings=env)
-        bert_training_controller.training()
+    elif arguments.distilBert_finetuned != 0 and arguments.num_epochs != 0:
+        if arguments.training:
+            print("+++ train DistilBERT +++")
+            bert_training_controller = BertTrainingController(settings=env)
+            bert_training_controller.training()
 
         print("+++ start prediction with fine-tuned model +++")
         prediction_controller = PredictionController(settings=env, pre_training=True, num_epochs=arguments.num_epochs)
         prediction_controller.predict()
 
-    elif arguments.distilBert_with_training != 0 and arguments.num_epochs == 0:
-        print("+++ train DistilBERT +++")
-        bert_training_controller = BertTrainingController(settings=env)
-        bert_training_controller.training()
+    elif arguments.distilBert_finetuned != 0 and arguments.num_epochs == 0:
+        if arguments.training:
+            print("+++ train DistilBERT +++")
+            bert_training_controller = BertTrainingController(settings=env)
+            bert_training_controller.training()
 
         print("+++ start prediction with fine-tuned model +++")
         prediction_controller = PredictionController(settings=env, pre_training=True)
         prediction_controller.predict()
 
-    elif arguments.distilBert_without_training != 0:
+    elif arguments.distilBert_baseline != 0:
         print("+++ start prediction without fine-tuned model +++")
         prediction_controller = PredictionController(settings=env, pre_training=False)
         prediction_controller.predict()

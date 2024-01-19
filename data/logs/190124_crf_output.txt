@@ -1,0 +1,11 @@
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/bin/python /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/src/mwe_metaphor/controller/crf_controller.py
+predicted mwe f1-score: 0.9595296323101414
+predicted mwe precision: 0.7215686274509804
+predicted mwe recall: 0.3556701030927835
+predicted mwe accuracy: 0.9652315982572804
+predicted metaphor f1-score: 0.9380010136263789
+predicted metaphor precision: 0.14285714285714285
+predicted metaphor recall: 0.03571428571428571
+predicted metaphor accuracy: 0.9520193861066236
+
+Process finished with exit code 0

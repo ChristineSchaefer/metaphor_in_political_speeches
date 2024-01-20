@@ -1,0 +1,221 @@
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/bin/python /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/src/mwe_metaphor/main.py 0 1 0 3 1 0
+mps
++++ train DistilBERT +++
+Some weights of DistilBertForTokenClassification were not initialized from the model checkpoint at distilbert-base-german-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+  0%|          | 0/1233 [00:00<?, ?it/s]You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+ 33%|███▎      | 411/1233 [1:09:31<34:37,  2.53s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.79s/it]
+ 30%|███       | 3/10 [00:07<00:17,  2.55s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.94s/it]
+ 50%|█████     | 5/10 [00:14<00:15,  3.16s/it]
+ 60%|██████    | 6/10 [00:17<00:13,  3.31s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.43s/it]
+ 80%|████████  | 8/10 [00:25<00:07,  3.51s/it]
+ 90%|█████████ | 9/10 [00:28<00:03,  3.55s/it]
+100%|██████████| 10/10 [00:30<00:00,  2.98s/it]/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+{'eval_loss': 0.0034256477374583483, 'eval_precision': 0.6700554528650647, 'eval_recall': 0.537833827893175, 'eval_f1': 0.5967078189300411, 'eval_accuracy': 0.9726027397260274, 'eval_runtime': 36.9443, 'eval_samples_per_second': 16.295, 'eval_steps_per_second': 0.271, 'epoch': 1.0}
+
+ 33%|███▎      | 411/1233 [1:10:08<34:37,  2.53s/it]
+100%|██████████| 10/10 [00:33<00:00,  2.98s/it]
+ 41%|████      | 500/1233 [1:14:36<36:19,  2.97s/it]{'loss': 0.0082, 'learning_rate': 2e-05, 'epoch': 1.22}
+ 67%|██████▋   | 822/1233 [1:30:26<17:12,  2.51s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.81s/it]
+ 30%|███       | 3/10 [00:07<00:17,  2.51s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.91s/it]
+ 50%|█████     | 5/10 [00:14<00:15,  3.14s/it]
+ 60%|██████    | 6/10 [00:17<00:13,  3.27s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.34s/it]
+ 80%|████████  | 8/10 [00:24<00:06,  3.40s/it]
+ 90%|█████████ | 9/10 [00:28<00:03,  3.43s/it]
+100%|██████████| 10/10 [00:29<00:00,  2.86s/it]/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+{'eval_loss': 0.0028099154587835073, 'eval_precision': 0.7552334943639292, 'eval_recall': 0.6958456973293768, 'eval_f1': 0.7243243243243244, 'eval_accuracy': 0.9794189663159288, 'eval_runtime': 35.8271, 'eval_samples_per_second': 16.803, 'eval_steps_per_second': 0.279, 'epoch': 2.0}
+
+ 67%|██████▋   | 822/1233 [1:31:02<17:12,  2.51s/it]
+100%|██████████| 10/10 [00:32<00:00,  2.86s/it]
+ 81%|████████  | 1000/1233 [1:39:41<11:16,  2.91s/it]{'loss': 0.0027, 'learning_rate': 6.35743519781719e-06, 'epoch': 2.43}
+100%|██████████| 1233/1233 [1:51:03<00:00,  2.53s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.79s/it]
+ 30%|███       | 3/10 [00:07<00:17,  2.53s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.92s/it]
+ 50%|█████     | 5/10 [00:14<00:15,  3.16s/it]
+ 60%|██████    | 6/10 [00:18<00:13,  3.34s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.42s/it]
+ 80%|████████  | 8/10 [00:25<00:06,  3.48s/it]
+ 90%|█████████ | 9/10 [00:28<00:03,  3.52s/it]
+100%|██████████| 10/10 [00:30<00:00,  2.95s/it]/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+
+100%|██████████| 1233/1233 [1:51:39<00:00,  2.53s/it]
+100%|██████████| 10/10 [00:32<00:00,  2.95s/it]
+                                               {'eval_loss': 0.0027547674253582954, 'eval_precision': 0.7307692307692307, 'eval_recall': 0.7329376854599406, 'eval_f1': 0.7318518518518519, 'eval_accuracy': 0.9795513202302958, 'eval_runtime': 36.8191, 'eval_samples_per_second': 16.35, 'eval_steps_per_second': 0.272, 'epoch': 3.0}
+{'train_runtime': 6702.1301, 'train_samples_per_second': 2.94, 'train_steps_per_second': 0.184, 'train_loss': 0.0047968201586993265, 'epoch': 3.0}
+100%|██████████| 1233/1233 [1:51:42<00:00,  5.44s/it]
++++ start 0th prediction with fine-tuned model +++
+Ignoring invalid subfolder format: distilbert-base-german-cased
+Ignoring invalid subfolder format: distilbert-base-german-cased
+start evaluation for metaphor corpus
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+epoch 0: precision=0.234006734006734 recall=0.3180778032036613 f1_score=0.2696411251212415 accuracy=0.9449825127791229
+start evaluation for mwe corpus
+epoch 0: precision=0.7239951278928136 recall=0.733646013330042 f1_score=0.7287886218734674 accuracy=0.9788716814159292
++++ train DistilBERT +++
+Some weights of DistilBertForTokenClassification were not initialized from the model checkpoint at distilbert-base-german-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0%|          | 0/1233 [00:00<?, ?it/s]You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+ 33%|███▎      | 411/1233 [20:26<35:16,  2.57s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.78s/it]
+ 30%|███       | 3/10 [00:07<00:17,  2.55s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.96s/it]
+ 50%|█████     | 5/10 [00:14<00:16,  3.20s/it]
+ 60%|██████    | 6/10 [00:18<00:13,  3.41s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.49s/it]
+ 80%|████████  | 8/10 [00:25<00:07,  3.56s/it]
+ 90%|█████████ | 9/10 [00:29<00:03,  3.62s/it]
+
+ 33%|███▎      | 411/1233 [21:04<35:16,  2.57s/it]
+100%|██████████| 10/10 [00:33<00:00,  3.18s/it]
+                                               {'eval_loss': 0.0037087618838995695, 'eval_precision': 0.6704781704781705, 'eval_recall': 0.478486646884273, 'eval_f1': 0.5584415584415585, 'eval_accuracy': 0.9713453775395408, 'eval_runtime': 38.6283, 'eval_samples_per_second': 15.584, 'eval_steps_per_second': 0.259, 'epoch': 1.0}
+ 41%|████      | 500/1233 [25:43<37:50,  3.10s/it]{'loss': 0.0105, 'learning_rate': 2e-05, 'epoch': 1.22}
+ 67%|██████▋   | 822/1233 [42:17<18:32,  2.71s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.84s/it]
+ 30%|███       | 3/10 [00:07<00:17,  2.55s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.94s/it]
+ 50%|█████     | 5/10 [00:14<00:15,  3.16s/it]
+ 60%|██████    | 6/10 [00:18<00:13,  3.38s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.48s/it]
+ 80%|████████  | 8/10 [00:25<00:07,  3.53s/it]
+ 90%|█████████ | 9/10 [00:29<00:03,  3.55s/it]
+100%|██████████| 10/10 [00:30<00:00,  3.00s/it]/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+
+ 67%|██████▋   | 822/1233 [42:54<18:32,  2.71s/it]
+100%|██████████| 10/10 [00:32<00:00,  3.00s/it]
+                                               {'eval_loss': 0.0028711522463709116, 'eval_precision': 0.7611940298507462, 'eval_recall': 0.6810089020771514, 'eval_f1': 0.7188723570869227, 'eval_accuracy': 0.9793527893587453, 'eval_runtime': 37.2373, 'eval_samples_per_second': 16.167, 'eval_steps_per_second': 0.269, 'epoch': 2.0}
+ 81%|████████  | 1000/1233 [52:12<12:14,  3.15s/it]{'loss': 0.0028, 'learning_rate': 6.35743519781719e-06, 'epoch': 2.43}
+100%|██████████| 1233/1233 [1:08:07<00:00,  2.59s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.77s/it]
+ 30%|███       | 3/10 [00:07<00:17,  2.50s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.86s/it]
+ 50%|█████     | 5/10 [00:14<00:15,  3.11s/it]
+ 60%|██████    | 6/10 [00:17<00:13,  3.29s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.39s/it]
+ 80%|████████  | 8/10 [00:24<00:06,  3.43s/it]
+ 90%|█████████ | 9/10 [00:28<00:03,  3.45s/it]
+100%|██████████| 10/10 [00:30<00:00,  2.97s/it]/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+{'eval_loss': 0.0027343863621354103, 'eval_precision': 0.7332826747720365, 'eval_recall': 0.7158753709198813, 'eval_f1': 0.7244744744744744, 'eval_accuracy': 0.9789557276156442, 'eval_runtime': 36.0021, 'eval_samples_per_second': 16.721, 'eval_steps_per_second': 0.278, 'epoch': 3.0}
+
+100%|██████████| 1233/1233 [1:08:43<00:00,  2.59s/it]
+100%|██████████| 10/10 [00:31<00:00,  2.97s/it]
+100%|██████████| 1233/1233 [1:08:46<00:00,  3.35s/it]
+{'train_runtime': 4126.6539, 'train_samples_per_second': 4.775, 'train_steps_per_second': 0.299, 'train_loss': 0.005818082105794382, 'epoch': 3.0}
++++ start 1th prediction with fine-tuned model +++
+Ignoring invalid subfolder format: distilbert-base-german-cased
+Ignoring invalid subfolder format: distilbert-base-german-cased
+start evaluation for metaphor corpus
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+epoch 1: precision=0.234006734006734 recall=0.3180778032036613 f1_score=0.2696411251212415 accuracy=0.9449825127791229
+start evaluation for mwe corpus
+epoch 1: precision=0.7239951278928136 recall=0.733646013330042 f1_score=0.7287886218734674 accuracy=0.9788716814159292
++++ train DistilBERT +++
+Some weights of DistilBertForTokenClassification were not initialized from the model checkpoint at distilbert-base-german-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0%|          | 0/1233 [00:00<?, ?it/s]You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+ 33%|███▎      | 411/1233 [20:31<35:34,  2.60s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.83s/it]
+ 30%|███       | 3/10 [00:07<00:18,  2.57s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.94s/it]
+ 50%|█████     | 5/10 [00:14<00:15,  3.17s/it]
+ 60%|██████    | 6/10 [00:18<00:13,  3.40s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.47s/it]
+ 80%|████████  | 8/10 [00:25<00:07,  3.51s/it]
+ 90%|█████████ | 9/10 [00:29<00:03,  3.53s/it]
+100%|██████████| 10/10 [00:31<00:00,  3.06s/it]
+
+ 33%|███▎      | 411/1233 [21:09<35:34,  2.60s/it]
+                                               {'eval_loss': 0.003708762116730213, 'eval_precision': 0.6704781704781705, 'eval_recall': 0.478486646884273, 'eval_f1': 0.5584415584415585, 'eval_accuracy': 0.9713453775395408, 'eval_runtime': 38.404, 'eval_samples_per_second': 15.675, 'eval_steps_per_second': 0.26, 'epoch': 1.0}
+ 41%|████      | 500/1233 [30:13<42:48,  3.50s/it]{'loss': 0.0105, 'learning_rate': 2e-05, 'epoch': 1.22}
+ 67%|██████▋   | 822/1233 [1:28:13<17:38,  2.57s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.80s/it]
+ 30%|███       | 3/10 [00:07<00:17,  2.54s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.92s/it]
+ 50%|█████     | 5/10 [00:14<00:15,  3.15s/it]
+ 60%|██████    | 6/10 [00:18<00:13,  3.39s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.50s/it]
+ 80%|████████  | 8/10 [00:25<00:07,  3.58s/it]
+ 90%|█████████ | 9/10 [00:29<00:03,  3.61s/it]
+100%|██████████| 10/10 [00:31<00:00,  3.10s/it]/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+
+
+ 67%|██████▋   | 822/1233 [1:28:51<17:38,  2.57s/it]
+                                               {'eval_loss': 0.0028711522463709116, 'eval_precision': 0.7611940298507462, 'eval_recall': 0.6810089020771514, 'eval_f1': 0.7188723570869227, 'eval_accuracy': 0.9793527893587453, 'eval_runtime': 38.6276, 'eval_samples_per_second': 15.585, 'eval_steps_per_second': 0.259, 'epoch': 2.0}
+ 81%|████████  | 1000/1233 [1:37:47<11:35,  2.98s/it]{'loss': 0.0028, 'learning_rate': 6.35743519781719e-06, 'epoch': 2.43}
+100%|██████████| 1233/1233 [1:49:21<00:00,  2.56s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+ 20%|██        | 2/10 [00:03<00:14,  1.80s/it]
+ 30%|███       | 3/10 [00:07<00:17,  2.55s/it]
+ 40%|████      | 4/10 [00:10<00:17,  2.94s/it]
+ 50%|█████     | 5/10 [00:14<00:15,  3.16s/it]
+ 60%|██████    | 6/10 [00:18<00:13,  3.36s/it]
+ 70%|███████   | 7/10 [00:21<00:10,  3.45s/it]
+ 80%|████████  | 8/10 [00:25<00:06,  3.50s/it]
+ 90%|█████████ | 9/10 [00:28<00:03,  3.53s/it]
+100%|██████████| 10/10 [00:30<00:00,  3.00s/it]/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+{'eval_loss': 0.0027343863621354103, 'eval_precision': 0.7332826747720365, 'eval_recall': 0.7158753709198813, 'eval_f1': 0.7244744744744744, 'eval_accuracy': 0.9789557276156442, 'eval_runtime': 37.0081, 'eval_samples_per_second': 16.267, 'eval_steps_per_second': 0.27, 'epoch': 3.0}
+
+
+100%|██████████| 1233/1233 [1:49:58<00:00,  2.56s/it]
+100%|██████████| 1233/1233 [1:50:01<00:00,  5.35s/it]
+{'train_runtime': 6601.2177, 'train_samples_per_second': 2.985, 'train_steps_per_second': 0.187, 'train_loss': 0.005818082105794382, 'epoch': 3.0}
++++ start 2th prediction with fine-tuned model +++
+Ignoring invalid subfolder format: distilbert-base-german-cased
+Ignoring invalid subfolder format: distilbert-base-german-cased
+start evaluation for metaphor corpus
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: no_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: is_metaphor seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+epoch 2: precision=0.2427536231884058 recall=0.30663615560640733 f1_score=0.27098078867542974 accuracy=0.9475383373688459
+start evaluation for mwe corpus
+epoch 2: precision=0.7244973938942666 recall=0.7205628239940756 f1_score=0.7225247524752475 accuracy=0.9788938053097345
+metaphor average over 3 epochs: (0.9458344543090306, 0.3142639206712433, 0.23692236373395792, 0.27008767963930425)
+mwe average over 3 epochs: (0.9788790560471976, 0.7292849502180531, 0.7241625498932979, 0.7267006654073941)
+
+Process finished with exit code 0

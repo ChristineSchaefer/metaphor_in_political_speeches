@@ -14,6 +14,8 @@ from src.mwe_metaphor.models.dataset_model import Dataset
 from src.mwe_metaphor.models.evaluation_model import PredictionEvaluationModel
 from src.mwe_metaphor.models.spacy_model import SpacyModel
 from src.mwe_metaphor.utils.tsvlib import TSVSentence, iter_tsv_sentences
+from src.utils.datetime import ts_now
+from src.utils.text_handler import write_list_with_dict_to_txt
 
 
 class PredictionController(BaseModel):
@@ -97,9 +99,10 @@ class PredictionController(BaseModel):
         with torch.no_grad():
             outputs = model(**inputs)
 
-        return self._compute_metrics(outputs, inputs["labels"])
+        return self._compute_metrics(outputs, inputs, dataset)
 
-    def _compute_metrics(self, eval_preds: ModelOutput, labels):
+    @classmethod
+    def _compute_metrics(cls, eval_preds: ModelOutput, inputs, dataset: Dataset):
         metric = evaluate.load("seqeval")
         logits = eval_preds.logits
         probabilities = F.softmax(logits, dim=-1)
@@ -107,17 +110,51 @@ class PredictionController(BaseModel):
 
         # Remove ignored index (special tokens) and convert to labels
         true_predictions = [
-            [self.test_dataset_metaphor.labels[p] for (p, l) in zip(prediction, label) if l != -100]
-            for prediction, label in zip(predicted_labels, labels)
+            [dataset.labels[p] for (p, l) in zip(prediction, label) if l != -100]
+            for prediction, label in zip(predicted_labels, inputs["labels"])
         ]
         true_labels = [
-            [self.test_dataset_metaphor.labels[l] for (p, l) in zip(prediction, label) if l != -100]
-            for prediction, label in zip(predicted_labels, labels)
+            [dataset.labels[l] for (p, l) in zip(prediction, label) if l != -100]
+            for prediction, label in zip(predicted_labels, inputs["labels"])
         ]
 
+        wrong_predictions = cls._get_sentence_with_wrong_prediction(true_labels, true_predictions, dataset, inputs.word_ids)
+        write_list_with_dict_to_txt(wrong_predictions, f"data/logs/{ts_now()}_wrong_predictions.txt", "w")
         all_metrics = metric.compute(predictions=true_predictions, references=true_labels)
         return PredictionEvaluationModel(
             precision=all_metrics["overall_precision"],
             recall=all_metrics["overall_recall"],
             f1_score=all_metrics["overall_f1"],
             accuracy=all_metrics["overall_accuracy"])
+
+    @classmethod
+    def _get_sentence_with_wrong_prediction(
+            cls,
+            true_labels: list,
+            predictions: list,
+            dataset: Dataset,
+            word_ids) -> list:
+        wrong_predictions = []
+        token_column = [t.data for t in dataset.columns if t.name == "tokens"]
+        for index, pred in enumerate(predictions):
+            if pred != true_labels[index]:
+                wrong_predictions.append({
+                    "predictions": cls._normalize_labels(pred, word_ids(index)),
+                    "true_labels": cls._normalize_labels(true_labels[index], word_ids(index)),
+                    "token": token_column[0][index]
+                })
+        return wrong_predictions
+
+    @classmethod
+    def _normalize_labels(cls, labels: list, word_ids: list) -> list:
+        normalized_labels = []
+
+        current_word = None
+        for id in (i for i in word_ids if i is not None):
+            if current_word is None or current_word != id:
+                normalized_labels.append(labels.pop(0))
+            current_word = id
+
+        return normalized_labels
+
+

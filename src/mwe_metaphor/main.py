@@ -31,8 +31,8 @@ def classification_main(arguments):
             bert_training_controller = BertTrainingController(settings=env)
             bert_training_controller.training()
 
-        print(f"+++ start {_}th prediction with fine-tuned model +++")
-        prediction_controller = PredictionController(settings=env, pre_training=True, num_epochs=_)
+        print(f"+++ start prediction with fine-tuned model +++")
+        prediction_controller = PredictionController(settings=env, pre_training=True)
         results = prediction_controller.predict()
         print(f"+++ finish prediction with results: {results} +++")
 

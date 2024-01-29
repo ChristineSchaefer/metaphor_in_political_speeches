@@ -26,6 +26,15 @@ def write_to_txt(text: str, name: str, mode: str):
     file.close()
 
 
+def write_list_with_dict_to_txt(data: list[dict], name: str, mode: str):
+    file = open(os.path.join(BASE_DIR, name), mode, encoding="utf-8")
+    for element in data:
+        for key, value in element.items():
+            file.write('%s: %s\n' % (key, value))
+        file.write("\n")
+    file.close()
+
+
 def read_from_txt(path: str) -> list:
     content = []
     with open(os.path.join(BASE_DIR, path)) as f:
@@ -47,8 +56,8 @@ def save_collection_in_separate_xml(search: dict, path: str):
         speech = speeches[i].dict(exclude={"_id"})
         xml = dict2xml(speech, wrap='speech', indent="   ")
         file = open(
-                      os.path.join(BASE_DIR, path) + "speeches_split_" + str(i + 1) + ".xml",
-                      "w")
+            os.path.join(BASE_DIR, path) + "speeches_split_" + str(i + 1) + ".xml",
+            "w")
         file.write(xml)
         file.close()
 
@@ -68,8 +77,3 @@ def read_from_csv_and_write_to_dict(path: str) -> list[dict]:
         ])
 
         return list(dict_reader)
-
-
-if __name__ == "__main__":
-    # save_collection_in_separate_xml({"url": "Bundesregierung.xml"}, "data/collections/bundesregierung_split/")
-    read_from_csv_and_write_to_dict("data/metaphors.csv")

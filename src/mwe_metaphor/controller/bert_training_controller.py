@@ -45,10 +45,10 @@ class BertTrainingController(BaseModel):
 
         training_args = TrainingArguments(
             output_dir=f'./results/{model_checkpoint}_{ts_now()}',  # output directory
-            num_train_epochs=3,  # total number of training epochs
-            per_device_train_batch_size=16,  # batch size per device during training
+            num_train_epochs=self.settings.epochs,  # total number of training epochs
+            per_device_train_batch_size=self.settings.batch_train,  # batch size per device during training
             per_device_eval_batch_size=64,  # batch size for evaluation
-            warmup_steps=500,  # number of warmup steps for learning rate scheduler
+            warmup_steps=self.settings.num_warmup_steps,  # number of warmup steps for learning rate scheduler
             weight_decay=0.01,  # strength of weight decay
             evaluation_strategy="epoch",
             save_strategy="epoch",
@@ -68,8 +68,9 @@ class BertTrainingController(BaseModel):
 
         trainer.train()
 
-        model.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{ts_now()}"))
-        tokenizer.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{ts_now()}"))
+        timestamp = ts_now()
+        model.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{timestamp}"))
+        tokenizer.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{timestamp}"))
 
     def _load_data(self, path: str) -> list[TSVSentence]:
         with open(f"{self.settings.mwe_dir}/{path}") as f:

@@ -17,9 +17,10 @@ def parse():
     parser.add_argument("distilBert_baseline", metavar="distilBert_baseline", nargs="?",
                         type=int, help="Choose if you want to classify with DistilBERT. 0 = no, 1 = yes.",
                         choices=[0, 1])
-    parser.add_argument("num_epochs", metavar="num_epochs", nargs="?", type=int,
-                        help="Choose number of epochs to train DistilBERT.", choices=[0, 1, 2, 3, 4, 5])
-    parser.add_argument("training", metavar="training", nargs="?", type=bool,
-                        help="Choose if you want to train DistilBERT.", choices=[True, False])
+    parser.add_argument("training", metavar="training", nargs="?", type=int,
+                        help="Choose if you want to train DistilBERT. 0 = no, 1 = yes.", choices=[0, 1])
+    parser.add_argument("crf", metavar="crf", nargs="?",
+                        type=int, help="Choose if you want to build a crf model and predict with it. 0 = no, 1 = yes.",
+                        choices=[0, 1])
 
     return parser

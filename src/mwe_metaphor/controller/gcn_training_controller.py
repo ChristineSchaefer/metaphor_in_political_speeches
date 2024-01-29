@@ -14,9 +14,8 @@ from src.config import Settings
 from src.mwe_metaphor.models.bert_with_gcn_model import BertWithGCNAndMWE
 from src.mwe_metaphor.models.evaluation_model import Evaluate
 from src.mwe_metaphor.models.spacy_model import CoNLLParserModel, SpacyModel
-from src.mwe_metaphor.utils.mwe_utils import mwe_adjacency
 from src.mwe_metaphor.utils.text_utils import tokenize
-from src.mwe_metaphor.utils.training_utils import adjacency, pad_or_truncate
+from src.mwe_metaphor.utils.training_utils import adjacency, pad_or_truncate, mwe_adjacency
 
 device = torch.device("mps") if torch.has_mps else torch.device("cpu")
 

@@ -2,7 +2,6 @@ import os
 from datetime import datetime
 
 import evaluate
-import numpy as np
 import torch
 import torch.nn.functional as F
 from pydantic import BaseModel, Field
@@ -36,16 +35,13 @@ class PredictionController(BaseModel):
 
         self._evaluate_and_print("metaphor", self.test_dataset_metaphor, tokenizer, model)
         self._evaluate_and_print("mwe", self.test_dataset_mwe, tokenizer, model)
+        return self.evaluation_results
 
     def _evaluate_and_print(self, corpus_name, test_dataset, tokenizer, model):
         print(f"start evaluation for {corpus_name} corpus")
-        for _ in range(self.num_epochs):
-            evaluation_results = self.evaluate(test_dataset, tokenizer, model)
-            self.evaluation_results.append(evaluation_results)
-            print(f"epoch {_}: {evaluation_results}")
-
-        averages = self._compute_average()
-        print(f"{corpus_name} average over {self.num_epochs} epochs: {averages}")
+        evaluation_results = self.evaluate(test_dataset, tokenizer, model)
+        self.evaluation_results.append(evaluation_results)
+        print(f"epoch {self.num_epochs}: {evaluation_results}")
         
     def _load_tsv_data(self) -> list[TSVSentence]:
         with open(f"{self.settings.mwe_dir}/{self.settings.mwe_test}") as f:
@@ -125,18 +121,3 @@ class PredictionController(BaseModel):
             recall=all_metrics["overall_recall"],
             f1_score=all_metrics["overall_f1"],
             accuracy=all_metrics["overall_accuracy"])
-
-    def _compute_average(self):
-        precision_scores = [value.precision for value in self.evaluation_results]
-        average_precision = np.mean(precision_scores)
-
-        recall_scores = [value.recall for value in self.evaluation_results]
-        average_recall = np.mean(recall_scores)
-
-        f1_scores = [value.f1_score for value in self.evaluation_results]
-        average_f1_score = np.mean(f1_scores)
-
-        accuracy_score = [value.accuracy for value in self.evaluation_results]
-        average_accuracy = np.mean(accuracy_score)
-
-        return average_accuracy, average_recall, average_precision, average_f1_score

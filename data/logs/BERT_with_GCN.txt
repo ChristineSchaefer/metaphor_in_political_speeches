@@ -1,0 +1,144 @@
+mps
++++ train BERT with GNC and predict +++
+MAX_LEN = 90
+len of sents in mwe adj processing 6568
+len(sentences)=252
+max_len of tokenized texts: 105
+fold number 1:
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]Train loss: 0.7009543350764683
+Epoch:  20%|██        | 1/5 [00:19<01:17, 19.30s/it]Train loss: 0.6857018087591443
+Epoch:  40%|████      | 2/5 [00:37<00:55, 18.63s/it]Train loss: 0.6856579439980643
+Epoch:  60%|██████    | 3/5 [00:55<00:36, 18.35s/it]Train loss: 0.6705661628927503
+Epoch:  80%|████████  | 4/5 [01:13<00:18, 18.18s/it]Train loss: 0.6647068730422429
+Epoch: 100%|██████████| 5/5 [01:31<00:00, 18.05s/it]Epoch: 100%|██████████| 5/5 [01:31<00:00, 18.24s/it]
+scores.accuracy()=0.5
+scores.precision_recall_fscore()=(0.25, 0.5, 0.3333333333333333)
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]fold number 2:
+Train loss: 0.6881107687950134
+Epoch:  20%|██        | 1/5 [00:17<01:11, 17.82s/it]Train loss: 0.6918096925531115
+Epoch:  40%|████      | 2/5 [00:35<00:53, 17.98s/it]Train loss: 0.6896273025444576
+Epoch:  60%|██████    | 3/5 [00:53<00:36, 18.00s/it]Train loss: 0.6788161737578255
+Epoch:  80%|████████  | 4/5 [01:11<00:18, 18.02s/it]Train loss: 0.6745486770357404
+Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.05s/it]Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.02s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+scores.accuracy()=0.6538461538461539
+scores.precision_recall_fscore()=(0.3269230769230769, 0.5, 0.39534883720930236)
+fold number 3:
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]Train loss: 0.6962353161403111
+Epoch:  20%|██        | 1/5 [00:18<01:12, 18.19s/it]Train loss: 0.6933462704930987
+Epoch:  40%|████      | 2/5 [00:36<00:54, 18.09s/it]Train loss: 0.6885671530451093
+Epoch:  60%|██████    | 3/5 [00:54<00:36, 18.07s/it]Train loss: 0.6883000561169216
+Epoch:  80%|████████  | 4/5 [01:12<00:18, 18.01s/it]Train loss: 0.6720363029411861
+scores.accuracy()=0.64
+scores.precision_recall_fscore()=(0.32, 0.5, 0.39024390243902435)
+Epoch: 100%|██████████| 5/5 [01:30<00:00, 17.98s/it]Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.02s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+fold number 4:
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]Train loss: 0.694491731269019
+Epoch:  20%|██        | 1/5 [00:18<01:12, 18.01s/it]Train loss: 0.6940134934016636
+Epoch:  40%|████      | 2/5 [00:36<00:54, 18.05s/it]Train loss: 0.6812434920242855
+Epoch:  60%|██████    | 3/5 [00:54<00:36, 18.03s/it]Train loss: 0.6787454613617488
+Epoch:  80%|████████  | 4/5 [01:12<00:18, 18.04s/it]Train loss: 0.6753408099923816
+Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.03s/it]Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.03s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+scores.accuracy()=0.52
+scores.precision_recall_fscore()=(0.26, 0.5, 0.34210526315789475)
+fold number 5:
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]Train loss: 0.6990596907479423
+Epoch:  20%|██        | 1/5 [00:18<01:12, 18.24s/it]Train loss: 0.6867951580456325
+Epoch:  40%|████      | 2/5 [00:36<00:54, 18.19s/it]Train loss: 0.6866126103060586
+Epoch:  60%|██████    | 3/5 [00:54<00:36, 18.30s/it]Train loss: 0.681414429630552
+Epoch:  80%|████████  | 4/5 [01:12<00:18, 18.18s/it]Train loss: 0.6643073558807373
+Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.14s/it]Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.18s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+scores.accuracy()=0.56
+scores.precision_recall_fscore()=(0.28, 0.5, 0.358974358974359)
+fold number 6:
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]Train loss: 0.7004282006195613
+Epoch:  20%|██        | 1/5 [00:17<01:11, 17.94s/it]Train loss: 0.6893976628780365
+Epoch:  40%|████      | 2/5 [00:35<00:53, 17.76s/it]Train loss: 0.6805461474827358
+Epoch:  60%|██████    | 3/5 [00:53<00:35, 17.77s/it]Train loss: 0.6817944049835205
+Epoch:  80%|████████  | 4/5 [01:11<00:17, 17.90s/it]Train loss: 0.667618168251855
+Epoch: 100%|██████████| 5/5 [01:29<00:00, 17.97s/it]Epoch: 100%|██████████| 5/5 [01:29<00:00, 17.91s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+scores.accuracy()=0.48
+scores.precision_recall_fscore()=(0.24, 0.5, 0.32432432432432434)
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+fold number 7:
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]Train loss: 0.7019697044576917
+Epoch:  20%|██        | 1/5 [00:18<01:15, 18.80s/it]Train loss: 0.6977603563240596
+Epoch:  40%|████      | 2/5 [00:36<00:54, 18.33s/it]Train loss: 0.6752454340457916
+Epoch:  60%|██████    | 3/5 [00:54<00:36, 18.06s/it]Train loss: 0.6693464432443891
+Epoch:  80%|████████  | 4/5 [01:12<00:18, 18.05s/it]Train loss: 0.6725992858409882
+scores.accuracy()=0.48
+scores.precision_recall_fscore()=(0.24, 0.5, 0.32432432432432434)
+Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.01s/it]Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.10s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]fold number 8:
+Train loss: 0.7181831342833382
+Epoch:  20%|██        | 1/5 [00:18<01:12, 18.20s/it]Train loss: 0.7067041184220996
+Epoch:  40%|████      | 2/5 [00:36<00:54, 18.03s/it]Train loss: 0.6873332347188678
+Epoch:  60%|██████    | 3/5 [00:54<00:36, 18.01s/it]Train loss: 0.6731654788766589
+Epoch:  80%|████████  | 4/5 [01:12<00:18, 18.09s/it]Train loss: 0.6616594621113369
+Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.02s/it]Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.04s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+scores.accuracy()=0.48
+scores.precision_recall_fscore()=(0.24, 0.5, 0.32432432432432434)
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]fold number 9:
+Train loss: 0.6940962161336627
+Epoch:  20%|██        | 1/5 [00:18<01:12, 18.02s/it]Train loss: 0.6887523361614772
+Epoch:  40%|████      | 2/5 [00:36<00:54, 18.01s/it]Train loss: 0.6845008688313621
+Epoch:  60%|██████    | 3/5 [00:54<00:35, 18.00s/it]Train loss: 0.6736242473125458
+Epoch:  80%|████████  | 4/5 [01:11<00:17, 17.91s/it]Train loss: 0.669593734400613
+scores.accuracy()=0.6
+scores.precision_recall_fscore()=(0.3, 0.5, 0.37499999999999994)
+Epoch: 100%|██████████| 5/5 [01:29<00:00, 17.87s/it]Epoch: 100%|██████████| 5/5 [01:29<00:00, 17.92s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]fold number 10:
+Train loss: 0.6884729436465672
+Epoch:  20%|██        | 1/5 [00:17<01:11, 17.86s/it]Train loss: 0.6964177404131208
+Epoch:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]Train loss: 0.6845952527863639
+Epoch:  60%|██████    | 3/5 [00:54<00:36, 18.20s/it]Train loss: 0.6799446216651371
+Epoch:  80%|████████  | 4/5 [01:12<00:18, 18.11s/it]Train loss: 0.668510479586465
+Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.04s/it]Epoch: 100%|██████████| 5/5 [01:30<00:00, 18.05s/it]
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+scores.accuracy()=0.6
+scores.precision_recall_fscore()=(0.3, 0.5, 0.37499999999999994)
+K-fold cross-validation results:
+Accuracy: 0.5513846153846153
+Precision: 0.2756923076923076
+Recall: 0.5
+F-score: 0.3542978668086887
+####
+recorded_results_per_fold= [(0.5, 0.25, 0.5, 0.3333333333333333), (0.6538461538461539, 0.3269230769230769, 0.5, 0.39534883720930236), (0.64, 0.32, 0.5, 0.39024390243902435), (0.52, 0.26, 0.5, 0.34210526315789475), (0.56, 0.28, 0.5, 0.358974358974359), (0.48, 0.24, 0.5, 0.32432432432432434), (0.48, 0.24, 0.5, 0.32432432432432434), (0.48, 0.24, 0.5, 0.32432432432432434), (0.6, 0.3, 0.5, 0.37499999999999994), (0.6, 0.3, 0.5, 0.37499999999999994)]
+len(set(recorded_results_per_fold))= 7

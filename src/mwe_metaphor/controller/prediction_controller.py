@@ -19,18 +19,26 @@ from src.utils.text_handler import write_list_with_dict_to_txt
 
 
 class PredictionController(BaseModel):
-    settings: Settings
-    test_dataset_mwe: Dataset = Field(default_factory=Dataset)
-    test_dataset_metaphor: Dataset = Field(default_factory=Dataset)
-    pre_training: bool
-    num_epochs: int = 1
-    evaluation_results: list[PredictionEvaluationModel] = Field(default_factory=list)
+    """
+        This class is responsible for making and controlling predictions from a trained model.
+    """
+    settings: Settings = Field(description="The configuration settings for making predictions.")
+    test_dataset_mwe: Dataset = Field(default_factory=Dataset, description="The test dataset specifically designed for Multi-Word Expressions (MWEs).")
+    test_dataset_metaphor: Dataset = Field(default_factory=Dataset, description="The test dataset specifically designed for metaphors.")
+    pre_training: bool = Field(description="If True, the model will undergo pre-training before main training.")
+    num_epochs: int = Field(default=1, description="The number of epochs for prediction.")
+    evaluation_results: list[PredictionEvaluationModel] = Field(default_factory=list, description="The results of the evaluation on the test datasets.")
 
     def predict(self):
+        """
+            Make a prediction based on the input data.
+
+            @returns predictions
+        """
         self.preprocessing()
         model = AutoModelForTokenClassification.from_pretrained(self._get_latest_save(
             self.settings.model)) if self.pre_training else AutoModelForTokenClassification.from_pretrained(
-            self.settings.model)
+            self.settings.model, num_labels=len(self.test_dataset_metaphor.labels))
         tokenizer = AutoTokenizer.from_pretrained(
             self._get_latest_save(self.settings.model)) if self.pre_training else AutoTokenizer.from_pretrained(
             self.settings.model)
@@ -40,22 +48,45 @@ class PredictionController(BaseModel):
         return self.evaluation_results
 
     def _evaluate_and_print(self, corpus_name, test_dataset, tokenizer, model):
+        """
+            Evaluate the model and print the results.
+
+            @param model: The trained model.
+            @param test_dataset: The dataloader for the test set.
+            @param corpus_name: The name of the corpus, mwe or metaphor
+            @param tokenizer: AutoTokenizer object
+        """
         print(f"start evaluation for {corpus_name} corpus")
         evaluation_results = self.evaluate(test_dataset, tokenizer, model)
         self.evaluation_results.append(evaluation_results)
         print(f"epoch {self.num_epochs}: {evaluation_results}")
         
     def _load_tsv_data(self) -> list[TSVSentence]:
+        """
+            Load test data from a file.
+
+            @returns list with TSVSentence objects
+        """
         with open(f"{self.settings.mwe_dir}/{self.settings.mwe_test}") as f:
             return list(iter_tsv_sentences(f))
 
     def preprocessing(self):
+        """
+            Preprocess the input data.
+        """
         language_model = SpacyModel(language_model=self.settings.language_model).get_language_model()
         test_data_tsv_sentences = self._load_tsv_data()
         self.test_dataset_mwe.create_from_tsv(test_data_tsv_sentences)
         self.test_dataset_metaphor.create_from_trofi(TroFiDataset.find(), language_model)
 
     def _get_latest_save(self, model_name: str) -> str | None:
+        """
+            Get the latest saved trained model.
+
+            @param model_name: The name of the model to used
+
+            @returns path for latest save
+        """
         subfolders = [f for f in os.listdir(os.path.join(BASE_DIR, self.settings.model_dir)) if
                       os.path.isdir(os.path.join(BASE_DIR, self.settings.model_dir, f))]
 
@@ -81,6 +112,15 @@ class PredictionController(BaseModel):
         return os.path.join(BASE_DIR, self.settings.model_dir, newest_subfolder)
 
     def evaluate(self, dataset: Dataset, tokenizer, model):
+        """
+            Evaluate the model.
+
+            @param dataset: The test Dataset
+            @param tokenizer: AutoTokenizer object
+            @param model: trained model
+
+            @returns predictions from trained model
+        """
         token = next((column for column in dataset.columns if column.name == "tokens"), None)
         labels = next((column for column in dataset.columns if column.name == "label"), None)
 
@@ -103,6 +143,15 @@ class PredictionController(BaseModel):
 
     @classmethod
     def _compute_metrics(cls, eval_preds: ModelOutput, inputs, dataset: Dataset):
+        """
+            Compute evaluation metrics.
+
+            @param eval_preds: model predictions
+            @param inputs: input from prediction
+            @param dataset: test Dataset
+
+            @returns evaluation metrics for prediction
+        """
         metric = evaluate.load("seqeval")
         logits = eval_preds.logits
         probabilities = F.softmax(logits, dim=-1)
@@ -134,6 +183,16 @@ class PredictionController(BaseModel):
             predictions: list,
             dataset: Dataset,
             word_ids) -> list:
+        """
+            Get sentences with incorrect predictions.
+
+            @param predictions: The predicted values.
+            @param true_labels: The true labels.
+            @param dataset: test Dataset
+            @param word_ids: list with word_ids
+
+            @returns list with sentences with incorrect predictions
+        """
         wrong_predictions = []
         token_column = [t.data for t in dataset.columns if t.name == "tokens"]
         for index, pred in enumerate(predictions):
@@ -147,6 +206,14 @@ class PredictionController(BaseModel):
 
     @classmethod
     def _normalize_labels(cls, labels: list, word_ids: list) -> list:
+        """
+            Normalize the labels.
+
+            @params labels: list of labels
+            @params word_ids: list with word_ids
+
+            @returns list without segmented labels
+        """
         normalized_labels = []
 
         current_word = None

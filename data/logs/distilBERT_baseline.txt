@@ -1,0 +1,8 @@
+mps
++++ start prediction without fine-tuned model +++
+Some weights of DistilBertForTokenClassification were not initialized from the model checkpoint at distilbert-base-german-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+start evaluation for metaphor corpus
+epoch 1: precision=0.008 recall=0.018518518518518517 f1_score=0.0111731843575419 accuracy=0.8325732899022801
+start evaluation for mwe corpus
+epoch 1: precision=0.026256983240223464 recall=0.13352272727272727 f1_score=0.04388422035480859 accuracy=0.7868271954674221

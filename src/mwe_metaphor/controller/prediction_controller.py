@@ -14,6 +14,8 @@ from src.mwe_metaphor.models.dataset_model import Dataset
 from src.mwe_metaphor.models.evaluation_model import PredictionEvaluationModel
 from src.mwe_metaphor.models.spacy_model import SpacyModel
 from src.mwe_metaphor.utils.tsvlib import TSVSentence, iter_tsv_sentences
+from src.mwe_metaphor.utils.visualisation import create_bar_chart_for_label_representation, \
+    create_confusion_matrix_for_prediction
 from src.utils.datetime import ts_now
 from src.utils.text_handler import write_list_with_dict_to_txt
 
@@ -43,8 +45,8 @@ class PredictionController(BaseModel):
             self._get_latest_save(self.settings.model)) if self.pre_training else AutoTokenizer.from_pretrained(
             self.settings.model)
 
-        self._evaluate_and_print("metaphor", self.test_dataset_metaphor, tokenizer, model)
-        self._evaluate_and_print("mwe", self.test_dataset_mwe, tokenizer, model)
+        self._evaluate_and_print("metaphor_test_data", self.test_dataset_metaphor, tokenizer, model)
+        self._evaluate_and_print("mwe_test_data", self.test_dataset_mwe, tokenizer, model)
         return self.evaluation_results
 
     def _evaluate_and_print(self, corpus_name, test_dataset, tokenizer, model):
@@ -57,7 +59,7 @@ class PredictionController(BaseModel):
             @param tokenizer: AutoTokenizer object
         """
         print(f"start evaluation for {corpus_name} corpus")
-        evaluation_results = self.evaluate(test_dataset, tokenizer, model)
+        evaluation_results = self.evaluate(test_dataset, tokenizer, model, corpus_name)
         self.evaluation_results.append(evaluation_results)
         print(f"epoch {self.num_epochs}: {evaluation_results}")
         
@@ -111,13 +113,14 @@ class PredictionController(BaseModel):
 
         return os.path.join(BASE_DIR, self.settings.model_dir, newest_subfolder)
 
-    def evaluate(self, dataset: Dataset, tokenizer, model):
+    def evaluate(self, dataset: Dataset, tokenizer, model, name):
         """
             Evaluate the model.
 
             @param dataset: The test Dataset
             @param tokenizer: AutoTokenizer object
             @param model: trained model
+            @param name: name of the dataset
 
             @returns predictions from trained model
         """
@@ -139,10 +142,10 @@ class PredictionController(BaseModel):
         with torch.no_grad():
             outputs = model(**inputs)
 
-        return self._compute_metrics(outputs, inputs, dataset)
+        return self._compute_metrics(outputs, inputs, dataset, name)
 
     @classmethod
-    def _compute_metrics(cls, eval_preds: ModelOutput, inputs, dataset: Dataset):
+    def _compute_metrics(cls, eval_preds: ModelOutput, inputs, dataset: Dataset, name):
         """
             Compute evaluation metrics.
 
@@ -167,8 +170,16 @@ class PredictionController(BaseModel):
             for prediction, label in zip(predicted_labels, inputs["labels"])
         ]
 
+        # create_bar_chart_for_label_representation(name, dataset.labels, true_labels)
+
+        create_confusion_matrix_for_prediction(
+            labels=dataset.labels,
+            predictions=true_predictions,
+            true_labels=true_labels,
+            name=name)
+
         wrong_predictions = cls._get_sentence_with_wrong_prediction(true_labels, true_predictions, dataset, inputs.word_ids)
-        write_list_with_dict_to_txt(wrong_predictions, f"data/logs/{ts_now()}_wrong_predictions.txt", "w")
+        write_list_with_dict_to_txt(wrong_predictions, f"data/logs/predictions/{ts_now()}_{name}_wrong_predictions.txt", "w")
         all_metrics = metric.compute(predictions=true_predictions, references=true_labels)
         return PredictionEvaluationModel(
             precision=all_metrics["overall_precision"],

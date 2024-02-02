@@ -1,0 +1,16 @@
+mps
++++ build crf model and start prediction +++
+Fitting 3 folds for each of 50 candidates, totalling 150 fits
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/lib/python3.10/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+best params: {'c1': 0.11796666034489688, 'c2': 0.004582402857775776}
+best CV score: 0.9577410139778788
+model size: 0.73M
+predicted mwe f1-score: 0.9605858094714236
+predicted mwe precision: 0.7
+predicted mwe recall: 0.38788659793814434
+predicted mwe accuracy: 0.9653749140105481
+predicted metaphor f1-score: 0.9372026109141477
+predicted metaphor precision: 0.14444444444444443
+predicted metaphor recall: 0.051587301587301584
+predicted metaphor accuracy: 0.9489499192245557

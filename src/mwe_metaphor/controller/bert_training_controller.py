@@ -10,6 +10,7 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification, Trainin
 from src.config import Settings, BASE_DIR
 from src.mwe_metaphor.models.dataset_model import Dataset, MWEDataset
 from src.mwe_metaphor.utils.tsvlib import iter_tsv_sentences, TSVSentence
+from src.mwe_metaphor.utils.visualisation import plot_history, process_and_chart
 from src.utils.datetime import ts_now
 
 
@@ -39,6 +40,10 @@ class BertTrainingController(BaseModel):
         # tokenize input and create word_ids, extend labels with special tokens
         tokenized_inputs_train = self.train_dataset.tokenize_and_align_labels(tokenizer)
         tokenized_inputs_val = self.val_dataset.tokenize_and_align_labels(tokenizer)
+
+        # create bar charts for datasets
+        # process_and_chart(dataset=self.train_dataset, tokenized_inputs=tokenized_inputs_train, dataset_name="train_data")
+        # process_and_chart(dataset=self.val_dataset, tokenized_inputs=tokenized_inputs_val, dataset_name="val_data")
 
         train_dataset = MWEDataset(tokenized_inputs_train, tokenized_inputs_train.data["labels"])
         val_dataset = MWEDataset(tokenized_inputs_val, tokenized_inputs_val.data["labels"])
@@ -82,6 +87,8 @@ class BertTrainingController(BaseModel):
         tokenizer.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{timestamp}"))
 
         history = pd.DataFrame(trainer.state.log_history)
+        history.to_csv(path_or_buf=os.path.join(BASE_DIR, f"data/logs/training_history/{ts_now()}_training_history.csv"))
+        plot_history(history, model_checkpoint)
         print(history)
 
     def _load_data(self, path: str) -> list[TSVSentence]:

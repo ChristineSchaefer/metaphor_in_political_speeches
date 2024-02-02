@@ -18,10 +18,6 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'I-MET', 'O', 'O', 'O']
 token: ['So', 'geschehen', 'in', 'Köln', 'als', 'die', 'städtebauliche', 'Planung', 'den', 'Dom', 'fast', 'von', 'der', 'Liste', 'der', 'Welterbestätten', 'gekegelt', 'hätte', 'und', 'dies', 'auch', 'noch', 'mit', 'Erstaunen', 'quittiert', 'wurde']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
-true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
-token: ['Ich', 'erinnere', 'nur', 'daran', 'wie', 'geschockt', 'die', 'Betroffenen', 'reagierten', 'als', 'der', 'Europäische', 'Gerichtshof', 'Gemeinschaftsrecht', 'auf', 'gute', 'alte', 'Traditionen', 'im', 'Sport', 'auf', 'den', 'Bereitschaftsdienst', 'von', 'Krankenhausärzten', 'oder', 'auf', 'den', 'Zugang', 'von', 'Frauen', 'zur', 'Bundeswehr', 'münzte', '·', 'Wir', 'müssen', 'den', 'Blick', 'weiten', 'und', 'uns', 'bei', 'der', 'Debatte', 'auf', 'supranationaler', 'Ebene', 'mit', 'der', 'Sicht', 'anderer', 'gleichberechtigter', 'Nationen', 'in', 'der', 'Kulturpolitik', 'auseinandersetzen']
-
 predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Ich', 'betrachte', 'es', 'daher', 'als', 'sehr', 'ermutigendes', 'Zeichen', 'dass', 'es', 'im', 'vergangenen', 'Jahr', 'gelungen', 'ist', 'eine', 'Koalition', 'für', 'kulturelle', 'Vielfalt', 'zu', 'schmieden']
@@ -90,6 +86,10 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Das', 'kann', 'nicht', 'oktroyiert', 'werden', 'sondern', 'das', 'geht', 'nur', 'indem', 'wir', 'die', 'wechselseitige', 'Blockade', 'die', 'nach', 'meinem', 'Eindruck', 'den', 'Prozess', 'so', 'lange', 'verzögert', 'hat', 'natürlich', 'sind', 'die', 'Interessen', 'unterschiedlich', 'und', 'treffen', 'auch', 'im', 'Bündnis', 'für', 'den', 'Film', 'aufeinander', 'dadurch', 'aufheben', 'dass', 'wir', 'ein', 'Paket', 'schnüren']
 
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Auch', 'im', 'privaten', 'Bereich', 'hat', 'die', 'Mikroelektronik', 'längst', 'Einzug', 'gehalten', 'Von', 'der', 'Unterhaltungselektronik', 'übers', 'Handy', 'bis', 'zur', 'Chipkarte']
+
 predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Und', 'zusätzlich', 'fließen', 'erhebliche', 'Beiträge', 'in', 'die', 'Kassen', 'der', 'sozialen', 'Sicherungssysteme']
@@ -102,7 +102,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O']
 token: ['Ich', 'verstehe', 'wirklich', 'nicht', 'wie', 'man', 'bei', 'dieser', 'Situation', 'sagen', 'kann', 'dass', 'der', 'Mittelstand', 'schlechter', 'gestellt', 'wird', 'als', 'die', 'Körperschaften']
 
-predictions: ['O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'B-MET', 'O', 'I-MET', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Auch', 'hier', 'gehen', 'wir', 'Hand', 'in', 'Hand', 'der', 'Bund', 'und', 'dieses', 'Land']
 
@@ -118,7 +118,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Meine', 'Partei', 'ist', 'gegen', 'dieses', 'Gesetz', 'Sturm', 'gelaufen', 'meine', 'Freunde', 'in', 'den', 'Gewerkschaften', 'genauso']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Ich', 'sage', 'deswegen', 'In', 'diesen', 'beiden', 'Bereichen', 'haben', 'wir', 'ein', 'Modernitätsdefizit', 'das', 'wir', 'gemeinsam', 'aufarbeiten', 'müssen', 'wenn', 'wir', 'ich', 'denke', 'an', 'diesem', 'Punkt', 'ziehen', 'wir', 'an', 'einem', 'Strang', 'wo', 'immer', 'sich', 'der', 'Einzelne', 'politisch', 'verortet', 'eines', 'wollen', 'des', 'Landes', 'Wohlfahrt', 'wie', 'man', 'bei', 'uns', 'in', 'Niedersachsen', 'so', 'schön', 'sagt']
 
@@ -130,7 +130,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'O', 'O', 'O']
 token: ['Hier', 'liegt', 'ein', 'Grund', 'warum', 'in', 'der', 'Frühphase', 'traditionelle', 'Kreditgeber', 'schon', 'einmal', 'zögern', 'wenn', 'Jungunternehmerinnen', 'und', 'unternehmer', 'mit', 'unkonventionellen', 'Methoden', 'und', 'einer', 'Finanzierung', 'die', 'nicht', 'in', 'allen', 'Punkten', 'als', 'abgesichert', 'gelten', 'kann', 'in', 'neue', 'Märkte', 'vorstoßen', 'wollen', 'was', 'wir', 'uns', 'alle', 'miteinander', 'aber', 'auf', 'der', 'anderen', 'Seite', 'wünschen']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Neben', 'der', 'eindeutig', 'beschäftigungsfreundlichen', 'Wirkung', 'dieser', 'Förderbank', 'liegt', 'mir', 'eines', 'der', 'Grundprinzipien', 'der', 'Kreditanstalt', 'für', 'Wiederaufbau', 'besonders', 'am', 'Herzen', 'das', 'Prinzip', 'der', 'Nachhaltigkeit']
 
@@ -149,10 +149,6 @@ token: ['Kein', 'Zweifel', 'Im', 'Vergleich', 'zur', 'Situation', 'die', 'wir', 
 predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Kein', 'Zweifel', 'also', 'Die', 'Weltwirtschaft', 'hat', 'sich', 'eingetrübt']
-
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O']
-true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
-token: ['Anders', 'ausgedrückt', 'Krisenhafte', 'Erscheinungen', 'in', 'dem', 'für', 'uns', 'so', 'wichtigen', 'Markt', 'der', 'Vereinigten', 'Staaten', 'schlagen', 'anders', 'und', 'vor', 'allen', 'Dingen', 'schneller', 'auf', 'Deutschland', 'durch', 'als', 'es', 'in', 'der', 'Vergangenheit', 'der', 'Fall', 'war']
 
 predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
@@ -194,11 +190,11 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Er', 'hat', 'ein', 'Stück', 'Automobilgeschichte', 'nicht', 'nur', 'in', 'Deutschland', 'sondern', 'auch', 'in', 'der', 'Welt', 'geschrieben']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'I-MET']
+predictions: ['O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'I-MET']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Insgesamt', 'drei', 'Millionen', 'Fahrzeuge', 'liefen', 'vom', 'Band']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'I-MET']
+predictions: ['O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Erste', 'Erfolge', 'der', 'Agenda', '2010', 'zeichnen', 'sich', 'ab']
 
@@ -230,7 +226,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
 token: ['Und', 'weil', 'das', 'so', 'ist', 'gibt', 'es', 'eine', 'Begründung', 'aus', 'den', 'Traditionen', 'heraus', 'die', 'man', 'nicht', 'klein', 'schreiben', 'soll']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'I-MET', 'I-MET', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Neben', 'den', 'staatlichen', 'und', 'den', 'grandiosen', 'privaten', 'Hilfen', 'ist', 'jetzt', 'vor', 'allen', 'Dingen', 'eines', 'notwendig', 'das', 'muss', 'man', 'gerade', 'heute', 'gerade', 'auf', 'dieser', 'Internationalen', 'Tourismus', 'Börse', 'sagen', 'Die', 'Touristen', 'sollten', 'die', 'Ziele', 'in', 'den', 'betroffenen', 'Regionen', 'nicht', 'aus', 'den', 'Augen', 'verlieren', 'sondern', 'sie', 'wieder', 'ansteuern']
 
@@ -238,7 +234,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Um', 'diese', 'Herausforderungen', 'zu', 'meistern', 'ist', 'es', 'notwendig', 'vor', 'allem', 'auf', 'Wissen', 'und', 'Innovation', 'zu', 'setzen']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O']
 token: ['Ich', 'finde', 'die', 'Begabungen', 'die', 'Sie', 'hier', 'an', 'den', 'Tag', 'gelegt', 'haben', 'lohnen', 'nun', 'wirklich', 'weiterentwickelt', 'zu', 'werden']
 
@@ -250,19 +246,19 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'I-MET', 'O']
 token: ['Nachdem', 'der', 'Feuerstrom', 'der', 'Reden', 'die', 'auf', 'Berlin', 'am', 'Ende', 'des', 'vergangenen', 'Jahrhunderts', 'gehalten', 'wurden', 'verglimmt', 'ist', 'beginnt', 'die', 'Gegenwart']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Berlin', 'ist', 'wieder', 'auf', 'sich', 'zurückgeworfen', 'wie', 'oft', 'genug', 'in', 'seiner', 'Geschichte']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Meist', 'lässt', 'der', 'Finanzsenator', 'die', 'Sense', 'kurz', 'aufblitzen', 'erntet', 'dann', 'ein', 'Aufjaulen', 'in', 'den', 'Feuilletons', 'und', 'lässt', 'sich', 'kurz', 'darauf', 'mit', 'der', 'Gewissheit', 'zurückfallen', 'dass', 'man', 'mit', 'dem', 'Schließen', 'einer', 'Oper', 'gerade', 'mal', 'sechs', 'Tage', 'lang', 'die', 'Zinsen', 'bezahlen', 'könnte']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Meist', 'lässt', 'der', 'Finanzsenator', 'die', 'Sense', 'kurz', 'aufblitzen', 'erntet', 'dann', 'ein', 'Aufjaulen', 'in', 'den', 'Feuilletons', 'und', 'lässt', 'sich', 'kurz', 'darauf', 'mit', 'der', 'Gewissheit', 'zurückfallen', 'dass', 'man', 'mit', 'dem', 'Schließen', 'einer', 'Oper', 'gerade', 'mal', 'sechs', 'Tage', 'lang', 'die', 'Zinsen', 'bezahlen', 'könnte']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'B-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Am', 'Ende', 'erstickt', 'man', 'die', 'Künste', 'um', 'die', 'Verwaltungen', 'am', 'Leben', 'zu', 'lassen']
 
@@ -270,7 +266,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
 token: ['Probleme', 'die', 'Berlin', 'zu', 'lösen', 'hat', 'lassen', 'sich', 'nicht', 'mit', 'Geld', 'zukleistern']
 
-predictions: ['O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'I-MET', 'O', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'O', 'O', 'O', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Dem', 'Autor', 'des', 'Artikels', 'drängt', 'sich', 'der', 'Verdacht', 'auf', 'ob', 'sich', 'vielleicht', 'sogar', 'die', 'Politik', 'mit', 'dieser', 'Absicht', 'trägt']
 
@@ -282,7 +278,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Auch', 'in', 'Schleswig', 'Holstein', 'wurde', 'das', 'Kulturressort', 'verzwergt', 'Eine', 'Kulturhoheit', 'der', 'Länder', 'stelle', 'ich', 'mir', 'anders', 'vor']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Das', 'Leben', 'hielt', 'dann', 'noch', 'einige', 'solcher', 'Überraschungen', 'für', 'mich', 'bereit']
 
@@ -290,7 +286,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Ich', 'halte', 'unsere', 'Position', 'für', 'die', 'verantwortliche', 'weil', 'sie', 'dazu', 'führt', 'dass', 'die', 'Schäden', 'die', 'die', 'Flut', 'geschlagen', 'hat', 'in', 'dieser', 'Generation', 'und', 'von', 'dieser', 'Generation', 'ausgeglichen', 'werden', 'und', 'nicht', 'auf', 'die', 'Schultern', 'unserer', 'Kinder', 'und', 'Enkelkinder', 'gelegt', 'werden']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Ganztagsbetreuung', 'ist', 'vor', 'allen', 'Dingen', 'wichtig', 'um', 'Frauen', 'zu', 'ermöglichen', 'Familie', 'und', 'Beruf', 'besser', 'als', 'je', 'zuvor', 'unter', 'einen', 'Hut', 'zu', 'bekommen']
 
@@ -302,15 +298,11 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'O', 'O']
 token: ['Das', 'ist', 'auch', 'notwendig', 'und', 'stünde', 'Deutschland', 'gut', 'an']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O']
-true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
-token: ['Ich', 'erinnere', 'mich', 'noch', 'sehr', 'gut', 'daran', 'wie', 'Ulla', 'Schmidt', 'standhaft', 'verteidigt', 'hat', 'was', 'gemeinsam', 'beschlossen', 'worden', 'ist', 'und', 'wie', 'sich', 'viele', 'von', 'Ihnen', 'zur', 'Seite', 'gedrückt', 'um', 'nicht', 'zu', 'sagen', 'in', 'die', 'Büsche', 'verkrochen', 'haben']
-
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Ich', 'glaube', 'dass', 'man', 'sich', 'wirklich', 'die', 'Zeit', 'nehmen', 'sollte', 'eine', 'der', 'größten', 'Sozialreformen', 'die', 'in', 'der', 'Geschichte', 'der', 'Bundesrepublik', 'gemacht', 'worden', 'sind', 'weil', 'sie', 'gemacht', 'werden', 'musste', 'sehr', 'sorgfältig', 'auf', 'ihre', 'Wirkungen', 'abzuklopfen', 'und', 'bereit', 'sein', 'sollte', 'korrigierend', 'einzugreifen', 'wenn', 'Wirkungen', 'erzielt', 'werden', 'die', 'das', 'Gesetz', 'nicht', 'vorsieht']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Dabei', 'können', 'wir', 'auf', 'eine', 'ungeheure', 'Kraft', 'in', 'der', 'deutschen', 'Gesellschaft', 'und', 'auch', 'in', 'der', 'deutschen', 'Wirtschaft', 'bauen', 'nicht', 'in', 'dem', 'Sinne', 'dass', 'man', 'sich', 'damit', 'zufrieden', 'geben', 'könnte', 'aber', 'schon', 'in', 'dem', 'Sinne', 'dass', 'man', 'sie', 'als', 'Ausgangspunkt', 'für', 'eine', 'Zukunft', 'nutzt', 'die', 'wir', 'nun', 'wirklich', 'nicht', 'schwarz', 'in', 'schwarz', 'malen', 'müssen']
 
@@ -458,7 +450,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Um', 'das', 'zu', 'erreichen', 'müssen', 'wir', 'die', 'Bundesanstalt', 'für', 'Arbeit', 'umbauen']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Wie', 'in', 'kaum', 'einem', 'anderen', 'Ministerium', 'sind', 'diesem', 'Haus', 'immer', 'wieder', 'Aufgaben', 'zugewachsen', 'und', 'gelegentlich', 'auch', 'Aufgaben', 'genommen', 'worden']
 
@@ -502,7 +494,7 @@ predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', '
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Vor', 'allem', 'aber', 'danke', 'ich', 'Ihnen', 'lieber', 'Herr', 'Vogel', 'und', 'Ihren', 'Mitarbeiterinnen', 'und', 'Mitarbeitern', 'weil', 'Sie', 'diese', 'traditionsreiche', 'Einrichtung', 'so', 'klug', 'und', 'fantasievoll', 'mit', 'Leben', 'erfüllen']
 
-predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+predictions: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'I-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
 token: ['Landschaften', 'Straßen', 'Städte', 'Plätze', 'und', 'Gebäude', 'speisen', 'den', 'Bilder', 'und', 'Inspirationsvorrat', 'eines', 'jeden', 'Architekten', 'und', 'wir', 'haben', 'das', 'Taut', 'Stipendium', 'ins', 'Leben', 'gerufen', 'um', 'den', 'besten', 'Absolventen', 'der', 'deutschen', 'Architekturschulen', 'durch', 'einen', 'gut', 'ausgestatteten', 'Auslandsaufenthalt', 'das', 'Sammeln', 'von', 'möglichst', 'vielen', 'prägnanten', 'Bildern', 'und', 'Erfahrungen', 'zu', 'ermöglichen', 'Sie', 'sind', 'in', 'diesem', 'Jahr', 'für', 'Ihre', 'außergewöhnlichen', 'Abschlussarbeiten', 'von', 'einer', 'fachkundigen', 'Jury', 'ausgewählt', 'worden', 'und', 'ich', 'freue', 'mich', 'Sie', 'im', 'Bundeskanzleramt', 'begrüßen', 'zu', 'können', 'Womöglich', 'gehört', 'dieses', 'außergewöhnliche', 'Haus', 'ja', 'bereits', 'zu', 'den', 'ersten', 'Entdeckungen', 'auf', 'Ihrer', 'nun', 'bald', 'beginnenden', 'Reise']
 

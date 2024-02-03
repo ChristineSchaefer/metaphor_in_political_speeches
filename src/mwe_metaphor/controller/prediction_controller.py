@@ -229,10 +229,15 @@ class PredictionController(BaseModel):
 
         current_word = None
         for id in (i for i in word_ids if i is not None):
-            if current_word is None or current_word != id:
-                normalized_labels.append(labels.pop(0))
-            current_word = id
-
+            if current_word is None:
+                current_word = id
+                normalized_labels.append(labels[id])
+            else:
+                if current_word != id:
+                    current_word = id
+                    normalized_labels.append(labels[id])
+                else:
+                    continue
         return normalized_labels
 
 

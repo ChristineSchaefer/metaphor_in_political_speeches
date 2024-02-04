@@ -70,6 +70,7 @@ class TrainingController(BaseModel):
 
     def prepare_data(self):
         df = pd.read_csv(self.settings.metaphor_dir, header=0, sep=',')
+        print(f"There are {df.shape[0]} entries in the test dataset for metaphor: \n {df.head()}")
         # Create sentence and label lists
         sentences = df.sentence.values
         self.max_len = max([len(sent.split()) for sent in sentences]) + 2

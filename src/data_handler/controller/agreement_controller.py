@@ -12,12 +12,19 @@ from src.utils.uuid_transformer import convert_to_valid_uuid
 
 
 class AgreementController(BaseModel):
-    annotations: dict[int, list[Annotation]] = Field(default_factory=dict)
-    annotation_path: str = "data/annotations/*.json"
-    fleiss_kappa: float = 0.0
-    cohen_kappa: list[float] = Field(default_factory=list)
+    """
+        Controller class for managing and calculating agreement scores based on annotations.
+        This class is responsible for handling annotations and producing agreement metrics including Fleiss Kappa and Cohen Kappa.
+    """
+    annotations: dict[int, list[Annotation]] = Field(default_factory=dict, description="dictionary with annotators annotations")
+    annotation_path: str = Field(default="data/annotations/*.json", description="path to annotation files")
+    fleiss_kappa: float = Field(default=0.0, description="fleiss kappa value")
+    cohen_kappa: list[float] = Field(default_factory=list, description="cohen kappa values for different annotator pairs")
 
     def compute_fleiss_agreement(self):
+        """
+            Function to compute and return the Fleiss' Kappa agreement measure for the annotations.
+        """
         print(f"+++ get all annotations from folder: {self.annotation_path} +++")
         self._get_annotations()
         print("+++ create matrix from annotations +++")
@@ -26,6 +33,9 @@ class AgreementController(BaseModel):
         self.fleiss_kappa = self._use_fleiss_kappa(matrix)
 
     def _get_annotations(self):
+        """
+            Private function to fetch and set all available annotations.
+        """
         annotations = []
         annotator = 0
         for filename in glob.glob(os.path.join(BASE_DIR, self.annotation_path)):
@@ -42,6 +52,11 @@ class AgreementController(BaseModel):
                 annotations = []
 
     def _create_matrix(self) -> list[list[int]]:
+        """
+            Private function responsible for transforming the fetched annotations into a suitable matrix format.
+
+            @return matrix for annotations
+        """
         counted_annotations = []
         for key, value_list in self.annotations.items():
             for index, obj in enumerate(value_list):
@@ -61,6 +76,11 @@ class AgreementController(BaseModel):
         return counted_annotations
 
     def _use_fleiss_kappa(self, matrix: list[list[int]]):
+        """
+            Private method for utilising the Fleiss' Kappa methodology to compute the agreement score based on the created matrix.
+
+            @param matrix: matrix of annotations
+        """
         try:
             checkInput(matrix, len(self.annotations))
         except AssertionError as e:
@@ -69,6 +89,9 @@ class AgreementController(BaseModel):
         return fleissKappa(matrix, len(self.annotations))
 
     def compute_cohen_agreement(self):
+        """
+            Function to compute and set the Cohen's Kappa agreement measure for the annotations.
+        """
         self._get_annotations()
         annotations_list = self._create_list_from_annotation()
         print("+++ compute cohen's kappa +++")
@@ -81,6 +104,11 @@ class AgreementController(BaseModel):
         self.cohen_kappa = [kappa_1_2, kappa_2_3, kappa_1_3]
 
     def _create_list_from_annotation(self) -> list[list[int]]:
+        """
+            Private method to transform the annotations into a list, used for Cohen's Kappa computation.
+
+            @return list with list of annotations
+        """
         annotator_annotations = []
         for key, value_list in self.annotations.items():
             return_list = []
@@ -93,6 +121,12 @@ class AgreementController(BaseModel):
         return annotator_annotations
 
     def get_cohen_examples(self, annotator_a: int, annotator_b: int):
+        """
+            Function to get examples of annotator pair.
+
+            @param annotator_a: annotator a
+            @param annotator_b: annotator b
+        """
         annotations_a = self.annotations[annotator_a]
         annotations_b = self.annotations[annotator_b]
         agreement = {"is_metaphor": set(), "no_metaphor": set()}
@@ -108,6 +142,9 @@ class AgreementController(BaseModel):
         return agreement, disagreement
 
     def update_annotation_collection(self):
+        """
+            Function to update the annotation collection based on annotator agreement
+        """
         matrix = self._create_matrix()
         for index, pair in enumerate(matrix):
             annotation = self.annotations[0][index]

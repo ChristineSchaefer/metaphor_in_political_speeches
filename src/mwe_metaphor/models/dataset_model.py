@@ -7,31 +7,55 @@ from src.utils.text_handler import normalize
 
 
 class Column(BaseModel):
-    name: str
-    data: list
+    """
+        This class represents a column in a data set.
+    """
+    name: str = Field(description="The name of the column.")
+    data: list = Field(description="The data contained in the column.")
 
 
 class Feature(BaseModel):
-    feature: str
-    names: list[str] = Field(default_factory=list)
+    """
+        This class represents a feature in a data set.
+    """
+    feature: str = Field(description="The specific feature type.")
+    names: list[str] = Field(default_factory=list, description="The names of the individual features.")
 
 
 class Dataset(BaseModel):
-    features: list[Feature] | None = Field(default_factory=list)
-    num_rows: int = 0
-    columns: list[Column] | None = Field(default_factory=list)
-    id2label: dict | None = Field(default_factory=dict)
-    label2id: dict | None = Field(default_factory=dict)
-    labels: list | None = Field(default_factory=list)
+    """
+        This class represents a dataset for training and evaluating ML models.
+    """
+    features: list[Feature] | None = Field(default_factory=list, description="The features included in the dataset.")
+    num_rows: int = Field(default=0, description="The number of rows in the dataset.")
+    columns: list[Column] | None = Field(default_factory=list, description="The columns in the dataset.")
+    id2label: dict | None = Field(default_factory=dict, description=" A mapping from ID to label (for instance, for categorical variables).")
+    label2id: dict | None = Field(default_factory=dict, description="A mapping from label to ID (inverse of id2label).")
+    labels: list | None = Field(default_factory=list, description="The labels/classes for each instance/sample in the data.")
 
     def add_column(self, column: Column):
+        """
+            Add a new column to the dataset.
+
+            @param column: An instance of the Column class.
+        """
         self.columns.append(column)
 
     def add_columns(self, columns: list[Column]):
+        """
+            Add multiple new columns to the dataset.
+
+            @param columns: A list of instances from the Column class.
+        """
         for column in columns:
             self.add_column(column)
 
     def remove_column(self, column_name: str):
+        """
+            Remove a column from the dataset.
+
+            @param column_name: The name of Column to be removed.
+        """
         for column in self.columns:
             if column.name == column_name:
                 self.columns.remove(column)
@@ -39,9 +63,15 @@ class Dataset(BaseModel):
                 continue
 
     def set_rows(self):
+        """
+            Set the number of rows (instances/samples) for the dataset.
+        """
         self.num_rows = len(self.columns[0].data)
 
     def set_features(self):
+        """
+            Set the features for the dataset.
+        """
         for column in self.columns:
             available_feature = set()
             for data in column.data:
@@ -52,9 +82,21 @@ class Dataset(BaseModel):
             self.features.append(Feature(feature=column.name, names=list(available_feature)))
 
     def get_column_data(self, column: int):
+        """
+            Retrieve the data from a given column.
+
+            @param column: The index of the column
+
+            @returns list with column data
+        """
         return self.columns[column].data
 
     def create_from_tsv(self, sentences: list[TSVSentence]):
+        """
+            Create a new Dataset object from TSVSentence.
+
+            @param sentences: A list of TSVSentence
+        """
         id_array, token_array, lemma_array, upos_array, xpos_array = [], [], [], [], []
         deprel_array, head_array, parseme_mwe_array = [], [], []
 
@@ -66,8 +108,9 @@ class Dataset(BaseModel):
             heads = [words.get("HEAD", "0") for words in sentence.words]
             deprels = [words.get("DEPREL", "0") for words in sentence.words]
             # TODO evtl doch mit Beginn und Ende  BIO-Tag weil gängige Praxis --> erwähnen
-            parseme_mwes = [0 if words.get("PARSEME:MWE", 0) == "*" else 1 for words in sentence.words]
-
+            # B-MET=Begin Metaphor, I-MET=Inner-Metaphor, 0=No Metaphor
+            # parseme_mwes = [0 if words.get("PARSEME:MWE", 0) == "*" else 1 for words in sentence.words]
+            parseme_mwes = [2 if words.get("PARSEME:MWE", 0).isdigit() else 1 if words.get("PARSEME:MWE", 0) != "*" else 0 for words in sentence.words]
             id_array.append(id)
             token_array.append(tokens)
             lemma_array.append(lemmas)
@@ -91,11 +134,17 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-        self.labels = ["no_metaphor", "is_metaphor"]
+        self.labels = ["O", "B-MET", "I-MET"]
         self.id2label = {index: label for index, label in enumerate(self.labels)}
         self.label2id = {id: tag for tag, id in self.id2label.items()}
 
     def create_from_trofi(self, sentences: list[TroFiDataset], language_model):
+        """
+            Create a new Dataset object from TroFi data.
+
+            @param sentences: A list of TroFi data
+            @param language_model: A Spacy language model for lemmatization
+        """
         sentence_array, lemma_array, token_array, label_array = [], [], [], []
         for sentence in sentences:
             token = normalize(sentence.sentence).split()
@@ -122,12 +171,20 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-        self.labels = ["no_metaphor", "is_metaphor"]
+        self.labels = ["O", "B-MET", "I-MET"]
         self.id2label = {index: label for index, label in enumerate(self.labels)}
         self.label2id = {id: tag for tag, id in self.id2label.items()}
 
     @staticmethod
     def align_labels_with_tokens(labels, word_ids):
+        """
+            Align labels with tokens in the dataset.
+
+            @param labels: list of old labels
+            @param word_ids: list of word ids
+
+            @returns list with segmented labels
+        """
         new_labels = []
         current_word = None
         for word_id in word_ids:
@@ -142,16 +199,21 @@ class Dataset(BaseModel):
             else:
                 # same word as previous token
                 label = labels[word_id]
-                # only the identifier is used for a continuous word (for BIO-tag)
-                # pattern = re.compile(r'^(\d+):.*$')
-                # match = pattern.match(label)
-                # if match:
-                # label = match.group(1)
+                # if label is beginning, then next label is inner (for BIO-tag)
+                if label == 1:
+                    label = 2
                 new_labels.append(label)
 
         return new_labels
 
     def tokenize_and_align_labels(self, tokenizer):
+        """
+            Tokenize the data and align labels with the tokens.
+
+            @param tokenizer: AutoTokenizer Object
+
+            @returns tokenized input
+        """
         token = next((column for column in self.columns if column.name == "tokens"), None)
         labels = next((column for column in self.columns if column.name == "label"), None)
         try:
@@ -175,14 +237,32 @@ class Dataset(BaseModel):
 
 
 class MWEDataset(torch.utils.data.Dataset):
+    """
+        This class represents a dataset specifically designed for Multi-Word Expressions (MWE).
+    """
     def __init__(self, encodings, labels):
+        """
+            Initialize the MWEDataset object.
+        """
         self.encodings = encodings
         self.labels = labels
 
     def __getitem__(self, idx):
+        """
+            Retrieve an item from the dataset using its index.
+
+            @param idx: index for label
+
+            @returns item
+        """
         item = {key: torch.tensor(val[idx]) for key, val in self.encodings.items()}
         item['labels'] = torch.tensor(self.labels[idx])
         return item
 
     def __len__(self):
+        """
+            Get the length (number of items/samples) of the dataset.
+
+            @returns length of labels
+        """
         return len(self.labels)

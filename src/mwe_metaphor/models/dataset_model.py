@@ -107,10 +107,9 @@ class Dataset(BaseModel):
             xpos = [words.get("XPOS", "0") for words in sentence.words]
             heads = [words.get("HEAD", "0") for words in sentence.words]
             deprels = [words.get("DEPREL", "0") for words in sentence.words]
-            # TODO evtl doch mit Beginn und Ende  BIO-Tag weil gängige Praxis --> erwähnen
             # B-MET=Begin Metaphor, I-MET=Inner-Metaphor, 0=No Metaphor
-            # parseme_mwes = [0 if words.get("PARSEME:MWE", 0) == "*" else 1 for words in sentence.words]
-            parseme_mwes = [2 if words.get("PARSEME:MWE", 0).isdigit() else 1 if words.get("PARSEME:MWE", 0) != "*" else 0 for words in sentence.words]
+            parseme_mwes = [0 if words.get("PARSEME:MWE", 0) == "*" else 1 for words in sentence.words]
+            # parseme_mwes = [2 if words.get("PARSEME:MWE", 0).isdigit() else 1 if words.get("PARSEME:MWE", 0) != "*" else 0 for words in sentence.words]
             id_array.append(id)
             token_array.append(tokens)
             lemma_array.append(lemmas)
@@ -134,7 +133,8 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-        self.labels = ["O", "B-MET", "I-MET"]
+        self.labels = ["no_metaphor", "is_metaphor"]
+        # self.labels = ["O", "B-MET", "I-MET"]
         self.id2label = {index: label for index, label in enumerate(self.labels)}
         self.label2id = {id: tag for tag, id in self.id2label.items()}
 
@@ -171,7 +171,8 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-        self.labels = ["O", "B-MET", "I-MET"]
+        self.labels = ["no_metaphor", "is_metaphor"]
+        # self.labels = ["O", "B-MET", "I-MET"]
         self.id2label = {index: label for index, label in enumerate(self.labels)}
         self.label2id = {id: tag for tag, id in self.id2label.items()}
 
@@ -199,9 +200,9 @@ class Dataset(BaseModel):
             else:
                 # same word as previous token
                 label = labels[word_id]
-                # if label is beginning, then next label is inner (for BIO-tag)
-                if label == 1:
-                    label = 2
+                # BIO: if label is beginning, then next label is inner (for BIO-tag)
+                # if label == 1:
+                    # label = 2
                 new_labels.append(label)
 
         return new_labels

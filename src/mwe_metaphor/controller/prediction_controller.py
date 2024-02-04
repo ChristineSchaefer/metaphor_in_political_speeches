@@ -178,7 +178,7 @@ class PredictionController(BaseModel):
             true_labels=true_labels,
             name=name)
 
-        wrong_predictions = cls._get_sentence_with_wrong_prediction(true_labels, true_predictions, dataset, inputs.word_ids)
+        wrong_predictions = cls._get_sentence_with_wrong_prediction(true_predictions, dataset, inputs.word_ids)
         write_list_with_dict_to_txt(wrong_predictions, f"data/logs/predictions/{ts_now()}_{name}_wrong_predictions.txt", "w")
         all_metrics = metric.compute(predictions=true_predictions, references=true_labels)
         return PredictionEvaluationModel(
@@ -190,7 +190,6 @@ class PredictionController(BaseModel):
     @classmethod
     def _get_sentence_with_wrong_prediction(
             cls,
-            true_labels: list,
             predictions: list,
             dataset: Dataset,
             word_ids) -> list:
@@ -206,11 +205,13 @@ class PredictionController(BaseModel):
         """
         wrong_predictions = []
         token_column = [t.data for t in dataset.columns if t.name == "tokens"]
+        true_labels = [[dataset.id2label[label_key] for label_key in token_sequence] for token_sequence in [t.data for t in dataset.columns if t.name == "label"][0]]
         for index, pred in enumerate(predictions):
-            if pred != true_labels[index]:
+            norm_pred = cls._normalize_labels(pred, word_ids(index))
+            if norm_pred != true_labels[index]:
                 wrong_predictions.append({
-                    "predictions": cls._normalize_labels(pred, word_ids(index)),
-                    "true_labels": cls._normalize_labels(true_labels[index], word_ids(index)),
+                    "predictions": norm_pred,
+                    "true_labels": true_labels[index],
                     "token": token_column[0][index]
                 })
         return wrong_predictions

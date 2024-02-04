@@ -1,0 +1,15 @@
+mps
++++ start prediction with fine-tuned model +++
+Ignoring invalid subfolder format: distilbert-base-german-cased_1706867765
+Ignoring invalid subfolder format: distilbert-base-german-cased_1706867765
+start evaluation for metaphor_test_data corpus
+[[6989  100  132]
+ [  83   23    7]
+ [  71    1   28]]
+epoch 1: precision=0.10674157303370786 recall=0.168141592920354 f1_score=0.13058419243986252 accuracy=0.9470002690341673
+start evaluation for mwe_test_data corpus
+[[43015   137   202]
+ [  233   564    29]
+ [  326    30   664]]
+epoch 1: precision=0.6834862385321101 recall=0.6512237762237763 f1_score=0.666965085049239 accuracy=0.9788274336283186
++++ finish prediction with results: [PredictionEvaluationModel(precision=0.10674157303370786, recall=0.168141592920354, f1_score=0.13058419243986252, accuracy=0.9470002690341673), PredictionEvaluationModel(precision=0.6834862385321101, recall=0.6512237762237763, f1_score=0.666965085049239, accuracy=0.9788274336283186)] +++

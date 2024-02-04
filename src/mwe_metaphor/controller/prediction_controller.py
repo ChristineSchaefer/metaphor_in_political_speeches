@@ -170,7 +170,7 @@ class PredictionController(BaseModel):
             for prediction, label in zip(predicted_labels, inputs["labels"])
         ]
 
-        # create_bar_chart_for_label_representation(name, dataset.labels, true_labels)
+        create_bar_chart_for_label_representation(name, dataset.labels, true_labels)
 
         create_confusion_matrix_for_prediction(
             labels=dataset.labels,

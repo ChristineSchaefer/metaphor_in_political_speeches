@@ -62,6 +62,7 @@ def create_bar_chart_for_label_representation(name: str, labels: list, labels_of
     counts = list(label_counts.values())
 
     # Create a bar chart
+    plt.figure(figsize=(16, 16))
     plt.bar(labels, counts)
     plt.xlabel('labels')
     plt.ylabel('count')
@@ -85,7 +86,7 @@ def create_confusion_matrix_for_prediction(name: str, labels: list, predictions:
     flat_true_labels = np.concatenate(true_labels)
     cm = confusion_matrix(y_pred=flat_predictions, y_true=flat_true_labels, labels=labels)
     print(cm)
-    plt.figure(figsize=(16, 12))
+    plt.figure(figsize=(16, 16))
     sns.set(font_scale=1.4, color_codes=True, palette="deep")
     sns.heatmap(pd.DataFrame(cm, index=labels, columns=ticks),
                 annot=True,

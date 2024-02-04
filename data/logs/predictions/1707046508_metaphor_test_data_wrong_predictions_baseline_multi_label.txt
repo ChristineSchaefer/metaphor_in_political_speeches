@@ -1,0 +1,1008 @@
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Heute', 'allerdings', 'muss', 'man', 'mit', 'Ernst', 'hinzufügen', 'Einigen', 'Menschen', 'vor', 'allen', 'Dingen', 'einigen', 'Szenen', 'die', 'so', 'aussahen', 'als', 'wären', 'sie', 'aus', 'dem', 'Kino', 'leibhaftig', 'in', 'die', 'Wirklichkeit', 'gekommen', 'wäre', 'man', 'nicht', 'gern', 'begegnet', 'hätte', 'man', 'nicht', 'gern', 'erlebt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Heute', 'allerdings', 'muss', 'man', 'mit', 'Ernst', 'hinzufügen', 'Einigen', 'Menschen', 'vor', 'allen', 'Dingen', 'einigen', 'Szenen', 'die', 'so', 'aussahen', 'als', 'wären', 'sie', 'aus', 'dem', 'Kino', 'leibhaftig', 'in', 'die', 'Wirklichkeit', 'gekommen', 'wäre', 'man', 'nicht', 'gern', 'begegnet', 'hätte', 'man', 'nicht', 'gern', 'erlebt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'O', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Es', 'eröffnet', 'Perspektiven', 'die', 'man', 'gelegentlich', 'über', 'den', 'Job', 'hinaus', 'braucht', 'die', 'wir', 'alle', 'nötig', 'brauchen;', 'jedenfalls', 'dann', 'wenn', 'wir', 'uns', 'miteinander', 'vornehmen', 'das', 'Leben', 'der', 'Menschen', 'besser', 'toleranter', 'aber', 'auch', 'friedlicher', 'zu', 'gestalten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Inzwischen', 'das', 'möchte', 'ich', 'Ihnen', 'gerne', 'versichern', 'ist', 'die', 'Berlinale', 'wirklich', 'völlig', 'frei', 'von', 'politischem', 'Reinreden', 'und', 'zwar', 'nicht', 'zuletzt', 'deshalb', 'und', 'gerade', 'jetzt', 'weil', 'wir', 'neben', 'dem', 'was', 'am', 'Kartenverkauf', 'hereinkommt', 'die', 'alleinige', 'Finanzierung', 'des', 'Festivals', 'übernommen', 'haben']
+
+predictions: ['B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wenn', 'mit', 'dem', 'Jahr', '2003', 'das', 'Filmförderungsgesetz', 'das', 'jetzt', 'gilt', 'ausgelaufen', 'sein', 'wird', 'dann', 'werden', 'wir', 'bei', 'der', 'Neuregelung', 'alle', 'diese', 'Anregungen', 'aufnehmen', 'und', 'ich', 'denke', 'wir', 'werden', 'auch', 'zu', 'einer', 'deutlichen', 'Erhöhung', 'kommen', 'vor', 'allen', 'Dingen', 'aber', 'zu', 'einer', 'zielgenaueren', 'Förderung', 'dessen', 'was', 'wir', 'wollen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Zugleich', 'mahnt', 'uns', 'die', 'Botschaft', 'der', 'Häftlinge', 'nicht', 'bei', 'der', 'Rekonstruktion', 'des', 'Leidens', 'zu', 'verweilen', 'denn', 'es', 'war', 'je', 'gerade', 'das', 'Leben', 'außerhalb', 'des', 'Lagers', 'das', 'ihnen', 'geraubt', 'wurde', 'das', 'Leben', 'ohne', 'Häftlingsnummer', 'und', 'Appell']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Orte', 'von', 'Leid', 'Unterdrückung', 'und', 'Tod', 'sind', 'längst', 'zu', 'wichtigen', 'historischen', 'Quellen', 'aufgestiegen', 'zu', 'Beweismitteln', 'auch', 'ohne', 'die', 'das', 'Gedenken', 'gegen', 'Ignoranz', 'und', 'Lüge', 'nicht', 'bestehen', 'kann']
+
+predictions: ['B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Gedenkstätten', 'werden', 'weiterentwickelt', 'zu', 'modernen', 'zeithistorischen', 'Museen', 'die', 'die', 'Erinnerung', 'an', 'die', 'Staatsverbrechen', 'des', 'vergangenen', 'Jahrhunderts', 'wachhalten', 'werden', 'Vorbildlich', 'in', 'diesem', 'Gesamtprozess', 'waren', 'und', 'sind', 'die', 'Gedenkstätte', 'und', 'das', 'Museum', 'Sachsenhausen', 'für', 'die', 'der', 'Bund', 'und', 'das', 'Land', 'Brandenburg', 'seit', 'Bestehen', 'der', 'Stiftung', 'Brandenburgische', 'Gedenkstätten', 'rund', '16', 'Millionen', 'Euro', 'bereitgestellt', 'haben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wir', 'werden', 'ihn', 'nur', 'durch', 'eine', 'Politik', 'der', 'Prävention', 'eindämmen', 'können', 'wenn', 'es', 'uns', 'gelingt', 'gemeinsam', 'einen', 'neuen', 'Anlauf', 'zu', 'machen', 'um', 'seine', 'vielfältigen', 'Ursachen', 'wirksam', 'zu', 'bekämpfen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Menschenrechte', 'sind', 'kein', 'Luxusgut', 'kein', 'Orchideenthema', 'das', 'in', 'den', 'Hintergrund', 'rücken', 'kann', 'wenn', 'die', 'Stunde', 'der', 'Sicherheitspolitik', 'wieder', 'schlägt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'hiermit', 'zusammenhängenden', 'konkreten', 'Fragen', 'sind', 'oft', 'nicht', 'leicht', 'zu', 'beantworten', 'auch', 'in', 'Deutschland', 'ist', 'um', 'ihre', 'Beantwortung', 'immer', 'wieder', 'gerungen', 'worden']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Auch', 'die', 'Kultusministerkonferenz', 'hat', 'im', 'Dezember', '2001', 'als', 'schnelle', 'Reaktion', 'auf', 'die', 'Ergebnisse', 'der', 'internationalen', 'PISA', 'Studie', 'beschlossen', 'Maßnahmen', 'mit', 'dem', 'Ziel', 'einer', 'frühzeitigen', 'Einschulung', 'zu', 'ergreifen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Die', 'Dichte', 'der', 'Vorgaben', 'für', 'den', 'Unterrichtsstoff', 'muss', 'überprüft', 'Lehrpläne', 'müssen', 'entrümpelt', 'werden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Obwohl', 'die', 'neue', 'Republik', 'auf', 'die', 'besten', 'und', 'nobelsten', 'deutschen', 'und', 'europäischen', 'Verfassungstraditionen', 'gestellt', 'war', 'war', 'die', 'Skepsis', 'am', 'Anfang', 'groß', 'ob', 'sich', 'im', 'Weststaat', 'eine', 'dauerhaft', 'stabile', 'Demokratie', 'würde', 'entfalten', 'können']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Sie', 'vor', 'allem', 'waren', 'es', 'die', 'den', 'Preis', 'für', 'die', 'deutsche', 'Kriegsschuld', 'zahlen', 'mußten', 'bis', 'sie', 'in', 'bewundernswerter', 'Zivilcourage', '1989', 'das', 'Zwangssystem', 'des', 'Einparteienstaates', 'abschüttelten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Unsere', 'Verfassung', 'bietet', 'auch', 'für', 'die', 'Zukunft', 'eine', 'tragfähige', 'Grundlage', 'die', 'gesellschaftlichen', 'Veränderungen', 'erfolgreich', 'zu', 'gestalten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Damals', 'kreiste', 'das', 'Interesse', 'um', 'zwei', 'internationale', 'Entwicklungen', '·', 'Kultur', 'und', 'Medien', 'sahen', 'sich', 'von', 'einer', 'Liberalisierungsdebatte', 'überzogen', 'die', 'aus', 'dem', 'Allgemeinen', 'Übereinkommen', 'über', 'den', 'Handel', 'mit', 'Dienstleistungen', 'kurz', 'GATS', 'herrührte', '·', 'Gleichzeitig', 'bemühte', 'sich', 'die', 'UNESCO', 'den', 'Druck', 'zu', 'mildern', 'und', 'die', 'kulturelle', 'Vielfalt', 'durch', 'ein', 'Übereinkommen', 'zu', 'schützen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Natürlich', 'fächert', 'diese', 'Studie', 'aber', 'auch', 'auf', 'wie', 'viel', 'noch', 'zu', 'tun', 'ist', 'um', 'einen', 'wirklichen', 'Konsens', 'zu', 'erreichen']
+
+predictions: ['B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Der', 'Handel', 'mit', 'Waren', 'also', 'zum', 'Beispiel', 'Büchern', 'oder', 'Tonträgern', 'ist', 'über', 'die', 'Regeln', 'des', 'GATT', 'bereits', 'seit', 'langem', 'weitgehend', 'liberalisiert', '·', 'Selbst', 'multilaterale', 'Übereinkommen', 'in', 'der', 'Kulturpolitik', 'können', 'Bindungswirkungen', 'für', 'die', 'innerstaatliche', 'Politik', 'entfalten', 'die', 'den', 'jeweils', 'Betroffenen', 'nicht', 'immer', 'bewusst', 'sind']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['So', 'geschehen', 'in', 'Köln', 'als', 'die', 'städtebauliche', 'Planung', 'den', 'Dom', 'fast', 'von', 'der', 'Liste', 'der', 'Welterbestätten', 'gekegelt', 'hätte', 'und', 'dies', 'auch', 'noch', 'mit', 'Erstaunen', 'quittiert', 'wurde']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'erinnere', 'nur', 'daran', 'wie', 'geschockt', 'die', 'Betroffenen', 'reagierten', 'als', 'der', 'Europäische', 'Gerichtshof', 'Gemeinschaftsrecht', 'auf', 'gute', 'alte', 'Traditionen', 'im', 'Sport', 'auf', 'den', 'Bereitschaftsdienst', 'von', 'Krankenhausärzten', 'oder', 'auf', 'den', 'Zugang', 'von', 'Frauen', 'zur', 'Bundeswehr', 'münzte', '·', 'Wir', 'müssen', 'den', 'Blick', 'weiten', 'und', 'uns', 'bei', 'der', 'Debatte', 'auf', 'supranationaler', 'Ebene', 'mit', 'der', 'Sicht', 'anderer', 'gleichberechtigter', 'Nationen', 'in', 'der', 'Kulturpolitik', 'auseinandersetzen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Ich', 'betrachte', 'es', 'daher', 'als', 'sehr', 'ermutigendes', 'Zeichen', 'dass', 'es', 'im', 'vergangenen', 'Jahr', 'gelungen', 'ist', 'eine', 'Koalition', 'für', 'kulturelle', 'Vielfalt', 'zu', 'schmieden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Man', 'sagt', 'Zahlen', 'nach', 'sie', 'wären', 'nur', 'abstrakte', 'Zeichen', 'hinter', 'denen', 'die', 'konkreten', 'menschlichen', 'Erfahrungen', 'und', 'Leiden', 'verschwinden']
+
+predictions: ['O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wenn', 'erst', 'einmal', 'der', 'Schmerz', 'die', 'Hoffnung', 'die', 'Trauer', 'und', 'die', 'Freundschaft', 'mit', 'denjenigen', 'gestorben', 'sind', 'die', 'all', 'dies', 'empfanden', 'dann', 'bleiben', 'die', 'Zahlen', 'in', 'den', 'Geschichtsbüchern', 'so', 'heißt', 'es', 'und', 'mit', 'ihnen', 'erkaltet', 'langsam', 'die', 'Erinnerung']
+
+predictions: ['O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O']
+token: ['Wenn', 'erst', 'einmal', 'der', 'Schmerz', 'die', 'Hoffnung', 'die', 'Trauer', 'und', 'die', 'Freundschaft', 'mit', 'denjenigen', 'gestorben', 'sind', 'die', 'all', 'dies', 'empfanden', 'dann', 'bleiben', 'die', 'Zahlen', 'in', 'den', 'Geschichtsbüchern', 'so', 'heißt', 'es', 'und', 'mit', 'ihnen', 'erkaltet', 'langsam', 'die', 'Erinnerung']
+
+predictions: ['O', 'O', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['In', 'den', 'Erinnerungen', 'vieler', 'Häftlinge', 'wie', 'sie', 'in', 'Schriften', 'in', 'Ton', 'und', 'Bildaufzeichnungen', 'niederlegt', 'sind', 'gehört', 'dieser', 'Keller', 'zu', 'den', 'finstersten', 'Orten', 'eines', 'Lagers', 'das', 'ohnehin', 'von', 'einer', 'immerwährenden', 'Nacht', 'der', 'Unmenschlichkeit', 'verdunkelt', 'wurde']
+
+predictions: ['B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ein', 'Ort', 'der', 'die', 'Erinnerung', 'an', 'die', 'Toten', 'wachhält']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Für', 'die', 'Zeit', 'des', 'Mittelalters', 'ist', 'die', 'Verbindung', 'unübersehbar', 'Parallelen', 'springen', 'aber', 'auch', 'in', 'der', 'Neuzeit', 'ins', 'Auge', 'Deutschland', 'und', 'Italien', 'sind', 'verspätete', 'Nationen', 'des', '19', 'Jahrhunderts', 'was', 'jeweils', 'im', 'Inneren', 'der', 'Gesellschaften', 'divergierende', 'Geschwindigkeiten', 'der', 'Modernisierung', 'bedingte']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Die', 'späte', 'Nationenbildung', 'hatte', 'nicht', 'zuletzt', 'den', 'Effekt', 'dass', 'die', 'kulturellen', 'Landschaften', 'beider', 'Länder', 'bis', 'heute', 'in', 'hohem', 'Maße', 'multipolar', 'verfasst', 'sind']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'kulturelle', 'Nähe', 'zwischen', 'Deutschland', 'und', 'Italien', 'äußert', 'sich', 'in', 'der', 'hohen', 'Wertschätzung', 'die', 'die', 'Leistungen', 'der', 'jeweils', 'anderen', 'Kultur', 'erfahren']
+
+predictions: ['B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Als', 'institutionellen', 'Niederschlag', 'der', 'wechselseitigen', 'Wertschätzung', 'kann', 'man', 'das', 'zwischen', 'unseren', 'Staaten', 'bestehende', 'dichte', 'Geflecht', 'kultureller', 'Einrichtungen', 'im', 'jeweils', 'anderen', 'Land', 'begreifen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Bemerkenswert', 'ist', 'dabei', 'dass', 'eine', 'Reihe', 'dieser', 'Einrichtungen', 'auf', 'das', '19', 'Jahrhundert', 'zurückgeht', 'eine', 'Zeit', 'also', 'in', 'der', 'der', 'Begriff', 'der', 'auswärtigen', 'Kulturpolitik', 'jedenfalls', 'im', 'deutschen', 'Sprachraum', 'noch', 'nicht', 'existierte']
+
+predictions: ['O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Auch', 'in', 'Folge', 'der', 'Mitte', 'der', '50er', 'Jahre', 'verstärkt', 'einsetzenden', 'Migration', 'hat', 'sich', 'die', 'Lebenswelt', 'in', 'Deutschland', 'in', 'gewisser', 'Weise', 'italianisiert', 'ich', 'denke', 'hier', 'z', 'B', 'an', 'die', 'Bereiche', 'Esskultur', 'Mode', 'und', 'Design']
+
+predictions: ['O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Der', 'langen', 'Tradition', 'der', 'Italien', 'besonders', 'der', 'Rom', 'Aufenthalte', 'deutscher', 'Künstler', 'ist', 'das', 'Motiv', 'der', 'Sehnsucht', 'eingeschrieben', 'Sehnsucht', 'nach', 'dem', 'Fremden', 'dem', 'ganz', 'Anderen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Liste', 'der', 'durch', 'die', 'DaimlerChrysler', 'AG', 'geförderten', 'Stipendiaten', 'spiegelt', 'die', 'Leitidee', 'der', 'Casa', 'di', 'Goethe', 'wieder', 'Goethes', 'Werk', 'sowohl', 'in', 'seinem', 'historischen', 'Kontext', 'zu', 'präsentieren', 'als', 'auch', 'aus', 'dem', 'Blickwinkel', 'der', 'Gegenwart', 'zu', 'befragen']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Aus', 'dieser', 'Tradition', 'erwächst', 'in', 'meinen', 'Augen', 'eine', 'besondere', 'Verpflichtung', 'auch', 'mit', 'Blick', 'auf', 'die', 'Erweiterung', 'der', 'Europäischen', 'Union']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'B-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Sein', 'Umfang', 'spiegelt', 'die', 'Vielfalt', 'die', 'Dauer', 'und', 'die', 'Intensität', 'der', 'Beziehungen', 'die', 'zwischen', 'Deutschland', 'und', 'Italien', 'auf', 'allen', 'Gebieten', 'der', 'Kultur', 'und', 'Bildung', 'bestehen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Diese', 'Intensität', 'zeigt', 'sich', 'nicht', 'zuletzt', 'darin', 'dass', 'sowohl', 'Deutschland', 'wie', 'Italien', 'im', 'jeweils', 'anderen', 'Land', 'die', 'relativ', 'größte', 'Zahl', 'kultureller', 'Einrichtungen', 'unterhalten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Dabei', 'ist', 'es', 'vor', 'allem', 'die', 'Reizgestalt', 'der', 'Handschrift', 'die', 'ihn', 'ans', 'Entziffern', 'der', 'Mikrogramme', 'bannt', 'und', 'gleichzeitig', 'in', 'eine', 'ungewohnte', 'Freiheit', 'entlässt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Dabei', 'ist', 'es', 'vor', 'allem', 'die', 'Reizgestalt', 'der', 'Handschrift', 'die', 'ihn', 'ans', 'Entziffern', 'der', 'Mikrogramme', 'bannt', 'und', 'gleichzeitig', 'in', 'eine', 'ungewohnte', 'Freiheit', 'entlässt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Im', 'Gegenteil', 'Es', 'ist', 'die', 'Sinnlichkeit', 'der', 'reinen', 'Augenlust', 'wenn', 'man', 'sich', 'ans', 'Studium', 'seiner', 'Blätter', 'macht', 'und', 'beobachtet', 'wie', 'die', 'Sätze', 'wuchern', 'übereinander', 'wachsen', 'sich', 'in', 'Linien', 'verlieren', 'oder', 'zu', 'Flächen', 'verdichten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Im', 'Gegenteil', 'Es', 'ist', 'die', 'Sinnlichkeit', 'der', 'reinen', 'Augenlust', 'wenn', 'man', 'sich', 'ans', 'Studium', 'seiner', 'Blätter', 'macht', 'und', 'beobachtet', 'wie', 'die', 'Sätze', 'wuchern', 'übereinander', 'wachsen', 'sich', 'in', 'Linien', 'verlieren', 'oder', 'zu', 'Flächen', 'verdichten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O']
+token: ['Im', 'Gegenteil', 'Es', 'ist', 'die', 'Sinnlichkeit', 'der', 'reinen', 'Augenlust', 'wenn', 'man', 'sich', 'ans', 'Studium', 'seiner', 'Blätter', 'macht', 'und', 'beobachtet', 'wie', 'die', 'Sätze', 'wuchern', 'übereinander', 'wachsen', 'sich', 'in', 'Linien', 'verlieren', 'oder', 'zu', 'Flächen', 'verdichten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Im', 'Gegenteil', 'Es', 'ist', 'die', 'Sinnlichkeit', 'der', 'reinen', 'Augenlust', 'wenn', 'man', 'sich', 'ans', 'Studium', 'seiner', 'Blätter', 'macht', 'und', 'beobachtet', 'wie', 'die', 'Sätze', 'wuchern', 'übereinander', 'wachsen', 'sich', 'in', 'Linien', 'verlieren', 'oder', 'zu', 'Flächen', 'verdichten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Denklandschaft', 'Regenblatt', 'Textvibrationsstudie', 'Satzfeld', 'oder', 'auch', 'Porträtierter', 'Satz', 'das', 'sind', 'die', 'Lockvögel', 'die', 'Claus', 'ausgesendet', 'hat', 'um', 'uns', 'in', 'seine', 'Expressionen', 'hineinzuziehen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['So', 'lautet', 'der', 'Titel', 'einer', 'Arbeit', 'aus', 'dem', 'Jahr', '1968', 'für', 'die', 'Claus', 'den', 'Zeichenstift', 'so', 'lange', 'über', 'das', 'Papier', 'kreisen', 'ließ', 'bis', 'das', 'Blatt', 'fast', 'vollständig', 'schwarz', 'geworden', 'war']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'I-MET', 'O', 'O', 'B-MET', 'O', 'I-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Wobei', 'das', 'Schweigen', 'in', 'diesem', 'speziellen', 'Fall', 'auch', 'nichts', 'anderes', 'ist', 'als', 'ein', 'Innehalten', 'im', 'Kontinuum', 'der', 'Wörter', 'und', 'Bilder', 'das', 'Raum', 'schafft', 'für', 'neue', 'Projektionen', 'und', 'Gedanken', 'die', 'von', 'den', 'Randzonen', 'zwischen', 'dem', 'Bekannten', 'und', 'dem', 'Unbewussten', 'herandrängen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'I-MET', 'O', 'I-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Europa', 'muss', 'von', 'seinen', 'Bürgerinnen', 'und', 'Bürgern', 'als', 'Ort', 'des', 'sozialen', 'Zusammenhalts', 'über', 'kulturelle', 'und', 'religiöse', 'Grenzen', 'hinweg', 'begriffen', 'und', 'erlebt', 'werden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'I-MET', 'O', 'I-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Europa', 'muss', 'von', 'seinen', 'Bürgerinnen', 'und', 'Bürgern', 'als', 'Ort', 'des', 'sozialen', 'Zusammenhalts', 'über', 'kulturelle', 'und', 'religiöse', 'Grenzen', 'hinweg', 'begriffen', 'und', 'erlebt', 'werden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Das', 'kann', 'nicht', 'oktroyiert', 'werden', 'sondern', 'das', 'geht', 'nur', 'indem', 'wir', 'die', 'wechselseitige', 'Blockade', 'die', 'nach', 'meinem', 'Eindruck', 'den', 'Prozess', 'so', 'lange', 'verzögert', 'hat', 'natürlich', 'sind', 'die', 'Interessen', 'unterschiedlich', 'und', 'treffen', 'auch', 'im', 'Bündnis', 'für', 'den', 'Film', 'aufeinander', 'dadurch', 'aufheben', 'dass', 'wir', 'ein', 'Paket', 'schnüren']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['So', 'werden', 'nach', 'Expertenaussagen', 'in', 'Deutschland', 'im', 'Jahr', '2000', 'von', 'Mikroelektronikprodukten', 'rund', '1', '000', 'Milliarden', 'DM', 'Umsatz', '4', '5', 'Millionen', 'Arbeitsplätze', 'Exporte', 'im', 'Wert', 'von', '510', 'Milliarden', 'DM', 'abhängen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Auch', 'im', 'privaten', 'Bereich', 'hat', 'die', 'Mikroelektronik', 'längst', 'Einzug', 'gehalten', 'Von', 'der', 'Unterhaltungselektronik', 'übers', 'Handy', 'bis', 'zur', 'Chipkarte']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Und', 'zusätzlich', 'fließen', 'erhebliche', 'Beiträge', 'in', 'die', 'Kassen', 'der', 'sozialen', 'Sicherungssysteme']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Und', 'gleichzeitig', 'glaube', 'ich', 'auch', 'daß', 'Kulturpolitik', 'durch', 'die', 'Arbeit', 'von', 'Stiftungen', 'belebt', 'werden', 'kann', 'also', 'eine', 'fruchtbare', 'Wechselwirkung', 'besteht']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Mehrheiten', 'lagen', 'quer', 'zu', 'den', 'politischen', 'Parteien']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'O', 'I-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'O', 'O', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'teile', 'diese', 'Auffassung', 'nicht', 'im', 'Gegenteil', 'Die', 'normative', 'Orientierung', 'an', 'menschlicher', 'Würde', 'am', 'Respekt', 'vor', 'dem', 'einzelnen', 'menschlichen', 'Individuum', 'sehe', 'ich', 'als', 'den', 'humanistischen', 'Kern', 'des', 'Ethos', 'an', 'das', 'eine', 'Demokratie', 'trägt', 'oder', 'besser', 'tragen', 'sollte', 'Die', 'Würde', 'des', 'Menschen', 'ist', 'unantastbar', 'muss', 'normativ', 'ausbuchstabiert', 'werden', 'die', 'Gesetzgebung', 'ist', 'nur', 'ein', 'Teil', 'dieses', 'ethischen', 'Projektes']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'O', 'O', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Allerdings', 'erschöpfen', 'sich', 'die', 'ethischen', 'Pflichten', 'nicht', 'in', 'der', 'Bewahrung', 'individueller', 'Rechte']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'räume', 'ein', 'dass', 'diese', '42', 'Prozent', 'die', 'gelten', 'sie', 'stehen', 'ja', 'schon', 'im', 'Gesetzblatt', 'nicht', 'zustande', 'gekommen', 'sind', 'weil', 'die', 'SPD', 'sich', 'das', 'so', 'gerne', 'gewünscht', 'hätte', 'sondern', 'das', 'war', 'ein', 'Kompromiss', 'den', 'wir', 'mit', 'der', 'rheinland', 'pfälzischen', 'Landesregierung', 'schließen', 'mussten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Davor', 'steht', 'die', 'Garantie', 'der', 'kommunalen', 'Selbstverwaltung']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O']
+token: ['Ich', 'verstehe', 'wirklich', 'nicht', 'wie', 'man', 'bei', 'dieser', 'Situation', 'sagen', 'kann', 'dass', 'der', 'Mittelstand', 'schlechter', 'gestellt', 'wird', 'als', 'die', 'Körperschaften']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Auch', 'hier', 'gehen', 'wir', 'Hand', 'in', 'Hand', 'der', 'Bund', 'und', 'dieses', 'Land']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'ist', 'vor', 'allen', 'Dingen', 'Ihren', 'eigenen', 'Aktivitäten', 'geschuldet', 'nicht', 'in', 'erster', 'Linie', 'das', 'behauptet', 'auch', 'keiner', 'der', 'Politik']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O']
+token: ['Aber', 'man', 'muss', 'eine', 'Säule', 'daneben', 'stellen', 'und', 'die', 'heißt', 'Kapitaldeckung']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Für', 'mich', 'war', 'es', 'immer', 'wichtig', 'zu', 'sagen', 'Der', 'Sinn', 'der', 'Reform', 'ist', 'Kapitaldeckung', 'aufzubauen', 'die', 'zweite', 'Säule', 'neben', 'die', 'erste', 'beitragsfinanzierte', 'zu', 'stellen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Meine', 'Partei', 'ist', 'gegen', 'dieses', 'Gesetz', 'Sturm', 'gelaufen', 'meine', 'Freunde', 'in', 'den', 'Gewerkschaften', 'genauso']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wir', 'haben', 'nämlich', 'einen', 'Rechtsanspruch', 'auf', 'Teilzeit', 'eingeräumt']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'O', 'B-MET', 'O', 'I-MET', 'O', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Deswegen', 'denke', 'ich', 'dass', 'wir', 'auch', 'in', 'diesem', 'Bereich', 'zwischen', 'den', 'Teilhabeansprüchen', 'Ihrer', 'Beschäftigten', 'und', 'den', 'berechtigten', 'Ansprüchen', 'dessen', 'der', 'sein', 'Geld', 'investieren', 'will', 'und', 'der', 'das', 'Risiko', 'für', 'das', 'investierte', 'Geld', 'trägt', 'eine', 'sinnvolle', 'vernünftige', 'Balance', 'finden', 'werden', 'und', 'finden', 'müssen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'jedenfalls', 'halte', 'das', 'was', 'gegenwärtig', 'an', 'vordergründigen', 'Konfrontationen', 'aufgebaut', 'wird', 'für', 'ganz', 'verkehrt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'B-MET', 'I-MET', 'O', 'O', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wir', 'brauchen', 'zweitens', 'in', 'unserer', 'Gesellschaft', 'ein', 'Maß', 'an', 'Offenheit', 'an', 'Internationalität', 'um', 'die', 'Menschen', 'von', 'außen', 'zu', 'bekommen', 'die', 'unsere', 'Leute', 'herausfordern', 'können']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'I-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'sage', 'deswegen', 'In', 'diesen', 'beiden', 'Bereichen', 'haben', 'wir', 'ein', 'Modernitätsdefizit', 'das', 'wir', 'gemeinsam', 'aufarbeiten', 'müssen', 'wenn', 'wir', 'ich', 'denke', 'an', 'diesem', 'Punkt', 'ziehen', 'wir', 'an', 'einem', 'Strang', 'wo', 'immer', 'sich', 'der', 'Einzelne', 'politisch', 'verortet', 'eines', 'wollen', 'des', 'Landes', 'Wohlfahrt', 'wie', 'man', 'bei', 'uns', 'in', 'Niedersachsen', 'so', 'schön', 'sagt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Was', 'sich', 'damals', 'in', 'den', 'Gesichtern', 'der', 'Menschen', 'widerspiegelte', 'zeigt', 'die', 'Ausstellung', 'Here', 'is', 'New', 'York']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Sie', 'erzählen', 'von', 'der', 'Trauer', 'und', 'der', 'Verzweiflung', 'der', 'Menschen', 'von', 'Müdigkeit', 'und', 'Erschöpfung', 'aber', 'auch', 'vom', 'Durchhaltewillen', 'und', 'der', 'festen', 'Entschlossenheit', 'nicht', 'aufzugeben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['An', 'der', 'Seite', 'der', 'USA', 'haben', 'wir', 'gemeinsam', 'mit', 'anderen', 'Nato', 'Partnern', 'in', 'Afghanistan', 'dazu', 'beigetragen', 'die', 'Wurzeln', 'des', 'terroristischen', 'Al', 'Quaida', 'Netzwerkes', 'zu', 'zerschlagen']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Aber', 'in', 'der', 'Not', 'stehen', 'die', 'Menschen', 'zusammen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O']
+token: ['Nicht', 'nur', 'eine', 'Flutwelle', 'eine', 'ungeheure', 'Welle', 'der', 'Hilfsbereitschaft', 'geht', 'durch', 'unser', 'Land']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Von', 'diesem', 'Gefühl', 'haben', 'wir', 'immer', 'noch', 'etwas', 'in', 'die', 'Gegenwart', 'hinübergerettet']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wir', 'werden', 'nie', 'ganz', 'fassen', 'können', 'was', 'damals', 'geschah']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wir', 'können', 'nur', 'versuchen', 'uns', 'weiter', 'anzunähern']
+
+predictions: ['B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'denke', 'dass', 'das', 'was', 'Sie', 'hier', 'nach', 'fünfjähriger', 'Bauzeit', 'beziehen', 'sich', 'sehen', 'lassen', 'kann', 'und', 'in', 'Berlins', 'Mitte', 'eine', 'Bereicherung', 'darstellt', 'sowohl', 'baulich', 'als', 'auch', 'von', 'den', 'Aufgaben', 'her', 'die', 'Sie', 'hier', 'bearbeiten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'möchte', 'aber', 'aufgreifen', 'was', 'Sie', 'Herr', 'Reich', 'vor', 'wenigen', 'Wochen', 'in', 'der', 'Bilanzpressekonferenz', 'gesagt', 'haben']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Hier', 'liegt', 'ein', 'Grund', 'warum', 'in', 'der', 'Frühphase', 'traditionelle', 'Kreditgeber', 'schon', 'einmal', 'zögern', 'wenn', 'Jungunternehmerinnen', 'und', 'unternehmer', 'mit', 'unkonventionellen', 'Methoden', 'und', 'einer', 'Finanzierung', 'die', 'nicht', 'in', 'allen', 'Punkten', 'als', 'abgesichert', 'gelten', 'kann', 'in', 'neue', 'Märkte', 'vorstoßen', 'wollen', 'was', 'wir', 'uns', 'alle', 'miteinander', 'aber', 'auf', 'der', 'anderen', 'Seite', 'wünschen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'I-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Interessant', 'ist', 'in', 'diesem', 'Zusammenhang', 'auch', 'die', 'Beobachtung', 'dass', 'die', 'Beschäftigungspläne', 'bei', 'den', 'Unternehmen', 'der', 'New', 'Economy', 'trotz', 'der', 'Kursbereinigung', 'an', 'den', 'Aktienmärkten', 'erneut', 'um', 'fast', 'zehn', 'Prozentpunkte', 'über', 'denen', 'des', 'Vorjahres', 'liegen']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Neben', 'der', 'eindeutig', 'beschäftigungsfreundlichen', 'Wirkung', 'dieser', 'Förderbank', 'liegt', 'mir', 'eines', 'der', 'Grundprinzipien', 'der', 'Kreditanstalt', 'für', 'Wiederaufbau', 'besonders', 'am', 'Herzen', 'das', 'Prinzip', 'der', 'Nachhaltigkeit']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'O', 'O', 'I-MET', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Meine', 'Freude', 'entzündet', 'sich', 'dabei', 'sowohl', 'am', 'Thema', 'der', 'Ausstellung', 'als', 'auch', 'an', 'ihrem', 'kulturpolitischen', 'Kontext']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Kunstwerke', 'erzählen', 'nicht', 'nur', 'die', 'Geschichte', 'der', 'Kunst', 'sondern', 'auch', 'die', 'ihres', 'Jahrhunderts']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O', 'O', 'O', 'O']
+true_labels: ['O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Sie', 'reflektieren', 'ihre', 'Epoche', 'sind', 'Spiegel', 'der', 'gesellschaftlichen', 'politischen', 'und', 'wissenschaftlichen', 'Wirklichkeit', 'in', 'der', 'sie', 'entstanden', 'sind']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Künste', 'initiieren', 'daraus', 'nicht', 'selten', 'gesellschaftliche', 'Bewegungen', 'Utopien', 'Revolution']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Der', 'europaweite', 'Terror', 'des', 'NS', 'Regimes', 'gegen', 'die', 'Kultur', 'und', 'der', 'kalte', 'Krieg', 'haben', 'unseren', 'Blick', 'zweifellos', 'zweifach', 'verstellt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Kein', 'Zweifel', 'Im', 'Vergleich', 'zur', 'Situation', 'die', 'wir', 'im', 'letzten', 'Jahr', 'um', 'diese', 'Zeit', 'vorgefunden', 'haben', 'hat', 'sich', 'die', 'Weltwirtschaft', 'eingetrübt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Kein', 'Zweifel', 'also', 'Die', 'Weltwirtschaft', 'hat', 'sich', 'eingetrübt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Anders', 'ausgedrückt', 'Krisenhafte', 'Erscheinungen', 'in', 'dem', 'für', 'uns', 'so', 'wichtigen', 'Markt', 'der', 'Vereinigten', 'Staaten', 'schlagen', 'anders', 'und', 'vor', 'allen', 'Dingen', 'schneller', 'auf', 'Deutschland', 'durch', 'als', 'es', 'in', 'der', 'Vergangenheit', 'der', 'Fall', 'war']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'O', 'I-MET', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wir', 'haben', 'gesagt', 'Wir', 'müssen', 'einen', 'Pfad', 'in', 'der', 'staatlichen', 'Finanzpolitik', 'finden', 'der', 'einen', 'Weg', 'in', 'die', 'Zukunft', 'dadurch', 'beschreibt', 'dass', 'auf', 'der', 'einen', 'Seite', 'Konsolidierungspolitik', 'in', 'den', 'öffentlichen', 'Haushalten', 'gemacht', 'wird', 'übrigens', 'auch', 'international', 'vereinbarte', 'Konsolidierungspolitik;', 'ich', 'erinnere', 'an', 'den', 'Stabilitätspakt', 'der', 'international', 'vereinbart', 'wurde', 'keine', 'Erfindung', 'von', 'mir', 'war', 'und', 'trotzdem', 'richtig', 'ist', 'und', 'auf', 'der', 'anderen', 'Seite', 'die', 'öffentlichen', 'Investitionen', 'verstetigt', 'werden', 'um', 'dadurch', 'Wachstum', 'zu', 'ermöglichen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Es', 'leuchtet', 'jedem', 'der', 'sich', 'mit', 'Finanz', 'und', 'Wirtschaftspolitik', 'befasst', 'unmittelbar', 'ein', 'dass', 'das', 'nicht', 'geht']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Diejenigen', 'die', 'das', 'befürworten', 'können', 'nur', 'sehr', 'kurzfristige', 'Beweise', 'dafür', 'antreten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Der', 'Herr', 'Ministerpräsident', 'hat', 'darauf', 'abgehoben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wir', 'haben', 'nämlich', 'aus', 'guten', 'Gründen', 'der', 'Herr', 'Ministerpräsident', 'hat', 'darauf', 'hingewiesen', 'den', 'Solidarpakt', 'II', 'unter', 'Dach', 'und', 'Fach', 'gebracht']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'wollte', 'nämlich', 'den', 'Finanzmärkten', 'wie', 'den', 'wirtschaftspolitischen', 'Akteuren', 'signalisieren', 'Dieses', 'Land', 'föderal', 'aufgebaut', 'was', 'ja', 'gelegentlich', 'durchaus', 'zu', 'Schwierigkeiten', 'bei', 'Entscheidungen', 'führen', 'kann', 'ist', 'in', 'der', 'Lage', 'komplizierteste', 'Entscheidungen', 'mit', 'weit', 'reichenden', 'Folgen', 'in', 'kurzer', 'Zeit', 'und', 'großer', 'Einigkeit', 'zu', 'fällen']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Auch', 'das', 'denke', 'ich', 'wird', 'die', 'Branche', 'nicht', 'übersehen', 'und', 'keineswegs', 'klein', 'schreiben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Aber', 'natürlich', 'brauchen', 'wir', 'die', 'Partner', 'um', 'die', 'Notwendigkeit', 'einer', 'solchen', 'Innovationsstrategie', 'auch', 'in', 'der', 'Gesellschaft', 'zu', 'verankern']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Filme', 'erzählen', 'die', 'Geschichten', 'von', 'der', 'Vergangenheit', 'mit', 'ihren', 'eigenen', 'Mitteln']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Gegenwärtig', 'zielen', 'die', 'stilistischen', 'Mittel', 'des', 'Kinos', 'nicht', 'nur', 'in', 'Deutschland', 'vor', 'allem', 'auf', 'die', 'Emotionen', 'des', 'Publikums', 'Diese', 'Tendenz', 'ist', 'nicht', 'etwa', 'zu', 'verachten']
+
+predictions: ['I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'Kino', 'erzählt', 'die', 'Geschichten', 'von', 'der', 'Vergangenheit', 'so', 'dass', 'sie', 'auf', 'die', 'Emotion', 'den', 'Sinnesapparat', 'das', 'seelische', 'Zentrum', 'des', 'Zuschauers', 'zielen']
+
+predictions: ['I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'Kino', 'erzählt', 'die', 'Geschichten', 'von', 'der', 'Vergangenheit', 'so', 'dass', 'sie', 'auf', 'die', 'Emotion', 'den', 'Sinnesapparat', 'das', 'seelische', 'Zentrum', 'des', 'Zuschauers', 'zielen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET', 'I-MET', 'I-MET', 'I-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'glaube', 'dass', 'jeder', 'unendliches', 'Mitgefühl', 'mit', 'den', 'Opfern', 'mit', 'den', 'Angehörigen', 'der', 'Toten', 'hat', 'und', 'haben', 'muss', 'und', 'daraus', 'auch', 'der', 'feste', 'Wille', 'erwachsen', 'muss', 'alles', 'zu', 'tun', 'um', 'erstens', 'das', 'was', 'abgelaufen', 'ist', 'abzuklären', 'und', 'zweitens', 'wenn', 'es', 'ein', 'Anschlag', 'gewesen', 'sein', 'sollte', 'was', 'gegenwärtig', 'nicht', 'sicher', 'feststeht', 'es', 'gibt', 'Anzeichen', 'es', 'gibt', 'auch', 'gegenteilige', 'Erklärungen', 'der', 'tunesischen', 'Behörden', 'dann', 'werden', 'wir', 'alles', 'in', 'unserer', 'Macht', 'stehende', 'tun', 'um', 'die', 'Menschen', 'die', 'so', 'etwas', 'tun', 'zu', 'fangen', 'und', 'auf', 'Dauer', 'hinter', 'Gitter', 'zu', 'bringen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Meine', 'Damen', 'und', 'Herren', 'am', '17', 'Dezember', '1999', 'in', 'der', '7', 'Verhandlungsrunde', 'haben', 'wir', 'hier', 'in', 'Berlin', 'eine', 'erste', 'Vereinbarung', 'erzielt', 'Bund', 'und', 'deutsche', 'Unternehmen', 'werden', 'je', 'zur', 'Hälfte', 'die', 'Bundesstiftung', 'Erinnerung', 'Verantwortung', 'und', 'Zukunft', 'mit', 'einem', 'Stiftungskapital', 'von', '10', 'Mrd', 'DM', 'ausstatten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Diese', 'Rechtssicherheit', 'berührt', 'unmittelbar', 'deutsche', 'Exporte', 'und', 'Investitionen', 'in', 'Amerika']
+
+predictions: ['I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wer', 'bauen', 'will', 'muss', 'Gebäude', 'zuerst', 'sehen', 'und', 'erleben', 'lernen', 'muss', 'sich', 'umtun', 'in', 'der', 'Welt', 'in', 'Werkstätten', 'und', 'Büros', 'muss', 'sich', 'einen', 'Bilderschatz', 'erarbeiten', 'den', 'er', 'an', 'einer', 'Universität', 'in', 'einer', 'Stadt', 'ja', 'nicht', 'einmal', 'in', 'einem', 'Land', 'finden', 'kann']
+
+predictions: ['I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wer', 'bauen', 'will', 'muss', 'Gebäude', 'zuerst', 'sehen', 'und', 'erleben', 'lernen', 'muss', 'sich', 'umtun', 'in', 'der', 'Welt', 'in', 'Werkstätten', 'und', 'Büros', 'muss', 'sich', 'einen', 'Bilderschatz', 'erarbeiten', 'den', 'er', 'an', 'einer', 'Universität', 'in', 'einer', 'Stadt', 'ja', 'nicht', 'einmal', 'in', 'einem', 'Land', 'finden', 'kann']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Architekten', 'müssen', 'wandern', 'und', 'es', 'war', 'nicht', 'zuletzt', 'diese', 'alte', 'Weisheit', 'die', 'die', 'rot', 'grüne', 'Bundesregierung', 'vor', 'nunmehr', 'fünf', 'Jahren', 'bewog', 'mit', 'dem', 'Taut', 'Stipendium', 'den', 'höchst', 'dotierten', 'Nachwuchspreis', 'für', 'junge', 'Architektinnen', 'und', 'Architekten', 'als', 'Reisestipendium', 'auszuloben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O']
+token: ['Nur', 'so', 'reifen', 'Ideen', 'zu', 'Innovationen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Aber', 'die', 'deutschen', 'Winzer', 'müssen', 'sich', 'mit', 'ihren', 'Produkten', 'keineswegs', 'hinter', 'der', 'Konkurrenz', 'aus', 'dem', 'sonnigeren', 'Ausland', 'verstecken']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Meine', 'Damen', 'und', 'Herren', 'Sie', 'werden', 'mir', 'zustimmen', 'diese', 'Zahlen', 'können', 'sich', 'sehen', 'lassen']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O']
+token: ['Das', 'perfide', 'Überwachungssystem', 'verstümmelte', 'die', 'Seele', 'der', 'Menschen']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O']
+token: ['Jeder', 'Hauch', 'einer', 'Opposition', 'wurde', 'zerstört']
+
+predictions: ['I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wer', 'immer', 'über', 'dieses', 'Thema', 'diskutiert', 'sollte', 'sich', 'die', 'Zahlen', 'des', 'Abbaus', 'der', 'Fördermengen', 'genauso', 'vor', 'Augen', 'führen', 'wie', 'die', 'Zahl', 'der', 'verlorengegangenen', 'Arbeitsplätze', 'und', 'was', 'in', 'einem', 'insgesamt', 'störungsfreien', 'weil', 'sozialverträglichen', 'Prozess', 'geleistet', 'worden', 'ist']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Er', 'hat', 'ein', 'Stück', 'Automobilgeschichte', 'nicht', 'nur', 'in', 'Deutschland', 'sondern', 'auch', 'in', 'der', 'Welt', 'geschrieben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Insgesamt', 'drei', 'Millionen', 'Fahrzeuge', 'liefen', 'vom', 'Band']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'ist', 'ein', 'Beispiel', 'an', 'dem', 'sich', 'viele', 'ausrichten', 'sollten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Deshalb', 'muss', 'der', 'Staat', 'die', 'ökonomischen', 'Strukturen', 'so', 'gestalten', 'dass', 'sich', 'auch', 'die', 'Zivilgesellschaft', 'besser', 'entfalten', 'kann']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Erste', 'Erfolge', 'der', 'Agenda', '2010', 'zeichnen', 'sich', 'ab']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Jetzt', 'vor', 'den', 'Zahlen', 'wegzulaufen', 'oder', 'den', 'Reformprozess', 'abzubrechen', 'wäre', 'verheerend']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Und', 'dann', 'ist', 'mir', 'wichtig', 'zu', 'betonen', 'dass', 'wir', 'Sorge', 'tragen', 'für', 'die', 'Wettbewerbsfähigkeit', 'unserer', 'Luftverkehrsunternehmen', 'unserer', 'Flughäfen', 'und', 'unserer', 'Luftfahrtindustrie']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Allerdings', 'ist', 'nicht', 'zuletzt', 'Folge', 'dessen', 'dass', 'wir', 'ein', 'ambitioniertes', 'Reformprogramm', 'auflegen', 'mussten', 'und', 'aufgelegt', 'haben', 'um', 'unsere', 'Gesellschaft', 'leistungsfähig', 'zu', 'halten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'glaube', 'ich', 'jedenfalls', 'den', 'Vorträgen', 'entnommen', 'zu', 'haben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Eines', 'ist', 'klar', 'die', 'wirtschaftliche', 'Entwicklung', 'der', 'Länder', 'gedeiht', 'am', 'besten', 'wenn', 'es', 'gelingt', 'Frieden', 'in', 'dieser', 'Region', 'zu', 'schaffen']
+
+predictions: ['B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Frage', 'der', 'Zwangsarbeiter', 'steht', 'nicht', 'etwa', 'am', 'Rande', 'jenes', 'furchtbaren', 'Geschehens', 'das', 'unter', 'dem', 'Namen', 'Holocaust', 'weltweit', 'zu', 'einem', 'Symbol', 'für', 'menschliche', 'Barbarei', 'geworden', 'ist']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Nein', 'die', 'Verschleppung', 'und', 'Misshandlung', 'von', 'Zwangsarbeitern', 'stehen', 'mit', 'im', 'Zentrum', 'jener', 'Verbrechen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O']
+token: ['Und', 'dazu', 'gehört', 'ebenso', 'die', 'Verpflichtung', 'Haß', 'Rassismus', 'und', 'Intoleranz', 'in', 'unserer', 'Gesellschaft', 'nicht', 'wieder', 'aufkeimen', 'zu', 'lassen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Redaktionen', 'sind', 'aber', 'keine', 'Behörden', 'wo', 'man', 'in', 'Ehren', 'ergrauen', 'könnte']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Eine', 'Wachstumsschwäche', 'die', 'natürlich', 'Europa', 'und', 'speziell', 'Deutschland', 'berührt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Da', 'haben', 'wir', 'die', 'entsprechenden', 'Haushalte', 'zweistellig', 'nach', 'oben', 'gefahren', 'inzwischen', 'fast', '16', 'Milliarden', 'obwohl', 'wir', 'für', 'weite', 'Teile', 'der', 'Bildung', 'gar', 'nicht', 'zuständig', 'sind', 'aber', 'wir', 'machen', 'das']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Und', 'weil', 'das', 'so', 'ist', 'gibt', 'es', 'eine', 'Begründung', 'aus', 'den', 'Traditionen', 'heraus', 'die', 'man', 'nicht', 'klein', 'schreiben', 'soll']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Neben', 'den', 'staatlichen', 'und', 'den', 'grandiosen', 'privaten', 'Hilfen', 'ist', 'jetzt', 'vor', 'allen', 'Dingen', 'eines', 'notwendig', 'das', 'muss', 'man', 'gerade', 'heute', 'gerade', 'auf', 'dieser', 'Internationalen', 'Tourismus', 'Börse', 'sagen', 'Die', 'Touristen', 'sollten', 'die', 'Ziele', 'in', 'den', 'betroffenen', 'Regionen', 'nicht', 'aus', 'den', 'Augen', 'verlieren', 'sondern', 'sie', 'wieder', 'ansteuern']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', '36', 'Spiele', 'werden', 'schätzungsweise', '30', 'Milliarden', 'Zuschauer', 'in', 'aller', 'Welt', 'verfolgen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Um', 'diese', 'Herausforderungen', 'zu', 'meistern', 'ist', 'es', 'notwendig', 'vor', 'allem', 'auf', 'Wissen', 'und', 'Innovation', 'zu', 'setzen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'finde', 'die', 'Begabungen', 'die', 'Sie', 'hier', 'an', 'den', 'Tag', 'gelegt', 'haben', 'lohnen', 'nun', 'wirklich', 'weiterentwickelt', 'zu', 'werden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Doch', 'die', 'hochfliegenden', 'Hauptstadt', 'Träume', 'waren', 'schon', 'längst', 'abgestürzt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O']
+token: ['Nachdem', 'der', 'Feuerstrom', 'der', 'Reden', 'die', 'auf', 'Berlin', 'am', 'Ende', 'des', 'vergangenen', 'Jahrhunderts', 'gehalten', 'wurden', 'verglimmt', 'ist', 'beginnt', 'die', 'Gegenwart']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Berlin', 'ist', 'wieder', 'auf', 'sich', 'zurückgeworfen', 'wie', 'oft', 'genug', 'in', 'seiner', 'Geschichte']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Meist', 'lässt', 'der', 'Finanzsenator', 'die', 'Sense', 'kurz', 'aufblitzen', 'erntet', 'dann', 'ein', 'Aufjaulen', 'in', 'den', 'Feuilletons', 'und', 'lässt', 'sich', 'kurz', 'darauf', 'mit', 'der', 'Gewissheit', 'zurückfallen', 'dass', 'man', 'mit', 'dem', 'Schließen', 'einer', 'Oper', 'gerade', 'mal', 'sechs', 'Tage', 'lang', 'die', 'Zinsen', 'bezahlen', 'könnte']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Meist', 'lässt', 'der', 'Finanzsenator', 'die', 'Sense', 'kurz', 'aufblitzen', 'erntet', 'dann', 'ein', 'Aufjaulen', 'in', 'den', 'Feuilletons', 'und', 'lässt', 'sich', 'kurz', 'darauf', 'mit', 'der', 'Gewissheit', 'zurückfallen', 'dass', 'man', 'mit', 'dem', 'Schließen', 'einer', 'Oper', 'gerade', 'mal', 'sechs', 'Tage', 'lang', 'die', 'Zinsen', 'bezahlen', 'könnte']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Am', 'Ende', 'erstickt', 'man', 'die', 'Künste', 'um', 'die', 'Verwaltungen', 'am', 'Leben', 'zu', 'lassen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Probleme', 'die', 'Berlin', 'zu', 'lösen', 'hat', 'lassen', 'sich', 'nicht', 'mit', 'Geld', 'zukleistern']
+
+predictions: ['I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Dem', 'Autor', 'des', 'Artikels', 'drängt', 'sich', 'der', 'Verdacht', 'auf', 'ob', 'sich', 'vielleicht', 'sogar', 'die', 'Politik', 'mit', 'dieser', 'Absicht', 'trägt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Und', 'doch', 'Bei', 'den', 'Berliner', 'Privattheatern', 'schnürte', 'man', 'schließlich', 'Zuwendungspakete', 'und', 'auch', 'den', 'Berliner', 'Universitäten', 'waren', 'Hochschulverträge', 'vergönnt', 'die', 'sie', 'vor', 'überfallartigen', 'Sparklausuren', 'bewahrten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Vielleicht', 'wäre', 'ein', 'Solidarpakt', 'möglich', 'wonach', 'die', 'Bühnen', 'Zuwendungsverträge', 'über', 'fünf', 'Jahren', 'bekommen', 'wenn', 'sie', 'im', 'Gegenzug', 'garantieren', 'Löhne', 'einzufrieren', 'statt', 'des', 'Tarif', 'nur', 'noch', 'einen', 'Inflationsausgleich', 'zu', 'zahlen', 'möglicherweise', 'gar', 'Abstriche', 'am', 'Urlaubsgeld', 'hinzunehmen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'O', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Solche', 'Handstreich', 'Aktionen', 'haben', 'den', 'Glauben', 'der', 'Beschäftigten', 'an', 'eine', 'moderne', 'Rechtsform', 'schwer', 'erschüttert']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Auch', 'in', 'Schleswig', 'Holstein', 'wurde', 'das', 'Kulturressort', 'verzwergt', 'Eine', 'Kulturhoheit', 'der', 'Länder', 'stelle', 'ich', 'mir', 'anders', 'vor']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ohne', 'die', 'Teilhabe', 'der', 'Menschen', 'am', 'Haben', 'und', 'Sagen', 'in', 'der', 'Gesellschaft', 'aber', 'werden', 'wir', 'die', 'Potenziale', 'nicht', 'nutzen', 'die', 'Kreativität', 'nicht', 'ausschöpfen', 'können']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'Leben', 'hielt', 'dann', 'noch', 'einige', 'solcher', 'Überraschungen', 'für', 'mich', 'bereit']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Ich', 'halte', 'unsere', 'Position', 'für', 'die', 'verantwortliche', 'weil', 'sie', 'dazu', 'führt', 'dass', 'die', 'Schäden', 'die', 'die', 'Flut', 'geschlagen', 'hat', 'in', 'dieser', 'Generation', 'und', 'von', 'dieser', 'Generation', 'ausgeglichen', 'werden', 'und', 'nicht', 'auf', 'die', 'Schultern', 'unserer', 'Kinder', 'und', 'Enkelkinder', 'gelegt', 'werden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ganztagsbetreuung', 'ist', 'vor', 'allen', 'Dingen', 'wichtig', 'um', 'Frauen', 'zu', 'ermöglichen', 'Familie', 'und', 'Beruf', 'besser', 'als', 'je', 'zuvor', 'unter', 'einen', 'Hut', 'zu', 'bekommen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Sie', 'haben', 'aus', 'der', 'Erstarrung', 'Flexibilität', 'und', 'aus', 'der', 'Unterdrückung', 'die', 'Freiheit', 'geboren']
+
+predictions: ['I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wer', 'ist', 'es', 'denn', 'der', 'mit', 'dem', 'französischen', 'und', 'dem', 'englischen', 'Außenminister', 'versucht', 'diesen', 'Konflikt', 'zu', 'dämmen', 'ihn', 'nicht', 'ausbrechen', 'zu', 'lassen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O']
+token: ['Das', 'ist', 'auch', 'notwendig', 'und', 'stünde', 'Deutschland', 'gut', 'an']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'erinnere', 'mich', 'noch', 'sehr', 'gut', 'daran', 'wie', 'Ulla', 'Schmidt', 'standhaft', 'verteidigt', 'hat', 'was', 'gemeinsam', 'beschlossen', 'worden', 'ist', 'und', 'wie', 'sich', 'viele', 'von', 'Ihnen', 'zur', 'Seite', 'gedrückt', 'um', 'nicht', 'zu', 'sagen', 'in', 'die', 'Büsche', 'verkrochen', 'haben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Lassen', 'Sie', 'es', 'uns', 'bald', 'machen;', 'denn', 'es', 'eilt', 'zum', 'einen', 'weil', 'es', 'in', 'die', 'Maastricht', 'Kriterien', 'eingeht', 'zum', 'anderen', 'aber', 'auch', 'weil', 'Klarheit', 'über', 'den', 'weiteren', 'Weg', 'herrschen', 'muss']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'musste', 'auch', 'schnell', 'gemacht', 'werden;', 'denn', 'zum', '1', 'Januar', '2005', 'muss', 'Klarheit', 'herrschen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'glaube', 'dass', 'man', 'sich', 'wirklich', 'die', 'Zeit', 'nehmen', 'sollte', 'eine', 'der', 'größten', 'Sozialreformen', 'die', 'in', 'der', 'Geschichte', 'der', 'Bundesrepublik', 'gemacht', 'worden', 'sind', 'weil', 'sie', 'gemacht', 'werden', 'musste', 'sehr', 'sorgfältig', 'auf', 'ihre', 'Wirkungen', 'abzuklopfen', 'und', 'bereit', 'sein', 'sollte', 'korrigierend', 'einzugreifen', 'wenn', 'Wirkungen', 'erzielt', 'werden', 'die', 'das', 'Gesetz', 'nicht', 'vorsieht']
+
+predictions: ['B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'dient', 'dem', 'Ziel', 'die', 'Zufuhr', 'in', 'die', 'Langzeitarbeitslosigkeit', 'einzudämmen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Dabei', 'können', 'wir', 'auf', 'eine', 'ungeheure', 'Kraft', 'in', 'der', 'deutschen', 'Gesellschaft', 'und', 'auch', 'in', 'der', 'deutschen', 'Wirtschaft', 'bauen', 'nicht', 'in', 'dem', 'Sinne', 'dass', 'man', 'sich', 'damit', 'zufrieden', 'geben', 'könnte', 'aber', 'schon', 'in', 'dem', 'Sinne', 'dass', 'man', 'sie', 'als', 'Ausgangspunkt', 'für', 'eine', 'Zukunft', 'nutzt', 'die', 'wir', 'nun', 'wirklich', 'nicht', 'schwarz', 'in', 'schwarz', 'malen', 'müssen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Doch', 'sein', 'sprichwörtlich', 'gewordenes', 'Genie', 'ist', 'andererseits', 'auch', 'nicht', 'vom', 'Himmel', 'gefallen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Hierfür', 'müssen', 'wir', 'Ressourcen', 'freibekommen', 'indem', 'wir', 'von', 'Vergangenheitssubventionen', 'hin', 'zu', 'Zukunftsinvestitionen', 'umsteuern']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'I-MET', 'I-MET', 'O', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Sie', 'hat', 'in', 'den', 'vergangenen', 'Jahren', 'in', 'den', 'Köpfen', 'vieler', 'Unternehmer', 'den', 'Gedanken', 'verankert', 'dass', 'betriebliche', 'Familienpolitik', 'wie', 'sie', 'sagt', 'kein', 'weiches', 'Weiberthema', 'sondern', 'konkretes', 'und', 'langfristiges', 'Handeln', 'für', 'eine', 'gute', 'Zukunft', 'unsers', 'Landes', 'ist']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Als', 'Konsequenz', 'nicht', 'zuletzt', 'aus', 'der', 'PISA', 'Studie', 'haben', 'wir', 'ein', 'Programm', 'aufgelegt', 'mit', 'dem', 'wir', 'den', 'Bau', 'von', 'Ganztagsschulen', 'mit', '4', 'Milliarden', 'Euro', 'über', 'vier', 'Jahre', 'hinweg', 'anschieben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O']
+token: ['Die', 'fürchterliche', 'Katastrophe', 'die', 'der', 'Hurrikan', 'Katrina', 'im', 'Süden', 'der', 'Vereinigten', 'Staaten', 'von', 'Amerika', 'angerichtet', 'ist', 'berührt', 'uns', 'alle']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Es', 'war', 'notwendig', 'die', 'weltwirtschaftlichen', 'Auswirkungen', 'durch', 'die', 'Preisexplosion', 'bei', 'Rohöl', 'und', 'Benzin', 'einzudämmen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Energiepolitik', 'die', 'auf', 'nachwachsende', 'Rohstoffe', 'und', 'auf', 'erneuerbare', 'Energien', 'setzt', 'ist', 'für', 'eine', 'verantwortlich', 'handelnde', 'Politik', 'für', 'eine', 'in', 'diesem', 'Sinne', 'weitsichtige', 'Politik', 'ohne', 'vernünftige', 'Alternative']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Jetzt', 'zahlt', 'sich', 'aus', 'dass', 'die', 'Bundesregierung', 'gemeinsam', 'mit', 'der', 'Automobilindustrie', 'und', 'der', 'Mineralölwirtschaft', 'frühzeitig', 'eine', 'Strategie', 'für', 'alternative', 'Kraftstoffe', 'und', 'Antriebe', 'entwickelt', 'hat']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Deswegen', 'stehe', 'ich', 'auch', 'zu', 'dem', 'Ziel', 'den', 'Anteil', 'der', 'erneuerbaren', 'Energien', 'am', 'Stromverbrauch', 'bis', '2020', 'auf', '20', 'Prozent', 'zu', 'steigern']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'I-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'denke', 'Sie', 'werden', 'verstehen', 'wenn', 'ich', 'mir', 'Sorgen', 'darüber', 'mache', 'dass', 'der', 'eine', 'oder', 'andere', 'denkt', 'in', 'einer', 'bestimmten', 'Situation', 'könne', 'man', 'das', 'was', 'sich', 'als', 'erfolgreich', 'erwiesen', 'hat', 'und', 'was', 'im', 'Interesse', 'der', 'großen', 'Ziele', 'die', 'ich', 'genannt', 'habe', 'weitergeführt', 'werden', 'muss', 'einfach', 'über', 'Bord', 'werfen', 'weil', 'es', 'einem', 'in', 'die', 'Tagesaktualität', 'passt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wichtig', 'ist', 'mir', 'das', 'werden', 'Sie', 'verstehen', 'auch', 'der', 'Wirtschaft', 'gegenüber', 'deutlich', 'zu', 'machen', 'dass', 'sie', 'selbst', 'eine', 'Verantwortung', 'für', 'sagen', 'wir', 'es', 'ruhig', 'so', 'den', 'Erhalt', 'der', 'Schöpfung', 'und', 'dafür', 'hat', 'dass', 'man', 'heute', 'nicht', 'aufessen', 'darf', 'wovon', 'unsere', 'Kinder', 'und', 'deren', 'Kinder', 'schließlich', 'auch', 'noch', 'leben', 'wollen']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Auf', 'dem', 'Europäischen', 'Rat', 'in', 'Feira', 'in', 'einigen', 'Wochen', 'wollen', 'wir', 'einen', 'konkreten', 'Aktions', 'Plan', 'zur', 'EU', 'Initiative', 'der', 'Nördlichen', 'Dimension', 'verabschieden']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Menschen', 'in', 'den', 'neuen', 'Bundesländern', 'haben', 'uns', 'das', 'im', 'Herbst', '1989', 'buchstäblich', 'demonstriert', 'Unbeirrt', 'haben', 'sie', 'sich', 'für', 'die', 'Grundwerte', 'der', 'Demokratie', 'eingesetzt', 'und', 'ein', 'diktatorisches', 'Regime', 'abschütteln', 'können']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Naumann', 'Da', 'ich', 'die', 'musikalische', 'Erziehung', 'und', 'Bildung', 'unserer', 'Kinder', 'für', 'äußerst', 'wichtig', 'halte', 'verfolge', 'ich', 'den', 'Rückgang', 'des', 'Musikunterrichtes', 'an', 'den', 'Schulen', 'mit', 'Sorge']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'O', 'O', 'I-MET', 'B-MET', 'I-MET', 'I-MET', 'O', 'O', 'I-MET', 'B-MET', 'B-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Neben', 'einer', 'gehörigen', 'Portion', 'wohltuenden', 'Pragmatismus', 'tritt', 'hier', 'das', 'überragende', 'Dienstleistungs', 'Ethos', 'Christoph', 'Bertrams', 'zutage']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'O', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'O', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'O', 'I-MET', 'I-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Russland', 'ist', 'unser', 'Nachbar', 'dessen', 'schwierige', 'innenpolitische', 'Entwicklung', 'mit', 'ihren', 'gewaltigen', 'sozialen', 'Spannungen', 'uns', 'unmittelbar', 'berührt', 'kann', 'Verbündeter', 'in', 'weltpolitischen', 'Fragen', 'sein', 'zum', 'Beispiel', 'im', 'Zusammenhang', 'mit', 'der', 'Bekämpfung', 'des', 'Terrorismus', 'und', 'der', 'Verbreitung', 'von', 'Massenvernichtungswaffen', 'ist', 'ein', 'Markt', 'mit', 'gewaltigem', 'Potential', 'für', 'die', 'deutsche', 'Wirtschaft', 'ist', 'einer', 'der', 'wichtigsten', 'Energielieferanten', 'Deutschlands', 'Partner', 'eines', 'vielgestaltigen', 'kulturellen', 'und', 'wissenschaftlichen', 'Austauschs', 'Ort', 'ökologischer', 'Probleme', 'die', 'uns', 'potentiell', 'betreffen', 'Herkunftsland', 'vieler', 'Menschen', 'deutscher', 'Abstammung', 'die', 'in', 'den', 'vergagenen', 'Jahren', 'in', 'Deutschland', 'ihre', 'neue', 'Heimat', 'gefunden', 'haben', 'und', 'vieles', 'mehr']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Damit', 'könnte', 'zum', 'einen', 'der', 'traditionelle', 'außen', 'und', 'sicherheitspolitische', 'Diskurs', 'besser', 'mit', 'solchen', 'Themen', 'verzahnt', 'werden', 'die', 'in', 'der', 'Regel', 'eher', 'der', 'Innenpolitik', 'zugerechnet', 'werden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Wirklichkeit', 'des', 'öffentlichen', 'Raums', 'formulierte', 'Hannah', 'Arendt', 'einst', 'erwächst', 'aus', 'der', 'gleichzeitigen', 'Anwesenheit', 'zahlloser', 'Aspekte', 'und', 'Perspektiven', 'in', 'denen', 'ein', 'Gemeinsames', 'sich', 'präsentiert', 'und', 'für', 'die', 'es', 'keinen', 'gemeinsamen', 'Maßstab', 'und', 'keinen', 'Generalnenner', 'je', 'geben', 'kann']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Bundesregierung', 'setzt', 'dabei', 'auf', 'einen', 'starken', 'Mittelstand']
+
+predictions: ['O', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'O', 'I-MET', 'O', 'O', 'O', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O']
+token: ['Auch', 'die', 'Behörden', 'müssen', 'Informationstechnik', 'nutzen', 'nicht', 'nur', 'intern', 'sondern', 'auch', 'zur', 'Kommunikation', 'mit', 'den', 'Bürgerinnen', 'und', 'Bürgern', 'Informationen', 'müssen', 'laufen', 'nicht', 'die', 'Bürger']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Diese', 'Proteste', 'haben', 'dazu', 'geführt', 'dass', 'ich', 'aus', 'guten', 'Gründen', 'gesagt', 'habe', 'An', 'der', 'Mitbestimmung', 'kann', 'man', 'aus', 'deutscher', 'Sicht', 'nicht', 'rütteln', 'und', 'zwar', 'deshalb', 'weil', 'wir', 'auch', 'innerhalb', 'eines', 'größer', 'gewordenen', 'Europas', 'nicht', 'auf', 'diese', 'in', 'Deutschland', 'sehr', 'erfolgreiche', 'Form', 'der', 'Beteiligung', 'der', 'Arbeitnehmerinnen', 'und', 'Arbeitnehmer', 'an', 'den', 'Entscheidungen', 'in', 'ihren', 'Unternehmen', 'verzichten', 'können']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wir', 'haben', 'also', 'eine', 'Kleinbetriebsklausel', 'eingebaut']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Aber', 'wir', 'müssen', 'eine', 'daneben', 'stellen', 'damit', 'das', 'Dach', 'nicht', 'kippt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Aber', 'wir', 'müssen', 'eine', 'daneben', 'stellen', 'damit', 'das', 'Dach', 'nicht', 'kippt']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wo', 'Automobilproduktion', 'im', 'internationalen', 'Wettbewerb', 'weggefegt', 'worden', 'ist', 'haben', 'Politiker', 'mit', 'einem', 'Ersatz', 'für', 'die', 'Automobilindustrie', 'Schwierigkeiten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O']
+token: ['Denn', 'niemand', 'wird', 'den', 'Forscherdrang', 'und', 'die', 'wissenschaftliche', 'Neugier', 'der', 'Menschen', 'bremsen', 'oder', 'aufhalten', 'können']
+
+predictions: ['B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Frage', 'um', 'die', 'im', 'Weltsicherheitsrat', 'aber', 'auch', 'in', 'den', 'Gesellschaften', 'dieser', 'Welt', 'miteinander', 'gerungen', 'wird', 'lautet', 'Darf', 'die', 'Staatengemeinschaft', 'in', 'einem', 'Moment', 'da', 'die', 'Inspektionen', 'Erfolge', 'zeitigen', 'und', 'die', 'Möglichkeit', 'einer', 'friedlichen', 'Abrüstung', 'des', 'Irak', 'alles', 'andere', 'als', 'ausgeschöpft', 'erscheint', 'zu', 'Mitteln', 'des', 'Krieges', 'greifen', 'oder', 'bleiben', 'wir', 'der', 'Logik', 'einer', 'friedlichen', 'Abrüstung', 'des', 'Irak', 'von', 'Massenvernichtungsmitteln', 'die', 'ohne', 'jede', 'Frage', 'sein', 'muss', 'verpflichtet']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Wir', 'werden', 'das', 'weiter', 'tun', 'müssen', 'auch', 'wenn', 'aufgrund', 'der', 'konjunkturellen', 'Situation', 'in', 'Ihrer', 'Branche', 'nicht', 'alle', 'Blütenträume', 'gereift', 'sind']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Dabei', 'geht', 'es', 'natürlich', 'auch', 'darum', 'dass', 'natur', 'und', 'ingenieurwissenschaftliche', 'Studiengänge', 'wegen', 'aktueller', 'konjunktureller', 'Schwierigkeiten', 'nicht', 'beschnitten', 'werden']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Marktsegmente', 'indessen', 'in', 'denen', 'der', 'Wettbewerb', 'funktioniert', 'werden', 'oder', 'bleiben', 'von', 'der', 'Regulierung', 'jedenfalls', 'nach', 'unserer', 'Auffassung', 'ausgeklammert']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'O', 'O', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Hier', 'entfaltete', 'sich', 'der', 'bis', 'in', 'unsere', 'Tage', 'wegweisende', 'Gedanke', 'eines', 'umfassenden', 'Bildungsauftrags', 'der', 'Museen', 'den', 'wir', 'in', 'Zukunft', 'mit', 'dem', 'Humboldt', 'Forum', 'abrunden', 'wollen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'O', 'O', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Hier', 'entfaltete', 'sich', 'der', 'bis', 'in', 'unsere', 'Tage', 'wegweisende', 'Gedanke', 'eines', 'umfassenden', 'Bildungsauftrags', 'der', 'Museen', 'den', 'wir', 'in', 'Zukunft', 'mit', 'dem', 'Humboldt', 'Forum', 'abrunden', 'wollen']
+
+predictions: ['I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Der', 'Besucher', 'war', 'eingeladen', 'in', 'die', 'Welt', 'einer', 'untergegangenen', 'Epoche', 'einzutauchen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Bei', 'all', 'diesen', 'Diskussionen', 'ist', 'es', 'für', 'mich', 'von', 'besonderer', 'Wichtigkeit', 'meine', 'sehr', 'verehrten', 'Damen', 'und', 'Herren', 'dass', 'wir', 'die', 'Museumsinsel', 'nicht', 'auf', 'dem', 'Stand', 'des', '19', 'Jahrhunderts', 'konservieren']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Der', '11', 'September', 'hat', 'die', 'Welt', 'in', 'eine', 'gefährliche', 'Zukunft', 'gestoßen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Der', '11', 'September', 'war', 'ein', 'defining', 'moment', 'ein', 'Tag', 'an', 'dem', 'die', 'Weltpolitik', 'neu', 'ausgerichtet', 'wurde']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Dies', 'heißt', 'nichts', 'Geringeres', 'als', 'die', 'Grundlagen', 'einer', 'kooperativen', 'Ordnungspolitik', 'für', 'das', '21', 'Jahrhundert', 'zu', 'entwerfen', 'einer', 'Politik', 'die', 'Zonen', 'der', 'Ordnungslosigkeit', 'nicht', 'mehr', 'zulässt', 'die', 'auf', 'eine', 'Weltordnung', 'zielt', 'die', 'allen', 'Völkern', 'eine', 'volle', 'und', 'gerechte', 'Teilhabe', 'ermöglicht']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Autoren', 'der', 'heute', 'erlebten', 'Interzone', 'folgen', 'den', 'wie', 'ich', 'finde', 'interessanteren', 'Ansätzen', 'William', 'Burroughs', 'Interzone', 'regt', 'nämlich', 'auch', 'an', 'feste', 'Begrifflichkeiten', 'in', 'Frage', 'zu', 'stellen', 'die', 'Assoziationskraft', 'von', 'Worten', 'zu', 'sezieren', 'und', 'sich', 'mit', 'der', 'Simultanität', 'von', 'Wahrnehmungen', 'zu', 'beschäftigen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET', 'I-MET']
+true_labels: ['O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Er', 'zerschneidet', 'Texte', 'und', 'setzt', 'sie', 'auf', 'der', 'Suche', 'nach', 'neuen', 'Sinnzusammenhängen', 'neu', 'zusammen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'I-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Er', 'zerschneidet', 'Texte', 'und', 'setzt', 'sie', 'auf', 'der', 'Suche', 'nach', 'neuen', 'Sinnzusammenhängen', 'neu', 'zusammen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wenn', 'man', 'diese', 'Technik', 'nicht', 'nur', 'auf', 'Texte', 'sondern', 'auch', 'auf', 'Bilder', 'und', 'Töne', 'münzt', 'dann', 'stellt', 'sich', 'ein', 'weiterer', 'Bezug', 'zu', 'der', 'heutigen', 'Interzone', 'her']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'B-MET', 'I-MET', 'O', 'O', 'B-MET', 'O', 'B-MET', 'I-MET', 'I-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Solche', 'Bindungen', 'aufzubrechen', 'Neues', 'zu', 'wagen', 'der', 'Kunstentwicklung', 'neue', 'Räume', 'zu', 'öffnen', 'darin', 'sehe', 'ich', 'ein', 'wichtiges', 'Anliegen', 'und', 'auch', 'eine', 'Existenzberechtigung', 'der', 'Berliner', 'Festspiele', 'des', 'Bundes']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Wenn', 'das', 'nicht', 'gelingt', 'werden', 'wir', 'in', 'eine', 'politische', 'Krise', 'hineinrutschen', 'die', 'sich', 'gewaschen', 'hat']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Wir', 'können', 'den', 'Kurden', 'kein', 'Territorium', 'in', 'Europa', 'ausschneiden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Es', 'kreisen', 'gewissermaßen', 'sinnloserweise', 'Milliarden', 'viele', 'Milliarden', 'von', 'Dollars', 'im', 'Augenblick', 'in', 'diesem', 'Kasino', 'genannt', 'Börse', 'verwaltet', 'von', '20', 'bis', '30jährigen', 'jungen', 'Männern']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O']
+token: ['Und', 'diese', 'Schieflage', 'haben', 'diejenigen', 'verursacht', 'die', 'sich', 'heute', 'als', 'Wahrer', 'der', 'sozialen', 'Gerechtigkeit', 'zu', 'gebärden', 'versuchen']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'bin', 'sicher', 'Die', 'meisten', 'Menschen', 'in', 'unserem', 'Lande', 'sehen', 'ein', 'dass', 'wir', 'nicht', 'die', 'Handlungsfähigkeit', 'unseres', 'Gemeinwesens', 'einschränken', 'die', 'Zukunft', 'unserer', 'Kinder', 'und', 'Enkel', 'verspielen', 'dürfen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Keine', 'Frage', 'Wir', 'werden', 'nicht', 'darum', 'herumkommen', 'die', 'Frage', 'neu', 'auszubuchstabieren', 'was', 'in', 'unserer', 'Gesellschaft', 'unter', 'den', 'Bedingungen', 'einer', 'globalisierten', 'Wirtschaft', 'soziale', 'Gerechtigkeit', 'konkret', 'bedeutet']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['All', 'das', 'zeigt', 'uns', 'Die', 'Maßnahmen', 'der', 'Bundesregierung', 'beginnen', 'zu', 'greifen']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Umso', 'wichtiger', 'ist', 'es', 'unserer', 'festen', 'Überzeugung', 'nach', 'dass', 'im', 'Verfassungsentwurf', 'verbesserte', 'Regelungen', 'zur', 'Abgrenzung', 'von', 'Kompetenzen', 'zwischen', 'mitgliedsstaatlicher', 'und', 'europäischer', 'Ebene', 'verankert', 'worden', 'sind']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Europa', 'wächst', 'gewissermaßen', 'ganz', 'konkret', 'zusammen', 'und', 'zwar', 'im', 'Alltag', 'der', 'Menschen', 'ganz', 'selbstverständlich', 'und', 'ganz', 'unspektakulär', 'beim', 'Reisen', 'beim', 'Gebrauch', 'der', 'einheitlichen', 'Währung', 'beim', 'Einkaufen', 'selbst', 'beim', 'Essen']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'I-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Das', 'ist', 'auch', 'die', 'Grundlage', 'auf', 'der', 'wir', 'über', 'Betrittsverhandlungen', 'mit', 'der', 'Türkei', 'diskutieren', 'und', 'auf', 'der', 'Europa', 'die', 'historische', 'Chance', 'hat', 'eine', 'Brücke', 'in', 'die', 'islamische', 'Welt', 'zu', 'schlagen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Einer', 'Aussöhnung', 'die', 'nur', 'durch', 'die', 'Bereitschaft', 'zur', 'Vergebung', 'möglich', 'wurde', 'und', 'durch', 'den', 'unbedingten', 'Willen', 'auf', 'beiden', 'Seiten', 'die', 'Erinnerung', 'an', 'die', 'Verbrechen', 'des', 'Völkermordes', 'wachzuhalten']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'O', 'I-MET', 'I-MET', 'B-MET', 'I-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Und', '55', 'Jahre', 'nach', 'dem', 'Krieg', 'da', 'die', 'europäische', 'Spaltung', 'endlich', 'überwunden', 'ist', 'gilt', 'unser', 'historischer', 'Auftrag', 'um', 'so', 'mehr', 'Auf', 'der', 'Grundlage', 'der', 'gemeinsamen', 'europäischen', 'Werte', 'unsererseits', 'den', 'Nachbarn', 'in', 'Mittel', 'und', 'Osteuropa', 'die', 'Hand', 'zur', 'Integration', 'auszustrecken']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Im', 'Moment', 'geistern', 'alle', 'möglichen', 'Berlinale', 'Reformideen', 'herum', 'Verlegung', 'des', 'Forums', 'in', 'den', 'Sommer', 'Abschaffung', 'des', 'Panorama', 'etc', 'Würden', 'Sie', 'diese', 'Ideen', 'verfolgen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Der', 'Bund', 'und', 'schon', 'gar', 'nicht', 'diese', 'Regierung', 'wird', 'sich', 'nicht', 'aus', 'seiner', 'sozialpolitischen', 'Verantwortung', 'stehlen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Diese', 'Institutionen', 'absterben', 'zu', 'lassen', 'kann', 'niemand', 'im', 'Sinn', 'haben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Oder', 'wird', 'es', 'uns', 'gelingen', 'den', 'kulturellen', 'Reichtum', 'in', 'seiner', 'Vielfalt', 'zu', 'erhalten', 'und', 'durch', 'die', 'Bereitschaft', 'zu', 'wechselseitiger', 'Verständigung', 'zu', 'beleben']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'I-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Eine', 'Barbarei', 'die', 'sich', 'häufig', 'genug', 'religiös', 'tarnt', 'oder', 'als', 'Recht', 'auf', 'ethnische', 'Identität', 'camoufliert']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'I-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Dadurch', 'erhellt', 'sich', 'der', 'Satz', 'Die', 'Sprache', 'ist', 'das', 'Tor', 'zur', 'jeweiligen', 'Kultur']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['So', 'als', 'habe', 'der', 'englische', 'Wortschatz', 'auf', 'seinem', 'weltweiten', 'Siegeszug', 'unsere', 'Jungfer', 'Deutsch', 'geschändet', 'die', 'wir', 'doch', 'längst', 'selbst', 'nach', 'Belieben', 'verstümmeln']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['So', 'gesehen', 'ist', 'das', 'Motto', 'tech', 'is', 'the', 'place', 'to', 'be', 'mit', 'dem', 'so', 'mancher', 'Aktionär', 'von', 'Nasdaq', 'oder', 'Nemax', 'Titeln', 'bis', 'März', 'letzten', 'Jahres', 'hervorragend', 'fuhr', 'auch', 'heute', 'noch', 'aktuell', 'auch', 'wenn', 'die', 'New', 'Economy', 'mittlerweile', 'in', 'eine', 'neue', 'Phase', 'eingetreten', 'ist']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'bedeutet', 'z', 'B', 'dass', 'man', 'nicht', 'sagt', 'Wir', 'schröpfen', 'die', 'aktiv', 'Beschäftigten', 'indem', 'wir', 'die', 'Steuerfreiheit', 'die', 'es', 'bei', 'der', 'Nacht', 'und', 'Schichtarbeit', 'gibt', 'beschneiden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'bedeutet', 'z', 'B', 'dass', 'man', 'nicht', 'sagt', 'Wir', 'schröpfen', 'die', 'aktiv', 'Beschäftigten', 'indem', 'wir', 'die', 'Steuerfreiheit', 'die', 'es', 'bei', 'der', 'Nacht', 'und', 'Schichtarbeit', 'gibt', 'beschneiden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Um', 'das', 'zu', 'erreichen', 'müssen', 'wir', 'die', 'Bundesanstalt', 'für', 'Arbeit', 'umbauen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Der', 'Teufelskreis', 'der', 'Gewalt', 'muß', 'endlich', 'mit', 'allen', 'verfügbaren', 'Mitteln', 'durchbrochen', 'werden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Geschieht', 'dies', 'noch', 'einmal', 'dann', 'wären', 'die', 'Verlierer', 'erneut', 'diejenigen', 'um', 'deren', 'besseren', 'Schutz', 'wir', 'gemeinsam', 'ringen', 'wollen', 'die', 'Unterdrückten', 'und', 'Entwürdigten', 'in', 'aller', 'Welt']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Wie', 'in', 'kaum', 'einem', 'anderen', 'Ministerium', 'sind', 'diesem', 'Haus', 'immer', 'wieder', 'Aufgaben', 'zugewachsen', 'und', 'gelegentlich', 'auch', 'Aufgaben', 'genommen', 'worden']
+
+predictions: ['B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'was', 'sich', 'später', 'als', 'Kino', 'durchsetzen', 'sollte', 'lebte', 'aber', 'gerade', 'von', 'dem', 'Seherlebnis', 'in', 'der', 'anonymen', 'Gemeinschaft', 'des', 'dunklen', 'Vorführsaales']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Jetzt', 'geht', 'es', 'und', 'das', 'ist', 'eine', 'schöne', 'Entwicklung', 'wie', 'ich', 'finde', 'um', 'die', 'nachbarschaftliche', 'Annäherung', 'in', 'Europa', 'eine', 'spanisch', 'italienisch', 'britisch', 'dänisch', 'belgisch', 'deutsch', 'französische', 'Studenten', 'WG', 'beim', 'Studienjahr', 'in', 'Barcelona', 'fungiert', 'in', 'dieser', 'Komödie', 'als', 'ideale', 'europäischen', 'Gemeinschaft', 'in', 'der', 'sich', 'ein', 'jeder', 'frei', 'entfalten', 'kann', 'und', 'vom', 'Esprit', 'der', 'anderen', 'beflügelt', 'wird']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Verbunden', 'damit', 'ist', 'die', 'zum', 'Teil', 'rüde', 'Abkehr', 'von', 'einer', 'Kunst', 'die', 'als', 'Drop', 'Art', 'verspottet', 'wird', 'eine', 'Kunst', 'die', 'so', 'aussieht', 'als', 'wäre', 'sie', 'an', 'einer', 'Stelle', 'aus', 'unerfindlichen', 'Gründen', 'vom', 'Himmel', 'gefallen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Wir', 'sollten', 'nicht', 'die', 'Standards', 'von', 'Einfamilienhäusern', 'auf', 'der', 'grünen', 'Wiese', 'in', 'die', 'Städte', 'hineintragen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'denke', 'dass', 'diese', 'Werte', 'der', 'europäischen', 'Stadt', 'in', 'Mario', 'Bottas', 'Arbeit', 'verteidigt', 'werden']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'O', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Unsere', 'Aufgabe', 'wird', 'es', 'sein', 'die', 'alte', 'Stadt', 'zu', 'stärken', 'ohne', 'sie', 'einzufrieren', 'ohne', 'sie', 'zu', 'musealisieren', 'da', 'gibt', 'es', 'auch', 'durchaus', 'Auseinandersetzungen', 'mit', 'manchen', 'Denkmalschützern']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'O', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Unsere', 'Aufgabe', 'wird', 'es', 'sein', 'die', 'alte', 'Stadt', 'zu', 'stärken', 'ohne', 'sie', 'einzufrieren', 'ohne', 'sie', 'zu', 'musealisieren', 'da', 'gibt', 'es', 'auch', 'durchaus', 'Auseinandersetzungen', 'mit', 'manchen', 'Denkmalschützern']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['natürlich', 'ist', 'es', 'so', 'dass', 'wir', 'alle', 'nicht', 'nur', 'in', 'Deutschland', 'noch', 'unter', 'dem', 'Schock', 'der', 'Ereignisse', 'vom', '11', 'September', 'stehen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'B-MET', 'O', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Menschen', 'die', 'sich', 'nicht', 'von', 'Pessimismus', 'und', 'Hoffnungslosigkeit', 'anstecken', 'ließen', 'sich', 'im', 'wahrsten', 'Sinne', 'des', 'Wortes', 'nicht', 'entmutigen', 'ließen', 'die', 'über', 'die', 'Jahre', 'hinweg', 'mit', 'Mut', 'und', 'Energie', 'mit', 'Willensstärke', 'aber', 'auch', 'mit', 'einer', 'ungeheuren', 'Leistungsbereitschaft', 'etwas', 'geschaffen', 'haben', 'auf', 'das', 'sie', 'die', 'Menschen', 'in', 'dieser', 'Region', 'wirklich', 'stolz', 'sein', 'können']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'wird', 'im', 'Osten', 'zwar', 'auf', 'absehbare', 'Zeit', 'immer', 'noch', 'eine', 'große', 'Aufgabe', 'für', 'den', 'Staat', 'bleiben', 'aber', 'es', 'geht', 'mir', 'wirklich', 'darum', 'dass', 'erkannt', 'wird', 'dass', 'man', 'in', 'den', 'Betrieben', 'noch', 'mehr', 'klotzen', 'und', 'weniger', 'kleckern', 'muss', 'was', 'diese', 'Frage', 'anbetrifft']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'wird', 'im', 'Osten', 'zwar', 'auf', 'absehbare', 'Zeit', 'immer', 'noch', 'eine', 'große', 'Aufgabe', 'für', 'den', 'Staat', 'bleiben', 'aber', 'es', 'geht', 'mir', 'wirklich', 'darum', 'dass', 'erkannt', 'wird', 'dass', 'man', 'in', 'den', 'Betrieben', 'noch', 'mehr', 'klotzen', 'und', 'weniger', 'kleckern', 'muss', 'was', 'diese', 'Frage', 'anbetrifft']
+
+predictions: ['B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Das', 'ist', 'auch', 'ein', 'wichtiger', 'Punkt', 'den', 'man', 'herausstreichen', 'muss', 'gerade', 'wenn', 'so', 'viel', 'und', 'zu', 'Recht', 'über', 'Globalisierung', 'geredet', 'wird']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Dabei', 'wurden', 'keineswegs', 'überkommene', 'Strukturen', 'konserviert']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Keine', 'Frage', 'Die', 'Rückgänge', 'in', 'der', 'Bauwirtschaft', 'trüben', 'das', 'Bild', 'merklich']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O']
+token: ['Die', 'Frage', 'wie', 'sich', 'die', 'unterschiedlichen', 'Menschenbilder', 'dieser', 'Systeme', 'im', 'Ausstellungsalltag', 'spiegelten', 'gäbe', 'Stoff', 'für', 'manche', 'Doktorarbeit']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'O', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Vielleicht', 'hat', 'gerade', 'die', 'wechselhafte', 'und', 'teils', 'widersprüchliche', 'Historie', 'des', 'Hauses', 'die', 'Einsicht', 'in', 'die', 'Geschichtlichkeit', 'des', 'Denkens', 'besonders', 'fest', 'in', 'den', 'Grundsätzen', 'dieses', 'Museums', 'und', 'seiner', 'Mitarbeiter', 'verankert']
+
+predictions: ['O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['In', 'diesen', 'Ausstellungstiteln', 'scheint', 'die', 'besondere', 'Stärke', 'des', 'Hygiene', 'Museums', 'auf', 'Elegant', 'und', 'spielerisch', 'überbrücken', 'sie', 'die', 'Trennung', 'zwischen', 'Wissenschaft', 'Kultur', 'und', 'Geschichte']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-MET']
+token: ['Vor', 'allem', 'aber', 'danke', 'ich', 'Ihnen', 'lieber', 'Herr', 'Vogel', 'und', 'Ihren', 'Mitarbeiterinnen', 'und', 'Mitarbeitern', 'weil', 'Sie', 'diese', 'traditionsreiche', 'Einrichtung', 'so', 'klug', 'und', 'fantasievoll', 'mit', 'Leben', 'erfüllen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'I-MET', 'I-MET', 'I-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'I-MET', 'O', 'I-MET', 'I-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Ich', 'will', 'nicht', 'unerwähnt', 'lassen', 'dass', 'die', 'Museen', 'zu', 'den', 'historischen', 'deutschen', 'Ost', 'und', 'Siedlungsgebieten', 'eine', 'hervorragende', 'Arbeit', 'leisten', 'wenn', 'es', 'darum', 'geht', 'das', 'Bewusstsein', 'für', 'das', 'kulturelle', 'Erbe', 'wachzuhalten']
+
+predictions: ['B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Deshalb', 'bin', 'ich', 'froh', 'dass', 'es', 'den', 'Kulturministern', 'aus', 'sechs', 'Ländern', 'noch', 'vor', 'der', 'EU', 'Erweiterung', 'gelungen', 'ist', 'ein', 'Europäisches', 'Netzwerk', 'Zwangsmigration', 'und', 'Vertreibung', 'zu', 'knüpfen']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'O', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Landschaften', 'Straßen', 'Städte', 'Plätze', 'und', 'Gebäude', 'speisen', 'den', 'Bilder', 'und', 'Inspirationsvorrat', 'eines', 'jeden', 'Architekten', 'und', 'wir', 'haben', 'das', 'Taut', 'Stipendium', 'ins', 'Leben', 'gerufen', 'um', 'den', 'besten', 'Absolventen', 'der', 'deutschen', 'Architekturschulen', 'durch', 'einen', 'gut', 'ausgestatteten', 'Auslandsaufenthalt', 'das', 'Sammeln', 'von', 'möglichst', 'vielen', 'prägnanten', 'Bildern', 'und', 'Erfahrungen', 'zu', 'ermöglichen', 'Sie', 'sind', 'in', 'diesem', 'Jahr', 'für', 'Ihre', 'außergewöhnlichen', 'Abschlussarbeiten', 'von', 'einer', 'fachkundigen', 'Jury', 'ausgewählt', 'worden', 'und', 'ich', 'freue', 'mich', 'Sie', 'im', 'Bundeskanzleramt', 'begrüßen', 'zu', 'können', 'Womöglich', 'gehört', 'dieses', 'außergewöhnliche', 'Haus', 'ja', 'bereits', 'zu', 'den', 'ersten', 'Entdeckungen', 'auf', 'Ihrer', 'nun', 'bald', 'beginnenden', 'Reise']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'B-MET', 'O', 'O']
+token: ['Die', 'Parameter', 'Form', 'und', 'Funktion', 'allein', 'greifen', 'nicht', 'mehr']
+
+predictions: ['B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'B-MET', 'I-MET', 'B-MET', 'B-MET', 'B-MET']
+true_labels: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+token: ['Lassen', 'Sie', 'sich', 'von', 'der', 'Unbestimmtheit', 'nicht', 'lähmen', 'sondern', 'beflügeln']
+

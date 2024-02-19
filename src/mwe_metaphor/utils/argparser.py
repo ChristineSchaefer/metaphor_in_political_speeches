@@ -4,8 +4,8 @@ import argparse
 def parse():
     """
         Instantiate argument parser.
-        Output:
-            - parser object
+
+        @returns parser object
     """
     parser = argparse.ArgumentParser(description="Metaphor Identification in Political Speeches - Classification")
     parser.add_argument("bert_gnc", metavar="bert_gnc", nargs="?", type=int,

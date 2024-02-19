@@ -6,8 +6,17 @@ from src.mwe_metaphor.models.gnc_model import ABGCN
 
 
 class BertWithGCNAndMWE(nn.Module):
+    """
+        The BertWithGCNAndMWE class extends the PyTorch nn.Module class.
+        This model integrates BERT, GCN and MWE.
+
+        from https://github.com/omidrohanian/metaphor_mwe/blob/master/models.py
+    """
 
     def __init__(self, max_len, config, heads, heads_mwe, dropout, num_labels=2):
+        """
+            Initializes the BertWithGCNAndMWE model.
+        """
         super(BertWithGCNAndMWE, self).__init__()
         self.num_labels = num_labels
         self.max_len = max_len
@@ -23,6 +32,18 @@ class BertWithGCNAndMWE(nn.Module):
         self.classifier = nn.Linear(256, num_labels)
 
     def forward(self, input_ids, target_token_idx, attention_mask, adj, adj_mwe, batch, labels=None):
+        """
+            Defines the forward pass for this model.
+            @param input_ids: token ifs from tokenized input text
+            @param target_token_idx: target token indices in the input
+            @param attention_mask: attention mask for input
+            @param adj: adjacency matrix for metaphor
+            @param adj_mwe: adjacency matrix for mwe
+            @param batch: batch size
+            @param labels: true labels
+
+            @returns The loss when labels are provided, otherwise the log softmax of the output logits
+        """
         output = self.bert(input_ids, attention_mask=attention_mask)  # pooled [batch, output_dim]
         gcn1 = self.gcn1(output.last_hidden_state, adj, self.heads)  # gcn.shape: [batch, max_len, output_dim]
         gcn2 = self.gcn2(output.last_hidden_state, adj_mwe, self.heads_mwe)
@@ -44,9 +65,17 @@ class BertWithGCNAndMWE(nn.Module):
             return nn.functional.log_softmax(logits, dim=1)
 
     def freeze_bert(self):
+        """
+            Freezes the parameters of the BERT model.
+            It sets 'requires_grad' attribute of all parameters in the model to False.
+        """
         for param in self.bert.parameters():
             param.requires_grad = False
 
     def unfreeze_bert(self):
+        """
+            Unfreezes the parameters of the BERT model.
+            It sets 'requires_grad' attribute of all parameters in the model to True.
+        """
         for param in self.bert.parameters():
             param.requires_grad = True

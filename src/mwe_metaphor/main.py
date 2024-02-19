@@ -4,7 +4,6 @@ from src.mwe_metaphor.controller.crf_controller import CRFController
 from src.mwe_metaphor.controller.gcn_training_controller import TrainingController
 from src.mwe_metaphor.controller.prediction_controller import PredictionController
 from src.mwe_metaphor.utils import argparser
-from src.mwe_metaphor.utils.prediction_utils import compute_average
 
 
 def classification_main(arguments):

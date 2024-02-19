@@ -4,8 +4,8 @@ import argparse
 def parse():
     """
         Instantiate argument parser.
-        Output:
-            - parser object
+
+        return parser object
     """
     parser = argparse.ArgumentParser(description="Metaphor Identification in Political Speeches - Data Management")
     parser.add_argument("crawler_url", metavar="crawler_url", nargs="?", type=int,

@@ -1,4 +1,4 @@
-from pydantic import Field, Extra
+from pydantic import ConfigDict, Field
 
 from src.database import Document
 
@@ -16,10 +16,10 @@ class Annotation(Document):
     basic_meaning: list = Field(default_factory=list, description="basic meaning of verb based on duden")
     contextual_meaning: list = Field(default_factory=list, description="contextual meaning of verb in sentence")
     is_metaphor: bool = Field(default=False, description="metaphorical use of verb")
+    model_config = ConfigDict(extra="allow")
 
-    class Config:
+    class Settings:
         collection_name = "annotations"
-        extra = Extra.allow
 
     def __hash__(self) -> int:
         """

@@ -7,22 +7,31 @@ from sklearn_crfsuite import metrics
 
 from src.config import Settings
 from src.data_handler.models.trofi_dataset import TroFiDataset
-from src.mwe_metaphor.utils.tsvlib import TSVSentence, iter_tsv_sentences
+from src.mwe_metaphor.utils.text_utils import load_data
 from src.utils.text_handler import normalize
 
 
 class CRFController(BaseModel):
-    settings: Settings
-    train_data_sentences: list[list] = Field(default_factory=list)
-    val_data_sentences: list[list] = Field(default_factory=list)
-    test_mwe_data_sentences: list[list] = Field(default_factory=list)
-    test_metaphor_data_sentences: list[list] = Field(default_factory=list)
+    """
+        The CRFController class handles the configuration and operation of a Conditional Random Field (CRF) model.
+    """
+    settings: Settings = Field(..., description="project settings")
+    train_data_sentences: list[list] = Field(default_factory=list, description="train data sentences")
+    val_data_sentences: list[list] = Field(default_factory=list, description="val data sentences")
+    test_mwe_data_sentences: list[list] = Field(default_factory=list, description="test data sentences for mwe")
+    test_metaphor_data_sentences: list[list] = Field(default_factory=list, description="test data sentences for metaphor")
 
     def build_crf(self):
+        """
+            Constructs and configures the CRF model. Main method to run the CRF.
+        """
+
+        # prepare and create data
         self.preprocessing()
         X_train = [sent2features(s) for s in self.train_data_sentences]
         y_train = [sent2labels(s) for s in self.train_data_sentences]
 
+        # not necessary for used scenario
         # X_val = [sent2features(s) for s in self.val_data_sentences]
         # y_val = [sent2labels(s) for s in self.val_data_sentences]
 
@@ -32,6 +41,7 @@ class CRFController(BaseModel):
         X_test_metaphor = [sent2features(s) for s in self.test_metaphor_data_sentences]
         y_test_metaphor = [sent2labels(s) for s in self.test_metaphor_data_sentences]
 
+        # label for binary classification
         labels = ["is_metaphor", "no_metaphor"]
 
         # define fixed parameters and parameters to search
@@ -57,50 +67,54 @@ class CRFController(BaseModel):
                                 n_iter=50,
                                 scoring=f1_scorer,
                                 return_train_score=True)
+
         rs.fit(X_train, y_train)
 
         print('best params:', rs.best_params_)
         print('best CV score:', rs.best_score_)
         print('model size: {:0.2f}M'.format(rs.best_estimator_.size_ / 1000000))
 
+        # get best estimator
         crf = rs.best_estimator_
 
-        y_pred = crf.predict(X_test_mwe)
-        f1_score = metrics.flat_f1_score(y_test_mwe, y_pred,
-                                         average='weighted', labels=labels)
-        print(f"predicted mwe f1-score: {f1_score}")
+        # mwe testing
+        y_pred_mwe = crf.predict(X_test_mwe)
+        self._calculate_and_print_metrics(y_test_mwe, y_pred_mwe, labels, "mwe")
 
-        precision = metrics.flat_precision_score(y_test_mwe, y_pred, labels=labels, pos_label="is_metaphor")
-        print(f"predicted mwe precision: {precision}")
+        # metaphor testing
+        y_pred_metaphor = crf.predict(X_test_metaphor)
+        self._calculate_and_print_metrics(y_test_metaphor, y_pred_metaphor, labels, "metaphor")
 
-        recall = metrics.flat_recall_score(y_test_mwe, y_pred, labels=labels, pos_label="is_metaphor")
-        print(f"predicted mwe recall: {recall}")
+    @staticmethod
+    def _calculate_and_print_metrics(y_test, y_pred, labels, test_type):
+        """
+            Calculate the metrics and print them
 
-        accuracy = metrics.flat_accuracy_score(y_test_mwe, y_pred)
-        print(f"predicted mwe accuracy: {accuracy}")
+            @param y_test: The test labels
+            @param y_pred: The predicted labels
+            @param labels: The unique labels
+            @param test_type: The type of test data (MWE / Metaphor)
+        """
+        f1_score = metrics.flat_f1_score(y_test, y_pred, average='weighted', labels=labels)
+        print(f"Predicted {test_type} f1-score: {f1_score}")
 
-        y_pred = crf.predict(X_test_metaphor)
-        f1_score = metrics.flat_f1_score(y_test_metaphor, y_pred,
-                                         average='weighted', labels=labels)
-        print(f"predicted metaphor f1-score: {f1_score}")
+        precision = metrics.flat_precision_score(y_test, y_pred, labels=labels, pos_label="is_metaphor")
+        print(f"Predicted {test_type} precision: {precision}")
 
-        precision = metrics.flat_precision_score(y_test_metaphor, y_pred, labels=labels, pos_label="is_metaphor")
-        print(f"predicted metaphor precision: {precision}")
+        recall = metrics.flat_recall_score(y_test, y_pred, labels=labels, pos_label="is_metaphor")
+        print(f"Predicted {test_type} recall: {recall}")
 
-        recall = metrics.flat_recall_score(y_test_metaphor, y_pred, labels=labels, pos_label="is_metaphor")
-        print(f"predicted metaphor recall: {recall}")
-
-        accuracy = metrics.flat_accuracy_score(y_test_metaphor, y_pred)
-        print(f"predicted metaphor accuracy: {accuracy}")
-
-    def _load_data(self, path: str) -> list[TSVSentence]:
-        with open(f"{self.settings.mwe_dir}/{path}") as f:
-            return list(iter_tsv_sentences(f))
+        accuracy = metrics.flat_accuracy_score(y_test, y_pred)
+        print(f"Predicted {test_type} accuracy: {accuracy}")
 
     def preprocessing(self):
-        tsv_train = self._load_data(self.settings.mwe_train)
-        tsv_test = self._load_data(self.settings.mwe_test)
-        tsv_val = self._load_data(self.settings.mwe_val)
+        """
+           Responsible for preprocessing the loaded data.
+           Converts the data into a format that is suitable for CRF training.
+        """
+        tsv_train = load_data(self.settings, self.settings.mwe_train)
+        tsv_test = load_data(self.settings, self.settings.mwe_test)
+        tsv_val = load_data(self.settings, self.settings.mwe_val)
 
         self.train_data_sentences = self._process_tsv_data(tsv_train)
         self.test_mwe_data_sentences = self._process_tsv_data(tsv_test)
@@ -108,7 +122,13 @@ class CRFController(BaseModel):
         self.test_metaphor_data_sentences = self._process_metaphor_data(TroFiDataset.find())
 
     @staticmethod
-    def _process_tsv_data(data):
+    def _process_tsv_data(data: list) -> list:
+        """
+           Responsible for preprocessing the tsv data.
+
+           @param data: list with tsv sentences
+           @return list tupel
+        """
         processed_data = []
         for sentence in data:
             sentence_list = [
@@ -119,7 +139,13 @@ class CRFController(BaseModel):
         return processed_data
 
     @staticmethod
-    def _process_metaphor_data(data: list[TroFiDataset]):
+    def _process_metaphor_data(data: list[TroFiDataset]) -> list:
+        """
+           Responsible for preprocessing the metaphor data.
+
+           @param data: list with trofi data
+           @return list with tupel
+        """
         processed_data = []
         for sentence in data:
             token = normalize(sentence.sentence).split()
@@ -129,7 +155,15 @@ class CRFController(BaseModel):
         return processed_data
 
 
-def word2features(sent, i):
+def word2features(sent: list, i: int) -> dict:
+    """
+        Create word to features vector for sentences in data.
+
+        @param sent: list with sentences
+        @param i: index
+
+        @return dictionary with crf features
+    """
     word = sent[i][0]
 
     features = {
@@ -164,9 +198,21 @@ def word2features(sent, i):
     return features
 
 
-def sent2features(sent):
+def sent2features(sent: list) -> list:
+    """
+        Create list with sentences and features.
+
+        @param sent: list of sentences
+        @return list with dict for sentences
+    """
     return [word2features(sent, i) for i in range(len(sent))]
 
 
-def sent2labels(sent):
+def sent2labels(sent: list) -> list:
+    """
+        Create list with label per sentence.
+
+        @param sent: list of sentences
+        @return list with labels
+    """
     return [label for token, label in sent]

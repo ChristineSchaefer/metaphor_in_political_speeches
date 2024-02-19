@@ -1,6 +1,7 @@
 import torch
 from pydantic import BaseModel, Field
 
+from src.config import Modus, get_settings
 from src.data_handler.models.trofi_dataset import TroFiDataset
 from src.mwe_metaphor.utils.tsvlib import TSVSentence
 from src.utils.text_handler import normalize
@@ -32,6 +33,7 @@ class Dataset(BaseModel):
     id2label: dict | None = Field(default_factory=dict, description=" A mapping from ID to label (for instance, for categorical variables).")
     label2id: dict | None = Field(default_factory=dict, description="A mapping from label to ID (inverse of id2label).")
     labels: list | None = Field(default_factory=list, description="The labels/classes for each instance/sample in the data.")
+    modus: Modus = Field(default=get_settings().modus, description="The modus used for classification")
 
     def add_column(self, column: Column):
         """
@@ -108,8 +110,10 @@ class Dataset(BaseModel):
             heads = [words.get("HEAD", "0") for words in sentence.words]
             deprels = [words.get("DEPREL", "0") for words in sentence.words]
             # B-MET=Begin Metaphor, I-MET=Inner-Metaphor, 0=No Metaphor
-            parseme_mwes = [0 if words.get("PARSEME:MWE", 0) == "*" else 1 for words in sentence.words]
-            # parseme_mwes = [2 if words.get("PARSEME:MWE", 0).isdigit() else 1 if words.get("PARSEME:MWE", 0) != "*" else 0 for words in sentence.words]
+            if self.modus.BINARY:
+                parseme_mwes = [0 if words.get("PARSEME:MWE", 0) == "*" else 1 for words in sentence.words]
+            else:
+                parseme_mwes = [2 if words.get("PARSEME:MWE", 0).isdigit() else 1 if words.get("PARSEME:MWE", 0) != "*" else 0 for words in sentence.words]
             id_array.append(id)
             token_array.append(tokens)
             lemma_array.append(lemmas)
@@ -133,8 +137,10 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-        self.labels = ["no_metaphor", "is_metaphor"]
-        # self.labels = ["O", "B-MET", "I-MET"]
+        if self.modus.BINARY:
+            self.labels = ["no_metaphor", "is_metaphor"]
+        else:
+            self.labels = ["O", "B-MET", "I-MET"]
         self.id2label = {index: label for index, label in enumerate(self.labels)}
         self.label2id = {id: tag for tag, id in self.id2label.items()}
 
@@ -171,13 +177,14 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-        self.labels = ["no_metaphor", "is_metaphor"]
-        # self.labels = ["O", "B-MET", "I-MET"]
+        if self.modus.BINARY:
+            self.labels = ["no_metaphor", "is_metaphor"]
+        else:
+            self.labels = ["O", "B-MET", "I-MET"]
         self.id2label = {index: label for index, label in enumerate(self.labels)}
         self.label2id = {id: tag for tag, id in self.id2label.items()}
 
-    @staticmethod
-    def align_labels_with_tokens(labels, word_ids):
+    def align_labels_with_tokens(self, labels, word_ids):
         """
             Align labels with tokens in the dataset.
 
@@ -201,8 +208,8 @@ class Dataset(BaseModel):
                 # same word as previous token
                 label = labels[word_id]
                 # BIO: if label is beginning, then next label is inner (for BIO-tag)
-                # if label == 1:
-                    # label = 2
+                if self.modus.MULTI_LABEL and label == 1:
+                    label = 2
                 new_labels.append(label)
 
         return new_labels

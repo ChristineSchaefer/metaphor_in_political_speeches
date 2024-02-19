@@ -1,14 +1,20 @@
-from pydantic import Extra
+from pydantic import ConfigDict, Field
 
 from src.data_handler.models.politician import Politician
 from src.database import Document
 
 
 class Speech(Document):
-    text: str
-    speaker: Politician
-    url: str = ""
+    """
+        Speech Class represents a speech in the database.
 
-    class Config:
+        Inherits from:
+            Document: Base class for MongoDB documents.
+    """
+    text: str = Field(..., description="text of speech")
+    speaker: Politician = Field(..., description="speaker of the speech")
+    url: str = Field(default="", description="url of the speech")
+    model_config = ConfigDict(extra="allow")
+
+    class Settings:
         collection_name = "speeches_raw"
-        extra = Extra.allow

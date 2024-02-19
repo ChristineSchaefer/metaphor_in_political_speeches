@@ -12,12 +12,16 @@ urls = ["https://goslar-gegen-rechtsextremismus.de/html/afd-sprueche.php",
 
 
 def main_data_handling(arguments):
+    """
+        main method for data handling
+
+        @param arguments: arguments to control behavior
+    """
     if arguments.crawler_url != 0:
         cc = CrawlerController(url=urls[arguments.crawler_url-1], index=arguments.crawler_url)
         cc.get_card_content()
 
     elif arguments.xml_path:
-        # TODO keine einzelne Datei, sondern Ordner mit Dateien, die alle durchgelaufen werden sollen
         xrc = XMLReaderController(path=arguments.xml_path)
         xrc.parse()
 

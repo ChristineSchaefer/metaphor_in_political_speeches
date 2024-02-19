@@ -5,11 +5,22 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-device = torch.device("mps") if torch.has_mps else torch.device("cpu")
-print(device)
+from src.config import get_settings
+
+# from https://github.com/omidrohanian/metaphor_mwe/blob/master/layers/GCN.py
 
 
 def attention(query, key, mask=None, dropout=None):
+    """
+        Computes the attention values for the query, key and value triplets.
+
+        @param query: query tensor
+        @param key: key tensor
+        @param mask: optional mask tensor
+        @param dropout: optional dropout layer
+
+        @returns attention-applied tensor
+    """
     d_k = query.size(-1)
     scores = torch.matmul(query, key.transpose(-2, -1)) / math.sqrt(d_k)
     if mask is not None:
@@ -23,12 +34,26 @@ def attention(query, key, mask=None, dropout=None):
 
 
 def clones(module, N):
+    """
+        Clones the given module N times.
+
+        @param module: PyTorch module to clone
+        @param N: number of clones
+
+        @returns list of cloned modules
+    """
     return nn.ModuleList([copy.deepcopy(module) for _ in range(N)])
 
 
 class MultiHeadAttention(nn.Module):
+    """
+        The MultiHeadAttention model extends the PyTorch nn.Module class.
+    """
 
     def __init__(self, h, d_model, dropout=0.1):
+        """
+            Initializes the MultiHeadAttention class.
+        """
         super(MultiHeadAttention, self).__init__()
         assert d_model % h == 0
 
@@ -41,10 +66,11 @@ class MultiHeadAttention(nn.Module):
         """
         Multi-head self-attention computation - it processes these inputs to compute
         the attention scores and returns the resulting attention scores
-        :param query:
-        :param key:
-        :param mask:
-        :return:
+        @param query: query tensor
+        @param key: key tensor
+        @param mask: optional mask tensor
+
+        @returns attention-applied tensor
         """
         if mask is not None:
             mask = mask.unsqueeze(1)
@@ -58,11 +84,18 @@ class MultiHeadAttention(nn.Module):
 
 
 class GraphConvolution(nn.Module):
+    """
+        The GraphConvolution model extends the PyTorch nn.Module class.
+        It represents the graph convolution layer in the model.
+    """
 
     def __init__(self,
                  input_dim,
                  output_dim,
                  bias=True):
+        """
+            Initializes the GraphConvolution class.
+        """
         super(GraphConvolution, self).__init__()
         self.input_dim = input_dim
         self.output_dim = output_dim
@@ -74,12 +107,24 @@ class GraphConvolution(nn.Module):
         self.reset_parameters()
 
     def reset_parameters(self):
+        """
+            Resets the parameters of the graph convolution layer.
+            Initializes the weights and bias randomly.
+        """
         stdv = 1. / math.sqrt(self.weight.size(1))
         self.weight.data.uniform_(-stdv, stdv)
         if self.bias is not None:
             self.bias.data.uniform_(-stdv, stdv)
 
     def forward(self, inputs, adj):
+        """
+            Defines the forward pass for the graph convolution.
+
+            @param adj: adjacency representation
+            @param inputs: inputs
+
+            @returns output of the graph convolution
+        """
         support = torch.matmul(inputs, self.weight)
         # adj.float().cuda() -> do not know if that makes differences
         output = torch.matmul(adj.float(), support)
@@ -90,7 +135,9 @@ class GraphConvolution(nn.Module):
 
 
 class ABGCN(nn.Module):
-    """Attention-based Graph Convolutional Network"""
+    """
+        Attention-based Graph Convolutional Network
+    """
 
     def __init__(self,
                  input_dim,
@@ -101,6 +148,9 @@ class ABGCN(nn.Module):
                  alpha=0.3,
                  beta=0.5,
                  dropout=0.2):
+        """
+            Initializes the ABGCN class.
+        """
         super(ABGCN, self).__init__()
 
         self.input_dim = input_dim
@@ -119,9 +169,18 @@ class ABGCN(nn.Module):
         self.linear = nn.Linear(self.heads * d_model, d_model)
 
     def forward(self, inputs, A, heads):
-        A = A.float().to(device) + torch.transpose(A, 2, 1).float().to(device) + torch.eye(A.shape[1]).repeat(
-            A.shape[0], 1, 1).float().to(device)
-        A = A.to(device)
+        """
+            Defines the forward pass for the ABGCN.
+
+            @param inputs: inputs
+            @param A: adjacency matrix representation of the graph
+            @param heads: number of attention heads
+
+            @returns output of the ABGCN after attention and graph convolution operations
+        """
+        A = A.float().to(get_settings().get_settings().device) + torch.transpose(A, 2, 1).float().to(get_settings().device) + torch.eye(A.shape[1]).repeat(
+            A.shape[0], 1, 1).float().to(get_settings().device)
+        A = A.to(get_settings().device)
 
         input_att = self.attn(inputs, inputs)
 
@@ -129,7 +188,7 @@ class ABGCN(nn.Module):
 
         multi_head_list = []
         for h in range(self.heads):
-            A_final = self.alpha * attn_adj_list[h].to(device) + (1 - self.alpha) * A.to(device)
+            A_final = self.alpha * attn_adj_list[h].to(get_settings().device) + (1 - self.alpha) * A.to(get_settings().device)
 
             for i in range(self.num_layers):
                 inputs = inputs * self.beta + (1 - self.beta) * F.relu(self.gc[i](inputs, A_final))

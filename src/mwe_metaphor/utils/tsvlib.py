@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
+# from https://github.com/omidrohanian/metaphor_mwe/blob/master/mwe/tsvlib.py
 
-r"""
+"""
     This is a small library for reading and interpreting
     the new ConLLU-PLUS format.
 
@@ -18,7 +19,7 @@ import collections
 import os
 import sys
 
-from pydantic import BaseModel, Field
+from pydantic import ConfigDict, Field
 
 from src.database import Document
 
@@ -28,7 +29,14 @@ SINGLEWORD = "*"
 
 #######################################
 def interpret_color_request(stream, color_req: str) -> bool:
-    r"""Interpret environment variables COLOR_STDOUT and COLOR_STDERR ("always/never/auto")."""
+    """
+        Interpret environment variables COLOR_STDOUT and COLOR_STDERR ("always/never/auto").
+
+        @param stream
+        @param color_req
+
+        @returns bool
+    """
     return color_req == 'always' or (color_req == 'auto' and stream.isatty())
 
 
@@ -39,7 +47,8 @@ COLOR_STDERR = interpret_color_request(sys.stderr, os.getenv('COLOR_STDERR', 'au
 
 ############################################################
 class TSVSentence(Document):
-    r"""A list of TSVTokens.
+    """
+        A list of TSVTokens.
         TSVTokens may include ranges and sub-tokens.
 
         For example, if we have these TSVTokens:
@@ -51,42 +60,30 @@ class TSVSentence(Document):
         Iterating through `self.words` will yield ["You", "did", "not", "go"].
         You can access the range ["didn't"] through `self.contractions`.
     """
-    filename: str
-    words: list | None = Field(default_factory=list)
-    contractions: list | None = Field(default_factory=list)
-    lineno_bag: int | None = None
+    filename: str = Field(..., description="filename of the TSV file")
+    words: list | None = Field(default_factory=list, description="list of words")
+    contractions: list | None = Field(default_factory=list, description="list of contractions")
+    lineno_bag: int | None = Field(default=None,description="line with no bag")
+    model_config = ConfigDict(arbitrary_types_allowed=True, extra="allow")
 
-    class Config:
-        arbitrary_types_allowed = True
-        extra = "allow"
+    class Settings:
         collection_name = "tsv_sentences"
 
     def append(self, token):
-        r"""Add `token` to either `self.words` or `self.contractions`."""
+        """
+            Add `token` to either `self.words` or `self.contractions`.
+
+            @param token
+        """
         L = (self.contractions if token.is_contraction() else self.words)
         L.append(token)
 
-    def subtoken_indexes(self):
-        r"""Return a set with the index of every sub-word."""
-        sub_indexes = set()
-        for token in self.contractions:
-            sub_indexes.update(token.contraction_range())
-        return sub_indexes
-
-    def iter_words_and_ranges(self):
-        r"""Yield all tokens, including ranges.
-        For example, this function may yield ["You", "didn't", "did", "not", "go"].
-        """
-        index2contractions = collections.defaultdict(list)
-        for c in self.contractions:
-            index2contractions[c.contraction_range().start] = c
-        for i, token in enumerate(self.words):
-            for c in index2contractions[i]:
-                yield c
-            yield token
-
     def mwe_infos(self):
-        r"""Return a dict {mwe_id: MWEInfo} for all MWEs in this sentence."""
+        """
+            Return a dict {mwe_id: MWEInfo} for all MWEs in this sentence.
+
+            @returns dict with mwe info
+        """
         mwe_infos = {}
         for token_index, token in enumerate(self.words):
             global_last_lineno(self.filename, token.lineno)
@@ -95,129 +92,74 @@ class TSVSentence(Document):
                 mwe_info.token_indexes.append(token_index)
         return mwe_infos
 
-    def absorb_mwes_from_contraction_ranges(self):
-        r"""If a range is part of an MWE, add its subtokens as part of it as well."""
-        for c in self.contractions:
-            mustwarn = False  # warning appears once per contraction...
-            for i_subtoken in c.contraction_range():
-                more_codes = c.mwe_codes()
-                if more_codes:
-                    mustwarn = True  # ...not once per contraction element
-                    all_codes = self.words[i_subtoken].mwe_codes()
-                    all_codes.update(more_codes)
-                    self.words[i_subtoken]['PARSEME:MWE'] = ";".join(sorted(all_codes))
-            if mustwarn:  # warning appears here
-                warn("Contraction {} ({}) should not contain MWE annotation {} ".format(c["ID"], c["FORM"],
-                                                                                        c["PARSEME:MWE"]))
-
-    def iter_mwe_fields_and_normalizedindexes(self, field_name: str):
-        r'''Yield one frozenset[(field_value: str, index: int)] for each MWE in
-        this sentence, where the value of `index` is normalized to start at 0.
-        '''
-        for mweinfo in self.mwe_infos().values():
-            if mweinfo.tokens_have_field(field_name):
-                yield mweinfo.field_and_normalizedindex_pairs(field_name)
-
-    def iter_mwe_fields_including_span(self, field_name: str):
-        r'''Yield a tuple[str] for each MWE in this sentence.
-        If the MWE contains gaps, the words inside those gaps appear in the tuple.
-        '''
-        for mweinfo in self.mwe_infos().values():
-            if mweinfo.tokens_have_field(field_name):
-                yield mweinfo.field_including_span(field_name)
-
-
-class FrozenCounter(collections.Counter):
-    r'''Instance of Counter that can be hashed. Should not be modified.'''
-
-    def __hash__(self):
-        return hash(frozenset(self.items()))
-
 
 class MWEInfo(collections.namedtuple('MWEInfo', 'sentence category token_indexes')):
-    r"""Represents a single MWE in a sentence.
-    CAREFUL: token indexes start at 0 (not at 1, as in the TokenID's).
-
-    Arguments:
-    @type sentence: TSVSentence
-    @type category: Optional[str]
-    @type token_indexes: list[int]
+    """
+        Represents a single MWE in a sentence.
+        CAREFUL: token indexes start at 0 (not at 1, as in the TokenID's).
     """
 
-    def n_gaps(self):
-        r'''Return the number of gaps inside self.'''
-        span_elems = max(self.token_indexes) - min(self.token_indexes) + 1
-        assert span_elems >= self.n_tokens(), self
-        return span_elems - self.n_tokens()
-
     def n_tokens(self):
-        r'''Return the number of tokens in self.'''
+        """
+            @returns the number of tokens in self
+        """
         return len(self.token_indexes)
-
-    def tokens_have_field(self, field_name: str):
-        r'''Return True iff token[field_name] is non-empty for every token in self.'''
-        return all(self.sentence.words[i][field_name] for i in self.token_indexes)
-
-    def field_and_normalizedindex_pairs(self, field_name: str):
-        r'''Return a frozenset[(field_value: str, index: int)],
-        where the value of `index` is normalized to start at 0.
-        '''
-        min_index = min(self.token_indexes)
-        return frozenset((self.sentence.words[i][field_name], i - min_index)
-                         for i in self.token_indexes)
-
-    def field_including_span(self, field_name: str):
-        r'''Return a tuple[str] with all words in this MWE (including words inside its gaps).'''
-        first, last = min(self.token_indexes), max(self.token_indexes)
-        return tuple(self.sentence.words[i][field_name] for i in range(first, last + 1))
 
 
 class TSVToken(collections.UserDict):
-    r"""Represents a token in the TSV file.
-    You can index this object to get the value of a given field
-    (e.g. self["FORM"] or self["PARSEME:MWE"]).
-
-    Extra attributes:
-    @type lineno: int
+    """
+        Represents a token in the TSV file.
+        You can index this object to get the value of a given field
+        (e.g. self["FORM"] or self["PARSEME:MWE"]).
     """
 
     def __init__(self, lineno, data):
+        """
+            Initialize the TSVToken class.
+        """
         self.lineno = lineno
         super().__init__(data)
 
     def mwe_codes(self):
-        r"""Return a set of MWE codes."""
+        """
+            @returns a set of MWE codes
+        """
         mwes = self['PARSEME:MWE']
         return set(mwes.split(';') if mwes != SINGLEWORD else ())
 
     def mwes_id_categ(self):
-        r"""For each MWE code in `self.mwe_codes`, yield an (id, categ) pair.
-        @rtype Iterable[(int, Optional[str])]
+        """
+            For each MWE code in `self.mwe_codes`, yield an (id, categ) pair.
+
+            @rtype Iterable[(int, Optional[str])]
         """
         for mwe_code in sorted(self.mwe_codes()):
             yield mwe_code_to_id_categ(mwe_code)
 
     def is_contraction(self):
-        r"""Return True iff this token represents a range of tokens.
-        (The following tokens in the TSVSentence will contain its elements).
+        """
+            Return True iff this token represents a range of tokens.
+            (The following tokens in the TSVSentence will contain its elements).
+
+            @returns true if token represents a range of token
         """
         return "-" in self.get('ID', '')
 
-    def contraction_range(self):
-        r"""Return a pair (beg, end) with the
-        0-based indexes of the tokens inside this range.
-        Should only be called if self.is_contraction() is true.
-        """
-        assert self.is_contraction()
-        a, b = self['ID'].split("-")
-        return range(int(a) - 1, int(b))
-
     def __missing__(self, key):
+        """
+            Override _missing_ method
+        """
         raise KeyError('''Field {} is underspecified ("_" or missing)'''.format(key))
 
 
 def mwe_code_to_id_categ(mwe_code):
-    r"""mwe_code_to_id_categ(mwe_code) -> (mwe_id, mwe_categ)"""
+    """
+        Convert mwe_code_to_id_categ(mwe_code) to (mwe_id, mwe_categ).
+
+        @param mwe_code: mwe_code to convert
+
+        @returns mwe_id, mwe_categ
+    """
     split = mwe_code.split(":")
     mwe_id = int(split[0])
     mwe_categ = (split[1] if len(split) > 1 else None)
@@ -228,7 +170,11 @@ def mwe_code_to_id_categ(mwe_code):
 
 
 def iter_tsv_sentences(fileobj):
-    r"""Yield `TSVSentence` instances for all sentences in the underlying PARSEME TSV file."""
+    """
+        Yield `TSVSentence` instances for all sentences in the underlying PARSEME TSV file.
+
+        @param fileobj: file
+    """
     header = next(fileobj)
     if not 'global.columns' in header:
         exit('ERROR: {}: file is not in the required format: missing global.columns header' \
@@ -264,7 +210,12 @@ last_lineno = 0
 
 
 def global_last_lineno(filename, lineno):
-    # Update global `last_lineno` var
+    """
+       Update global `last_lineno` var.
+
+       @param filename
+       @param lineno
+    """
     global last_filename
     global last_lineno
     last_filename = filename
@@ -276,6 +227,9 @@ _WARNED = collections.defaultdict(int)
 
 
 def warn(message, *, warntype="WARNING", position=None, **format_args):
+    """
+        Warning method.
+    """
     _WARNED[message] += 1
     if _WARNED[message] <= _MAX_WARNINGS:
         if position is None:
@@ -291,6 +245,9 @@ def warn(message, *, warntype="WARNING", position=None, **format_args):
 
 
 def excepthook(exctype, value, tb):
+    """
+        Exception handler.
+    """
     global last_lineno
     global last_filename
     if value and last_lineno:
@@ -304,10 +261,3 @@ def excepthook(exctype, value, tb):
 
 
 #####################################################################
-
-if __name__ == "__main__":
-    sys.excepthook = excepthook
-    with open(sys.argv[1]) as f:
-        for tsv_sentence in iter_tsv_sentences(f):
-            print("TSVSentence:", tsv_sentence)
-            print("MWEs:", tsv_sentence.mwe_infos())

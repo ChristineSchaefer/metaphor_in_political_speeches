@@ -3,13 +3,15 @@ import os
 import evaluate
 import numpy as np
 import pandas as pd
-from pydantic import BaseModel, Field
+import torch
+from pydantic import BaseModel, Field, computed_field
 from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, \
     DataCollatorForTokenClassification
 
 from src.config import Settings, BASE_DIR
 from src.mwe_metaphor.models.dataset_model import Dataset, MWEDataset
-from src.mwe_metaphor.utils.tsvlib import iter_tsv_sentences, TSVSentence
+from src.mwe_metaphor.utils.text_utils import load_data
+from src.mwe_metaphor.utils.tsvlib import TSVSentence
 from src.mwe_metaphor.utils.visualisation import plot_history, process_and_chart
 from src.utils.datetime import ts_now
 
@@ -20,17 +22,27 @@ class BertTrainingController(BaseModel):
         It handles data loading, preprocessing, training, and evaluation stages.
     """
     settings: Settings = Field(description="The configuration settings for training the model.")
-    train_data_sentences: list[TSVSentence] = Field(default_factory=list, description="The training data used for model training. These are the sentences or phrases the model learns from.")
-    val_data_sentences: list[TSVSentence] = Field(default_factory=list, description="The validation data used for validating the model's performance. These sentences or phrases are used to tune the model.")
-    train_dataset: Dataset = Field(default_factory=Dataset, description="The actual training dataset, which might be different from train_data_sentences after preprocessing or other transformations.")
-    val_dataset: Dataset = Field(default_factory=Dataset, description="The actual validation dataset, which might differ from val_data_sentences after preprocessing or other transformations.")
+    train_data_sentences: list[TSVSentence] = Field(default_factory=list,
+                                                    description="The training data used for model training. These are the sentences or phrases the model learns from.")
+    val_data_sentences: list[TSVSentence] = Field(default_factory=list,
+                                                  description="The validation data used for validating the model's performance. These sentences or phrases are used to tune the model.")
+    train_dataset: Dataset = Field(default_factory=Dataset,
+                                   description="The actual training dataset, which might be different from train_data_sentences after preprocessing or other transformations.")
+    val_dataset: Dataset = Field(default_factory=Dataset,
+                                 description="The actual validation dataset, which might differ from val_data_sentences after preprocessing or other transformations.")
     labels: list[str] = Field(default_factory=list, description="The target labels/classes for the training data.")
+
+    @computed_field
+    @property
+    def device(self):
+        return torch.device(self.settings.device)
 
     def training(self):
         """
             This method handles the training process of the BERT model using the settings and data-set defined in the instance.
             Includes configuration setup, model definition, training and validation.
         """
+
         # load datasets and preprocessing
         self.preprocessing()
 
@@ -45,9 +57,11 @@ class BertTrainingController(BaseModel):
         # process_and_chart(dataset=self.train_dataset, tokenized_inputs=tokenized_inputs_train, dataset_name="train_data")
         # process_and_chart(dataset=self.val_dataset, tokenized_inputs=tokenized_inputs_val, dataset_name="val_data")
 
+        # transform datasets to torch datasets
         train_dataset = MWEDataset(tokenized_inputs_train, tokenized_inputs_train.data["labels"])
         val_dataset = MWEDataset(tokenized_inputs_val, tokenized_inputs_val.data["labels"])
 
+        # instantiate model
         model = AutoModelForTokenClassification.from_pretrained(
             model_checkpoint,
             num_labels=len(self.train_dataset.labels),
@@ -55,8 +69,12 @@ class BertTrainingController(BaseModel):
             id2label=self.train_dataset.id2label,
             label2id=self.train_dataset.label2id)
 
+        model.to(self.device)
+
+        # instantiate data collator
         data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
 
+        # set training arguments
         training_args = TrainingArguments(
             output_dir=f'./results/{model_checkpoint}_{ts_now()}',  # output directory
             num_train_epochs=self.settings.epochs,  # total number of training epochs
@@ -64,52 +82,45 @@ class BertTrainingController(BaseModel):
             per_device_eval_batch_size=64,  # batch size for evaluation
             warmup_steps=self.settings.num_warmup_steps,  # number of warmup steps for learning rate scheduler
             weight_decay=0.01,  # strength of weight decay
-            evaluation_strategy="epoch",
-            save_strategy="epoch",
-            learning_rate=2e-5,
-            load_best_model_at_end=True
+            evaluation_strategy="epoch",  # evaluation strategy
+            save_strategy="epoch",  # save strategy
+            learning_rate=2e-5,  # learning rate
+            load_best_model_at_end=True  # load only best model
         )
 
+        # instantiate trainer
         trainer = Trainer(
             model=model,  # the instantiated 🤗 Transformers model to be trained
             args=training_args,  # training arguments, defined above
             train_dataset=train_dataset,  # training dataset
             eval_dataset=val_dataset,  # evaluation dataset
-            compute_metrics=self.compute_metrics,
-            data_collator=data_collator,
-            tokenizer=tokenizer
+            compute_metrics=self.compute_metrics,  # evaluation metric compute method
+            data_collator=data_collator,  # data collator
+            tokenizer=tokenizer  # tokenizer
         )
 
+        # start training
         trainer.train()
 
+        # save fine-tuned model local
         timestamp = ts_now()
         model.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{timestamp}"))
         tokenizer.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{timestamp}"))
 
+        # training history
         history = pd.DataFrame(trainer.state.log_history)
-        history.to_csv(path_or_buf=os.path.join(BASE_DIR, f"data/logs/training_history/{ts_now()}_training_history.csv"))
+        history.to_csv(
+            path_or_buf=os.path.join(BASE_DIR, f"data/logs/training_history/{ts_now()}_training_history.csv"))
         plot_history(history, model_checkpoint)
         print(history)
-
-    def _load_data(self, path: str) -> list[TSVSentence]:
-        """
-            A private method that loads data for training and validation.
-            It sets the data as attributes to the instance for later usage.
-
-            @param path: path to the mwe korpus
-
-            @returns list with TSVSentence objects
-        """
-        with open(f"{self.settings.mwe_dir}/{path}") as f:
-            return list(iter_tsv_sentences(f))
 
     def preprocessing(self):
         """
            Responsible for preprocessing the loaded data.
            Converts the data into a format that is suitable for BERT training.
         """
-        self.train_data_sentences = self._load_data(self.settings.mwe_train)
-        self.val_data_sentences = self._load_data(self.settings.mwe_val)
+        self.train_data_sentences = load_data(self.settings, self.settings.mwe_train)
+        self.val_data_sentences = load_data(self.settings, self.settings.mwe_val)
 
         self.train_dataset.create_from_tsv(self.train_data_sentences)
         self.val_dataset.create_from_tsv(self.val_data_sentences)
@@ -144,25 +155,3 @@ class BertTrainingController(BaseModel):
             "f1": all_metrics["overall_f1"],
             "accuracy": all_metrics["overall_accuracy"],
         }
-
-    @staticmethod
-    def postprocess(predictions, labels, label_names):
-        """
-            Responsible for any post-processing steps after training.
-            Includes tasks like saving model parameters and making the model ready for predictions.
-
-            @param labels: list of predicted labels
-            @param label_names: list of label names
-
-            @returns list with true labels and predictions
-        """
-        predictions = predictions.detach().cpu().clone().numpy()
-        labels = labels.detach().cpu().clone().numpy()
-
-        # Remove ignored index (special tokens) and convert to labels
-        true_labels = [[label_names[l] for l in label if l != "-100"] for label in labels]
-        true_predictions = [
-            [label_names[p] for (p, l) in zip(prediction, label) if l != "-100"]
-            for prediction, label in zip(predictions, labels)
-        ]
-        return true_labels, true_predictions

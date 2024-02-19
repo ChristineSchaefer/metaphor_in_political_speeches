@@ -13,6 +13,7 @@ from src.data_handler.models.trofi_dataset import TroFiDataset
 from src.mwe_metaphor.models.dataset_model import Dataset
 from src.mwe_metaphor.models.evaluation_model import PredictionEvaluationModel
 from src.mwe_metaphor.models.spacy_model import SpacyModel
+from src.mwe_metaphor.utils.text_utils import load_data
 from src.mwe_metaphor.utils.tsvlib import TSVSentence, iter_tsv_sentences
 from src.mwe_metaphor.utils.visualisation import create_bar_chart_for_label_representation, \
     create_confusion_matrix_for_prediction
@@ -62,22 +63,13 @@ class PredictionController(BaseModel):
         evaluation_results = self.evaluate(test_dataset, tokenizer, model, corpus_name)
         self.evaluation_results.append(evaluation_results)
         print(f"epoch {self.num_epochs}: {evaluation_results}")
-        
-    def _load_tsv_data(self) -> list[TSVSentence]:
-        """
-            Load test data from a file.
-
-            @returns list with TSVSentence objects
-        """
-        with open(f"{self.settings.mwe_dir}/{self.settings.mwe_test}") as f:
-            return list(iter_tsv_sentences(f))
 
     def preprocessing(self):
         """
             Preprocess the input data.
         """
         language_model = SpacyModel(language_model=self.settings.language_model).get_language_model()
-        test_data_tsv_sentences = self._load_tsv_data()
+        test_data_tsv_sentences = load_data(self.settings, self.settings.mwe_test)
         self.test_dataset_mwe.create_from_tsv(test_data_tsv_sentences)
         self.test_dataset_metaphor.create_from_trofi(TroFiDataset.find(), language_model)
 

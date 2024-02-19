@@ -556,7 +556,7 @@
   "contextual_meaning": [
     "zwei internationale Entwicklungen waren von Interesse"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -783,7 +783,7 @@
   "contextual_meaning": [
     "Betonung der düsteren und schweren Atmosphäre des Lagers"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -875,7 +875,7 @@
   "contextual_meaning": [
     "die kulturellen Landschaften beider Länder sind in vielschichtiger und vielfältiger Weise gestaltet"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -986,7 +986,7 @@
   "contextual_meaning": [
     "italienische Einflüsse sind in bestimmten Bereichen der deutschen Lebenswelt präsent"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -1157,7 +1157,7 @@
   "contextual_meaning": [
     "durch Bann (2) [irgendwo] festhalten"
   ],
-  "is_metaphor": false
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -1309,7 +1309,7 @@
     "Sätze fügen sich zu Flächen zusammen",
     "ähnlich wie das Verdichten von Materie oder Informationen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -1922,7 +1922,7 @@
     "der Mittelstand ist in dieser Situation in einer schlechteren Position oder Lage im Vergleich zu den Körperschaften",
     "nicht körperlich"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -2012,7 +2012,7 @@
   "contextual_meaning": [
     "aus sittlichen, gesellschaftlichen o. ä. Gründen jemandem ein bestimmtes Verhalten, Tun, eine bestimmte Haltung schuldig sein"
   ],
-  "is_metaphor": false
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -2949,7 +2949,7 @@
   "contextual_meaning": [
     "schriftlich oder mündlich auf anschauliche Weise darstellen"
   ],
-  "is_metaphor": false
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -3034,7 +3034,7 @@
     "beeinträchtigen",
     "verzerren"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -3646,7 +3646,7 @@
     "verändern",
     "bewegen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -3696,7 +3696,7 @@
   "contextual_meaning": [
     "in, unter, hinter etwas anderem verbergen"
   ],
-  "is_metaphor": false
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -4503,7 +4503,7 @@
     "bereisen",
     "beachten"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -4724,7 +4724,7 @@
     "hervorholen",
     "sichtbar machen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -5053,7 +5053,7 @@
     "verursachen",
     "mit Wucht hervorgebracht"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -5500,7 +5500,7 @@
     "betreffen",
     "angehen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -6160,7 +6160,7 @@
     "etwas provozieren",
     "nicht körperlich"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -6211,7 +6211,7 @@
     "aufhalten",
     "mit Druck etwas stoppen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -6637,7 +6637,7 @@
   "contextual_meaning": [
     "übertragen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -6669,7 +6669,7 @@
   "contextual_meaning": [
     "sich öffnen, aufgehen, aufspringen"
   ],
-  "is_metaphor": false
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -6894,7 +6894,7 @@
   "contextual_meaning": [
     "fest mit einer Unterlage o. Ä. verbinden und so [unverrückbar] an seinem Platz halten"
   ],
-  "is_metaphor": false
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -7285,7 +7285,7 @@
     "etwas hat funktioniert",
     "einsetzen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -7380,7 +7380,7 @@
   "contextual_meaning": [
     "(ein Hindernis) mit Wucht oder Gewalt durchdringen (1)"
   ],
-  "is_metaphor": false
+  "is_metaphor": true
 },
 {
   "_id": {
@@ -7581,7 +7581,7 @@
   "contextual_meaning": [
     "übertragen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -7749,7 +7749,7 @@
     "übertragen",
     "nicht krankheitsbezogen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {
@@ -8006,7 +8006,7 @@
     "aktiviert werden",
     "funktionstüchtig machen"
   ],
-  "is_metaphor": true
+  "is_metaphor": false
 },
 {
   "_id": {

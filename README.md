@@ -16,6 +16,7 @@ speeches.
 |-- 📁 data
 |   |-- 📁 annotations            #  json files with annotations and annotation guideline
 |   |-- 📁 collections            #  MongoDB collections with all necessary documents
+|   |-- 📁 crf                    #  saved crf model during training 
 |   |-- 📁 logs                   #  every console output as txt-file
 |   |-- 📁 plots                  #  training plots (confusion matrix, bar charts etc.)  
 |-- 📁 src

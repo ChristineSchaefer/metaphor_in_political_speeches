@@ -1,13 +1,13 @@
+import os
 from itertools import chain
 
 import pycrfsuite
 import scipy
 from pydantic import BaseModel, Field
-from sklearn.metrics import make_scorer, classification_report
-from sklearn.model_selection import RandomizedSearchCV
+from sklearn.metrics import classification_report
 from sklearn.preprocessing import LabelBinarizer
 
-from src.config import Settings
+from src.config import Settings, BASE_DIR
 from src.data_handler.models.trofi_dataset import TroFiDataset
 from src.mwe_metaphor.utils.text_utils import load_data
 from src.utils.text_handler import normalize
@@ -19,7 +19,6 @@ class CRFController(BaseModel):
     """
     settings: Settings = Field(..., description="project settings")
     train_data_sentences: list[list] = Field(default_factory=list, description="train data sentences")
-    val_data_sentences: list[list] = Field(default_factory=list, description="val data sentences")
     test_mwe_data_sentences: list[list] = Field(default_factory=list, description="test data sentences for mwe")
     test_metaphor_data_sentences: list[list] = Field(default_factory=list, description="test data sentences for metaphor")
 
@@ -33,18 +32,11 @@ class CRFController(BaseModel):
         X_train = [sent2features(s) for s in self.train_data_sentences]
         y_train = [sent2labels(s) for s in self.train_data_sentences]
 
-        # not necessary for used scenario
-        # X_val = [sent2features(s) for s in self.val_data_sentences]
-        # y_val = [sent2labels(s) for s in self.val_data_sentences]
-
         X_test_mwe = [sent2features(s) for s in self.test_mwe_data_sentences]
         y_test_mwe = [sent2labels(s) for s in self.test_mwe_data_sentences]
 
         X_test_metaphor = [sent2features(s) for s in self.test_metaphor_data_sentences]
         y_test_metaphor = [sent2labels(s) for s in self.test_metaphor_data_sentences]
-
-        # label for binary classification
-        labels = ["is_metaphor", "no_metaphor"]
 
         trainer = pycrfsuite.Trainer(verbose=False)
 
@@ -52,18 +44,18 @@ class CRFController(BaseModel):
             trainer.append(xseq, yseq)
 
         trainer.set_params({
-            'c1': scipy.stats.expon(scale=0.5),  # coefficient for L1 penalty
-            'c2': scipy.stats.expon(scale=0.05),  # coefficient for L2 penalty
-            'max_iterations': 100,  # stop earlier
+            "c1": scipy.stats.expon(scale=0.5),  # coefficient for L1 penalty
+            "c2": scipy.stats.expon(scale=0.05),  # coefficient for L2 penalty
+            "max_iterations": 100,  # stop earlier
 
             # include transitions that are possible, but not observed
-            'feature.possible_transitions': True
+            "feature.possible_transitions": True
         })
 
-        trainer.train('mwe_metaphor.crfsuite')
+        trainer.train(os.path.join(BASE_DIR, f"data/crf/mwe_metaphor.crfsuite"))
 
         tagger = pycrfsuite.Tagger()
-        tagger.open('mwe_metaphor.crfsuite')
+        tagger.open(os.path.join(BASE_DIR, f"data/crf/mwe_metaphor.crfsuite"))
 
         # mwe testing
         y_pred_mwe = [tagger.tag(xseq) for xseq in X_test_mwe]
@@ -106,11 +98,9 @@ class CRFController(BaseModel):
         """
         tsv_train = load_data(self.settings, self.settings.mwe_train)
         tsv_test = load_data(self.settings, self.settings.mwe_test)
-        tsv_val = load_data(self.settings, self.settings.mwe_val)
 
         self.train_data_sentences = self._process_tsv_data(tsv_train)
         self.test_mwe_data_sentences = self._process_tsv_data(tsv_test)
-        self.val_data_sentences = self._process_tsv_data(tsv_val)
         self.test_metaphor_data_sentences = self._process_metaphor_data(TroFiDataset.find())
 
     @staticmethod

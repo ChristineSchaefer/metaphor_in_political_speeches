@@ -59,30 +59,30 @@ Use the following arguments to activate the different workflows:
 
 
 ### Required env vars for workflows
-| VAR              | CRF   | BERT with GCN | DistilBERT |
-|------------------|-------| - | - |
-| MWE_TRAIN        | x     | x | x |
-| MWE_TEST         | x     |  | x |
-| MWE_VAL          | x     |  | x |
-| MWE_DIR          | x     | x | x |
-| METAPHOR_DIR     |       | x |  |
-| DB_HOST          | x     | x | x |
-| DB_PORT          | x     | x | x |
-| DB_NAME          | x     | x | x |
-| BATCH_TRAIN      |       | x | x |
-| BATCH_TEST       |       | x |  |
-| K                |       | x |  |
-| EPOCHS           |       | x | x |
-| NUM_TOTAL_STEPS  |       | x |  |
-| NUM_WARMUP_STEPS |       | x | x |
-| HEADS            |       | x |  |
-| HEADS_MWE        |       | x |  |
-| DROPOUT          |       | x |  |
-| LANGUAGE_MODEL   |       | x | x |
-| MODEL            |       |  | x |
-| MODEL_DIR        |       |  | x |
-| MODUS            |       |  | x |
-| MAX_LEN          |       | x |  |
+| VAR              | CRF  | BERT with GCN | DistilBERT |
+|------------------|------| - | - |
+| MWE_TRAIN        | x    | x | x |
+| MWE_TEST         | x    |  | x |
+| MWE_VAL          |      |  | x |
+| MWE_DIR          | x    | x | x |
+| METAPHOR_DIR     |      | x |  |
+| DB_HOST          | x    | x | x |
+| DB_PORT          | x    | x | x |
+| DB_NAME          | x    | x | x |
+| BATCH_TRAIN      |      | x | x |
+| BATCH_TEST       |      | x |  |
+| K                |      | x |  |
+| EPOCHS           |      | x | x |
+| NUM_TOTAL_STEPS  |      | x |  |
+| NUM_WARMUP_STEPS |      | x | x |
+| HEADS            |      | x |  |
+| HEADS_MWE        |      | x |  |
+| DROPOUT          |      | x |  |
+| LANGUAGE_MODEL   |      | x | x |
+| MODEL            |      |  | x |
+| MODEL_DIR        |      |  | x |
+| MODUS            |      |  | x |
+| MAX_LEN          |      | x |  |
 
 
 When using the DistilBERT Fine-Tuning workflow with multiple training epochs a few visualizations are created in the process.

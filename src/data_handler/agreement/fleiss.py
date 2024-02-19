@@ -1,11 +1,11 @@
-'''
+"""
 Created on Aug 1, 2016
 @author: skarumbaiah
 @url: https://github.com/Shamya/FleissKappa.git
 
 Computes Fleiss' Kappa
 Joseph L. Fleiss, Measuring Nominal Scale Agreement Among Many Raters, 1971.
-'''
+"""
 
 
 def checkInput(rate, n):

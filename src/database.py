@@ -34,7 +34,7 @@ class Document(BaseModel):
         """
             @returns collection name
         """
-        return cls.Config.collection_name
+        return cls.Settings.collection_name
 
     @classmethod
     def _get_collection_from_name(cls, name: str) -> Collection:

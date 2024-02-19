@@ -1,16 +1,17 @@
 from src.config import get_settings
 from src.mwe_metaphor.controller.bert_training_controller import BertTrainingController
 from src.mwe_metaphor.controller.crf_controller import CRFController
-from src.mwe_metaphor.controller.gcn_training_controller import TrainingController
+from src.mwe_metaphor.controller.gcn_training_controller import BERTWithGCNTrainingController
 from src.mwe_metaphor.controller.prediction_controller import PredictionController
 from src.mwe_metaphor.utils import argparser
 
 
 def classification_main(arguments):
     env = get_settings()
+    print(f"+++ classification modus: {env.modus.value} +++")
     if arguments.bert_gnc != 0:
         print("+++ train BERT with GNC and predict +++")
-        training_controller = TrainingController(settings=env)
+        training_controller = BERTWithGCNTrainingController(settings=env)
         results = training_controller.training()
 
         print('K-fold cross-validation results:')

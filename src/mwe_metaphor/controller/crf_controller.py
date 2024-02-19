@@ -1,9 +1,11 @@
+from itertools import chain
+
+import pycrfsuite
 import scipy
-import sklearn_crfsuite
 from pydantic import BaseModel, Field
-from sklearn.metrics import make_scorer
+from sklearn.metrics import make_scorer, classification_report
 from sklearn.model_selection import RandomizedSearchCV
-from sklearn_crfsuite import metrics
+from sklearn.preprocessing import LabelBinarizer
 
 from src.config import Settings
 from src.data_handler.models.trofi_dataset import TroFiDataset
@@ -44,68 +46,58 @@ class CRFController(BaseModel):
         # label for binary classification
         labels = ["is_metaphor", "no_metaphor"]
 
-        # define fixed parameters and parameters to search
-        crf = sklearn_crfsuite.CRF(
-            algorithm='lbfgs',
-            max_iterations=100,
-            all_possible_transitions=True
-        )
-        params_space = {
-            'c1': scipy.stats.expon(scale=0.5),
-            'c2': scipy.stats.expon(scale=0.05),
-        }
+        trainer = pycrfsuite.Trainer(verbose=False)
 
-        # use the same metric for evaluation
-        f1_scorer = make_scorer(metrics.flat_f1_score,
-                                average='weighted', labels=labels)
+        for xseq, yseq in zip(X_train, y_train):
+            trainer.append(xseq, yseq)
 
-        # search
-        rs = RandomizedSearchCV(crf, params_space,
-                                cv=3,
-                                verbose=1,
-                                n_jobs=-1,
-                                n_iter=50,
-                                scoring=f1_scorer,
-                                return_train_score=True)
+        trainer.set_params({
+            'c1': scipy.stats.expon(scale=0.5),  # coefficient for L1 penalty
+            'c2': scipy.stats.expon(scale=0.05),  # coefficient for L2 penalty
+            'max_iterations': 100,  # stop earlier
 
-        rs.fit(X_train, y_train)
+            # include transitions that are possible, but not observed
+            'feature.possible_transitions': True
+        })
 
-        print('best params:', rs.best_params_)
-        print('best CV score:', rs.best_score_)
-        print('model size: {:0.2f}M'.format(rs.best_estimator_.size_ / 1000000))
+        trainer.train('mwe_metaphor.crfsuite')
 
-        # get best estimator
-        crf = rs.best_estimator_
+        tagger = pycrfsuite.Tagger()
+        tagger.open('mwe_metaphor.crfsuite')
 
         # mwe testing
-        y_pred_mwe = crf.predict(X_test_mwe)
-        self._calculate_and_print_metrics(y_test_mwe, y_pred_mwe, labels, "mwe")
+        y_pred_mwe = [tagger.tag(xseq) for xseq in X_test_mwe]
+        print(f"CRF prediction evaluation results for mwe: \n {self.bio_classification_report(y_test_mwe, y_pred_mwe)}")
 
         # metaphor testing
-        y_pred_metaphor = crf.predict(X_test_metaphor)
-        self._calculate_and_print_metrics(y_test_metaphor, y_pred_metaphor, labels, "metaphor")
+        y_pred_metaphor = [tagger.tag(xseq) for xseq in X_test_metaphor]
+        print(f"CRF prediction evaluation results for metaphor: \n {self.bio_classification_report(y_test_metaphor, y_pred_metaphor)}")
 
     @staticmethod
-    def _calculate_and_print_metrics(y_test, y_pred, labels, test_type):
+    def bio_classification_report(y_true, y_pred):
         """
-            Calculate the metrics and print them
+            Classification report for a list of BIO-encoded sequences.
+            It computes token-level metrics and discards "O" labels.
 
-            @param y_test: The test labels
-            @param y_pred: The predicted labels
-            @param labels: The unique labels
-            @param test_type: The type of test data (MWE / Metaphor)
+            @param y_true: true labels
+            @param y_pred: predicted labels
+
+            @returns classification report
         """
-        f1_score = metrics.flat_f1_score(y_test, y_pred, average='weighted', labels=labels)
-        print(f"Predicted {test_type} f1-score: {f1_score}")
+        lb = LabelBinarizer()
+        y_true_combined = lb.fit_transform(list(chain.from_iterable(y_true)))
+        y_pred_combined = lb.transform(list(chain.from_iterable(y_pred)))
 
-        precision = metrics.flat_precision_score(y_test, y_pred, labels=labels, pos_label="is_metaphor")
-        print(f"Predicted {test_type} precision: {precision}")
+        tagset = set(lb.classes_) - {'O'}
+        tagset = sorted(tagset, key=lambda tag: tag.split('-', 1)[::-1])
+        class_indices = {cls: idx for idx, cls in enumerate(lb.classes_)}
 
-        recall = metrics.flat_recall_score(y_test, y_pred, labels=labels, pos_label="is_metaphor")
-        print(f"Predicted {test_type} recall: {recall}")
-
-        accuracy = metrics.flat_accuracy_score(y_test, y_pred)
-        print(f"Predicted {test_type} accuracy: {accuracy}")
+        return classification_report(
+            y_true_combined,
+            y_pred_combined,
+            labels=[class_indices[cls] for cls in tagset],
+            target_names=tagset,
+        )
 
     def preprocessing(self):
         """

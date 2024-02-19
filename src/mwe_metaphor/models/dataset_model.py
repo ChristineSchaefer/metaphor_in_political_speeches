@@ -19,7 +19,7 @@ class Feature(BaseModel):
     """
         This class represents a feature in a data set.
     """
-    feature: str = Field(description="The specific feature type.")
+    feature: str = Field(...,description="The specific feature type.")
     names: list[str] = Field(default_factory=list, description="The names of the individual features.")
 
 
@@ -81,7 +81,7 @@ class Dataset(BaseModel):
                     available_feature.update(d for d in data)
                 else:
                     available_feature.add(data)
-            self.features.append(Feature(feature=column.name, names=list(available_feature)))
+            self.features.append(Feature(feature=column.name, names=list(map(str, available_feature))))
 
     def get_column_data(self, column: int):
         """
@@ -137,7 +137,7 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-        if self.modus.BINARY:
+        if self.modus == Modus.BINARY:
             self.labels = ["no_metaphor", "is_metaphor"]
         else:
             self.labels = ["O", "B-MET", "I-MET"]
@@ -177,7 +177,7 @@ class Dataset(BaseModel):
         self.add_columns(columns)
         self.set_rows()
         self.set_features()
-        if self.modus.BINARY:
+        if self.modus == Modus.BINARY:
             self.labels = ["no_metaphor", "is_metaphor"]
         else:
             self.labels = ["O", "B-MET", "I-MET"]
@@ -208,8 +208,9 @@ class Dataset(BaseModel):
                 # same word as previous token
                 label = labels[word_id]
                 # BIO: if label is beginning, then next label is inner (for BIO-tag)
-                if self.modus.MULTI_LABEL and label == 1:
-                    label = 2
+                if self.modus == Modus.MULTI_LABEL:
+                    if label == 1:
+                        label = 2
                 new_labels.append(label)
 
         return new_labels

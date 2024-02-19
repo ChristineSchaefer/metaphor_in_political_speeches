@@ -49,12 +49,10 @@ class Settings(BaseSettings):
     heads_mwe: int = Field(default=4, description="number of mwe heads")
     dropout: float = Field(default=0.6, description="dropout value")
     language_model: str = Field(default="", description="name of language model")
-    language: str = Field(default="", description="language")
     model: str = Field(default="", description="name of transformer model")
     model_dir: str = Field(default="", description="path to model directory")
-    device: str = Field(default="cpu", description="device name")
     modus: Modus = Field(default=Modus.BINARY, description="classification mode")
-    model_config = SettingsConfigDict(env_file=os.path.join(SRC_DIR, ".env"))
+    model_config = SettingsConfigDict(env_file=os.path.join(SRC_DIR, ".env"), protected_namespaces=())
 
     def mdb_connection_string(self):
         """

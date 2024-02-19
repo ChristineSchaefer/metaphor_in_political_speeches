@@ -9,6 +9,8 @@ from src.config import get_settings
 
 # from https://github.com/omidrohanian/metaphor_mwe/blob/master/layers/GCN.py
 
+device = torch.device("mps") if torch.backends.mps.is_built() else torch.device("cpu")
+
 
 def attention(query, key, mask=None, dropout=None):
     """
@@ -178,9 +180,9 @@ class ABGCN(nn.Module):
 
             @returns output of the ABGCN after attention and graph convolution operations
         """
-        A = A.float().to(get_settings().get_settings().device) + torch.transpose(A, 2, 1).float().to(get_settings().device) + torch.eye(A.shape[1]).repeat(
-            A.shape[0], 1, 1).float().to(get_settings().device)
-        A = A.to(get_settings().device)
+        A = A.float().to(device) + torch.transpose(A, 2, 1).float().to(device) + torch.eye(A.shape[1]).repeat(
+            A.shape[0], 1, 1).float().to(device)
+        A = A.to(device)
 
         input_att = self.attn(inputs, inputs)
 
@@ -188,7 +190,7 @@ class ABGCN(nn.Module):
 
         multi_head_list = []
         for h in range(self.heads):
-            A_final = self.alpha * attn_adj_list[h].to(get_settings().device) + (1 - self.alpha) * A.to(get_settings().device)
+            A_final = self.alpha * attn_adj_list[h].to(device) + (1 - self.alpha) * A.to(device)
 
             for i in range(self.num_layers):
                 inputs = inputs * self.beta + (1 - self.beta) * F.relu(self.gc[i](inputs, A_final))

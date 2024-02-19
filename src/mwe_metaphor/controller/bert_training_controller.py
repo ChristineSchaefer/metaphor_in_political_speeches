@@ -4,7 +4,7 @@ import evaluate
 import numpy as np
 import pandas as pd
 import torch
-from pydantic import BaseModel, Field, computed_field
+from pydantic import BaseModel, Field
 from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, \
     DataCollatorForTokenClassification
 
@@ -14,6 +14,8 @@ from src.mwe_metaphor.utils.text_utils import load_data
 from src.mwe_metaphor.utils.tsvlib import TSVSentence
 from src.mwe_metaphor.utils.visualisation import plot_history, process_and_chart
 from src.utils.datetime import ts_now
+
+device = torch.device("mps") if torch.backends.mps.is_built() else torch.device("cpu")
 
 
 class BertTrainingController(BaseModel):
@@ -31,11 +33,6 @@ class BertTrainingController(BaseModel):
     val_dataset: Dataset = Field(default_factory=Dataset,
                                  description="The actual validation dataset, which might differ from val_data_sentences after preprocessing or other transformations.")
     labels: list[str] = Field(default_factory=list, description="The target labels/classes for the training data.")
-
-    @computed_field
-    @property
-    def device(self):
-        return torch.device(self.settings.device)
 
     def training(self):
         """
@@ -69,7 +66,7 @@ class BertTrainingController(BaseModel):
             id2label=self.train_dataset.id2label,
             label2id=self.train_dataset.label2id)
 
-        model.to(self.device)
+        model.to(device)
 
         # instantiate data collator
         data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)

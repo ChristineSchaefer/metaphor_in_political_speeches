@@ -17,8 +17,10 @@ from src.mwe_metaphor.models.spacy_model import CoNLLParserModel, SpacyModel
 from src.mwe_metaphor.utils.text_utils import tokenize
 from src.mwe_metaphor.utils.training_utils import adjacency, pad_or_truncate, mwe_adjacency
 
+device = torch.device("mps") if torch.backends.mps.is_built() else torch.device("cpu")
 
-class TrainingController(BaseModel):
+
+class BERTWithGCNTrainingController(BaseModel):
     """
         The TrainingController class handles BERT with GCN training-related activities.
 
@@ -33,11 +35,6 @@ class TrainingController(BaseModel):
     recorded_results_per_fold: list = Field(default_factory=list, description="list with results per fold")
     random_seed: int = Field(default=616, description="random seed")
 
-    @computed_field
-    @property
-    def device(self):
-        return torch.device(self.settings.device)
-
     def training(self):
         """
             The top-level method that coordinates the training process.
@@ -47,7 +44,7 @@ class TrainingController(BaseModel):
             @returns evaluation results
         """
 
-        print(f"+++ start BERT with GCN training on {self.device} +++")
+        print(f"+++ start BERT with GCN training on {device} +++")
 
         # set adjacency matrix and other vectors
         A, A_MWE, labels, target_token_indices, vocab, texts = self.prepare_data()
@@ -68,7 +65,7 @@ class TrainingController(BaseModel):
         for i, (train_dataloader, test_dataloader) in enumerate(splits):
             model = BertWithGCNAndMWE(self.max_len, bert_config, self.settings.heads, self.settings.heads_mwe,
                                       self.settings.dropout)
-            model.to(self.device)
+            model.to(device)
 
             optimizer = AdamW(model.parameters(), lr=2e-5)
             scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=self.settings.num_warmup_steps,
@@ -250,7 +247,7 @@ class TrainingController(BaseModel):
             # Train the data for one epoch
             for step, batch in enumerate(train_dataloader):
                 # Add batch to GPU
-                batch = tuple(t.clone().to(torch.int64).to(self.device) for t in batch)
+                batch = tuple(t.clone().to(torch.int64).to(device) for t in batch)
                 # Unpack the inputs from our dataloader
                 b_input_ids, b_input_mask, b_adj, b_adj_mwe, b_labels, b_target_idx, _ = batch
 
@@ -258,9 +255,9 @@ class TrainingController(BaseModel):
                 optimizer.zero_grad()
                 # Forward pass
                 ### For BERT + GCN and MWE
-                loss = model(b_input_ids.to(self.device), adj=b_adj, adj_mwe=b_adj_mwe,
-                             attention_mask=b_input_mask.to(self.device), labels=b_labels,
-                             batch=batch_train, target_token_idx=b_target_idx.to(self.device))
+                loss = model(b_input_ids.to(device), adj=b_adj, adj_mwe=b_adj_mwe,
+                             attention_mask=b_input_mask.to(device), labels=b_labels,
+                             batch=batch_train, target_token_idx=b_target_idx.to(device))
 
                 train_loss_set.append(loss.item())
                 # Backward pass
@@ -290,7 +287,7 @@ class TrainingController(BaseModel):
             # Evaluate data for one epoch
             for batch in test_dataloader:
                 # Add batch to GPU
-                batch = tuple(t.clone().to(torch.int64).to(self.device) for t in batch)
+                batch = tuple(t.clone().to(torch.int64).to(device) for t in batch)
                 # Unpack the inputs from our dataloader
                 b_input_ids, b_input_mask, b_adj, b_adj_mwe, b_labels, b_target_idx, test_idx = batch
                 # Telling the model not to compute or store gradients, saving memory and speeding up validation
@@ -298,12 +295,12 @@ class TrainingController(BaseModel):
                     # Forward pass, calculate logit predictions
                     ### For BERT + GCN and MWE
                     logits = model(
-                        b_input_ids.to(self.device),
+                        b_input_ids.to(device),
                         adj=b_adj,
                         adj_mwe=b_adj_mwe,
-                        attention_mask=b_input_mask.to(self.device),
+                        attention_mask=b_input_mask.to(device),
                         batch=batch_test,
-                        target_token_idx=b_target_idx.to(self.device))
+                        target_token_idx=b_target_idx.to(device))
 
                     # Move logits and labels to CPU
                     logits = logits.detach().cpu()

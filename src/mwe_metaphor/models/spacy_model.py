@@ -8,7 +8,6 @@ class SpacyModel(BaseModel):
         The SpacyModel class defines a spaCy language model.
     """
     language_model: str = Field(..., description="name of language model")
-    language: str = Field(default="", description="language")
 
     def get_language_model(self):
         """

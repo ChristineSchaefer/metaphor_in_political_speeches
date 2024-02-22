@@ -39,12 +39,12 @@ There are four controllers to control the different steps for this approach.
 - `BERTWithGCNTrainingController`: Controller to manage the Fine-Tuning and evaluation process of the BERT with GCN model
 - `CRFController`: Controller for CRF baseline
 
-The controllers use different models from `mwe_metaphor/models/` and `data_handler/models` to fine-tune the models.
+The controllers use different models from `mwe_metaphor/models/` and `data_handler/models/` to fine-tune the models.
 With arguments passed to the `main`-method in `main.py` the different workflows are started.
 
 ## Workflows
 For activating the single flows you can pass arguments by running the main script.
-The main scripts can be started with `python -m src.mwe_metaphor.main` and the available arguments can be 
+The main script can be started with `python -m src.mwe_metaphor.main` and the available arguments can be 
 shown with `-h` at the end of the command.
 
 `python -m src.mwe_metaphor.main -h`
@@ -54,7 +54,7 @@ Use the following arguments to activate the different workflows:
 - CRF baseline: `0 0 0 0 1`
 - DistilBERT baseline: `0 0 1 0 0`
 - DistilBERT with Fine-Tuning: `0 1 0 1 0` 
-  - you can use an already fine-tuned and locally saved model with: 0 1 0 0 0 (the latest saved model will be used)
+  - you can use an already fine-tuned and locally saved model with: `0 1 0 0 0` (the latest saved model will be used)
   - when you choose Fine-Tuning with multiple epochs, you can set the number of epochs in the env vars
   - after Fine-Tuning the model and tokenizer will be saved locally in `/data/models/`
 

@@ -19,6 +19,7 @@ speeches.
 |   |-- 📁 crf                    #  saved crf model during training 
 |   |-- 📁 logs                   #  every console output as txt-file
 |   |-- 📁 plots                  #  training plots (confusion matrix, bar charts etc.)  
+|   |-- 📁 tests                  #  files for test purposes
 |-- 📁 src
 |   |-- 📁 data_handler           #  contains models, controller etc. for data operations
 |   |   |-- 📁 agreement

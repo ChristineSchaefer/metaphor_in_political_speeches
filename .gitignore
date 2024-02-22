@@ -133,7 +133,7 @@ dmypy.json
 .idea
 
 
-/data/models/
+/data/models/*
 /data/notes.txt
 /src/mwe_metaphor/controller/results/
 results/

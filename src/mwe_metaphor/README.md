@@ -4,15 +4,15 @@ Required: [python 3.11](https://docs.python.org/3.11/contents.html)
 
 
 ## What is this folder for?
-In this folder are the main steps to fine-tune transformer models that they are 
-able to detect metaphors in political speeches.
+In this folder are the main steps to fine-tune transformer models that they learn 
+how to detect metaphors in political speeches.
 
 ### Folder structure
 
 ```
 |-- 📁 mwe_metaphors
 |   |-- 📁 controller    
-|   |   |-- bert_training_controller.py         # controller for DistilBERT baseline
+|   |   |-- bert_training_controller.py         # controller for DistilBERT baseline and Fine-Tuning
 |   |   |-- crf_controller.py                   # controller for CRF baseline
 |   |   |-- gcn_training_controller.py          # controller for BERT with GCN
 |   |   |-- prediction_controller.py            # controller for testing DistilBERT baseline and with Fine-Tuning
@@ -35,8 +35,8 @@ able to detect metaphors in political speeches.
 ### Controller
 There are four controllers to control the different steps for this approach.
 - `BertTrainingController`: Controller to manage the Fine-Tuning process of the DistilBERT model
-- `PredictionController`: Controller to manage testing on fine-tuned DistilBERT model
-- `BERTWithGCNTrainingController`: Controller to manage the Fine-Tuning process of the BERT with GCN model
+- `PredictionController`: Controller to manage testing on DistilBERT model
+- `BERTWithGCNTrainingController`: Controller to manage the Fine-Tuning and evaluation process of the BERT with GCN model
 - `CRFController`: Controller for CRF baseline
 
 The controllers use different models from `mwe_metaphor/models/` and `data_handler/models` to fine-tune the models.
@@ -56,6 +56,9 @@ Use the following arguments to activate the different workflows:
 - `DistilBERT with Fine-Tuning`: 0 1 0 1 0 
   - you can use an already fine-tuned and locally saved model with: 0 1 0 0 0
   - when you choose Fine-Tuning with multiple epochs, you can set the number of epochs in the env vars
+  - after Fine-Tuning the model will be saved locally in `/data/models/`
+
+e.g. `python -m src.mwe_metaphor.main 0 1 0 1 0` for DistilBERT with Fine-Tuning
 
 
 ### Required env vars for workflows
@@ -85,5 +88,7 @@ Use the following arguments to activate the different workflows:
 | MAX_LEN          |      | x |  |
 
 
+### Visualisation
+
 When using the DistilBERT Fine-Tuning workflow with multiple training epochs a few visualizations are created in the process.
-They will be saved in `data/plots/` and `data/logs/training_history`.
+They will be saved in `data/plots/` and `data/logs/training_history/`.

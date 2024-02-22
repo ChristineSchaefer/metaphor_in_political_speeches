@@ -59,6 +59,7 @@ speeches.
 |                                                            | [matplotlib](https://matplotlib.org/)                            |                                                                                   |
 |                                                            | [seaborn](https://seaborn.pydata.org/)                           |                                                                                   |
 |                                                            | [seqeval](https://huggingface.co/spaces/evaluate-metric/seqeval) |                                                                                   |
+|                                                            | [accelerate](https://huggingface.co/docs/accelerate/index) |                                                                                   |
 
 All requirements are listed in `requirements.txt`.
 
@@ -66,9 +67,9 @@ All requirements are listed in `requirements.txt`.
 ## Local setup
 1) Install [python 3.11](https://docs.python.org/3.11/contents.html)
 2) Clone repository with `git clone https://github.com/ChristineSchaefer/metaphor_in_political_speeches.git`
-3) Create virtual environment with `python -m venv /path/to/new/virtual/environment`
+3) Open repo and create virtual environment with `python -m venv /path/to/new/virtual/environment` and activate it
 4) Install requirements with `pip install -r requirements.txt`
-5) Create `.env` file from `.env.example` at the same level and fill empty vars or change existing ones
+5) Create `.env` file from `.env.example` at the same level (`src`) and fill empty vars or change existing ones
 
 ### Database setup
 1) Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass)

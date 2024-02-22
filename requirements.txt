@@ -19,3 +19,4 @@ requests
 matplotlib
 scipy
 seaborn
+accelerate>=0.21.0

@@ -1,10 +1,7 @@
 import csv
 import os
 
-from dict2xml import dict2xml
-
 from src.config import BASE_DIR
-from src.data_handler.models.speech import Speech
 
 
 def normalize(text: str):
@@ -79,30 +76,6 @@ def read_from_txt(path: str) -> list:
         for line in lines:
             content.append(normalize(line).split())
     return content
-
-
-def save_collection_in_separate_xml(search: dict, path: str):
-    """
-        Saves a collection of Speech objects in separate XML files.
-
-        @param search: search dict for documents
-        @param path: path to file
-    """
-    speeches = Speech.find(filter=search)
-    print(len(speeches))
-
-    size_of_the_split = 1
-    total = len(speeches) // size_of_the_split
-    print(total + 1)
-
-    for i in range(total):
-        speech = speeches[i].dict(exclude={"_id"})
-        xml = dict2xml(speech, wrap='speech', indent="   ")
-        file = open(
-            os.path.join(BASE_DIR, path) + "speeches_split_" + str(i + 1) + ".xml",
-            "w")
-        file.write(xml)
-        file.close()
 
 
 def read_from_csv_and_write_to_dict(path: str) -> list[dict]:

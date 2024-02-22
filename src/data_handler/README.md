@@ -47,5 +47,29 @@ The corresponding MongoDB collections can be found in `data/collections/`.
 - AgreementController: Compute Cohen's and Fleiss' Kappa for evaluate the annotation process.
 
 ## Workflows
-- Preprocessing
-- Evaluation of annotation process
+- Preprocessing: The preprocessing process for enriching the data with additional information like speaker with party
+etc. there are several steps to collect the information from external websites.
+The Preprocessing step uses the `CrawlerController`, `XMLReaderController`, `CSVController` and `TrofiCollectionController`
+to do the following things:
+  - Collect information from web about current active german politicians and their parties and save in db
+  - Save speeches in db and set speaker from Politician objects
+  - Update annotations with basic meaning, index etc.
+  - Transform annotations to TroFi data
+- Evaluation of annotation process: The annotations in `data/annotations/` will be compared to compute the IAA with
+Cohen's and Fleiss' Kappa.
+  - Cohen's Kappa will be computed for each annotator combination.
+
+For activating the single flows you can pass arguments by running the main script.
+The main scripts can be started with `python -m src.data_handler.main` and the available arguments can be 
+shown with `-h` at the end of the command.
+
+`python -m src.data_handler.main -h`
+
+Use the following example arguments to activate the different workflows:
+- `Web Crawler`: 1 "" "" 0 0
+- `XML Reader`: 0 "path/to/xml/" "" 0 0
+- `CSV Reader` 0 "" "path/to/csv/" 0 0
+- `TroFi Transformation`: 0 "" "" 1 0
+- `Annotation Evaluation`: 0 "" "" 0 1
+
+e.g. `python -m src.data_handler.main 0 "" "" 0 1` for evaluation of the annotation process.

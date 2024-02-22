@@ -58,7 +58,10 @@ Use the following arguments to activate the different workflows:
   - when you choose Fine-Tuning with multiple epochs, you can set the number of epochs in the env vars
   - after Fine-Tuning the model and tokenizer will be saved locally in `/data/models/`
 
-e.g. `python -m src.mwe_metaphor.main 0 1 0 1 0` for DistilBERT with Fine-Tuning
+e.g. `python -m src.mwe_metaphor.main 0 1 0 1 0` for DistilBERT with Fine-Tuning.
+
+If you want to change the classification modus from binary to multi-label you can set
+the corresponding env var `MODUS` to `multi_label`.
 
 
 ### Required env vars for workflows

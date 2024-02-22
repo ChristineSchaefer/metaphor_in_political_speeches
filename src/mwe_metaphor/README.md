@@ -54,9 +54,9 @@ Use the following arguments to activate the different workflows:
 - `CRF baseline`: 0 0 0 0 1
 - `DistilBERT baseline` 0 0 1 0 0 
 - `DistilBERT with Fine-Tuning`: 0 1 0 1 0 
-  - you can use an already fine-tuned and locally saved model with: 0 1 0 0 0
+  - you can use an already fine-tuned and locally saved model with: 0 1 0 0 0 (the latest saved model will be used)
   - when you choose Fine-Tuning with multiple epochs, you can set the number of epochs in the env vars
-  - after Fine-Tuning the model will be saved locally in `/data/models/`
+  - after Fine-Tuning the model and tokenizer will be saved locally in `/data/models/`
 
 e.g. `python -m src.mwe_metaphor.main 0 1 0 1 0` for DistilBERT with Fine-Tuning
 

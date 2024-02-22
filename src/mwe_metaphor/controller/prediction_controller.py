@@ -40,10 +40,10 @@ class PredictionController(BaseModel):
         """
         self.preprocessing()
         model = AutoModelForTokenClassification.from_pretrained(self._get_latest_save(
-            self.settings.model)) if self.pre_training else AutoModelForTokenClassification.from_pretrained(
+            self.settings.model, "model")) if self.pre_training else AutoModelForTokenClassification.from_pretrained(
             self.settings.model, num_labels=len(self.test_dataset_metaphor.labels))
         tokenizer = AutoTokenizer.from_pretrained(
-            self._get_latest_save(self.settings.model)) if self.pre_training else AutoTokenizer.from_pretrained(
+            self._get_latest_save(self.settings.model, "tokenizer")) if self.pre_training else AutoTokenizer.from_pretrained(
             self.settings.model)
 
         self._evaluate_and_print("metaphor_test_data", self.test_dataset_metaphor, tokenizer, model)
@@ -73,7 +73,7 @@ class PredictionController(BaseModel):
         self.test_dataset_mwe.create_from_tsv(test_data_tsv_sentences)
         self.test_dataset_metaphor.create_from_trofi(TroFiDataset.find(), language_model)
 
-    def _get_latest_save(self, model_name: str) -> str | None:
+    def _get_latest_save(self, model_name: str, name: str) -> str | None:
         """
             Get the latest saved trained model.
 
@@ -93,10 +93,15 @@ class PredictionController(BaseModel):
 
         for subfolder in subfolders:
             try:
-                model, timestamp_str = subfolder.split('_')
-                if model != model_name:
+                splits = subfolder.split('_')
+                modus = "_".join(splits[1:3])
+                if splits[0] != model_name:
                     continue
-                timestamp = datetime.strptime(timestamp_str, "%Y%m%d%H%M%S")
+                elif modus != self.settings.modus:
+                    continue
+                elif splits[3] != name:
+                    continue
+                timestamp = datetime.strptime(splits[4], "%Y%m%d%H%M%S")
                 if timestamp > newest_timestamp:
                     newest_timestamp = timestamp
                     newest_subfolder = subfolder

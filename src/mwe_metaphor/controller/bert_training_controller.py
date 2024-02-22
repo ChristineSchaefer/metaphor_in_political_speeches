@@ -101,8 +101,16 @@ class BertTrainingController(BaseModel):
 
         # save fine-tuned model local
         timestamp = ts_now()
-        model.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{timestamp}"))
-        tokenizer.save_pretrained(os.path.join(BASE_DIR, self.settings.model_dir + f"{model_checkpoint}_{timestamp}"))
+        # create local folder for saving model
+        if not os.path.exists(os.path.join(BASE_DIR, self.settings.model_dir)):
+            os.makedirs(os.path.join(BASE_DIR, self.settings.model_dir))
+        # save model and tokenizer
+        model.save_pretrained(os.path.join(
+            BASE_DIR,
+            self.settings.model_dir + f"{model_checkpoint}_{self.settings.modus}_model_{timestamp}"))
+        tokenizer.save_pretrained(os.path.join(
+            BASE_DIR,
+            self.settings.model_dir + f"{model_checkpoint}_{self.settings.modus}_tokenizer_{timestamp}"))
 
         # training history
         history = pd.DataFrame(trainer.state.log_history)

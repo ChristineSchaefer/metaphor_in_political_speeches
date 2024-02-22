@@ -6,6 +6,9 @@ from src.database import Document
 class Annotation(Document):
     """
         Annotation class extends Document and represents an annotation model in the database.
+
+        Inherits from:
+            Document: Base class for MongoDB documents.
     """
     speech_id: str = Field(..., description="id of the speech")
     sentence: str = Field(..., description="sentence used for the annotation")

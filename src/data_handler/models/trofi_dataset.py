@@ -6,6 +6,8 @@ from src.database import Document
 class TroFiDataset(Document):
     """
         TroFi data Class represents a politician in the database.
+        Structure taken over from
+        https://github.com/omidrohanian/metaphor_mwe/blob/master/datasets/trofi/TroFi_formatted_all3737.csv
 
         Inherits from:
             Document: Base class for MongoDB documents.

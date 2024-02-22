@@ -13,8 +13,8 @@ class XMLReaderController(BaseModel):
         Controller class for managing and handling XML files.
         This class is responsible for parsing XML files from a specified path and extracting speech and politician data.
     """
-    path: str = Field(..., description="path to the xml file")
-    politician: Politician | None = Field(default_factory=None, description="politician object")
+    path: str = Field(..., description="path to the folder with xml files")
+    politician: Politician | None = Field(default=None, description="politician object")
     speeches: list[dict] = Field(default_factory=list, description="list of speech from politician")
 
     def parse(self):

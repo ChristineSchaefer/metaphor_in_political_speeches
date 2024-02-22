@@ -61,27 +61,6 @@ class CrawlerController(BaseModel):
                 text = remove_string(text, [party])
                 self.politicians.append(Politician(name=" ".join(text), party=party).save())
 
-    def _crawler_3(self, soup: BeautifulSoup):
-        """
-            Private method to crawl and parse content specific to HTML unordered lists.
-            Gathers data from list items to create and save new Politician instances.
-            Uses a workaround to perform a manual normalization operation, and reads the normalized data from a text file.
-
-            @param soup: BeautifulSoup object for parsing webpage
-        """
-        for post in soup.findAll("ul"):
-            for line in post.findAll("li"):
-                for element in line.findAll("a"):
-                    # workaround: write to txt, manually normalization, read normalized txt
-                    write_to_txt(element.text, "data/Regierungsmitglieder.txt", "w")
-
-        text = read_from_txt("data/Regierungsmitglieder_normalisiert.txt")
-        for item in text:
-            politician = item[0:2]
-            party = remove_string(item, politician)
-            if len(Politician.find({"name": {"$in": [" ".join(politician)]}})) <= 0:
-                self.politicians.append(Politician(name=" ".join(politician), party=" ".join(party)).save())
-
     def get_card_content(self):
         """
             Fetches content from the target URL and parses it into a BeautifulSoup object.
@@ -95,5 +74,3 @@ class CrawlerController(BaseModel):
                 self._crawler_1(soup)
             case 2:
                 self._crawler_2(soup)
-            case 3:
-                self._crawler_3(soup)

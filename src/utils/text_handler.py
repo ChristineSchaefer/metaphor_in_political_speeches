@@ -114,16 +114,14 @@ def read_from_csv_and_write_to_dict(path: str) -> list[dict]:
         @returns content of file as list with dict
     """
     with open(os.path.join(BASE_DIR, path), 'r') as f:
-        dict_reader = csv.DictReader(f, delimiter=';', fieldnames=[
+        dict_reader = csv.DictReader(f, delimiter=',', fieldnames=[
+            "_id",
             "speech_id",
             "sentence",
             "sentence_index",
             "verb",
             "lexem",
-            "index_verb",
-            "basic_meaning",
-            "contextual_meaning",
-            "metaphorical_use"
+            "index_verb"
         ])
 
         return list(dict_reader)

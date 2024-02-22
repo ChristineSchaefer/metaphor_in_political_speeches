@@ -11,7 +11,7 @@ class Politician(Document):
             Document: Base class for MongoDB documents.
     """
     name: str = Field(..., description="name of the politician")
-    party: str | None = Field(default_factory=None, description="name of the party, can be without party")
+    party: str | None = Field(default=None, description="name of the party, can be without party")
     model_config = ConfigDict(extra="allow")
 
     class Settings:

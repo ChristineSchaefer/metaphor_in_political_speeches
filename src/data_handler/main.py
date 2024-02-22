@@ -7,8 +7,7 @@ from src.data_handler.utils import argparser
 from src.data_handler.controller.web_crawler import CrawlerController
 
 urls = ["https://goslar-gegen-rechtsextremismus.de/html/afd-sprueche.php",
-        "https://www.bundestag.de/parlament/geschichte/bundestagspraesidenten_seit_1949/bundestagspraesidenten_seit_1949-196684",
-        "https://de.wikipedia.org/wiki/Liste_der_deutschen_Regierungsmitglieder_seit_1949"]
+        "https://www.bundestag.de/parlament/geschichte/bundestagspraesidenten_seit_1949/bundestagspraesidenten_seit_1949-196684"]
 
 
 def main_data_handling(arguments):

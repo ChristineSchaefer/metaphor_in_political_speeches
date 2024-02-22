@@ -40,7 +40,7 @@ documents. Also there are the steps to evaluate the annotation process.
 The corresponding MongoDB collections can be found in `data/collections/`.
 
 ### Controller
-- `CrawlerController`: Offers three different web crawlers that can be used for the URLs listed in the main script.
+- `CrawlerController`: Offers two different web crawlers that can be used for the URLs listed in the main script.
 - `XMLReaderController`: Reads a xml with potential political speeches from path and transform them to documents.
 - `CSVController`: Reads a csv file of annotations, find the basic meaning by using the duden api and transform them to annotation documents.
 - `TrofiCollectionController`: Transforms annotation documents into TroFi documents.
@@ -65,10 +65,20 @@ shown with `-h` at the end of the command.
 
 `python -m src.data_handler.main -h`
 
+When using the data from `data/collections/` you don't need to run the four preprocessing steps.
+The collection data contains the results from the controller, you can only import the data to your 
+MongoDB database.
+
 Use the following example arguments to activate the different workflows:
 - Web Crawler: `1 "" "" 0 0`
+  - there are two different crawler for URLs listed in `main.py`
+  - used for collect information about politician and fill db
 - XML Reader: `0 "path/to/xml/" "" 0 0`
-- CSV Reader: `0 "" "path/to/csv/" 0 0`
+  - used for transform the corpus of political speeches from https://politische-reden.eu/ into documents 
+  (after download the xml files to a local folder)
+  - you can test this flow with the folder `data/tests/`
+- CSV Reader: `0 "" "path/to/csv/file.csv" 0 0`
+  - you can test this flow with the file `data/tests/annotations.csv`
 - TroFi Transformation: `0 "" "" 1 0`
 - Annotation Evaluation: `0 "" "" 0 1`
 

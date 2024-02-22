@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field
 from transformers import AutoModelForTokenClassification, AutoTokenizer
 from transformers.utils import ModelOutput
 
-from src.config import Settings, BASE_DIR
+from src.config import Settings, BASE_DIR, Modus
 from src.data_handler.models.trofi_dataset import TroFiDataset
 from src.mwe_metaphor.models.dataset_model import Dataset
 from src.mwe_metaphor.models.evaluation_model import PredictionEvaluationModel
@@ -62,7 +62,7 @@ class PredictionController(BaseModel):
         print(f"start evaluation for {corpus_name} corpus")
         evaluation_results = self.evaluate(test_dataset, tokenizer, model, corpus_name)
         self.evaluation_results.append(evaluation_results)
-        print(f"epoch {self.num_epochs}: {evaluation_results}")
+        print(f"results for training with epoch {self.num_epochs}: {evaluation_results}")
 
     def preprocessing(self):
         """
@@ -94,14 +94,15 @@ class PredictionController(BaseModel):
         for subfolder in subfolders:
             try:
                 splits = subfolder.split('_')
-                modus = "_".join(splits[1:3])
+                if splits[1] == "ml":
+                    splits[1] = Modus.MULTI_LABEL.value
                 if splits[0] != model_name:
                     continue
-                elif modus != self.settings.modus:
+                elif splits[1] != self.settings.modus:
                     continue
-                elif splits[3] != name:
+                elif splits[2] != name:
                     continue
-                timestamp = datetime.strptime(splits[4], "%Y%m%d%H%M%S")
+                timestamp = datetime.strptime(splits[3], "%Y%m%d%H%M%S")
                 if timestamp > newest_timestamp:
                     newest_timestamp = timestamp
                     newest_subfolder = subfolder

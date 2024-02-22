@@ -31,4 +31,21 @@ documents. Also there are the steps to evaluate the annotation process.
 |   |-- README.md
 ```
 
+### Models
+- `Annotation`: has all relevant attributes for an annotated sentence, like analyzed verb with index, basic and contextual meaning and label
+- `Politician`: information about potential used politician with name and party
+- `Speech`: speech from DWDS corpus with corresponding speaker as Politician object
+- `TroFi_Dataset`: transformed Annotation objects in TroFi structure
+
+The corresponding MongoDB collections can be found in `data/collections/`.
+
 ### Controller
+- CrawlerController: Offers three different web crawlers that can be used for the URLs listed in the main script.
+- XMLReaderController: Reads a xml with potential political speeches from path and transform them to documents.
+- CSVController: Reads a csv file of annotations, find the basic meaning by using the duden api and transform them to annotation documents.
+- TrofiCollectionController: Transforms annotation documents into TroFi documents.
+- AgreementController: Compute Cohen's and Fleiss' Kappa for evaluate the annotation process.
+
+## Workflows
+- Preprocessing
+- Evaluation of annotation process

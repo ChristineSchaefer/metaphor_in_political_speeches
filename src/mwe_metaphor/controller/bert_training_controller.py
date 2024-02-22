@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field
 from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, \
     DataCollatorForTokenClassification
 
-from src.config import Settings, BASE_DIR
+from src.config import Settings, BASE_DIR, Modus
 from src.mwe_metaphor.models.dataset_model import Dataset, MWEDataset
 from src.mwe_metaphor.utils.text_utils import load_data
 from src.mwe_metaphor.utils.tsvlib import TSVSentence
@@ -105,12 +105,16 @@ class BertTrainingController(BaseModel):
         if not os.path.exists(os.path.join(BASE_DIR, self.settings.model_dir)):
             os.makedirs(os.path.join(BASE_DIR, self.settings.model_dir))
         # save model and tokenizer
+        if self.settings.modus == Modus.MULTI_LABEL:
+            modus = "ml"
+        else:
+            modus = Modus.BINARY.value
         model.save_pretrained(os.path.join(
             BASE_DIR,
-            self.settings.model_dir + f"{model_checkpoint}_{self.settings.modus}_model_{timestamp}"))
+            self.settings.model_dir + f"{model_checkpoint}_{modus}_model_{timestamp}"))
         tokenizer.save_pretrained(os.path.join(
             BASE_DIR,
-            self.settings.model_dir + f"{model_checkpoint}_{self.settings.modus}_tokenizer_{timestamp}"))
+            self.settings.model_dir + f"{model_checkpoint}_{modus}_tokenizer_{timestamp}"))
 
         # training history
         history = pd.DataFrame(trainer.state.log_history)

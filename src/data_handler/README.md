@@ -40,11 +40,11 @@ documents. Also there are the steps to evaluate the annotation process.
 The corresponding MongoDB collections can be found in `data/collections/`.
 
 ### Controller
-- CrawlerController: Offers three different web crawlers that can be used for the URLs listed in the main script.
-- XMLReaderController: Reads a xml with potential political speeches from path and transform them to documents.
-- CSVController: Reads a csv file of annotations, find the basic meaning by using the duden api and transform them to annotation documents.
-- TrofiCollectionController: Transforms annotation documents into TroFi documents.
-- AgreementController: Compute Cohen's and Fleiss' Kappa for evaluate the annotation process.
+- `CrawlerController`: Offers three different web crawlers that can be used for the URLs listed in the main script.
+- `XMLReaderController`: Reads a xml with potential political speeches from path and transform them to documents.
+- `CSVController`: Reads a csv file of annotations, find the basic meaning by using the duden api and transform them to annotation documents.
+- `TrofiCollectionController`: Transforms annotation documents into TroFi documents.
+- `AgreementController`: Compute Cohen's and Fleiss' Kappa for evaluate the annotation process.
 
 ## Workflows
 - Preprocessing: The preprocessing process for enriching the data with additional information like speaker with party
@@ -56,7 +56,7 @@ to do the following things:
   - Update annotations with basic meaning, index etc.
   - Transform annotations to TroFi data
 - Evaluation of annotation process: The annotations in `data/annotations/` will be compared to compute the IAA with
-Cohen's and Fleiss' Kappa.
+Cohen's and Fleiss' Kappa with `AgreementController`.
   - Cohen's Kappa will be computed for each annotator combination.
 
 For activating the single flows you can pass arguments by running the main script.
@@ -66,10 +66,17 @@ shown with `-h` at the end of the command.
 `python -m src.data_handler.main -h`
 
 Use the following example arguments to activate the different workflows:
-- `Web Crawler`: 1 "" "" 0 0
-- `XML Reader`: 0 "path/to/xml/" "" 0 0
-- `CSV Reader` 0 "" "path/to/csv/" 0 0
-- `TroFi Transformation`: 0 "" "" 1 0
-- `Annotation Evaluation`: 0 "" "" 0 1
+- Web Crawler: `1 "" "" 0 0`
+- XML Reader: `0 "path/to/xml/" "" 0 0`
+- CSV Reader: `0 "" "path/to/csv/" 0 0`
+- TroFi Transformation: `0 "" "" 1 0`
+- Annotation Evaluation: `0 "" "" 0 1`
 
 e.g. `python -m src.data_handler.main 0 "" "" 0 1` for evaluation of the annotation process.
+
+### Required env vars for workflows
+| VAR              | Web Crawler | XML Reader | CSV Reader | TroFi Tranformer | Agreement |
+|------------------|-------------|-----|-----|-----|-----|
+| DB_HOST          | x           | x | x | x | x |
+| DB_PORT          | x           | x | x | x | x |
+| DB_NAME          | x           | x | x | x | x |

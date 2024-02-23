@@ -67,15 +67,19 @@ All requirements are listed in `requirements.txt`.
 ## Local setup
 1) Install [python 3.11](https://docs.python.org/3.11/contents.html)
 2) Clone repository with `git clone https://github.com/ChristineSchaefer/metaphor_in_political_speeches.git`
+   - if error occurs you can try `git clone --depth=1 https://github.com/ChristineSchaefer/metaphor_in_political_speeches.git`
+   or download the repository as zip 
 3) Open repo and create virtual environment with `python -m venv /path/to/new/virtual/environment` and activate it
 4) Install requirements with `pip install -r requirements.txt`
 5) Create `.env` file from `.env.example` at the same level (`src`) and fill empty vars or change existing ones
 
 ### Database setup
-1) Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass)
-2) Connect to local database connection (URI e.g. `mongodb://localhost:27017`)
-3) Create database and collections. Add data from `data/collections/` (each file is a collection)
-4) Update database env vars (`DB_HOST`, `DB_NAME`, `DB_PORT`)
+1) Running MongoDB community instance (see: [installation guide](https://www.mongodb.com/docs/manual/administration/install-community/))
+   - make sure you have a MongoDB service running locally on port 27017 (e.g. activate with macos: 'brew services mongodb-community', ubuntu: 'sudo systemctl start mongod')
+2) Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass)
+3) Connect to local database connection (URI e.g. `mongodb://localhost:27017`)
+4) Create database and collections. Add data from `data/collections/` (each file is a collection)
+5) Update database env vars (`DB_HOST`, `DB_NAME`, `DB_PORT`)
 
 ### Corpus setup
 1) Clone repository with annotated VMWE with `git clone https://gitlab.com/parseme/sharedtask-data.git`

@@ -52,6 +52,7 @@ class Settings(BaseSettings):
     model: str = Field(default="", description="name of transformer model")
     model_dir: str = Field(default="", description="path to model directory")
     modus: Modus = Field(default=Modus.BINARY, description="classification mode")
+    init_db: bool = Field(default=False, description="whether to initialize db or not")
     model_config = SettingsConfigDict(env_file=os.path.join(SRC_DIR, ".env"), protected_namespaces=())
 
     def mdb_connection_string(self):

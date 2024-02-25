@@ -1,3 +1,4 @@
+from src.config import get_settings
 from src.data_handler.controller.agreement_controller import AgreementController
 from src.data_handler.controller.trofi_collection_controller import TrofiCollectionController
 from src.data_handler.controller.csv_reader import CSVController
@@ -5,6 +6,7 @@ from src.data_handler.controller.xml_reader import XMLReaderController
 from src.data_handler.models.annotations import Annotation
 from src.data_handler.utils import argparser
 from src.data_handler.controller.web_crawler import CrawlerController
+from src.utils.database import init_db
 
 urls = ["https://goslar-gegen-rechtsextremismus.de/html/afd-sprueche.php",
         "https://www.bundestag.de/parlament/geschichte/bundestagspraesidenten_seit_1949/bundestagspraesidenten_seit_1949-196684"]
@@ -16,6 +18,9 @@ def main_data_handling(arguments):
 
         @param arguments: arguments to control behavior
     """
+    env = get_settings()
+    if env.init_db:
+        init_db()
     if arguments.crawler_url != 0:
         cc = CrawlerController(url=urls[arguments.crawler_url-1], index=arguments.crawler_url)
         cc.get_card_content()

@@ -98,3 +98,14 @@ def read_from_csv_and_write_to_dict(path: str) -> list[dict]:
         ])
 
         return list(dict_reader)
+
+
+def make_json_from_csv(csv_file: str):
+    data = []
+
+    with open(csv_file, encoding='utf-8') as file:
+        csv_reader = csv.DictReader(file)
+
+        for row in csv_reader:
+            data.append(row)
+    return data

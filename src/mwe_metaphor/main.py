@@ -4,10 +4,13 @@ from src.mwe_metaphor.controller.crf_controller import CRFController
 from src.mwe_metaphor.controller.gcn_training_controller import BERTWithGCNTrainingController
 from src.mwe_metaphor.controller.prediction_controller import PredictionController
 from src.mwe_metaphor.utils import argparser
+from src.utils.database import init_db
 
 
 def classification_main(arguments):
     env = get_settings()
+    if env.init_db:
+        init_db()
     print(f"+++ classification modus: {env.modus.value} +++")
     if arguments.bert_gnc != 0:
         print("+++ train BERT with GNC and predict +++")

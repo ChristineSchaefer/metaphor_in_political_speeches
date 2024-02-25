@@ -79,7 +79,10 @@ All requirements are listed in `requirements.txt`.
    - make sure you have a MongoDB service running locally on port 27017 (e.g. activate with macos: 'brew services mongodb-community', ubuntu: 'sudo systemctl start mongod')
 2) Download and install [MongoDB Compass](https://www.mongodb.com/try/download/compass)
 3) Connect to local database connection (URI e.g. `mongodb://localhost:27017`)
-4) Create database and collections. Add data from `data/collections/` (each file is a collection)
+4) Create database and collections. Either
+   - add data from `data/collections/` (each file is a collection) or
+   - set env var `INIT_DB` to `True` (if you choose this option, **you should only execute this option once**, 
+   i.e. set the var to `False` again after the first time, otherwise the data will be written to the database twice)
 5) Update database env vars (`DB_HOST`, `DB_NAME`, `DB_PORT`)
 
 ### Corpus setup

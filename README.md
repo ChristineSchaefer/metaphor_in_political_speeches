@@ -72,6 +72,7 @@ All requirements are listed in `requirements.txt`.
 3) Open repo and create virtual environment with `python -m venv /path/to/new/virtual/environment` and activate it
 4) Install requirements with `pip install -r requirements.txt`
 5) Create `.env` file from `.env.example` at the same level (`src`) and fill empty vars or change existing ones
+   - there are some default values in `.env.example`, you can use these if they match or updated with new values
 
 ### Database setup
 1) Running MongoDB community instance (see: [installation guide](https://www.mongodb.com/docs/manual/administration/install-community/))
@@ -83,7 +84,9 @@ All requirements are listed in `requirements.txt`.
 
 ### Corpus setup
 1) Clone repository with annotated VMWE with `git clone https://gitlab.com/parseme/sharedtask-data.git`
-2) Update corpus env vars (`MWE_DIR`, `MWE_TRAIN`, `MWE_TEST`, `MWE_VAL`)
+2) Update following corpus env vars:
+   - `MWE_DIR`: path to folder, e.g. /Users/testuser/sharedtask-data/1.2/DE
+   - `MWE_TRAIN`, `MWE_TEST` and `MWE_VAL`: name of the file
 
 ### Additional setup
 1) Download spacy language model with `python -m spacy download de_core_news_sm`

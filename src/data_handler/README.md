@@ -73,12 +73,12 @@ Use the following example arguments to activate the different workflows:
 - Web Crawler: `1 "" "" 0 0`
   - there are two different crawler for URLs listed in `main.py`
   - used for collect information about politician and fill db
-- XML Reader: `0 "path/to/xml/" "" 0 0`
+- XML Reader: `0 "path/to/xml_folder/" "" 0 0`
   - used for transform the corpus of political speeches from https://politische-reden.eu/ into documents 
   (after download the xml files to a local folder)
-  - you can test this flow with the folder `data/tests/`
+  - you can test this flow with the folder `python -m src.data_handler.main 0 "data/tests/" "" 0 0`
 - CSV Reader: `0 "" "path/to/csv/file.csv" 0 0`
-  - you can test this flow with the file `data/tests/annotations.csv`
+  - you can test this flow with the file `python -m src.data_handler.main 0 "" "data/tests/annotations.csv" 0 0`
 - TroFi Transformation: `0 "" "" 1 0`
 - Annotation Evaluation: `0 "" "" 0 1`
 

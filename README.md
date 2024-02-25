@@ -74,6 +74,12 @@ All requirements are listed in `requirements.txt`.
 5) Create `.env` file from `.env.example` at the same level (`src`) and fill empty vars or change existing ones
    - there are some default values in `.env.example`, you can use these if they match or updated with new values
 
+### Corpus setup
+1) Clone repository with annotated VMWE with `git clone https://gitlab.com/parseme/sharedtask-data.git`
+2) Update following corpus env vars:
+   - `MWE_DIR`: path to folder, e.g. /Users/testuser/sharedtask-data/1.2/DE
+   - `MWE_TRAIN`, `MWE_TEST` and `MWE_VAL`: name of the file
+
 ### Database setup
 1) Running MongoDB community instance (see: [installation guide](https://www.mongodb.com/docs/manual/administration/install-community/))
    - make sure you have a MongoDB service running locally on port 27017 (e.g. activate with macos: 'brew services mongodb-community', ubuntu: 'sudo systemctl start mongod')
@@ -84,12 +90,6 @@ All requirements are listed in `requirements.txt`.
    - set env var `INIT_DB` to `True` (if you choose this option, **you should only execute this option once**, 
    i.e. set the var to `False` again after the first time, otherwise the data will be written to the database twice)
 5) Update database env vars (`DB_HOST`, `DB_NAME`, `DB_PORT`)
-
-### Corpus setup
-1) Clone repository with annotated VMWE with `git clone https://gitlab.com/parseme/sharedtask-data.git`
-2) Update following corpus env vars:
-   - `MWE_DIR`: path to folder, e.g. /Users/testuser/sharedtask-data/1.2/DE
-   - `MWE_TRAIN`, `MWE_TEST` and `MWE_VAL`: name of the file
 
 ### Additional setup
 1) Download spacy language model with `python -m spacy download de_core_news_sm`

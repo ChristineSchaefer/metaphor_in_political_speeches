@@ -1,0 +1,25 @@
+/Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/venv/bin/python /Users/christineschafer/Documents/Uni-Kram/Masterarbeit/Repos/metaphor_in_political_speeches/src/mwe_metaphor/main.py 0 0 0 0 1
++++ classification modus: binary +++
++++ build crf model and start prediction +++
+CRF prediction evaluation results for mwe:
+               precision    recall  f1-score   support
+
+ is_metaphor       0.63      0.39      0.48      1552
+ no_metaphor       0.97      0.99      0.98     33336
+
+    accuracy                           0.96     34888
+   macro avg       0.80      0.69      0.73     34888
+weighted avg       0.96      0.96      0.96     34888
+
+CRF prediction evaluation results for metaphor:
+               precision    recall  f1-score   support
+
+ is_metaphor       0.17      0.07      0.10       252
+ no_metaphor       0.96      0.99      0.97      5938
+
+    accuracy                           0.95      6190
+   macro avg       0.57      0.53      0.54      6190
+weighted avg       0.93      0.95      0.94      6190
+
+
+Process finished with exit code 0

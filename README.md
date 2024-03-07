@@ -2,6 +2,8 @@
 
 Required: [python 3.11](https://docs.python.org/3.11/contents.html)
 
+Implemented on macOS.
+
 
 ## What is this repository for?
 The repository is for the master thesis "Metaphern im Politischen Diskurs: Transformer-Modelle für

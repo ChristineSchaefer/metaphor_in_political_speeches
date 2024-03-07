@@ -9,6 +9,8 @@ from src.config import get_settings
 
 # from https://github.com/omidrohanian/metaphor_mwe/blob/master/layers/GCN.py
 
+# if you train on windows, change this to
+# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 device = torch.device("mps") if torch.backends.mps.is_built() else torch.device("cpu")
 
 

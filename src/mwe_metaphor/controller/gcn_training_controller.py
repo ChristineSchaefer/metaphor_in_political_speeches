@@ -17,6 +17,8 @@ from src.mwe_metaphor.models.spacy_model import CoNLLParserModel, SpacyModel
 from src.mwe_metaphor.utils.text_utils import tokenize
 from src.mwe_metaphor.utils.training_utils import adjacency, pad_or_truncate, mwe_adjacency
 
+# if you train on windows, change this to
+# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 device = torch.device("mps") if torch.backends.mps.is_built() else torch.device("cpu")
 
 
@@ -106,7 +108,7 @@ class BERTWithGCNTrainingController(BaseModel):
         # create adjacency matrix for metaphor
         A = np.array(adjacency(sentences=sentences, max_len=self.settings.max_len, language_model=language_model))
 
-        with open(self.settings.mwe_dir + "/" + self.settings.mwe_train) as f:
+        with open(self.settings.mwe_dir + "/" + self.settings.mwe_train, encoding="utf-8") as f:
             parser = CoNLLParserModel(language_model=self.settings.language_model)
             # create adjacency matrix for mwe and metaphor
             A_MWE = mwe_adjacency(f, self.settings.metaphor_dir, self.settings.max_len - 2, parser.get_parser())

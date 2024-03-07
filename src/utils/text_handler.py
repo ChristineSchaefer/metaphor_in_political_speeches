@@ -40,7 +40,7 @@ def write_to_txt(text: str, name: str, mode: str):
        @param name: name of file
        @param mode: read or write
     """
-    file = open(os.path.join(BASE_DIR, name), mode)
+    file = open(os.path.join(BASE_DIR, name), mode, encoding="utf-8")
     file.write(text + "\n")
     file.close()
 
@@ -71,7 +71,7 @@ def read_from_txt(path: str) -> list:
         @returns content of file as list
     """
     content = []
-    with open(os.path.join(BASE_DIR, path)) as f:
+    with open(os.path.join(BASE_DIR, path), encoding="utf-8") as f:
         lines = f.readlines()
         for line in lines:
             content.append(normalize(line).split())
@@ -86,7 +86,7 @@ def read_from_csv_and_write_to_dict(path: str) -> list[dict]:
 
         @returns content of file as list with dict
     """
-    with open(os.path.join(BASE_DIR, path), 'r') as f:
+    with open(os.path.join(BASE_DIR, path), 'r', encoding="utf-8") as f:
         dict_reader = csv.DictReader(f, delimiter=',', fieldnames=[
             "_id",
             "speech_id",

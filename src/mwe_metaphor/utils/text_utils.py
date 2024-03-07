@@ -24,5 +24,5 @@ def load_data(settings: Settings, path: str) -> list[TSVSentence]:
 
         @returns list with TSVSentence objects
     """
-    with open(f"{settings.mwe_dir}/{path}") as f:
+    with open(f"{settings.mwe_dir}/{path}", encoding="utf-8") as f:
         return list(iter_tsv_sentences(f))

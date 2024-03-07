@@ -30,7 +30,7 @@ def create_collection_from_json():
     for file in glob.glob(os.path.join(BASE_DIR, "data/collections/*.json")):
         collection_name = Path(file).stem
         collection = metaphor_identification_db[collection_name]
-        with open(file) as f:
+        with open(file, encoding="utf-8") as f:
             file_data = json.load(f)
             for document in file_data:
                 if "$oid" in document["_id"]:

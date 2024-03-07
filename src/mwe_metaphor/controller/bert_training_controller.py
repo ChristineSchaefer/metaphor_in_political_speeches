@@ -15,6 +15,8 @@ from src.mwe_metaphor.utils.tsvlib import TSVSentence
 from src.mwe_metaphor.utils.visualisation import plot_history, process_and_chart
 from src.utils.datetime import ts_now
 
+# if you train on windows, change this to
+# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 device = torch.device("mps") if torch.backends.mps.is_built() else torch.device("cpu")
 
 
